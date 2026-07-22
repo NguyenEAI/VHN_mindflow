@@ -1,0 +1,3 @@
+Found If need product info
+session.extra.previous_manager_decision.need_product_info == "yes"
+False branch:

@@ -1,0 +1,11 @@
+﻿
+  VHN_DauTien.json:630:                  "componentType": "switch",
+  VHN_DauTien.json:631:                  "type": "if",
+> VHN_DauTien.json:632:                  "name": "If still has products",
+  VHN_DauTien.json:633:                  "properties": {
+  VHN_DauTien.json:634:                    "condition": "order_info.product_requirement == \"NOT-PROVIDED\""
+  VHN_DauTien.json:635:                  },
+  VHN_DauTien.json:636:                  "branches": {
+  VHN_DauTien.json:637:                    "true": [
+
+

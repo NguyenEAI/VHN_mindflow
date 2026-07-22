@@ -1,0 +1,6 @@
+Node 1: AI Decide b2c_consult
+  Not found in instruction.
+Node 4: AI Chuyên trách B2C
+  Found session.extra.product_information in instruction!
+Node 8: AI Check B2C Status
+  Not found in instruction.

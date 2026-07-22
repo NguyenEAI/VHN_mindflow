@@ -1,0 +1,1453 @@
+{
+  "sequence": [
+    {
+      "id": "8108fe3b9537a4601259045606e6a924",
+      "componentType": "task",
+      "type": "session",
+      "name": "Session Manager",
+      "properties": {
+        "extra": "{\n  \"findproduct_chat_history\": \"\",\n  \"findcombo_chat_history\": \"\",\n  \"findproduct_bot_output\": \"\",\n  \"findproduct_data\": \"\",\n  \"findcombo_data\": \"\",\n  \"registration_chat_history\": \"\",\n  \"registration_bot_reply\": \"\",\n  \"company_name\": \"Shegan\",\n  \"company_contact\": \"Hotline: 0899507188\",\n  \"assistant_role\": \"Assistant named Ngọc Linh, Affiliate sales staff for Shegan. Assistant must always respond in the language used by the User\",\n  \"company_product\": \"Anti-darkening deodorant serum, Intimate wash, Facial cleanser, Exfoliator, Makeup remover, Cotton pads\",\n  \"assistant_skill\": \"Assistant is an experienced staff in providing advice and information about various skincare products. Assistant always aims to skillfully gather information about the User's needs for skincare products and make appropriate product recommendations based on the User's concerns and condition. Assistant always responds in the language used by the User. Identify the language of the User's input and reply in the same language\",\n  \"assistant_scope\": \"Consult on available products from Shegan \\n- Advise on combo deals with preferential prices, provide information about Shegan \\n - Assist with placing orders and quoting prices.\",\n  \"assistant_tone\": \"- Humor and sarcasm can be tricky in text. Let's keep the conversation straightforward and avoid misunderstandings\\n- Even in casual conversations, Assistant must maintain a level of professionalism. Let's keep the interaction respectful and professional.\",\n  \"vn_pronoun\": \"Trong tiếng việt, Assistant luôn là \\\"Em\\\" và Assistant PHẢI tự xưng là \\\"Em\\\" trong tất cả các trường hợp. \\nAssistant gọi User theo danh xưng lịch sự là \\\"anh\\\" nếu giới tính là NAM hoặc \\\"chị\\\" nếu giới tính là NỮ và nếu chưa xác định được giới tính thì gọi User là \\\"anh/chị\\\". \\n\\nXem các ví dụ bên dưới để hiểu rõ cách dùng\\nUser: Xin chào\\nReasoning: User nói xin chào nhưng không xác định được giới tính nên Assistant sẽ gọi User là \\\"anh/chị\\\", Assistant sẽ là \\\"em\\\" \\nAssistant: Dạ, em có thể giúp gì cho anh/chị?\\n\\nUser: Chào em, anh là Tùng, cho anh hỏi một chút.\\nReasoning: User xưng \\\"anh\\\" và giới thiệu tên là \\\"Tùng\\\" nên xác định được giới tính là Nam nên sẽ gọi User bằng danh xưng và tên là \\\"Anh Tùng\\\". Assistant sẽ là \\\"Em\\\"\\nAssistant: Chào anh Tùng, em có thể giúp gì cho anh.\",\n  \"product_main_keyword\": \"<dòng sản phẩm>\",\n  \"summary_fields_format\": \"product_requirement: <names and quantity of the products User is interested in> \\nPhone: <Customer's phone/Not provided>\\nName: <Customer's name/Not provided>\\nAddress: <Customer's address/Not provided>\\nEmail: <Customer's email/Not provided>\\nOther information: <Customer's Other information/Not provided>\",\n  \"required_fields_for_json\": [\n    \"product_requirement\",\n    \"combo_requirement\",\n    \"customer_phone\",\n    \"customer_name\",\n    \"customer_address\",\n    \"customer_email\",\n    \"other_information\",\n    \"is_user_want_to_exit\"\n  ],\n  \"register_purpose\": \"place order or have more specific product recommendation\",\n  \"register_mandatory_field\": \"PHONE, FULL NAME, ADDRESS, EMAIL, PRODUCT_REQUIREMENT, ADDRESS, EMAIL \",\n  \"register_optional_field\": \"\",\n  \"register_field_1\": \"Field Name: Phone \\nInput instruction: số điện thoại của User, tối thiểu 7 số, tối đa 11 số + 2 số vùng, có thể có khoảng cách trong dãy số, phone must be in correct format; \\nMandatory: Required - MUST HAVE Must be real data provided by the User. Assistant cannot create data. The Assistant must ask until it is provided by the User\",\n  \"register_field_2\": \"Field Name: Full Name \\nInput instruction: Tên hoặc họ tên đầy đủ của User \\nMandatory: Required - MUST HAVE Must be real data provided by the User. Assistant cannot create data. The Assistant must ask until it is provided by the User\",\n  \"register_field_3\": \"Mandatory: Required - MUST HAVE: Field: \\\"Email\\\" \\nInput instruction: User email Must be real data provided by the User. Assistant cannot create data. The Assistant must ask until it is provided by the User.\",\n  \"register_field_4\": \"Field Name: ADDRESS - Address for delivery. Must have full house number, street name, and district. If information is missing, the Assistant must ask again. Can only be an address in Vietnam. Delivery to other countries is not supported. If the User gives an address in another country, the Assistant must ask again for the Vietnamese address \\nMandatory: Required - MUST HAVE. Must be real data provided by the User. Assistant cannot create data. The Assistant must ask until it is provided by the User\",\n  \"register_field_5\": \"Field Name: PRODUCT REQUIREMENTS \\n Input instruction: Product User interested in and quantity of them \\nMandatory: Required - MUST HAVE\",\n  \"register_field_6\": \"\",\n  \"findproduct_conversation_example\": \"\",\n  \"findproduct_analyze_conversation_example\": \"\",\n  \"register_successfully\": \"The order has been successfully recorded by AI. A specialist will contact you to confirm your order. If you want to know any information about the product, please message me directly.\",\n  \"case_to_contact\": \"\",\n  \"contact_for\": \"\",\n  \"stop_examples\": [\n    \"stop\",\n    \"phiền quá\",\n    \"không làm nữa đâu\",\n    \"thôi không tìm nữa\",\n    \"when User say off-topic subjects such as poetry writing, dating, eating, love, animals...\"\n  ],\n  \"overall_register_description\": \"\",\n  \"old_order_customer_information\": \"NA\"\n}"
+      }
+    },
+    {
+      "id": "ef56ff22fa1ac83014edd07f9b4ece21",
+      "componentType": "task",
+      "type": "router",
+      "name": "Router",
+      "properties": {
+        "setting": [
+          {
+            "topic": "greetings",
+            "phrases": [
+              "hello",
+              "hi",
+              "chào",
+              "xin chào",
+              "em ơi",
+              "có ai không",
+              "chào em",
+              "sticker",
+              "gif",
+              "emoji"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "off_topic",
+            "phrases": [
+              "làm thơ",
+              "viết code",
+              "write poetry",
+              "write code",
+              "kể chuyện hài ",
+              "Assistant là một Sales Agent. Vì vậy off_topic khi User nói nhảm, tán tỉnh, nói những chủ đề không liên quan tới tìm và tư vấn sản phẩm, mua hàng",
+              "Khi User nhắn chuỗi các ký tự đặc biệt ##&$%%^%$*%*O^(√ (*&^*$%#$",
+              "Khi User gửi duy nhất 1 số \"9\"",
+              "9",
+              "9",
+              "9",
+              "9"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "company_information",
+            "phrases": [
+              "thương hiệu này của ai vậy em?",
+              "nhãn hàng này của ai vậy em?",
+              "giới thiệu anh về công ty mình nha",
+              "brand mình của ai?",
+              "bên mình có tiêu chí nào cho sản phẩm vậy em?",
+              "thông điệp của nhãn hàng mình là gì á?",
+              "tuyển dụng",
+              "công ty gồm phòng ban nào",
+              "bộ phận của công ty",
+              "công ty có bao nhiêu nhân sự",
+              "shopee sốp pe",
+              "lazada",
+              "tiktok shop",
+              "có shopee khong?",
+              "có lazada ko?",
+              "chính sách đổi trả",
+              "chính sách bảo mật",
+              "chính sách vận chuyển ",
+              "điều khoản và dịch vụ",
+              "đổi hàng",
+              "trả hàng",
+              "chuyển ra hà nội",
+              "vận chuyển đi hải phòng",
+              "có ship hàng đi bình dương ko"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "find_product",
+            "phrases": [
+              "bên mình có sản phẩm nào vậy em?",
+              "da anh bị dầu thì dùng sản phẩm nào em?",
+              "da anh bị mụn thì dùng sản phẩm nào?",
+              "anh muốn dưỡng ẩm da thì dùng sản phẩm nào",
+              "anh bị mùi cơ thể thì dùng sản phẩm nào",
+              "tư vấn giúp chị sữa rửa mặt",
+              "mình có bán tẩy trang ko",
+              "2 hộp bông tẩy trang giá nhiêu?",
+              "giá sản phẩm này nhiêu em?",
+              "srm",
+              "dung dịch vệ sinh",
+              "sữa rửa mặt",
+              "serum",
+              "còn combo nào khác ko em?",
+              "có combo nào liên quan nữa k em?",
+              "chị muốn tham khảo thêm vài combo",
+              "tư vấn anh combo đa năng đi",
+              "mua nhiều có được giảm giá k?",
+              "có gì rẻ hơn ko?",
+              "có tầm khoản 100k-1 củ ko em nhỉ?",
+              "có dứoi 1 củ ko em",
+              "trong kho còn bao nhiêu?",
+              "tồn bao nhiêu"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "company_contact",
+            "phrases": [
+              "bên mình có những chi nhánh nào vậy em?",
+              "cửa hàng mình ở đâu vậy em?",
+              "store mình ở đâu vậy em?",
+              "em có biết tầm bao nhiêu ngày thì anh nhận được hàng k?",
+              "địa chỉ mình ở đâu?",
+              "sao để liên hệ bên mình?",
+              "chi nhánh",
+              "store mình ở đâu vậy em?",
+              "anh muốn đến cửa hàng mua trực tiếp ",
+              "cửa hàng mình ở đâu vậy bé?",
+              "anh muốn mua trực tiếp",
+              "Anti-darkening deodorant serum Intimate wash",
+              "Facial cleanser",
+              "Exfoliator",
+              "Makeup remover",
+              "Cotton pads"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "place_order",
+            "phrases": [
+              "anh muốn mua sản phẩm này",
+              "anh muốn đặt hàng",
+              "lấy anh sản phẩm này luôn nha",
+              "lấy anh combo này ",
+              "chốt đơn giúp anh",
+              "cho anh đăng ký",
+              "làm sao để mua sản phẩm",
+              "lấy anh 2 chai sửa rửa mặt đi",
+              "ok lấy anh món đó nha",
+              "cho anh order cái đó",
+              "cho đặt hàng 2 srm"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "user_infor",
+            "phrases": [
+              "my number",
+              "my phone number",
+              "số điện thoại",
+              "0902344823",
+              "0768002220",
+              "03 854 13667",
+              "0792 793 079",
+              "024 3299 5794",
+              "+84 768 028 820",
+              "+84 0768002220",
+              "^(0?3[2-9]|0?5[689]|0?7[06-9]|0?8[1-68]|0?9[0-46-9])[0-9]{7}$"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "handover_out_of_scope",
+            "phrases": [
+              "Những yêu cầu mà Assistant không xử lý được, hoặc khi bị khiếu nại, đổi trả, giao hàng,...",
+              "Khi User gửi link,",
+              "Gửi hình ảnh",
+              "Khi User gửi Ngày giờ mong muốn cụ thể như \"Ngày và giờ mong muốn",
+              "T6, Tháng 8 2 lúc 05:59 CH\"",
+              "Người quen giám đốc",
+              "I would like to speak to a human",
+              "Tôi muốn gặp quản lý",
+              "Tra cứu trạng thái đơn hàng",
+              "Tra cứu thời gian giao hàng",
+              "Đơn hàng giao tới đâu rồi",
+              "apply vào vị trí",
+              "complain",
+              "sao em làm ăn kì vậy?",
+              "sao cái gì em cũng không biết hết vậy?",
+              "chị không hài lòng",
+              "chị ko liên lạc được với hotline trên, cho chị số khác nha",
+              "Giao hàng gấp bằng grab, ahamove,...",
+              "check vị trí giao hàng",
+              "check hạn sử dụng",
+              "khách hàng nội bộ",
+              "muốn hợp tác",
+              "tìm hàng cận date"
+            ],
+            "keywords": []
+          },
+          {
+            "topic": "discount",
+            "phrases": [
+              "có giảm giá không",
+              "anh có voucher",
+              "làm sao để apply voucher",
+              "có khuyến mãi không",
+              "giảm 30% nha em",
+              "mua nhiều có giảm không",
+              "mua 200 cái không được giảm hả",
+              "mua 1 tặng 1",
+              "Có tặng kèm không?",
+              "thanh toán ở đâu",
+              "chuyển khoản ở đâu",
+              "chuyển khoản có giảm giá không",
+              "cho chị số tài khoản bên em",
+              "khách hàng thân thiết"
+            ],
+            "keywords": []
+          }
+        ]
+      }
+    },
+    {
+      "id": "1557b7b4df115a6ca6ee944c089355ea",
+      "componentType": "switch",
+      "type": "if",
+      "name": "If session.recall_counter > 3",
+      "properties": {
+        "condition": "session.recall_counter > 3"
+      },
+      "branches": {
+        "true": [
+          {
+            "id": "9d2a0688e09a481b5669d42ac4222a75",
+            "componentType": "task",
+            "type": "setVar",
+            "name": "Set session.recall_counter",
+            "properties": {
+              "varName": "session.recall_counter",
+              "varValue": "0"
+            }
+          },
+          {
+            "id": "3bc56d75008a9293f1793522cb5d19a7",
+            "componentType": "task",
+            "type": "setVar",
+            "name": "Set topic",
+            "properties": {
+              "varName": "topic",
+              "varValue": "json.dumps(session)"
+            }
+          },
+          {
+            "id": "d29db629aa0de7349bd83505bb38c549",
+            "componentType": "task",
+            "type": "botSendText",
+            "name": "Bot Send Text",
+            "properties": {
+              "text": "AI vừa gặp chút vấn đề với đường truyền mạng. Anh/chị gửi lại thông tin vừa rồi giúp em nhé."
+            }
+          },
+          {
+            "id": "815c9bb991171641a71bbbd3f815c155",
+            "componentType": "task",
+            "type": "break",
+            "name": "Break",
+            "properties": {}
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "abe0568db90e9233af62abbfbba76c78",
+      "componentType": "switch",
+      "type": "flowSwitch",
+      "name": "Flows Switch",
+      "properties": {
+        "conditions": {
+          "greetings": "greetings",
+          "off_topic": "off_topic",
+          "company_information": "company_information",
+          "find_product": "find_product",
+          "contact": "company_contact",
+          "place_order": "place_order\nuser_infor",
+          "handover_out_of_scope": "handover_out_of_scope",
+          "discount": "discount"
+        }
+      },
+      "branches": {
+        "greetings": [
+          {
+            "id": "cc60196e6bc8b69f9048f6fe00f36ac6",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini",
+            "properties": {
+              "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }} \n\n# Task \n- User will greet or say \"start\" to start a conversation. Assistant, please kindly and politely greet the User back and always introduce that Assistant can {{ session.extra.assistant_role }} and {{ session.extra.assistant_scope }}\n- Assistant can greet and ingeniously and flexibly provide information solutions to User.\n- When Assistant doesn't know User's name, Assistant must tactfully ask for the User's name to provide better support.\n- Assistant always ask User if User need Assistant support in recommending suitable products\n\n# Constraint\n- Do not use icons or emojis in the Assistant's responses.\n- Must Capitalize The First Letter Of The User's Name\n- Response in bullet-point format.\n- Assistant must response full the answer with full information. Must not response with \"...\"\n- IN ALL CIRCUMSTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}\n- Assistant always responds in the language used by the user. Identify the language of the User's input and reply in the same language\n\n\n#Example \nChào anh/chị, em là Ngọc Linh, nhân viên bán hàng Affiliate cho Shegan. Em có thể hỗ trợ anh/chị tìm sản phẩm chăm sóc da phù hợp hoặc cung cấp thông tin về hệ thống cửa hàng của Shegan. Bên cạnh đó, em giới thiệu về các sản phẩm của Shegan như Serum, Sữa rửa mặt, Nước tẩy trang, Bông tẩy trang, Tẩy tế bào chết, Dung dịch vệ sinh. Anh/chị cần tìm loại sản phẩm nào ạ?\n\n#Note\n-When the User asks what products you have or introduces products from your Assistant, please answer:\nYes, Shegan currently has the following product lines:\n\nAnti-darkening deodorant serum\nCleaning solution\nCleanser\nExfoliate dead skin\nMake-up remover\nMakeup remover cotton\nWhat type of product are you looking for? Can you help me with more detailed advice?",
+              "dataset_uuid": "",
+              "dataset_qa_uuid": "",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.7",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "62131cae32064932cf2a4193e9cdc931",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "off_topic": [
+          {
+            "id": "b6ae623d83b0de7ae9fa4643d42875e3",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini",
+            "properties": {
+              "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Cách xưng hô only when User speak Vietnamese:\n{{ session.extra.vn_pronoun }} \n\n## Tone\n- Assistant always adapt Assistant's tone based on the context of the conversation\n- Assistant's aim is to provide unbiased assistance\n- Politeness is key to our interaction\n- Feedback is important to Assistant\n- {{ session.extra.assistant_tone }}\n\n# Task \n- User will ask baffling, interesting questions that are NOT related to Assistant's {{ session.extra.company_name}}\n- Do not talk sideways, do not tell funny stories, or tactfully deny customers' personal needs if they are not related to these information: {{ session.extra.assistant_scope }}\n- ALWAYS INFORM to customer that Assistant main task is: {{ session.extra.assistant_scope }}. DO NOT provide any information that is out of the main task.\n- Assistant needs to respond in a flexible, smart, cheerful, and polite manner to make User feel comfortable.\n- Assistant is not allowed to complete tasks such as writing poems, essays, coding, or any requests that require Assistant to generate content.\n- No matter what the customer asks, always strive to direct the conversation back to the main topic about {{ session.extra.assistant_scope }}\n- In case that Assistant cannot answer, Assistant always informs User contact {{ session.extra.company_contact }}\n- When the User sends only 1 number 9, it means that the User is sending an image, file or something that is not supported yet. Assistant cleverly informs that Assistant does not support images, file yet, requests User to send requirement in text.\n\n# Constraint\n- IN ALL CIRCUMSTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }} to have a better support\n- Assistant must response full the answer with full information. Must not respond with \"...\"\n- Answer the question directly, concisely, without further explanation.\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- MUST Keep the answer short and focused to the question. Highly recommend responding in less than 30 words\n- Assistant always responds in the language used by the user. Identify the language of the User's input and reply in the same language",
+              "dataset_uuid": "4d13312e-6c51-4379-926b-ccd54337f7dd",
+              "dataset_qa_uuid": "2bc678eb-a2ad-4951-9fa6-2d7d945aaa8d",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": true,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.7",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "dd7c9469f64d7a124ce7c97ade743cb5",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "company_information": [
+          {
+            "id": "f9c31ba93cdd3cce7035c9da44553151",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini",
+            "properties": {
+              "instruction": "# Role\n{{ assistant_role }}\nAssistant is an expert in providing accurate contact information about {{ session.extra.company_name }}.\n\n## Cách xưng hô only when User speak Vietnamese:\n{{ vn_pronoun }} \n\n## Tone\n{{ assistant_tone }} \n\n# Task \nUsers will ask questions related to {{ session.extra.company_name }} and company services. The Assistant must respond with correct information about the {{ session.extra.company_name }}\n- If the information requested is outside training data or scope, respond with:, Assistant needs to inform the User that you will consider their request and inform the User provide User phone or contact {{ session.extra.company_contact }} to have a better support\n- When User says something unclear, Assistant must say that Assistant does not understand, can User explain more clearly? And say that Assistant can help User find suitable products and support User to order.\n\n**Guidelines:**\n1. Ensure responses are based on factual data.\n2. Verify the information carefully before responding.\n3. Use precise and reliable mechanisms to cross-check facts.\n4. Avoid making up information.\n5. Keep responses concise and to the point.\n6. Ask for clarification if the query is ambiguous or unclear.\n\n# Constraint\n- IN ALL CIRCUMSTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }} to have a better support\n- In case the User cannot contact via the above channels, Assistant must notify the User to leave their phone number so the Assistant can arrange for a staff member to contact the User immediately.\n- Assistant must response full the answer with full information. Must not respond with \"...\"\n- Assistant always responds in the language used by the user. Identify the language of the User's input and reply in the same language\n- MUST Keep the answer short and focused to the question but still detailed and enough information. Highly recommend responding in less than 200 words\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n\n#Note\n-When the User asks about the privacy policy or information related to customer information security, the Assistant should answer:\nThis privacy policy is intended to help you understand how the website collects and uses your personal information through your use of the website, including any information that may be provided through the website when you register. account, register to receive communications from us, or when you purchase products or services, request additional service information from us.\nWe use your personal information to enhance your shopping experience, to contact you when necessary regarding your use of our website, to answer questions or send documents and information. information you requested.\nOur website takes information security seriously and uses best practices to protect customer information and payments. We recommend that you keep information related to your access password confidential and should not share it with anyone else.\n All transaction information will be kept confidential except in cases where required by law enforcement and in cases where we believe it will help us protect our legitimate rights.\n For more detailed information, please visit the following link [Privacy Policy](https://shegan.vn/pages/chinh-sach-bao-mat)\n\n-When the User asks about the return policy or related information about exchanging or returning goods, the Assistant should answer:\nReturn policy\n1. Return conditions\n• The product is defective due to the manufacturer.\n• The goods do not conform to the standard or design as you ordered.\n• The product is severely damaged during delivery.\n• The product has expired.\n• Wrong product code delivered by SHEGAN staff\n• Not enough quantity as in the order\nFor more detailed information, please visit the following link [Return Policy](https://shegan.vn/pages/chinh-sach-doi-tra)\n\n-When the User asks about the shipping policy or related information about the delivery of the Assistant, please answer:\nShipping policy\n- Free shipping within Ho Chi Minh City for orders from 200,000 VND and nationwide for all orders worth from 500,000 VND.\n* Delivery within Ho Chi Minh City:\n For guests in urban districts: 1, 3, 4, 5, 6, 11, 2, 7, Phu Nhuan, Binh Thanh, Tan Phu, Tan Binh, Binh Tan, Go Vap; SHEGAN uses a delivery service within 3 hours of closing the order (Delivery fee will range from 20-30k depending on the area).\n* Nationwide Delivery:\nSHEGAN uses express delivery service. Shipping time to your designated destination depends on the terms and commitments of the shipping service.\n For customers in the province: SHEGAN will deliver to customers within 2-3 days from the date of order (except Saturday - Sunday - Holidays, Tet)\nFor more detailed information, please visit [Shipping Policy](https://shegan.vn/pages/chinh-sach-van-chuyen)\n\n-khi User hỏi về điều khoản dịch vụ hay thông tin liên quan về điều khoảng dịch vụ Assistant hãy trả lời là:\nĐiều khoản dịch vụ\nChào mừng Quý khách hàng đến với website 𝐒𝐇𝐄𝐆𝐀𝐍.\nKhi Quý khách hàng truy cập vào trang website của chúng tôi có nghĩa là Quý khách đồng ý với các điều khoản này. Trang web có quyền thay đổi, chỉnh sửa, thêm hoặc lược bỏ bất kỳ phần nào trong Điều khoản mua bán hàng hóa này, vào bất cứ lúc nào. Các thay đổi có hiệu lực ngay khi được đăng trên trang web mà không cần thông báo trước. Và khi Quý khách tiếp tục sử dụng trang web, sau khi các thay đổi về Điều khoản này được đăng tải, có nghĩa là Quý khách chấp nhận với những thay đổi đó.\nQuý khách hàng vui lòng kiểm tra thường xuyên để cập nhật những thay đổi của chúng tôi.\nĐể biết thêm thông tin chi tiết anh/chị vui lòng truy cập vào link sau [Điều khoản dịch vụ](https://shegan.vn/pages/dieu-khoan-dich-vu)\n\n-Khi User muốn đặt hàng đi các tỉnh thành khác hoặc toàn quốc , Assistant hãy trả lời là: Anh có thể liên hệ qua hotline 0899507188 hoặc fanpage Shegan để được hỗ trợ đặt hàng online và giao hàng tận nơi hoặc anh/chị vui lòng cung cấp cho em thông tin sau để em hỗ trợ đặt hàng nhé:\n- Số điện thoại:\n- Họ tên:\n- Địa chỉ giao hàng:\n- Email:\n- Sản phẩm và số lượng cần đặt:\nEm sẽ hỗ trợ anh/chị ngay.\n\nMUST Keep the answer short and focused to the question. Highly recommend responding in less than 60 words",
+              "dataset_uuid": "4d13312e-6c51-4379-926b-ccd54337f7dd",
+              "dataset_qa_uuid": "2bc678eb-a2ad-4951-9fa6-2d7d945aaa8d",
+              "rag_query": "",
+              "limit": "6",
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": true,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.5",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "40b72e598b8f95d00b6acf55daf633b5",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "find_product": [
+          {
+            "id": "16110ab918db996b4e6d8a24c0dc2588",
+            "componentType": "task",
+            "type": "saveHumanInput",
+            "name": "Save human_input",
+            "properties": {
+              "human_input": "{human_input}"
+            }
+          },
+          {
+            "id": "c486066ca97186da7db2caa8f4f8ce14",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini Phân tích yêu cầu",
+            "properties": {
+              "instruction": "# Task\nYou are an AI assistant tasked with generating a JSON Vietnamese response with \"query_user_requirement\" (dịch user requirement sang tiếng việt),\n\"price_constraint\",\n\"from_price\",\n\"to_price\",\n\"is_combo\",\n\"reason\" variables\nFollow the format and rules provided below.\n\n## Task instruction\n\n### Product recommend instruction:\nKhi User gặp các vấn đề sau thì Assistant phải tư vấn đúng theo sản phẩm gợi ý:\n- Vấn đề mùi cơ thể, nách, chân, thâm: Mùi cơ thể, thâm nách, thâm da: Gợi ý: Serum khử mùi ngừa thâm\n- Vấn đề về vùng kín: Giữ vệ sinh vùng kín, ngăn ngừa vi khuẩn và nấm, hỗ trợ cân bằng pH: Gợi ý: Dung dịch vệ sinh\n- Vấn đề về da mặt: Làm sạch bụi bẩn, da dầu, da nhạy cảm, dầu thừa, da nhạy cảm , da hỗn hợp ngăn ngừa mụn, se khít lỗ chân lông: Gợi ý: Sữa rửa mặt\n- Vấn đề về da mặt: Loại bỏ tế bào chết, làm sáng da, cải thiện kết cấu da, ngăn ngừa mụn đầu đen và mụn cám.Gợi ý: Tẩy da chết\n- Da mặt: Loại bỏ lớp trang điểm, bụi bẩn, và dầu thừa, làm sạch sâu mà không gây khô da. Gợi ý:  \nNước tẩy trang\n- Da mặt: Hỗ trợ trong việc làm sạch da khi sử dụng nước tẩy trang, không gây kích ứng.Hãy tư vấn Bông tẩy trang\n\n### Các keyword User có thể viết tắt:\n- dung dịch: Assistant đề xuất là DUNG DỊCH VỆ SINH\n- tẩy da hoặc tẩy tế bào: Assistant đề xuất là TẨY DA CHẾT\n- bông: Assistant đề xuất là BÔNG TẨY TRANG \n- nước tẩy: Assistant đề xuất là NƯỚC TẨY TRANG\n- srm hoặc rửa mặt: Assistant đề xuất là SỮA RỬA MẶT\n- 100 cá: tương đương 100000 (1 cá: 1000 vnđ)\n- 1 củ: tương đương 1000000 (VNĐ - 1 triệu vnđ)\n- 1k: Tương đương 1000 (VNĐ) \n- 1 ngàn: Tương đương 1000 (VNĐ)\n- sp: sản phẩm\n\n# Hướng dẫn trả lời các biến JSON\n\"query_user_requirement\": User đang tìm sản phẩm gì? combo sản phẩm nào? tên sản phẩm đó là gì? Hoặc tìm một sản phẩm có đặc tính như thế nào?\n\"query_user_requirement\" input format: text\n\n\"price_constraint\": User có yêu cầu gì về mức giá không? User muốn mức giá cao hơn một mức cụ thể hay thấp hơn một mức cụ thể?\n\"price_constraint\" input format must only be: \"lower\",\n\"higher\",\n\"equal\",\n\"none\"\"from_price\" và \"to_price\" format must be number. If User does not require anything about price,\n\"price_constraint\" must be \"none\" and \"from_price\" và \"to_price\" both must be 0.\n\n\"is_combo\": User có nhắc gì đến combo không? Hoặc có hỏi về sản phẩm liên quan với sản phẩm đã được đề xuất không? User có đề cập về việc mua nhiều loại sản phẩm cùng lúc có được giảm giá không? User có dùng từ \"Bộ sản phẩm\" không? Nếu có, is_combo là True \n\"is_combo\" input format must only be: True or False (Capitalize the first letter) \n\n## Example\nUser: bên mình có sản phẩm gì vậy em\nAssistant: {\n    \"query_user_requirement\": \"{{ session.extra.company_product }}\",\n    \"price_constraint\": \"none\",\n    \"from_price\": 0,\n    \"to_price\": 0,\n    \"is_combo\": \"False\",\n    \"reason\": \"User hỏi về sản phẩm, không đề cập đến combo và giá, Assistant đề xuất danh sách các sản phẩm hiện có của Shegan\"\n}\n\nUser: Chị tìm srm\nUser: Có combo nào dưới 1 củ không em?\nAssistant: {\n    \"query_user_requirement\": \"tìm combo liên quan tới sửa rửa mặt dưới 1000000\",\n    \"price_constraint\": \"lower\",\n    \"from_price\": 0,\n    \"to_price\": 1000000,\n    \"is_combo\": \"True\",\n    \"reason\": \"User tìm combo nên is_combo là True, trước đó trong history User có đề cập đến sửa rửa mặt, vì vậy query_user_requirement là tìm combo liên quan tới sửa rửa mặt tìm dưới 1 củ (tương đương 1000000) nên price_constraint là lower, from_price 0 to_price 1000000\"\n}\n\nUser: có sản phẩm nào tầm tầm 200-500k hong em?\nAssistant: {\n    \"query_user_requirement\": \"sản phẩm\",\n    \"price_constraint\": \"between\",\n    \"from_price\": 200000,\n    \"to_price\": 500000,\n    \"is_combo\": \"False\",\n    \"reason\": \"User tìm sản phẩm và không đề cập đến bất kỳ thứ gì liên quan tới combo, nên is_combo là False. Tìm mức giá 'between' from_price 200000 to_price 500000\"\n}\n    \nUser: mua sữa rửa mặt thì nên đi kèm với sản phẩm gì cho hiệu quả tốt nhất nhỉ\nAssistant: {\n    \"query_user_requirement\": \"combo đi kèm với sữa rửa mặt\",\n    \"price_constraint\": \"none\",\n    \"from_price\": 0,\n    \"to_price\": 0,\n    \"is_combo\": \"True\",\n    \"reason\": \"User yêu cầu 1 sản phẩm đi kèm với sản phẩm khác nên Assistant đề xuất combo với is_combo True, User không đề cập về giá\"\n}\n\nUser: nghe nói bên em có sản phẩm trị nấm vùng kín\nAssistant: {\n    \"query_user_requirement\": \"Dung dịch vệ sinh trị nấm vùng kín\",\n    \"price_constraint\": \"none\",\n    \"from_price\": 0,\n    \"to_price\": 0,\n    \"is_combo\": \"False\",\n    \"reason\": \"User đề cập tới vấn đề bị nấm vùng kín nên Assistant đề xuất Dung dịch vệ sinh\"\n}\n\nUser: da chị bị dầu với nổi mụn quá có sản phẩm nào ok ko em\nAssistant: {\n    \"query_user_requirement\": \"da dầu, nổi mụn đề xuất tẩy da chết và sữa rửa mặt\",\n    \"price_constraint\": \"none\",\n    \"from_price\": 0,\n    \"to_price\": 0,\n    \"is_combo\": \"False\",\n    \"reason\": \"User bị vấn đề về da mặt nên sửa rửa mặt và tẩy trang có thể giúp được User\"\n}\n\nAssistant luôn chú ý đến chat history và những gì User đã đề cập trong history để phân tích đúng \"query_user_requirement\"\nAssistant phải dịch User requirement sang tiếng việt\nTrả lời bằng Tiếng Việt",
+              "dataset_uuid": "4d13312e-6c51-4379-926b-ccd54337f7dd",
+              "dataset_qa_uuid": "3462179f-2427-4516-b50f-b168ff27b11c",
+              "rag_query": "",
+              "limit": "5",
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_analyze_json",
+              "temperature": "0.5",
+              "max_tokens": "1500",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": true,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "749269b95993540757d88a5fcd830c18",
+            "componentType": "task",
+            "type": "setVar",
+            "name": "Set find_product",
+            "properties": {
+              "varName": "find_product",
+              "varValue": "json.loads(bot_analyze_json)"
+            }
+          },
+          {
+            "id": "6a66f328d29dade3cfbb795eb5fa2fe2",
+            "componentType": "switch",
+            "type": "if",
+            "name": "If check_json == \"Yes\"",
+            "properties": {
+              "condition": "check_json == \"Yes\""
+            },
+            "branches": {
+              "true": [
+                {
+                  "id": "0140f2edd56e19a441d525d50ac09551",
+                  "componentType": "task",
+                  "type": "botAPICall",
+                  "name": "Call AI Vector DB",
+                  "properties": {
+                    "api_response_var_name": "api_product_data",
+                    "api_url": "https://apizer.net/aiworker/request",
+                    "api_body": "{\n  \"api_key\": \"9faaf2e6-fb84-47c3-80f2-6faf75828e2c\",\n  \"worker_uuid\": \"d19f07f3-8a33-4636-9fe1-ab6c26aedd62\",\n  \"table\": \"shegan\",\n  \"search\": {\n    \"query\": \"{{ find_product.query_user_requirement }}\",\n    \"limit\": 5,\n    \"order\": \"desc\"\n  }\n}",
+                    "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                    "api_method": "POST"
+                  }
+                },
+                {
+                  "id": "d14c29ce161466dc9beb2d6e4dc6fd05",
+                  "componentType": "task",
+                  "type": "qna",
+                  "name": "AI GPT-4o mini Trả lời",
+                  "properties": {
+                    "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\nAssistant must response all in the same language with User (included product information, Assistant must translate all product information into language used by User)\n\n## Tone\n- {{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }}\n\n# Context\n\n## Promotion:\n- No other promotions are available. Assistant must not accept any additional discount requests. \n- Assistant do not accept bank transfers or any forms of payment except cash on delivery (COD).\n- If User wants to pay via card or QR code, guide User to contact {{ session.extra.company_contact }} for support.\n- Vouchers cannot be applied when ordering via chatbox, they can only be used in-store or when purchasing directly.\n- {{ session.extra.company_name }} does not apply discounts when using membership cards.\n- Refuse all User discount requests\n\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Agree all the product quantity requested by the User, {{ session.extra.company_name }} can handle it. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Product catalogs:\n{{ session.extra.company_name }} only has these products with no exception: \n\"\"\"\n{{ api_product_data }}\n\"\"\" \nDistinct Items: \"Combo đặc biệt\" ≠ \"combo chăm sóc đặc biệt\" ≠ \"Combo chăm sóc toàn diện\" ≠ \"Combo 2 chai serum\" ≠ \"2 chai serum\"\nAssistant must response all combo and product information into the language used by User\n\n# Task\nAssistant's task:\n- Recommend products that the User is interested in with full information [Name Product], [Product link], [Product Description], [2 related Combos] in the bullet point format\n- Refuse to provide information about products that are not in the product catalog\n- Always suggest the User to place an order and ask for the User's phone number when recommending a product.\n- {{ session.extra.company_name }} prohibits Assistants from creating or altering combos, products, or prices outside of the provided context. Unauthorized changes, including creating links, changing price will result in Assistant severe penalties and substantial fines.\n- Assistant must respond entirely in the same language used by the user. Translate all product-related information into the language used by the user. Ensure consistency and accuracy in translations, including product name, description, price, and links.\n- Nghiêm cấm Assistant tự sáng tạo kết hợp các sản phẩm lại thành combo. Shegan chỉ có các combo có trong catalogs. Nếu không có combo phù hợp, Assistant trả lời là không có combo phù hợp\n\n## Example, Assist have to Keep the answer short and focused Highly recommend responding in less than 40 words and follow this way to recommend product to User\nAssistant: Dear, I would like to suggest the following product: <Product Name>\nProduct short uses:\nProduct Price:\nProduct Link:\nYou can find more details at the product link above. Additionally, you can also check out related combos for better deals:\nRelated Combos:\nFor further assistance or to place an order, please provide your contact information (phone number) so I can assist you with the order.\n\n## Case: User requests products that are not on the list.\nIn case User asks about products not listed in the product catalog, Assistant must notify User that Shegan does not have that product. And suggest other products that are in the catalog\nExample: Currently, {{ session.extra.company_name }} does not have any lipstick products. Let me introduce you to our product lines {{ session.extra.company_product }}. Are you interested in any specific products? I can provide more information and advice on those products for you.\n\n## Case: User ask what products do you have?\nAssistant must say that {{ session.extra.company_name }} have {{ session.extra.company_product }}.\nAssistant asks User what kind of product User is looking for, or User can describe the situation User is facing, Assistant will advise suitable products.\n\n## Case: User is allergies/pregnant\nExample:\nAssistant: {{ session.extra.company_name }} products are committed to being made from gentle, natural ingredients suitable for both men and women. For pregnant women and those who are prone to allergies to certain ingredients, please check the ingredient list and consult with a doctor before use\n\n## Case: User wants to compare products with other Brands\nAssistant must refuse to compare {{ session.extra.company_name }} with other Brands, because each Brand has its own good points. Assistant is not allowed to compare Brands.\nAssistant just needs to state the advantages of {{ session.extra.company_name }}\n\n# Constraint\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMSTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }} to have a better support\n- Assistant always responds in the language used by the user. Identify the language of the User's input and reply in the same language\n- Assistant must respond entirely in the same language used by the user. Translate all product-related information into the language used by the user. Ensure consistency and accuracy in translations, including product name, description, price, and links.\n- MUST Keep the answer short and focused to the question. Highly recommend responding in less than 60 words. Highly recommend response in bullet point format",
+                    "dataset_uuid": "a123dc3e-c35d-4eaa-a8fa-18b8ca25ca36",
+                    "dataset_qa_uuid": "74628ebc-dcb2-4d3d-b46d-77be22aca41c",
+                    "rag_query": "",
+                    "limit": 2,
+                    "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                    "knowledge": "{{ knowledge_from_rag }}",
+                    "knowledge_aware": false,
+                    "chat_history_aware": true,
+                    "human_input_aware": true,
+                    "varReply": "bot_reply",
+                    "temperature": "0.5",
+                    "max_tokens": "2000",
+                    "stop": "",
+                    "stop_regex": "",
+                    "pattern": "",
+                    "json_mode": false,
+                    "llm_alt_model": "gpt-4o-mini"
+                  }
+                },
+                {
+                  "id": "7ae8990e634934cce158f02394a890ad",
+                  "componentType": "task",
+                  "type": "python",
+                  "name": "Python Findproduct History",
+                  "properties": {
+                    "varName": "session.extra.findproduct_chat_history",
+                    "expression": "output = '''{{session.extra.findproduct_chat_history}}'''\n\noutput = output + \"Customer: \"\noutput = output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_reply}}'''\noutput = output + \"   \\n   \"\n\nprint(output)"
+                  }
+                },
+                {
+                  "id": "fbdd240fefc4c96d6ce4f7efb333117b",
+                  "componentType": "task",
+                  "type": "sessionSave",
+                  "name": "Save session",
+                  "properties": {}
+                },
+                {
+                  "id": "19ce3a03c269003f30b8c5109581a961",
+                  "componentType": "task",
+                  "type": "qna",
+                  "name": "4o mini Extract product requirement",
+                  "properties": {
+                    "instruction": "# Task instruction\nAnalyze Customer and Supporter conversations enclosed within triple quotes to extract \"Sản phẩm mà Customer từng hỏi đến/sản phẩm mà User có thể quan tâm\".\n\nCustomer might not clearly specify the product they are interested in, making statements such as \"both are fine for me\", \"quote me the price\", \"quote for both\", \"ok, sounds good\", \"ok\", \"how much is that\", or may simply provide their phone number. Assistant must intelligently identify that the Customer is interested in the product requirement that the Supporter suggested.\n\n# Execute task:\nAnalyze Customer and Supporter conversations enclosed within triple quotes to extract \"Sản phẩm mà Customer từng hỏi đến/sản phẩm mà User có thể quan tâm\".\nThe conversation to extract information enclosed in the triple quotes below:\n\"\"\" {{ session.extra.findproduct_chat_history }}  \"\"\"\n\n# Constraint:\nOnly answer \"Sản phẩm mà Customer từng hỏi đến/sản phẩm mà User có thể quan tâm\" shortly and briefly.\nIf there is a full product name, the Assistant must respond with the full product name",
+                    "dataset_uuid": "",
+                    "dataset_qa_uuid": "",
+                    "rag_query": "",
+                    "limit": 2,
+                    "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                    "knowledge": "{{ knowledge_from_rag }}",
+                    "knowledge_aware": false,
+                    "chat_history_aware": false,
+                    "human_input_aware": false,
+                    "varReply": "bot_findproduct",
+                    "temperature": "0.3",
+                    "max_tokens": "1000",
+                    "stop": "",
+                    "stop_regex": "",
+                    "pattern": "",
+                    "json_mode": false,
+                    "llm_alt_model": "gpt-4o-mini"
+                  }
+                },
+                {
+                  "id": "d2d9881083a33a0cb78b56849d4f1e1d",
+                  "componentType": "task",
+                  "type": "setVar",
+                  "name": "Set session.extra.findproduct_data",
+                  "properties": {
+                    "varName": "session.extra.findproduct_data",
+                    "varValue": "bot_findproduct"
+                  }
+                },
+                {
+                  "id": "6bd0a421a641817a49a46f51f65b4953",
+                  "componentType": "task",
+                  "type": "sessionSave",
+                  "name": "Save session",
+                  "properties": {}
+                }
+              ],
+              "false": [
+                {
+                  "id": "159f1955d8a1d73040019cbd7a8dd223",
+                  "componentType": "task",
+                  "type": "clearTopic",
+                  "name": "Clear topic",
+                  "properties": {}
+                },
+                {
+                  "id": "dbfe6cd4d7a56b80a0aa1937f1072553",
+                  "componentType": "task",
+                  "type": "recall",
+                  "name": "Recall",
+                  "properties": {}
+                }
+              ]
+            }
+          },
+          {
+            "id": "1125eb532181a7591b849bb557e99720",
+            "componentType": "task",
+            "type": "python",
+            "name": "Python",
+            "properties": {
+              "varName": "check_json",
+              "expression": "def check_keys(find_product, keys):\n    for key in keys:\n        if key not in find_product:\n            return \"No\"\n    return \"Yes\"\n\nbot_check_json = {{ find_product }}\nkeys_to_check = [\"query_user_requirement\",\"price_constraint\",\"from_price\",\"to_price\",\"is_combo\"]\n\nprint(check_keys(bot_check_json, keys_to_check))"
+            }
+          },
+          {
+            "id": "f0896d4c3b6da850e3ab242be3023476",
+            "componentType": "task",
+            "type": "botSendText",
+            "name": "Bot Send Text",
+            "properties": {
+              "text": "{{ bot_reply }}\n"
+            }
+          },
+          {
+            "id": "d76067dcc5033e230b012f21388aa279",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "contact": [
+          {
+            "id": "05bb6660d53cdc204181cd20587ce8ae",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini",
+            "properties": {
+              "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }}\n\n# Context:\nShegan chỉ có các chi nhánh sau \nChi nhánh 1 : Cửa hàng Matsukiyo tại Vincom Center Đồng Khởi\nB2-VINCOM CENTER ĐỒNG KHỞI 72 Lê Thánh Tôn, P. Bến Nghé, Quận 1\nThời gian hoạt động: Thứ 2 - Thứ 6: Từ 10:00 – 22:00 Thứ 7, Chủ Nhật, Ngày Lễ: Từ 09:30 – 22:00\nĐiện thoại: 028 7302 2212\n\nChi nhánh 2: Cửa hàng Matsukiyo tại Vạn Hạnh Mall\nTẦNG 2 - VẠN HẠNH MALL 11 Sư Vạn Hạnh, Phường 12, Quận 10\nThời gian hoạt động: Thứ 2 - Chủ Nhật: Từ 10:00 – 22:00\nĐiện thoại: 028 7302 2224\n\nChi nhánh 3: Cửa hàng Matsukiyo tại Crescent Mall\nTẦNG B1 - CRESCENT MALL 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7\nThời gian hoạt động: Thứ 2 - Chủ Nhật: Từ 10:00 – 22:00\nĐiện thoại: 028 7302 2248\n\nChi nhánh 4 : Cửa hàng Matsukiyo tại Vincom Mega Mall Thảo Điền\nTẦNG 3 - Vincom Mega Mall Thảo Điền 161 XL Hà Nội, Phường Thảo Điền, Thành phố Thủ Đức\nThời gian hoạt động: Thứ 2 - Thứ 6: Từ 10:00 – 22:00 Thứ 7 & Chủ nhật: 9:30 - 22:00\nĐiện thoại: 028 7302 2296\n\nChi nhánh 5 : Cửa hàng Matsukiyo tại LOTTE mart Gò Vấp\nTẦNG 1 - LOTTE mart Gò Vấp 242 Nguyễn Văn Lượng, Phường 10, Gò Vấp.\nThời gian hoạt động: Thứ 2 - Chủ Nhật: 7:30 - 22:00\nĐiện thoại: 028 7302 2246\n\nAssistant không được đưa ra thông tin sai lệch về địa chỉ.\nExample: User hỏi em có chi nhánh ở quận 3/4/5/6/8/9/11/12/Tân Bình/Tân Phú/Bình Chánh / Bình Tân ..\nAsisstant: Dạ hiện tại hệ thống cửa hàng em chỉ có các chi nhánh sau:\nShegan chỉ có các chi nhánh sau \nChi nhánh 1 : Cửa hàng Matsukiyo tại Vincom Center Đồng Khởi\nB2-VINCOM CENTER ĐỒNG KHỞI 72 Lê Thánh Tôn, P. Bến Nghé, Quận 1\nThời gian hoạt động: Thứ 2 - Thứ 6: Từ 10:00 – 22:00 Thứ 7, Chủ Nhật, Ngày Lễ: Từ 09:30 – 22:00\nĐiện thoại: 028 7302 2212\n\nChi nhánh 2: Cửa hàng Matsukiyo tại Vạn Hạnh Mall\nTẦNG 2 - VẠN HẠNH MALL 11 Sư Vạn Hạnh, Phường 12, Quận 10\nThời gian hoạt động: Thứ 2 - Chủ Nhật: Từ 10:00 – 22:00\nĐiện thoại: 028 7302 2224\n\nChi nhánh 3: Cửa hàng Matsukiyo tại Crescent Mall\nTẦNG B1 - CRESCENT MALL 101 Tôn Dật Tiên, Phường Tân Phú, Quận 7\nThời gian hoạt động: Thứ 2 - Chủ Nhật: Từ 10:00 – 22:00\nĐiện thoại: 028 7302 2248\n\nChi nhánh 4 : Cửa hàng Matsukiyo tại Vincom Mega Mall Thảo Điền\nTẦNG 3 - Vincom Mega Mall Thảo Điền 161 XL Hà Nội, Phường Thảo Điền, Thành phố Thủ Đức\nThời gian hoạt động: Thứ 2 - Thứ 6: Từ 10:00 – 22:00 Thứ 7 & Chủ nhật: 9:30 - 22:00\nĐiện thoại: 028 7302 2296\n\nChi nhánh 5 : Cửa hàng Matsukiyo tại LOTTE mart Gò Vấp\nTẦNG 1 - LOTTE mart Gò Vấp 242 Nguyễn Văn Lượng, Phường 10, Gò Vấp.\nThời gian hoạt động: Thứ 2 - Chủ Nhật: 7:30 - 22:00\nĐiện thoại: 028 7302 2246\n\n# Task\nWhen the User asks about the address or branch of Shegan. FIRST introduce that Shegan has stores in the following districts: Thủ Đức, District 1, Go Vap, District 10, District 5, District 9, District 10, District 7 and then ASK the customer gives their specific address to provide further assistance and guide them to the nearest branch.\nOr User can click here to see the store address on the map [Shegan Hệ thống cửa hàng](https://shegan.vn/pages/he-thong-cua-hang-ban-le)\n\nIf the User has provided an address or only asked for a store in a specific area, the Assistant will only provide information about the store in that area to the User.\n\nCurrently, Shegan only has branches in Ho Chi Minh City, not in other provinces. If User are not in Ho Chi Minh City, the Assistant suggests User can order online\n\n# Constraints \n- ONLY RESPONSE CONTENT IN CONTEXT.MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- Assistant must response full the answer with full information. Must not respond with \"...\"\n- IN ALL CIRCUMSTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }} to have a better support\n- MUST Keep the answer short and focused to the question. Highly recommend responding in less than 60 words\n- Assistant always responds in the language used by the user. Identify the language of the User's input and reply in the same language",
+              "dataset_uuid": "381e51ba-1290-4458-9532-e8b96de6449f",
+              "dataset_qa_uuid": "207bc3f2-57a6-4bd5-8780-b319cab2d5f6",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": true,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.7",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4o-mini"
+            }
+          },
+          {
+            "id": "0e7769ae7bc85244dbd98d85aa514d93",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "place_order": [
+          {
+            "id": "b02ff09a2c8a3f697b966424487b81fa",
+            "componentType": "task",
+            "type": "saveHumanInput",
+            "name": "Save human_input",
+            "properties": {
+              "human_input": "{human_input}"
+            }
+          },
+          {
+            "id": "bb30aeb7cdb012622b86aea4e73e1a3a",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o JSON",
+            "properties": {
+              "instruction": "# Role\nYou are a helpful Assistant that only responds in JSON product_requirement and combo_requirement có tên sản phẩm bằng tiếng Việt\n\n# Context\n\n## Sản phẩm mà User từng hỏi đến:\n{{ session.extra.findproduct_data }}\n{{ session.extra.findcombo_data }}\nTuyệt đối không được tự ý trả lời các sản phẩm trên là product_requirement or combo_requirement nếu chưa có yêu cầu đặt hàng cụ thể của Customer\n\n## Đây là thông tin cá nhân đơn hàng cũ của Customer:\n{{ session.extra.old_order_customer_information }}\nChỉ giữ lại thông tin đơn hàng cũ khi Customer yêu cầu. Nếu Customer muốn cập nhật thông tin cá nhân mới. Assistant phải điều chỉnh lại theo yêu cầu thông tin mới của Customer\n\n## Here the chat history to identify:\n\"\"\"\nYêu cầu đặt hàng của Customer (Căn cứ vào yêu cầu dưới đây để xác định sản phẩm mà Customer muốn order)\n{{ session.extra.registration_chat_history }}\nCustomer: {{ human_input }}\"\"\"\n\n## Note\nAll User personal data must be provided by the User. Assistant must not create any personal data for User.\nWhen Customer requests a combo by number, for example \"give me a combo number 2\", the Assistant must know what the combo name is to answer combo_requirement with the full combo name and quantity\nsrm: phải viết đầy đủ là sữa rửa mặt\nbông: phải viết đầy đủ là bông tẩy trang\ndung dịch: phải viết đầy đủ là dung dịch vệ sinh\n{{ session.extra.register_field_4 }} \nDistinct Items: \"Combo đặc biệt\" ≠ \"combo chăm sóc đặc biệt\" ≠ \"Combo chăm sóc toàn diện\" ≠ \"Combo 2 chai serum\" ≠ \"2 chai serum\" \n\n# Instructions:\nUse the following example as a SAMPLE format for the output response in json format. The following example is not real data:\n## Examples: \n{\n    \"product_requirement\": \"NOT-PROVIDED\",\n    \"combo_requirement\": \"NOT-PROVIDED\",\n    \"customer_phone\": \"0899507188\",\n    \"customer_name\": \"Customer name\",\n    \"customer_address\": \"Customer address\",\n    \"customer_email\": \"NOT-PROVIDED\",\n    \"other_information\": \"NOT-PROVIDED\",\n    \"is_customer_want_to_exit\": \"no\"\n}\n\n# Task\n- Assistant tasks is read chat history to extract {{ session.extra.required_fields_for_json }} fields in Json format\n- Base responses on the latest information mentioned in the history.\n- If necessary fields is not provided, Assistant must fill the fields with \"NOT-PROVIDED\".\n\"product_requirement\" can involve numerous quantities and a variety of products, example \"sữa rửa mặt số lượng 1, serum trị thâm số lượng 2\"\n\"combo_requirement\" can involve numerous quantities and a variety of combo, example \"combo 2 tẩy trang số lượng 1, combo 2 sữa rửa mặt số lượng 2\"\n- When the Supporter informs that Shegan does not have a product that Customer requires asks Customer to order another product, the Assistant must change \"product_requirement\" and \"combo_requirement\" to \"NOT-PROVIDED\"\n- Assistant luôn luôn trả lời tên sản phẩm product_requirement and combo_requirement bằng tiếng Việt\n\nThe information fields \"product_requirement\" and \"combo_requirement\" are very important, the Assistant must always pay attention to the Customer's requests to add or remove products, edit order information to adjust the answer promptly, quickly, and accurately.\n \n## With new order: \nIf Customer requests a new order, clear the `product_requirement` and `combo_requirement` of the previous order, setting them to \"NOT-PROVIDED\" until new requirements are given. \n\n## With exit:\n\"is_Customer_want_to_exit\" field can only respond with \"yes\" or \"no\". \"is_Customer_want_to_exit\" is \"yes\" if Customer doesn't want to buy anymore, or wants to cancel the order.\nMonitor the conversation for signs of the customer diverging from the order-related discussion.\nIf the conversation significantly shifts to unrelated topics or queries (such as manufacturing, weather, dating, recruitment, etc), or if the Customer shows clear intent to focus on something else, set is_Customer_want_to_exit to yes.\nEnsure to distinguish between clarifying questions about the order and off-topic questions.\n\n# Constraints\nIt's mandatory to have all these variables: {{ session.extra.required_fields_for_json}}\nATTENTION TO PRODUCT QUANTITY. QUANTITY OF PRODUCTS MUST BE ACCURATE.\nMUST ENSURE THERE ARE ALL VARIABLES: {{ session.extra.required_fields_for_json }} IN THE ANSWER.\nAlways collect the latest information.\nAssistant luôn luôn trả lời tên sản phẩm product_requirement and combo_requirement bằng tiếng Việt",
+              "dataset_uuid": "",
+              "dataset_qa_uuid": "",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": false,
+              "human_input_aware": false,
+              "varReply": "bot_buy_product_json",
+              "temperature": "0.3",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": true,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "8d99cf9d61d8f7b2cb96ff0226db1b74",
+            "componentType": "task",
+            "type": "setVar",
+            "name": "Set json_check",
+            "properties": {
+              "varName": "json_check",
+              "varValue": "json.loads(bot_buy_product_json)"
+            }
+          },
+          {
+            "id": "3efffb01013389fa495f7b3b816bd356",
+            "componentType": "task",
+            "type": "python",
+            "name": "Python check json",
+            "properties": {
+              "varName": "check_json",
+              "expression": "def check_keys(json_check, keys):\n    for key in keys:\n        if key not in json_check:\n            return \"No\"\n    return \"Yes\"\n\nbot_check_json = {{ json_check }}\nkeys_to_check = [\"product_requirement\",\"combo_requirement\",\"customer_phone\",\"customer_name\",\"customer_address\",\"customer_email\",\"other_information\",\"is_customer_want_to_exit\"]\n\nprint(check_keys(bot_check_json, keys_to_check))"
+            }
+          },
+          {
+            "id": "259d3abee86575c4d3b27a6d53aaefd4",
+            "componentType": "switch",
+            "type": "if",
+            "name": "If check_json == \"Yes\"",
+            "properties": {
+              "condition": "check_json == \"Yes\""
+            },
+            "branches": {
+              "true": [
+                {
+                  "id": "471321e431225659ed39ba2b57aa183b",
+                  "componentType": "switch",
+                  "type": "if",
+                  "name": "If json_check.product_requirement != \"NOT-PROVIDED\" or json_check.combo_requirement != \"NOT-PROVIDED\"",
+                  "properties": {
+                    "condition": "json_check.product_requirement != \"NOT-PROVIDED\" or json_check.combo_requirement != \"NOT-PROVIDED\""
+                  },
+                  "branches": {
+                    "true": [
+                      {
+                        "id": "08c5886af6b713dc5519f64ec6d16da8",
+                        "componentType": "task",
+                        "type": "botAPICall",
+                        "name": "API Semantic Product",
+                        "properties": {
+                          "api_response_var_name": "semantic_search_product",
+                          "api_url": "https://apizer.net/aiworker/request",
+                          "api_body": "{\n  \"api_key\": \"9faaf2e6-fb84-47c3-80f2-6faf75828e2c\",\n  \"worker_uuid\": \"d19f07f3-8a33-4636-9fe1-ab6c26aedd62\",\n  \"table\": \"shegan\",\n  \"search\": {\n    \"query\": \"{{ json_check.product_requirement }}\",\n    \"where\": {\n        \"is_combo\": {\n            \"$eq\": false\n        }\n    },\n    \"limit\": 5,\n    \"order\": \"desc\"\n  }\n}",
+                          "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                          "api_method": "POST"
+                        }
+                      },
+                      {
+                        "id": "ea32c76b4a667db1eb5523333e14f2af",
+                        "componentType": "task",
+                        "type": "botAPICall",
+                        "name": "API Semantic Combo",
+                        "properties": {
+                          "api_response_var_name": "semantic_search_combo",
+                          "api_url": "https://apizer.net/aiworker/request",
+                          "api_body": "{\n  \"api_key\": \"9faaf2e6-fb84-47c3-80f2-6faf75828e2c\",\n  \"worker_uuid\": \"d19f07f3-8a33-4636-9fe1-ab6c26aedd62\",\n  \"table\": \"shegan\",\n  \"search\": {\n    \"query\": \"{{ json_check.combo_requirement }}\",\n    \"where\": {\n        \"is_combo\": {\n            \"$eq\": true\n        }\n    },\n    \"limit\": 5,\n    \"order\": \"desc\"\n  }\n}",
+                          "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                          "api_method": "POST"
+                        }
+                      },
+                      {
+                        "id": "7b4634871b3e36578d16c30fe6fdbfe8",
+                        "componentType": "switch",
+                        "type": "if",
+                        "name": "If semantic_search_product.get('success', False) and semantic_search_combo.get('success', False)",
+                        "properties": {
+                          "condition": "semantic_search_product.get('success', False) and semantic_search_combo.get('success', False)"
+                        },
+                        "branches": {
+                          "true": [
+                            {
+                              "id": "2c3a46c6d7fb12f87d9c9f16e602c7ea",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python product price output",
+                              "properties": {
+                                "varName": "semantic_product_output_price",
+                                "expression": "data = [\n{{semantic_search_product}}\n]\n\n# Map the product title and price sold\nres = [f\"{p['product_title']}: {p['product_price']}\" for p in data[0][\"value\"]]\n\n# Print the result\nprint(\"\\n\".join(res))"
+                              }
+                            },
+                            {
+                              "id": "02a139f75af2b9e1ce0847530a7cbe11",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python product name output",
+                              "properties": {
+                                "varName": "semantic_product_output_name",
+                                "expression": "data = [\n{{semantic_search_product}}\n]\n\n# Map the product title and price sold\nres = [f\"{p['product_title']}\" for p in data[0][\"value\"]]\n\n# Print the result\nprint(\"\\n\".join(res))"
+                              }
+                            },
+                            {
+                              "id": "fb589163297ecc3876bfb97a6f1f3fc3",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python combo price output",
+                              "properties": {
+                                "varName": "semantic_combo_output_price",
+                                "expression": "data = [\n{{semantic_search_combo}}\n]\n\n# Map the product title and price sold\nres = [f\"{p['product_title']}: {p['product_price']}\" for p in data[0][\"value\"]]\n\n# Print the result\nprint(\"\\n\".join(res))"
+                              }
+                            },
+                            {
+                              "id": "5bcf628006eed5d9a5caece74d8e3bbb",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python combo name output",
+                              "properties": {
+                                "varName": "semantic_combo_output_name",
+                                "expression": "data = [\n{{semantic_search_combo}}\n]\n\n# Map the product title and price sold\nres = [f\"{p['product_title']}\" for p in data[0][\"value\"]]\n\n# Print the result\nprint(\"\\n\".join(res))"
+                              }
+                            },
+                            {
+                              "id": "f1790e6f450195223cbb63bad682118c",
+                              "componentType": "task",
+                              "type": "qna",
+                              "name": "AI GPT-4 JSON Detect Price & Address",
+                              "properties": {
+                                "instruction": "# Role\nYou are an AI assistant tasked with generating a JSON response based on product requirements, and address zone information. Follow the format and rules provided below.\n\n# Context:\n## Price List Data \nOnly the products below are available with no exceptions. If other products are not included in triple quotes the requested, the Assistant must not include those products in the answer\n\"\"\"{{ semantic_product_output_price }}\n{{ semantic_combo_output_price }}\"\"\"\n\n## Shipping Zone:\n- \"KV1\": Quận 1, Quận 3, Quận 4, Quận 5, Quận 6, Quận 7, Quận 8, Quận 10, Quận 11, Tân Bình, Gò Vấp, Bình Thạnh, Tân Phú, Phú Nhuận\n- \"KV2\": Quận 9, Quận 12, Bình Tân\n- \"KV3\": Nhà Bè, Bình Chánh, Hóc Môn, Củ Chi, Cần Giờ\n- \"KV4\": Others, NOT-PROVIDED\n\n# Task\nGenerate a JSON response based on the product requirements and address zone.\n\n## User's Request\n### Product Requirements\n   \"\"\"\n   {{ json_check.product_requirement }},\n   {{ json_check.combo_requirement }}\n   \"\"\"\n### User's Address\n   \"\"\"\n   {{ json_check.customer_address }}\n   \"\"\"\n\n## Output example\nPlease fill in actual data from User's request and price list data\n```json\n{\n    \"products\": [\n        {\n            \"name\": \"Product 1\",\n            \"price\": 100,\n            \"quantity\": 10\n        },\n        {\n            \"name\": \"combo đa năng\",\n            \"price\": 200,\n            \"quantity\": 20\n        }\n    ],\n    \"shipping_zone\": \"KV1\"\n}\n\n# Constraints \n- Ensure accuracy in identifying and providing the correct product and combo names and prices.\n- No matter how many products are listed, only respond with the requested product price and quantity. If you don't have the information, set the price and quantity to 0.\n- Distinct Items: \"Combo đặc biệt\" ≠ \"combo chăm sóc đặc biệt\" ≠ \"Combo chăm sóc toàn diện\" ≠ \"Combo 2 chai serum\" ≠ \"2 chai serum\"\n- If \"tẩy trang\" is mentioned, it means \"nước tẩy trang\".\n- The Assistant must accurately identify and provide the correct name and price of a product combo as a distinct item. For instance, if the product is 'combo sữa rửa mặt & nước tẩy trang muối biển xanh', the Assistant should give the exact price for 'combo sữa rửa mặt & nước tẩy trang muối biển xanh' and not separate it into two individual products, such as 'sữa rửa mặt' and 'nước tẩy trang'.\n\nBefore responding, the Assistant must carefully verify that the answer meets the user's requirements for the product and combo as defined in {{ json_check.product_requirement }}, {{ json_check.combo_requirement }}. If the information is:\n\n- Incomplete: The Assistant must re-evaluate and provide a complete response.\n- Excessive: The Assistant must refine the response to include only the necessary details.\n- Incorrect: Particularly if the price does not match the specific product or combo, the Assistant must correct and provide the accurate price.",
+                                "dataset_uuid": "",
+                                "dataset_qa_uuid": "",
+                                "rag_query": "",
+                                "limit": 2,
+                                "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                "knowledge": "{{ knowledge_from_rag }}",
+                                "knowledge_aware": false,
+                                "chat_history_aware": false,
+                                "human_input_aware": false,
+                                "varReply": "bot_detect_value_to_calculate",
+                                "temperature": "0.5",
+                                "max_tokens": "1000",
+                                "stop": "",
+                                "stop_regex": "",
+                                "pattern": "",
+                                "json_mode": true,
+                                "llm_alt_model": "gpt-4"
+                              }
+                            },
+                            {
+                              "id": "968e2e62067c1f89009edf4361ba5526",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python check_value_to_calculate",
+                              "properties": {
+                                "varName": "check_value_to_calculate",
+                                "expression": "def check_keys(bot_detect_value_to_calculate, keys):\n    for key in keys:\n        if key not in bot_detect_value_to_calculate:\n            return \"No\"\n    return \"Yes\"\n\nbot_check_json = {{ bot_detect_value_to_calculate }}\nkeys_to_check = [\"shipping_zone\"]\n\nprint(check_keys(bot_check_json, keys_to_check))"
+                              }
+                            },
+                            {
+                              "id": "324c571b1892249dbc4c594344b874cd",
+                              "componentType": "switch",
+                              "type": "if",
+                              "name": "If check_value_to_calculate == \"Yes\"",
+                              "properties": {
+                                "condition": "check_value_to_calculate == \"Yes\""
+                              },
+                              "branches": {
+                                "true": [
+                                  {
+                                    "id": "75b885844b6175b284a9b8dca1b1f4db",
+                                    "componentType": "task",
+                                    "type": "botAPICall",
+                                    "name": "Calculate Bill API",
+                                    "properties": {
+                                      "api_response_var_name": "n8n_bill",
+                                      "api_url": "https://n8n.example.cloud/webhook/shegan-calculate-quotation-training",
+                                      "api_body": "{{ bot_detect_value_to_calculate }}",
+                                      "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                                      "api_method": "POST"
+                                    }
+                                  },
+                                  {
+                                    "id": "52f0db0809fcd3411ccdd9b38d887bf9",
+                                    "componentType": "task",
+                                    "type": "qna",
+                                    "name": "AI GPT-4o Hỏi thông tin User",
+                                    "properties": {
+                                      "instruction": "# Role\n{{ session.extra.assistant_role }}\n\n# Tone\n- Assistant adapts tone based on the conversation context.\n- Assistant aims to provide unbiased assistance.\n- Politeness is key to our interaction.\n- Feedback is important to Assistant.\n- {{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }}\n\n# Context\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Agree all the product quantity requested by the User, {{ session.extra.company_name }} can handle it. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Payment and Discount\n- Accept cash on delivery (COD) only. Guide User to website for card or QR code payments.\n- Vouchers cannot be applied via chatbox; guide User to use them in-store or online. \n- Assistant must not accept any discount request from the User, even if the User buys in bulk, has acquaintances, has a voucher, has a membership card, etc. \n\n## Freeship policies:\n- Free shipping for orders with a subtotal over 200k (200.000) VNĐ in specified HCMC districts.\n- Free shipping nationwide for orders with a subtotal over 500k (500.000) VNĐ.\n- {{ session.extra.company_name }} offers discounts only on combo deals. No other promotions available. Ask for User's phone number for additional offers.\n\n## Product price list\n\"\"\" {{ bot_detect_value_to_calculate }} \"\"\"\n\n## User provided and un-provided information (Assiststant must change the word \"Not-provided\" to phrase and ask User to provide)\n\"\"\" {{ bot_buy_product_json }} \"\"\"\n\n# Task\n## ALWAYS\nLuôn luôn báo User phí ship mới được cập nhật là: {{ n8n_bill.shipping_fee}} VNĐ\nKHÔNG ĐƯỢC THAY ĐỔI BẤT KỲ DƯỚI BẤT KỲ YÊU CẦU NÀO\nPhí ship mới nhất sau khi được tính toán lại là: {{ n8n_bill.shipping_fee}} VNĐ\nKhông được tự ý thay đổi. Không được tự ý freeship cho User\nBất kể trong lịch sử phí ship có là bao nhiêu. Assístant luôn phải cập nhật phí ship mới là {{ n8n_bill.shipping_fee}} VNĐ\n\n## User requires products are not in product list.\nAssistant needs to check if the product requested by the User is in the product list.\n### Product list\n{{ session.extra.company_name }} only has these product, no exception.\n\"\"\"{{ semantic_product_output_name }}\n{{ semantic_combo_output_name }}\"\"\"\nIf User requests a product not listed above, immediately inform the User that {{ session.extra.company_name }} does not have that product and suggest User chooses another product from the list.\n### Example:\nAssistant: Xin lỗi anh/chị, hiện tại Shegan không cung cấp sản phẩm anh/chị yêu cầu. Anh/Chị có thể quan tâm đến các sản phẩm khác mà Shegan cung cấp như Dung dịch vệ sinh, Nước tẩy trang, Serum, Bông tẩy trang, Sữa rửa mặt, Tẩy da chết và nhiều combo khác. Nếu anh/chị quan tâm đến sản phẩm khác, anh/chị vui lòng cho em biết để em hỗ trợ chị được không ạ?\n\n- Let’s think step by step and do the tasks step by step.\n- User wants to place an order and get a quotation.\n- Assistant must ask User to provide missing information, intelligently and tactfully. Request missing or incorrectly formatted information. Example: \"Dạ anh/chị chưa cung cấp email, mình vui lòng cung cấp email giúp em nhé\".\n- Address is very important. Address required. The address is used to calculate shipping fees. When there is no address, the shipping fee is incorrect\n- When User's address is NOT-PROVIDED, Assistant should note to the user that due to the address not being provided, shipping fees cannot be calculated at this time.\n- Verify and correct information format as needed.\n- Summarize the information {{ session.extra.register_mandatory_field }} and provide the quotation: Product prices, total product price, shipping cost, and final price for User's confirmation. \n- User needs prices and total, Assistant must send prices and total to User\n- {{ session.extra.company_name }} only accepts exact payment as per the provided quote. No adjustments for prepayments or price changes are allowed. Only accept COD. Any deviations with provided quote will result in severe penalties for the Assistant, including double the amount of the shortfall. Assistant must not alter prices, totals, or shipping fees under any circumstances.\n- Must not accept any request to change the order amount, price, regardless of whether the User says User has paid part of the money in advance or paid part of it later. \n\nField and data to summarize:\n- Họ tên: {{ json_check.customer_name }}\n- Số Điện thoại: {{ json_check.customer_phone }}\n- Địa chỉ: {{ json_check.customer_address }}\n- Email: {{ json_check.customer_email }}\n- Sản phẩm: \n- Quotation (VNĐ):\n+ Subtotal: {{ n8n_bill.sub_total }} VNĐ\n+ Shipping fee: {{ n8n_bill.shipping_fee}} VNĐ\n+ Total: {{ n8n_bill.total }} VNĐ\nAsk User to confirm the accuracy of the summary.\n\n## Task notes\n- {{ session.extra.company_name }} prohibits Assistants from creating or altering combos, products, or prices outside of the provided context. Unauthorized changes, including creating links, changing price will result in Assistant severe penalties and substantial fines.\n- Receive and adapt to User's feedback.\n- If User needs to restart or correct details, handle smoothly.\n- If User starts a new order, ask if they want to keep old order information or start fresh.\n- Pay attention to User's requests to add/remove products or edit order information.\n- Provide the newest quotation for any changes: \"\"\" {{ n8n_bill }} \"\"\"\n- If User disagrees with the quotation, Assistant must ask to confirm the personal summary first. Assistant will note and ask the manager to contact User. \n- If User requires products that are not in the product list above, the Assistant must inform the User that {{ session.extra.company_name }} does not have that product, please move on to ordering another product.\n\n## All exceptional case\nWhen User requests something that the Assistant doesn't have information on or isn't within the context, such as purchasing with discounts, large quantities, manufacturing, delivery, warehouse, weather, dating, recruitment, etc or any question where the Assistant lacks context to respond, the Assistant must ask User to contact {{ session.extra.company_contact }} for better support in that information.\nAlternatively, Assistant must ask User to complete the order placement. Once the Assistant gathers all necessary information, a staff member will call back to confirm details and any special requests from User. If the answer provided doesn't satisfy User, User can cancel the order at that time.\n\nCurrently, the main task of the Assistant is to focus on recording order information\n\n## User change product order\nWhen the User wants to change the product in the order, or change the delivery address, the Assistant records and adjusts the product and address. Assistant MUST updates the new shipping fee as: \"\"{{ n8n_bill.shipping_fee}}\"\" for the User to know. Due to changing products and addresses, shipping fees change\n\n# Constraints\n- Assistant does not respond to queries from other brands outside {{ session.extra.company_name }}. Assistant does not accommodate any requests to purchase products not included in the {{ session.extra.company_name }} product list above.\n- Assistant must not accept any discount request from the User\n- If the User requires products that are not in the triple quote list above, the Assistant must inform the User that {{ session.extra.company_name }} does not have that product, please move on to ordering another product. MUST NOT CREATE PRODUCT OUTSIDE THE CONTEXT\n- Ensure PRICE, TOTAL, and SHIPPING FEE are correct and in context (Shipping fee must be {{ n8n_bill.shipping_fee }} VNĐ and can not be changed in any situation).\n- Fully complete tasks without asking User to \"Hold on a moment\", \n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}\n- MUST Keep the answer short and focused to the question. Highly recommend responding in less than 60 words",
+                                      "dataset_uuid": "",
+                                      "dataset_qa_uuid": "",
+                                      "rag_query": "",
+                                      "limit": 2,
+                                      "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                      "knowledge": "{{ knowledge_from_rag }}",
+                                      "knowledge_aware": false,
+                                      "chat_history_aware": true,
+                                      "human_input_aware": true,
+                                      "varReply": "bot_reply",
+                                      "temperature": "0.3",
+                                      "max_tokens": "1000",
+                                      "stop": "",
+                                      "stop_regex": "",
+                                      "pattern": "",
+                                      "json_mode": false,
+                                      "llm_alt_model": "gpt-4"
+                                    }
+                                  },
+                                  {
+                                    "id": "15cafac7e0c9c0fcc90e80bfbd278525",
+                                    "componentType": "task",
+                                    "type": "python",
+                                    "name": "Collect Register Chat history",
+                                    "properties": {
+                                      "varName": "session.extra.registration_chat_history",
+                                      "expression": "output = '''{{session.extra.registration_chat_history}}'''\n\noutput = output + \"Customer: \"\noutput = output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_reply}}'''\noutput = output + \"   \\n   \"\n\nprint(output)"
+                                    }
+                                  },
+                                  {
+                                    "id": "5a2be63cad906fe868ca5a37fd9081b4",
+                                    "componentType": "task",
+                                    "type": "sessionSave",
+                                    "name": "Save session",
+                                    "properties": {}
+                                  },
+                                  {
+                                    "id": "c0e65ca0daf247ce74ac8b6cd9d142ac",
+                                    "componentType": "task",
+                                    "type": "qna",
+                                    "name": "AI GPT-4 CHECK",
+                                    "properties": {
+                                      "instruction": "Assistant strictly reviews Chats enclosed in quotes to extract the Customer's information.\n# Conversation:\n\"\"\" {{ session.extra.registration_chat_history }}\nCustomer: {{ human_input }}\nSupporter: {{ bot_reply }}\"\"\"\n\nLet's think about it step by step:\n\n#Tasks:\n\n## Validation checklist:\n- Step 1: Verify step by step whether all information (Name, phone, address) fields are provided.\n- Step 2: Ascertain if the Supporter has compiled a summary of the Customer's information.\n- Step 3: Ensure the Customer has confirmed the order summary, such as \"ok\" \"đúng r\" \"đồng ý\" \"chuẩn\" \"ýe\" \"okay\",... or anything that represents consent. (Important)\n#Final confirmation:\n- Step 4: If all the above steps are correct, make decision yes, respond with { \"decision\":\"yes\" }\n\n## Response criteria:\n- The Assistant must only answer { \"decision\":\"yes\" } if there is clear confirmation from the Customer that the Assistant's summary is accurate.\n- If the information is unconfirmed or incomplete, or Customer does not confirm the summary, the Assistant must respond with { \"decision\":\"no\" }\n- The answer must be { \"decision\":\"exit\" } if and only if the Customer gives clear instructions to stop the conversation, or cancel the order.\n\n## Example:\n{ \"decision\":\"yes\" \n\"reason\":\"Customer have confirm the summary is correct\"\n} \nor example\n{ \"decision\":\"no\" \n\"reason\":\"enough information but customer haven't confirmed yet\"\n}\n\n## Constraints:\nThe Assistant's \"decision\" answer could only be: \"yes\", \"no\", \"exit\". Other than that, no other information is available.",
+                                      "dataset_uuid": "",
+                                      "dataset_qa_uuid": "",
+                                      "rag_query": "",
+                                      "limit": 2,
+                                      "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                      "knowledge": "{{ knowledge_from_rag }}",
+                                      "knowledge_aware": false,
+                                      "chat_history_aware": false,
+                                      "human_input_aware": false,
+                                      "varReply": "bot_check_json",
+                                      "temperature": "0.3",
+                                      "max_tokens": "100",
+                                      "stop": "",
+                                      "stop_regex": "",
+                                      "pattern": "",
+                                      "json_mode": true,
+                                      "llm_alt_model": "gpt-4"
+                                    }
+                                  },
+                                  {
+                                    "id": "ba882a279cf944188ab93f1affb15238",
+                                    "componentType": "task",
+                                    "type": "setVar",
+                                    "name": "Set bot_check",
+                                    "properties": {
+                                      "varName": "bot_check",
+                                      "varValue": "json.loads(bot_check_json)"
+                                    }
+                                  },
+                                  {
+                                    "id": "8f6bd4de22a5eb0e4ebacc6f533c9ae4",
+                                    "componentType": "switch",
+                                    "type": "if",
+                                    "name": "If bot_check.decision == \"yes\"",
+                                    "properties": {
+                                      "condition": "bot_check.decision == \"yes\""
+                                    },
+                                    "branches": {
+                                      "true": [
+                                        {
+                                          "id": "f99c2b419497de6017bdfd016a4f24b6",
+                                          "componentType": "task",
+                                          "type": "botAPICall",
+                                          "name": "Sheet API Call",
+                                          "properties": {
+                                            "api_response_var_name": "api_name_output",
+                                            "api_url": "https://n8n.example.com/webhook/shegan-customer-record-training",
+                                            "api_body": "{\n\"company_name\":\"Shegan\",\n    \"product_requirement\": \"{{ json_check['product_requirement'] }}\",\n    \"combo_requirement\": \"{{ json_check['combo_requirement'] }}\",\n    \"customer_phone\": \"{{ json_check['customer_phone'] }}\",\n    \"customer_name\": \"{{ json_check['customer_name'] }}\",\n    \"customer_address\": \"{{ json_check['customer_address'] }}\",\n    \"customer_email\": \"{{ json_check['customer_email'] }}\",\n    \"other_information\": \"{{ json_check['other_information'] }}\",\n    \"sub_total\": \"{{ n8n_bill.sub_total }}\",\n    \"shipping_fee\": \"{{ n8n_bill.shipping_fee }}\",\n    \"total\": \"{{ n8n_bill.total }}\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\"\n}"
+                                          }
+                                        },
+                                        {
+                                          "id": "9da48365e9ee6f2dcf0c90d03b367403",
+                                          "componentType": "task",
+                                          "type": "qna",
+                                          "name": "AI GPT-4o mini Success",
+                                          "properties": {
+                                            "instruction": "# Role\n{{ session.extra.assistant_role }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô\n{{ session.extra.vn_pronoun }} \n\n# Context\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Absolutely do not create any amount of inventory for the User. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Payment and Discount\n- Accept cash on delivery (COD) only. Guide User to website for card or QR code payments.\n- Vouchers cannot be applied via chatbox; guide User to use them in-store or online. \n- Assistant must not accept any discount request from the User, even if the User buys in bulk, has acquaintances, has a voucher, has a membership card, etc. \n\n## Freeship policies\n- Free shipping for orders with a subtotal over 200k (200.000) VNĐ in specified HCMC districts.\n- Free shipping nationwide for orders with a subtotal over 500k (500.000) VNĐ.\n- {{ session.extra.company_name }} offers discounts only on combo deals. No other promotions available. Ask for User's phone number for additional offers.\n\n# Task \nAssistant’s task is to inform User that Assistant have recorded User information for {{ session.extra.register_successfully }} \nWhen the User has provided enough information, the Assistant must tell the User that the information has been recorded and will issue a delivery order as soon as possible. \nAnd Đơn hàng đã được ghi nhận thành công bởi hệ thống AI. Nhân viên của {{ session.extra.company_name }} sẽ tiến hành xác nhận lại để đảm bảo tính chính xác và liên hệ với anh/chị để hoàn tất quá trình xác nhận đơn hàng một lần nữa.\nCảm ơn anh/chị đã lựa chọn sử dụng dịch vụ của {{ session.extra.company_name }}\n\n# Constraints\n- Assistant must not accept any discount request from the User\n- Fully complete tasks without asking User to \"Hold on a moment\"\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}",
+                                            "dataset_uuid": "",
+                                            "dataset_qa_uuid": "",
+                                            "rag_query": "",
+                                            "limit": 2,
+                                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                            "knowledge": "{{ knowledge_from_rag }}",
+                                            "knowledge_aware": false,
+                                            "chat_history_aware": true,
+                                            "human_input_aware": true,
+                                            "varReply": "bot_success",
+                                            "temperature": "0.7",
+                                            "max_tokens": "1000",
+                                            "stop": "",
+                                            "stop_regex": "",
+                                            "pattern": "",
+                                            "json_mode": false,
+                                            "llm_alt_model": "gpt-4o-mini"
+                                          }
+                                        },
+                                        {
+                                          "id": "66ce645431958934a169d9ee85f5ba89",
+                                          "componentType": "task",
+                                          "type": "botSendText",
+                                          "name": "Bot Send Text",
+                                          "properties": {
+                                            "text": "{{ bot_success }}\n\n"
+                                          }
+                                        },
+                                        {
+                                          "id": "9d499e5bdae2f3ae47dce181715a4807",
+                                          "componentType": "task",
+                                          "type": "setVar",
+                                          "name": "Set session.extra.registration_chat_history",
+                                          "properties": {
+                                            "varName": "session.extra.registration_chat_history",
+                                            "varValue": "empty_str()"
+                                          }
+                                        },
+                                        {
+                                          "id": "9006bf3a8bc4554519b43c8d7c303f78",
+                                          "componentType": "task",
+                                          "type": "setVar",
+                                          "name": "Set session.extra.findproduct_data",
+                                          "properties": {
+                                            "varName": "session.extra.findproduct_data",
+                                            "varValue": "empty_str()"
+                                          }
+                                        },
+                                        {
+                                          "id": "9d16edcf527b9d1d5decbe5b569a1e80",
+                                          "componentType": "task",
+                                          "type": "setVar",
+                                          "name": "Set session.extra.findcombo_data",
+                                          "properties": {
+                                            "varName": "session.extra.findcombo_data",
+                                            "varValue": "empty_str()"
+                                          }
+                                        },
+                                        {
+                                          "id": "d510db7356a613954671bc1926085b54",
+                                          "componentType": "task",
+                                          "type": "python",
+                                          "name": "Python old_order_customer_information",
+                                          "properties": {
+                                            "varName": "session.extra.old_order_customer_information",
+                                            "expression": "output = \"customer name\" + '''{{ json_check['customer_name'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer phone\" + '''{{ json_check['customer_phone'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer email\" + '''{{ json_check['customer_email'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer address\" + '''{{ json_check['customer_address'] }}'''\n\nprint(output)"
+                                          }
+                                        },
+                                        {
+                                          "id": "370b2513f63550fa6f1a93d99857514d",
+                                          "componentType": "task",
+                                          "type": "sessionSave",
+                                          "name": "Save session",
+                                          "properties": {}
+                                        },
+                                        {
+                                          "id": "28619cadbc3987ea4c663642c99e6fe8",
+                                          "componentType": "task",
+                                          "type": "clearTopic",
+                                          "name": "Clear topic",
+                                          "properties": {}
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "id": "80ad1bb48b74d45a760ae0a82004d15b",
+                                          "componentType": "switch",
+                                          "type": "if",
+                                          "name": "If bot_check.decision == \"exit\"",
+                                          "properties": {
+                                            "condition": "bot_check.decision == \"exit\""
+                                          },
+                                          "branches": {
+                                            "true": [
+                                              {
+                                                "id": "c83846211cfc47a80be7832b9f899a8a",
+                                                "componentType": "task",
+                                                "type": "setVar",
+                                                "name": "Set session.extra.registration_chat_history",
+                                                "properties": {
+                                                  "varName": "session.extra.registration_chat_history",
+                                                  "varValue": "empty_str()"
+                                                }
+                                              },
+                                              {
+                                                "id": "a2c980730085ca91c5949945945531d0",
+                                                "componentType": "task",
+                                                "type": "python",
+                                                "name": "Python old_order_customer_information",
+                                                "properties": {
+                                                  "varName": "session.extra.old_order_customer_information",
+                                                  "expression": "output = \"customer name\" + '''{{ json_check['customer_name'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer phone\" + '''{{ json_check['customer_phone'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer email\" + '''{{ json_check['customer_email'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer address\" + '''{{ json_check['customer_address'] }}'''\n\nprint(output)"
+                                                }
+                                              },
+                                              {
+                                                "id": "b324c5dae07adc0932d5459908e5f6f4",
+                                                "componentType": "task",
+                                                "type": "sessionSave",
+                                                "name": "Save session",
+                                                "properties": {}
+                                              },
+                                              {
+                                                "id": "cb98094ab16e502ba599a59019fc5536",
+                                                "componentType": "task",
+                                                "type": "qna",
+                                                "name": "AI GPT-4o mini Out Register",
+                                                "properties": {
+                                                  "instruction": "# Role\n{{ session.extra.assistant_role }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }} \n\n# Context\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Absolutely do not create any amount of inventory for the User. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Payment and Discount\n- Accept cash on delivery (COD) only. Guide User to website for card or QR code payments.\n- Vouchers cannot be applied via chatbox; guide User to use them in-store or online. \n- Assistant must not accept any discount request from the User, even if the User buys in bulk, has acquaintances, has a voucher, has a membership card, etc. \n\n## Freeship policies\n- Free shipping for orders with a subtotal over 200k (200.000) VNĐ in specified HCMC districts.\n- Free shipping nationwide for orders with a subtotal over 500k (500.000) VNĐ.\n- {{ session.extra.company_name }} offers discounts only on combo deals. No other promotions available. Ask for User's phone number for additional offers.\n\n# Task \nUser wants to pause the purchase process/cancel the order. Assistant notifies User that Assistant has paused the place order process.\nSay thank you User and tell User feel free to ask Assistant to find products suitable for User or ask questions related to {{ session.extra.company_name }}. Assistant is always available, ready to support User.\n\n## All exceptional case\nWhen User requests something that the Assistant doesn't have information on or isn't within the context, such as purchasing with discounts, large quantities, manufacturing, delivery, warehouse, weather, dating, recruitment, etc or any question where the Assistant lacks context to respond, the Assistant must ask User to contact {{ session.extra.company_contact }} for better support in that information.\n\n# Constraints\n- Assistant must not accept any discount request from the User\n- Fully complete tasks without asking User to \"Hold on a moment\"\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}",
+                                                  "dataset_uuid": "",
+                                                  "dataset_qa_uuid": "",
+                                                  "rag_query": "",
+                                                  "limit": 2,
+                                                  "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                                  "knowledge": "{{ knowledge_from_rag }}",
+                                                  "knowledge_aware": false,
+                                                  "chat_history_aware": true,
+                                                  "human_input_aware": true,
+                                                  "varReply": "bot_out",
+                                                  "temperature": "0.7",
+                                                  "max_tokens": "1000",
+                                                  "stop": "",
+                                                  "stop_regex": "",
+                                                  "pattern": "",
+                                                  "json_mode": false,
+                                                  "llm_alt_model": "gpt-4o-mini"
+                                                }
+                                              },
+                                              {
+                                                "id": "8010fbf333734ba69c22645284519722",
+                                                "componentType": "task",
+                                                "type": "clearTopic",
+                                                "name": "Clear topic",
+                                                "properties": {}
+                                              }
+                                            ],
+                                            "false": [
+                                              {
+                                                "id": "7acb8c690b4bf0875adf7643491ac23c",
+                                                "componentType": "task",
+                                                "type": "botSendText",
+                                                "name": "Bot Send Text",
+                                                "properties": {
+                                                  "text": "{{ bot_reply }}"
+                                                }
+                                              }
+                                            ]
+                                          }
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "id": "4ca0962948706bbf5d7fe65d6f9fa5d5",
+                                    "componentType": "task",
+                                    "type": "recall",
+                                    "name": "Recall",
+                                    "properties": {}
+                                  }
+                                ]
+                              }
+                            }
+                          ],
+                          "false": [
+                            {
+                              "id": "1e349942b1924402d1cb2f1f1fc78057",
+                              "componentType": "task",
+                              "type": "botAPICall",
+                              "name": "Bot API Call",
+                              "properties": {
+                                "api_response_var_name": "api_name_output",
+                                "api_url": "https://n8n.example.com/webhook/semantic-errors-training",
+                                "api_body": "{\n\"company_name\":\"Shegan\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\"\n}",
+                                "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                                "api_method": "POST"
+                              }
+                            },
+                            {
+                              "id": "aeb7798b772f56378a4cd4dacd390607",
+                              "componentType": "task",
+                              "type": "recall",
+                              "name": "Recall",
+                              "properties": {}
+                            }
+                          ]
+                        }
+                      }
+                    ],
+                    "false": [
+                      {
+                        "id": "e53e255c0e0bc94b03ab72e2c184bb96",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "AI GPT-4o Hỏi thông tin User",
+                        "properties": {
+                          "instruction": "# Role\n{{ session.extra.assistant_role }}\n\n# Tone\n- Assistant always adapt Assistant's tone based on the context of the conversation\n- Assistant's aim is to provide unbiased assistance\n- Politeness is key to our interaction\n- Feedback is important to Assistant\n- {{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }} \n\n# Context\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Agree all the product quantity requested by the User, {{ session.extra.company_name }} can handle it. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Payment and Discount\n- Accept cash on delivery (COD) only. Guide User to website for card or QR code payments.\n- Vouchers cannot be applied via chatbox; guide User to use them in-store or online. \n- Assistant must not accept any discount request from the User, even if the User buys in bulk, has acquaintances, has a voucher, has a membership card, etc. \n\n## Freeship policies:\n- Free shipping for orders with a subtotal over 200k (200.000) VNĐ in specified HCMC districts.\n- Free shipping nationwide for orders with a subtotal over 500k (500.000) VNĐ.\n- {{ session.extra.company_name }} offers discounts only on combo deals. No other promotions available. Ask for User's phone number for additional offers.\n\n## Product list\n{{ session.extra.company_name }} only has these product, no exception.\n{{ session.extra.company_product }}\ncompany_product\nCOMBO 2 HỘP BÔNG TẨY TRANG\nCOMBO 2 CHAI SERUM KHỬ MÙI NGỪA THÂM NÁCH VÀ CHÂN\nCOMBO 2 CHAI DUNG DỊCH VỆ SINH\nCOMBO NƯỚC TẨY TRANG & BÔNG TẨY TRANG \nCOMBO DUNG DỊCH VỆ SINH VÀ SERUM\nCOMBO SỮA RỬA MẶT, NƯỚC TẨY TRANG, TẨY DA CHẾT SHEGAN \nCOMBO TẨY DA CHẾT & SERUM KHỬ MÙI NGỪA TH M \nCOMBO DUNG DỊCH VỆ SINH & TẨY DA CHẾT \nCOMBO SỮA RỬA MẶT & NƯỚC TẨY TRANG MUỐI BIỂN SHEGAN \nCOMBO CHĂM SÓC ĐẶC BIỆT \nCOMBO CHĂM SÓC TOÀN DIỆN\nCOMBO ĐẶC BIỆT \nCOMBO ĐA NĂNG \nIf the User requires products that are not in the triple quote list above, the Assistant must inform the User that {{ session.extra.company_name }} does not have that product, please move on to ordering another product.\n\n# Task \nLet's think step by step and do the tasks step by step.\nAssistant's task is collecting User's {{ session.extra.register_mandatory_field }}, and [Summary all Information] for better assisting User in getting product quotations and placing orders. Assistant will ask User a series of questions to collect needed information. Assistant must ask User again if required information is missing or in WRONG format. User DOES NOT want to be asked many questions at a time. Assistant MUST ask them smartly. Assistant MUST remember valid information and DO NOT ask that information again.\n\nHere's how Assistant can ensure adherence to the standards:\n\n- Analyze carefully to identify {{ session.extra.register_mandatory_field }}, {{ session.extra.register_optional_field }} to avoid asking again for the provided information. Asking repeatedly for provided information makes the User dissatisfied.\n- Tactfully request missing information fields. \n- Verify if the information is in the correct format yet. If the information is incorrect, politely ask for clarification or corrections.\n- Read the product information and ask User if they are interested in that product? If there is no product information provided, ask User what product they are interested in?\n- Summarize the information {{ session.extra.register_mandatory_field }} in a bullet-point FOR USER CONFIRMATION. This summary must be concise and complete. \n- Summary is very IMPORTANT, can't be missing and must be in a bullet-point format.\n- Assistant needs to receive feedback from User that agrees with the summary\n- Be adaptive to User's feedback. If User needs to restart the process or correct any details, handle it smoothly. \n\nIf the User wants to start a new order, the Assistant must ask if the User wants to keep the old order information or wants to start with new information.\nThis is the personal information of the Customer's old order:\n{{ session.extra.old_order_customer_information }}\nOnly retain old order information when requested by the Customer. If Customer wants to update new personal information. The Assistant must readjust according to the Customer's new information request\n\n## Needed Information\n{{ session.extra.register_field_1 }} \n{{ session.extra.register_field_2 }} \n{{ session.extra.register_field_3 }} \n{{ session.extra.register_field_4 }} \n{{ session.extra.register_field_5 }}\n{{ session.extra.register_field_6 }} \n\nUse the example conversation below as a guide for how you interact with the User:\n## Example:\nAssistant: Xin chào, em có thể biết thông tin về số điện thoại, tên, email và địa chỉ của anh để em hỗ trợ nhanh chóng và tốt hơn được không ạ?\nUser: 0908750840, Lê Tấn Phú\nAssistant: Dạ vâng em đã ghi nhận số điện thoại của anh là 0908750840 và họ tên của anh là Lê Tấn Phú\nAnh cho em thông tin địa chỉ để bên em giao hàng đến cho mình được không ạ?\nUser: ở Singapore\nAssistant: Dạ anh ơi, bên em chưa hỗ trợ giao hàng ra nước ngoài. Anh cho em xin địa chỉ cụ thể ở Việt Nam được không ạ?\nUser: 29 Nguyễn Trung Ngạn, Q1 \nAssistant: Em ghi nhận mình ở 29 Nguyễn Trung Ngạn, Quận 1, Thành phố Hồ Chí Minh ạ. Dạ em có thể xin email của mình để em tiện liên lạc và gửi thông tin đơn hàng không ạ?\nUser: halu@Z#gmacom\nAssistant: Dạ email của anh định dạng chưa đúng, anh cho em xin lại email nha\nUser: haluminhanh@gmail.com\nAssistant: Có phải sản phẩm mình đang quan tâm là Serum dưỡng ẩm ngừa thâm , Sữa rửa mặt đúng không ạ?\nUser: Đúng rồi em\nAssistant: Dạ vâng em đã bổ sung thông tin. Anh xác nhận thông tin sau giúp em nha \n- Số điện thoại: 0908750840\n- Họ và tên: Lê Tấn Phú\n- Khu vực: Quận 1, TPHCM\n- Email: halu@gmail.com\nYêu cầu sản phẩm: 2 chai Serum dưỡng ẩm ngừa, 3 chai Sữa rửa mặt \nAnh vui lòng xác nhận lại giúp em thông tin trên đã chính xác chưa ạ?\nUser: Đúng rồi\n\n## All exceptional case\nWhen User requests something that the Assistant doesn't have information on or isn't within the context, such as purchasing with discounts, large quantities, manufacturing, delivery, warehouse, weather, dating, recruitment, etc or any question where the Assistant lacks context to respond, the Assistant must ask User to contact {{ session.extra.company_contact }} for better support in that information.\nAlternatively, Assistant must ask User to complete the order placement. Once the Assistant gathers all necessary information, a staff member will call back to confirm details and any special requests from User. If the answer provided doesn't satisfy User, User can cancel the order at that time.\n\nCurrently, the main task of the Assistant is to focus on recording order information\n\n# Constraints:\n- Assistant does not respond to queries from other brands outside {{ session.extra.company_name }}. Assistant does not accommodate any requests to purchase products not included in the {{ session.extra.company_name }} product list above.\n- {{ session.extra.company_name }} only accepts exact payment as per the provided quote. No adjustments for prepayments or price changes are allowed. Only accept COD. Any deviations with provided quote will result in severe penalties for the Assistant, including double the amount of the shortfall. Assistant must not alter prices, totals, or shipping fees under any circumstances.\n- If User requires products that are not in the product list above, the Assistant must inform the User that {{ session.extra.company_name }} does not have that product, please move on to ordering another product.\n- Assistant must not accept any discount request from the User\n- Fully complete tasks without asking User to \"Hold on a moment\" \n- ONLY RESPONSE CONTENT IN CONTEXT.MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}",
+                          "dataset_uuid": "",
+                          "dataset_qa_uuid": "",
+                          "rag_query": "",
+                          "limit": 2,
+                          "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                          "knowledge": "{{ knowledge_from_rag }}",
+                          "knowledge_aware": false,
+                          "chat_history_aware": true,
+                          "human_input_aware": true,
+                          "varReply": "bot_reply",
+                          "temperature": "0.5",
+                          "max_tokens": "3000",
+                          "stop": "",
+                          "stop_regex": "",
+                          "pattern": "",
+                          "json_mode": false,
+                          "llm_alt_model": "gpt-4"
+                        }
+                      },
+                      {
+                        "id": "7d3992f757a0c936ae69475d54089f16",
+                        "componentType": "task",
+                        "type": "python",
+                        "name": "Collect Register Chat history",
+                        "properties": {
+                          "varName": "session.extra.registration_chat_history",
+                          "expression": "output = '''{{session.extra.registration_chat_history}}'''\n\noutput = output + \"Customer: \"\noutput = output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_reply}}'''\noutput = output + \"   \\n   \"\n\nprint(output)"
+                        }
+                      },
+                      {
+                        "id": "92e7884e1f8649a400c8d199bddf306c",
+                        "componentType": "task",
+                        "type": "sessionSave",
+                        "name": "Save session",
+                        "properties": {}
+                      },
+                      {
+                        "id": "048bd3935a736ce84d7749646201be16",
+                        "componentType": "switch",
+                        "type": "if",
+                        "name": "If json_check.is_customer_want_to_exit == \"yes\"",
+                        "properties": {
+                          "condition": "json_check.is_customer_want_to_exit == \"yes\""
+                        },
+                        "branches": {
+                          "true": [
+                            {
+                              "id": "4ba82e3afd3cb4d54d845894a6c41abb",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Set session.extra.registration_chat_history",
+                              "properties": {
+                                "varName": "session.extra.registration_chat_history",
+                                "varValue": "empty_str()"
+                              }
+                            },
+                            {
+                              "id": "2e481dfd74b7b3b91dffbe5ad1dd7b22",
+                              "componentType": "task",
+                              "type": "python",
+                              "name": "Python old_order_customer_information",
+                              "properties": {
+                                "varName": "session.extra.old_order_customer_information",
+                                "expression": "output = \"customer name\" + '''{{ json_check['customer_name'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer phone\" + '''{{ json_check['customer_phone'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer email\" + '''{{ json_check['customer_email'] }}'''\noutput = output + \"   \\n   \"\noutput = output + \"customer address\" + '''{{ json_check['customer_address'] }}'''\n\nprint(output)"
+                              }
+                            },
+                            {
+                              "id": "9e4c8a8a84ceee90aed411bb2c0f204d",
+                              "componentType": "task",
+                              "type": "sessionSave",
+                              "name": "Save session",
+                              "properties": {}
+                            },
+                            {
+                              "id": "6dbfcfa035325e8411b60e9740a45571",
+                              "componentType": "task",
+                              "type": "qna",
+                              "name": "AI GPT-4o mini Out Register",
+                              "properties": {
+                                "instruction": "# Role\n{{ session.extra.assistant_role }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }} \n\n# Context\n## Inventory\nCurrently, Assistant has not updated the inventory of {{ session.extra.company_name }}. Users just need to order the desired quantity, Assistant will be ready to assist. Absolutely do not create any amount of inventory for the User. If User still wants to know the inventory quantity, Assistant must ask User to contact {{ session.extra.company_contact }}\n\n## Payment and Discount\n- Accept cash on delivery (COD) only. Guide User to website for card or QR code payments.\n- Vouchers cannot be applied via chatbox; guide User to use them in-store or online. \n- Assistant must not accept any discount request from the User, even if the User buys in bulk, has acquaintances, has a voucher, has a membership card, etc. \n\n## Freeship policies\n- Free shipping for orders with a subtotal over 200k (200.000) VNĐ in specified HCMC districts.\n- Free shipping nationwide for orders with a subtotal over 500k (500.000) VNĐ.\n- {{ session.extra.company_name }} offers discounts only on combo deals. No other promotions available. Ask for User's phone number for additional offers.\n\n# Task \nUser wants to pause the purchase process/cancel the order. Assistant notifies User that Assistant has paused the place order process.\nSay thank you User and tell User feel free to ask Assistant to find products suitable for User or ask questions related to {{ session.extra.company_name }}. Assistant is always available, ready to support User.\n\n## All exceptional case\nWhen User requests something that the Assistant doesn't have information on or isn't within the context, such as purchasing with discounts, large quantities, manufacturing, delivery, warehouse, weather, dating, recruitment, etc or any question where the Assistant lacks context to respond, the Assistant must ask User to contact {{ session.extra.company_contact }} for better support in that information.\n\n# Constraints\n- Assistant must not accept any discount request from the User\n- Fully complete tasks without asking User to \"Hold on a moment\"\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMTANCES, when user questions or makes requests that are not in the context, Assistant is not allowed to answer and must ask User to contact {{ session.extra.company_contact }}",
+                                "dataset_uuid": "",
+                                "dataset_qa_uuid": "",
+                                "rag_query": "",
+                                "limit": 2,
+                                "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                "knowledge": "{{ knowledge_from_rag }}",
+                                "knowledge_aware": false,
+                                "chat_history_aware": true,
+                                "human_input_aware": true,
+                                "varReply": "bot_out",
+                                "temperature": "0.7",
+                                "max_tokens": "1000",
+                                "stop": "",
+                                "stop_regex": "",
+                                "pattern": "",
+                                "json_mode": false,
+                                "llm_alt_model": "gpt-4o-mini"
+                              }
+                            },
+                            {
+                              "id": "0a606ec8b8458581b6d65e63791ac4ea",
+                              "componentType": "task",
+                              "type": "clearTopic",
+                              "name": "Clear topic",
+                              "properties": {}
+                            }
+                          ],
+                          "false": [
+                            {
+                              "id": "ba0cc39290dd7ff7b4c5893481274581",
+                              "componentType": "task",
+                              "type": "botSendText",
+                              "name": "Bot Send Text",
+                              "properties": {
+                                "text": "{{ bot_reply }}"
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "false": [
+                {
+                  "id": "9030a454ac5a8780ef67b16dac475255",
+                  "componentType": "task",
+                  "type": "recall",
+                  "name": "Recall",
+                  "properties": {}
+                }
+              ]
+            }
+          }
+        ],
+        "handover_out_of_scope": [
+          {
+            "id": "6c0a0d6f4c565b883e2911dfe40fe6ef",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini Analyze",
+            "properties": {
+              "instruction": "# Role\nYou are a helpful Assistant that only responds in JSON with \"reason\" variable.\n\n# Task\nAssistant's task is to read chat history and analyze what User just requested? Why does the User want to meet the manager? Why do users not want to talk to AI anymore? Or a request for something beyond what the Assistant can not do, like \"track order information\" \"track delivery time\",... . If the request is unclear, Assistant can briefly summarize the most recent conversation in about 2 sentences.\n\n# Constraint\n- Answer as briefly as possible\n- Assistant must ensure there is \"reason\" variable in the answer\n- Trả lời bằng tiếng việt. Giữ duy nhất biến \"reason\" là tiếng Anh.",
+              "dataset_uuid": "",
+              "dataset_qa_uuid": "",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_analyze",
+              "temperature": "0.5",
+              "max_tokens": "200",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": true,
+              "llm_alt_model": "gpt-4o-mini"
+            }
+          },
+          {
+            "id": "c69d95446e1428de4618e9f6bbf9b6b0",
+            "componentType": "task",
+            "type": "setVar",
+            "name": "Set handover",
+            "properties": {
+              "varName": "handover",
+              "varValue": "json.loads(bot_analyze)"
+            }
+          },
+          {
+            "id": "b6230d4c0a95eaa0927fccdd6b3b247e",
+            "componentType": "task",
+            "type": "botAPICall",
+            "name": "Bot API Call",
+            "properties": {
+              "api_response_var_name": "api_name_output",
+              "api_url": "https://n8n.example.com/webhook/shegan-handover-training",
+              "api_body": "{\n\"company_name\":\"Shegan\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"customer_issue\": \"{{ handover.reason }}\"\n}",
+              "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+              "api_method": "POST"
+            }
+          },
+          {
+            "id": "a08f665ad55f6d63d9af8a883e2f3da2",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini Answer",
+            "properties": {
+              "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }} \n\n# Task\nUser wants to talk with a human or representative, and doesn't want to talk to the Assistant anymore. The Assistant is sorry for not satisfying the user. Assistant has informed the manager, and the manager will contact the user in this chat channel for support within a few minutes. The Assistant will strive to learn and improve its own knowledge and hopes to have more opportunities to support the user in the future.\n\nOr User wants to track order information, track delivery time, or request Assistant to do something it does not have in context. The Assistant must inform the User that that is out of scope and Assistant is not allowed to do it. Assistant has informed the manager, and the manager will contact the user in this chat channel for support within a few minutes. \nWhen the User submits a specific desired Date and Time such as \"Desired Date and Time\nFri, Aug 2 at 05:59 PM\". The Assistant asks if the User wants to schedule an appointment? The Assistant cannot schedule an appointment right now, as it depends on the Manager's schedule. The Assistant can call the Manager to discuss the appointment in more detail with the User.\n\n# Constrainst:\n- Assistant must speak in the most sincere manner to soothe and satisfy the User.\n- ONLY RESPONSE CONTENT IN CONTEXT.\n- MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.",
+              "dataset_uuid": "",
+              "dataset_qa_uuid": "",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.7",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4o-mini"
+            }
+          },
+          {
+            "id": "32591642449ceb30b9ab6c95b28f167f",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ],
+        "discount": [
+          {
+            "id": "9ad81625086776ed6c61223847777537",
+            "componentType": "task",
+            "type": "qna",
+            "name": "AI GPT-4o mini Discount",
+            "properties": {
+              "instruction": "# Role\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô trong Tiếng Việt\n{{ session.extra.vn_pronoun }}\n\n## Payment\nShegan offers various payment methods: the User can check when purchasing on the website. \nIn this channel, both the Assistant and Shegan only support Cash on Delivery (COD).\n\n# CONTEXT\nShegan's combo\nCOMBO 2 HỘP BÔNG TẨY TRANG\nCOMBO 2 CHAI SERUM KHỬ MÙI NGỪA THÂM NÁCH VÀ CHÂN\nCOMBO 2 CHAI DUNG DỊCH VỆ SINH\nCOMBO NƯỚC TẨY TRANG & BÔNG TẨY TRANG ( bao gồm nước tẩy trang và bông tẩy trang )\nCOMBO DUNG DỊCH VỆ SINH VÀ SERUM ( bao gồm dung dịch vệ sinh và serum )\nCOMBO SỮA RỬA MẶT, NƯỚC TẨY TRANG, TẨY DA CHẾT SHEGAN ( bao gồm sữa rửa mặt , nước tẩy trang , tẩy da chết )\nCOMBO TẨY DA CHẾT & SERUM KHỬ MÙI NGỪA TH M \nCOMBO DUNG DỊCH VỆ SINH & TẨY DA CHẾT \nCOMBO SỮA RỬA MẶT & NƯỚC TẨY TRANG \nCOMBO CHĂM SÓC ĐẶC BIỆT ( bao gồm -Sữa Rửa Mặt  ,Nước Tẩy Trang,Tẩy Da Chết )\nCOMBO CHĂM SÓC TOÀN DIỆN ( bao gồm Sữa Rửa Mặt,Nước Tẩy Trang,Tẩy Da Chết,Dung Dịch Vệ Sinh )\nCOMBO ĐẶC BIỆT ( bao gồm -Sữa Rửa Mặt,Nước Tẩy Trang,Tẩy Da Chết,Dung Dịch Vệ Sinh,Bông Tẩy Trang ) \nCOMBO ĐA NĂNG ( bao gồm -Sữa Rửa Mặt,Nước Tẩy Trang,Tẩy Da Chết,Dung Dịch Vệ Sinh, Serum Khử Mùi Ngừa Thâm Nách Và Chân, Bông Tẩy Trang )\n\n# Task\nWhen the User asks about buying in bulk, or wants a discount or voucher, the Assistant should tactfully explain that the Assistant currently doesn't have information about ongoing promotions to assist the User. The User can contact the hotline or visit the official Shegan website for detailed information. After that, suggest 2-3 related combos catered to the User's needs.\n\nWhen User ask about freeship, hiện tại, Shegan miễn ship cho đơn hàng trên 200k (200.000vnđ) ở nội thành TPHCM (Bao gồm và chỉ bao gồm: Quận 1 (Q1), Quận 3 (Q3), Quận 4 (Q4), Quận 5 (Q5), Quận 6 (Q6), Quận 7, Quận 8, Quận 10, Quận 11, Tân Bình, Gò Vấp, Bình Thạnh, Tân Phú, Phú Nhuận) và miễn ship trong đơn hàng trên 500k (500.000vnđ) trên toàn quốc. Không có ngoại lệ nào khác. Assistant không được tự ý miễn phí ship cho bất kỳ đơn hàng nào!\n\n{{ session.extra.company_name }} prohibits Assistant from giving any discounts to User, regardless of relationship or loyalty. Unauthorized discounts will result in severe penalties and substantial fines for Assistant\n\n# Constraint\n- {{ session.extra.company_name }} currently only offers discounts on combo deals. No other promotions are available\n- Assistant must not accept any additional discount requests. Please ask for the User's phone number to support and advise on additional offers.\n- Assistant do not accept bank transfers or any forms of payment except cash on delivery (COD).\n- If User wants to pay via card or QR code, guide User to contact {{ session.extra.company_contact }} for support.\n- Vouchers cannot be applied when ordering via chatbox, they can only be used in-store or when purchasing directly. Assistant must not ask for the User's voucher code\n- ONLY RESPONSE CONTENT IN CONTEXT. MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- IN ALL CIRCUMSTANCES, When the User asks questions or make requests that are NOT IN THE CONTEXT, Assistant is NOT ALLOWED to answer and MUST ASK USER to CONTACT {{ session.extra.company_contact }}\n- MUST Keep the answer short and focused to the question. Highly recommend responding in less than 60 words",
+              "dataset_uuid": "",
+              "dataset_qa_uuid": "",
+              "rag_query": "",
+              "limit": 2,
+              "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+              "knowledge": "{{ knowledge_from_rag }}",
+              "knowledge_aware": false,
+              "chat_history_aware": true,
+              "human_input_aware": true,
+              "varReply": "bot_reply",
+              "temperature": "0.7",
+              "max_tokens": "1000",
+              "stop": "",
+              "stop_regex": "",
+              "pattern": "",
+              "json_mode": false,
+              "llm_alt_model": "gpt-4"
+            }
+          },
+          {
+            "id": "979811acc89c39176571bdffaf032226",
+            "componentType": "task",
+            "type": "clearTopic",
+            "name": "Clear topic",
+            "properties": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "ef8c9df971087e605aef715248c32763",
+      "componentType": "task",
+      "type": "botReplyFilter",
+      "name": "Filter Bot Reply",
+      "properties": {
+        "regex": "(?:tôi)",
+        "replace": "em"
+      }
+    },
+    {
+      "id": "677b42be47ca09908e78bd7213324678",
+      "componentType": "task",
+      "type": "botReplyFilter",
+      "name": "Filter Bot Reply",
+      "properties": {
+        "regex": "(?:chúng tôi|chúng em|Chúng tôi|Chúng em|chúng mình|Chúng mình)",
+        "replace": "bên em"
+      }
+    },
+    {
+      "id": "ed02ea8cbed193818d8e3b22250a2b32",
+      "componentType": "task",
+      "type": "botReplyFilter",
+      "name": "Filter Bot Reply",
+      "properties": {
+        "regex": "(?:chị cảm ơn|anh cảm ơn|mình cảm ơn)",
+        "replace": "em cảm ơn"
+      }
+    }
+  ],
+  "properties": {}
+}

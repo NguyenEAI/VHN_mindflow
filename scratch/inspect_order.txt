@@ -1,0 +1,7 @@
+0. Save human_input (type: saveHumanInput)
+1. AI Decide Order Action (type: qna)
+2. Set order_info (type: setVar)
+3. Collect Register Chat History (type: python)
+4. Save session (type: sessionSave)
+5. If action EXIT (type: if)
+  branches: ['true', 'false']

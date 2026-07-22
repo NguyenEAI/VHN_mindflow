@@ -1,0 +1,1 @@
+Node 6: Save findproduct_data {'varName': 'session.extra.findproduct_data', 'varValue': 'session.extra.product_information'}

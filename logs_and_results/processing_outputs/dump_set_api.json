@@ -1,0 +1,12 @@
+[
+  {
+    "id": "2eb038c0383668d66cceab6470ff37cc",
+    "type": "setVar",
+    "componentType": "task",
+    "name": "Set api_raw_product_data",
+    "properties": {
+      "varName": "api_raw_product_data",
+      "varValue": "json.loads(api_call_product_data)"
+    }
+  }
+]

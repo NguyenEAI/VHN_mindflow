@@ -1,0 +1,33 @@
+If action EXIT (if)
+  Branch: true
+    If still has products (if)
+      Branch: true
+        Bot Send Text - Exit (botSendText)
+        Clear registration_chat_history (setVar)
+        Save session (sessionSave)
+        Clear findproduct_data (setVar)
+        Clear chat_history_b2c (setVar)
+        Clear findproduct_chat_history (setVar)
+        Save session after cleanup (sessionSave)
+        Clear Topic (clearTopic)
+      Branch: false
+        Bot Send Text - Go To Consult (botSendText)
+        Clear Topic (clearTopic)
+  Branch: false
+    If action CONFIRMED (if)
+      Branch: true
+        If missing phone (if)
+          Branch: true
+            Bot Send Text - Ask Missing (botSendText)
+          Branch: false
+            Bot Send Text - Success (botSendText)
+            Save old_order_customer_information (python)
+            Clear registration_chat_history (setVar)
+            Save session (sessionSave)
+            Clear findproduct_data (setVar)
+            Clear chat_history_b2c (setVar)
+            Clear findproduct_chat_history (setVar)
+            Save session after cleanup (sessionSave)
+            Clear Topic (clearTopic)
+      Branch: false
+        Bot Send Text - Reply (botSendText)

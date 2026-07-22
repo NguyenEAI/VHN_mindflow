@@ -1,0 +1,11 @@
+Found 'n)' in node Set topic (type setVar) prop varValue: json.dumps(session)
+Found 'n)' in node AI QnA Internal Handler (type qna) prop instruction: ưới 250 từ.
+- Luôn xưng 'em', gọi NV là 'Anh/Chị'.
+Found 'n)' in node AI Decide Order Action (type qna) prop instruction: p bất kỳ số tài khoản hay thông tin ngân hàng nào.
+Found 'n)' in node Save Decision (type setVar) prop varValue: json.loads(manager_decision)
+Found 'n)' in node GPT-4 Query Data (type qna) prop instruction: , so please DO NOT TẠO VENDOR VÀ PRODUCT_TYPE MỚI.
+Found 'n)' in node GPT-4 Analysis (type qna) prop instruction:  `Product List`. KHÔNG ĐƯỢC PHÉP SAI tên sản phẩm.
+Found 'n)' in node AI Chuyên trách B2C (type qna) prop instruction: M HOẶC LẤY SẢN PHẨM KHÔNG CÓ TRONG DANH SÁCH TRÊN.
+Found 'n)' in node Save Decision (type setVar) prop varValue: json.loads(manager_decision)
+Found 'n)' in node AI QnA Company Info (type qna) prop instruction:  KHÔNG ĐƯỢC tự bịa bất kỳ thông tin ngân hàng nào.
+Found 'n)' in node Filter Bot Reply - bạn → Anh/Chị (type botReplyFilter) prop regex: (?:bạn|Bạn)

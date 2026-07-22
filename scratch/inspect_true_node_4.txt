@@ -1,0 +1,21 @@
+
+PRODUCTS = {{api_raw_product_data[0].data}}
+WISHLIST = {{product_analyze.name}}
+
+content = ""
+i = 1
+
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    title_lower = title.lower()
+    
+    # Robust matching
+    match_found = False
+    for names in WISHLIST:
+        names_lower = names.strip().lower()
+        if names_lower in title_lower or title_lower in names_lower:
+            match_found = True
+            break
+            
+    if match_found:
+      

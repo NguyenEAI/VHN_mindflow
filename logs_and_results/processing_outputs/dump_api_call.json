@@ -1,0 +1,28 @@
+[
+  {
+    "id": "3173e7d6fcbdeb4100c4dfabad2c1bbd",
+    "type": "botAPICall",
+    "componentType": "task",
+    "name": "API CALL PRODUCT DATA",
+    "properties": {
+      "api_response_var_name": "api_call_product_data",
+      "api_url": "{{ api_url_search_data }}",
+      "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n    \"product_type\": \"{{ session.extra.query_data.product_type }}\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+      "api_header": "{\"Authorization\": \"Bearer token\"}",
+      "api_method": "POST"
+    }
+  },
+  {
+    "id": "b2b_consult_api_call",
+    "type": "botAPICall",
+    "componentType": "task",
+    "name": "API CALL PRODUCT DATA",
+    "properties": {
+      "api_response_var_name": "api_call_product_data",
+      "api_url": "{{api_url_search_data}}",
+      "api_body": "{\n  \"bot_uuid\": \"{{ bot_uuid }}\",\n  \"channel_type\": \"{{ channel_type }}\",\n  \"channel_id\": \"{{ channel_id }}\",\n  \"thread_id\": \"{{ thread_id }}\",\n  \"user_msg_id\": \"{{ user_msg_id }}\",\n  \"vendor\": \"{{ session.extra.query_data.vendor[0] }}\",\n  \"product_type\": \"{{ session.extra.query_data.product_type[0] }}\",\n  \"sheet_url\": \"{{ sheet_url }}\"\n}",
+      "api_header": "{}",
+      "api_method": "POST"
+    }
+  }
+]

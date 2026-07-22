@@ -1,0 +1,17 @@
+True branch nodes:
+ - Bot Send Text - Exit (botSendText)
+   Properties: {'text': '{{ order_info.reply_text }}'}
+ - Clear registration_chat_history (setVar)
+   Properties: {'varName': 'session.extra.registration_chat_history', 'varValue': 'empty_str()'}
+ - Save session (sessionSave)
+   Properties: {}
+ - Clear findproduct_data (setVar)
+   Properties: {'varName': 'session.extra.findproduct_data', 'varValue': 'empty_str()'}
+ - Clear chat_history_b2c (setVar)
+   Properties: {'varName': 'session.extra.chat_history_b2c', 'varValue': 'empty_str()'}
+ - Clear findproduct_chat_history (setVar)
+   Properties: {'varName': 'session.extra.findproduct_chat_history', 'varValue': 'empty_str()'}
+ - Save session after cleanup (sessionSave)
+   Properties: {}
+ - Clear Topic (clearTopic)
+   Properties: {}

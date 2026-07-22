@@ -1,0 +1,1337 @@
+{
+    "sequence": [
+        {
+            "id": "8108fe3b9537a4601259045606e6a924",
+            "componentType": "task",
+            "type": "session",
+            "name": "Session Manager",
+            "properties": {
+                "extra": "{\n  \"product_wishlist\": \"Product List:\",\n  \"findproduct_chat_history\": \"empty\",\n  \"placeorder_chat_history\": \"empty\",\n  \"old_order_customer_information\": \"empty\",\n  \"call_support\": {\n    \"user_issue\": \"empty\",\n    \"reply_to_user\": \"empty\"\n  },\n  \"placeorder_analyze_order\": \"empty\",\n  \"user_query\": \"empty\",\n  \"customer_information\": \"empty\",\n  \"chat_history\": \"empty\",\n  \"return_check\": \"empty\",\n  \"previous_manager_decision\": {\n    \"phase\": \"greetings\",\n    \"need_product_info\": \"no\",\n    \"customer_class\": \"empty\",\n    \"current_step\": \"Chào hỏi, giới thiệu, hỏi khách lẻ hay cá nhân bán sỉ hay đại lý\",\n    \"customer_name\": \"NOT-PROVIDED\",\n    \"customer_phone\": \"NOT-PROVIDED\",\n    \"user_context\": \"Chưa bắt đầu cuộc trò chuyện\",\n    \"target_product\": \"NOT-PROVIDED\",\n    \"note_for_sales\": \"none\"\n  },\n  \"query_data\": {\n    \"vendor\": \"none\",\n    \"product_type\": \"none\"\n  },\n  \"order_bill\": \"empty\",\n  \"product_information\": \"empty\",\n  \"new_customer_message\": 0,\n  \"agency_telegram_message\": 0,\n  \"topic\":\"reset\",\n  \"is_salon_product\": 0\n}"
+            }
+        },
+        {
+            "id": "b47b974925ba515d1e8e2c8fcebf72be",
+            "componentType": "container",
+            "type": "block",
+            "name": "Company",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "86b6ee2fa0b7aa14f10c0c5b46277073",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const company_name",
+                    "properties": {
+                        "constName": "company_name",
+                        "constValue": "Y Dược VHN"
+                    }
+                },
+                {
+                    "id": "0ac157ed2cd7e4f021d5a331afc14cf6",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const company_contact",
+                    "properties": {
+                        "constName": "company_contact",
+                        "constValue": "# Thông tin liên hệ\n*   Công ty Cổ phần Xuất Nhập Khẩu & Phân Phối Sản Phẩm Y Dược VHN\n*   Điện thoại: 0941 905 885\n*   Email: truongphongmarketing@vhndistribution.com\n*   Website: vhndistribution.com\n*   Văn phòng Sài Gòn: Tầng 5A số 407 Tô Hiến Thành, Phường 14, Quận 10, TP. Hồ Chí Minh.\n*   Văn phòng Hà Nội: Số 14 Láng Hạ, Phường Thành công, Quận Ba Đình, Hà Nội.\n*   Link store Shopee: [https://shopee.vn/yduocvhn](https://shopee.vn/yduocvhn)"
+                    }
+                },
+                {
+                    "id": "b19a642f971446b87aa125276d78049b",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const company_branch",
+                    "properties": {
+                        "constName": "company_branch",
+                        "constValue": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "b948943d58abe2714d0394beee50eb71",
+            "componentType": "container",
+            "type": "block",
+            "name": "AI Setting",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "6ded50bfe069950f1c948c4383d7012c",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const assistant_role",
+                    "properties": {
+                        "constName": "assistant_role",
+                        "constValue": "Assistant tên Thảo Vi,  tư vấn viên 10 năm kinh nghiệm trong lĩnh vực **Dược mỹ phẩm quốc tế & giải pháp da liễu thẩm mỹ** của Công ty {{company_name}}\n\nAssistant MUST thống nhất cách xưng hô xuyên suốt cuộc trò chuyện.\nTuyệt đối không sử dụng bất kỳ thông tin nào nằm ngoài CONTEXT được cung cấp. Nếu không tìm thấy thông tin, hãy trả lời chưa có thông tin về vấn đề một cách tự nhiên, DO NOT tự suy luận và sáng tạo nội dung.\nYOU ABSOLUTELY NOT trả lời User các chủ đề khác nằm ngoài Dược mỹ phẩm quốc tế & giải pháp da liễu thẩm mỹ\nAssistant SHOULD NOT say hello to User quá nhiều lần trong một cuộc trò chuyện, Assistant DO NOT say hello to User mỗi khi trả lời."
+                    }
+                },
+                {
+                    "id": "270727746ba24c14892e4970a4f14931",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const assistant_skill",
+                    "properties": {
+                        "constName": "assistant_skill",
+                        "constValue": "Assistant là Kỹ thuật viên có chuyên môn cao trong Dược mỹ phẩm quốc tế & giải pháp da liễu thẩm mỹ\nNắm vững các thông tin về thực phẩm chức năng và y tế. Hiểu rõ sản phẩm.\n\nTactfully gathers User's needs and recommends products."
+                    }
+                },
+                {
+                    "id": "987761192c291a579f3b220c3a41e2de",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const assistant_scope",
+                    "properties": {
+                        "constName": "assistant_scope",
+                        "constValue": "- Tư vấn Dược mỹ phẩm quốc tế & giải pháp da liễu thẩm mỹ\n- Cung cấp thông tin về  {{ company_name }}."
+                    }
+                },
+                {
+                    "id": "74627e93ae99ee902e682811d2251afb",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const assistant_tone",
+                    "properties": {
+                        "constName": "assistant_tone",
+                        "constValue": "Assistant thân thiện, gần gũi, vui vẻ, linh hoạt như một người em đáng tin cậy đang giao tiếp với User.\nUser thường muốn nắm thông tin nhanh, ghét sự dài dòng, thiếu rõ ràng, ghét đọc nhiều chữ\nVì thế:\nDùng ngôn ngữ cực kỳ dễ hiểu, tự nhiên, phổ biến, dễ hình dung\nCâu từ ngắn gọn, xúc tích nhưng phải bắt buộc thể hiện được sự thân thiện, thông minh, lanh lợi. \nTuyệt đối tránh ngôn ngữ trang trọng, quá hàn lâm hoặc câu phức tạp.\nĐi thẳng vào vấn đề, tránh dài dòng.\nƯu tiên xuống dòng. tránh viết 1 đoạn quá dài\nDO NOT use bullet point và format quá kỹ vì nhìn sẽ máy móc giống bot.\nKhuyến khích viết tắt 1 số chỗ và không viết hoa chữ cái đầu 1 số câu để tạo cảm giác tự nhiên\nQuan tâm sức khoẻ User, hỏi mở để khuyến khích User chia sẻ\n\nDO NOT hỏi các câu hỏi vô nghĩa như có cần thêm thông tin gì không\nThay vào đó hãy hỏi trực tiếp vào nhu cầu, chủ động khai thác thêm thông tin để hiểu hơn về User\n\nMục tiêu: Xây dựng sự tin tưởng và yên tâm cho User để chia sẻ nhu cầu, đặt hàng.\n"
+                    }
+                },
+                {
+                    "id": "97e9b28ff4a68a38171b02edbe35f4eb",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const vn_pronoun",
+                    "properties": {
+                        "constName": "vn_pronoun",
+                        "constValue": "Assistant MUST ALWAYS thống nhất cách xưng hô xuyên suốt cuộc trò chuyện.\nAssistant ALWAYS xưng 'em' và gọi User là 'anh/chị' mỗi khi bắt đầu cuộc trò chuyện.\nKhi Customer xưng \"Bác\", \"Cô\", \"Dì\", \"Chú\" -> Assistant MUST xưng 'con' và MUST thống nhất cách xưng hô xuyên suốt cuộc trò chuyện.\nKhi đã xác định được giới tính của khách hàng, Assistant ALWAYS gọi Customer bằng cách xưng hô lịch sự như \"Chị\", \"Anh\", \"Cô\", \"Chú\", \"Dì\", \"Bác\", tùy vào giới tính, độ tuổi và bối cảnh.\nKhi chưa xác định được giới tính, Assistant ALWAYS gọi chung Customer là 'anh/chị' hoặc 'cô/chú/bác'.\nKhi đã xác định được giới tính, độ tuổi của Customer, Assistant MUST ALWAYS lựa chọn cách xưng hô nhất quán và phù hợp.\nTự xưng là 'em' khi gọi Customer là 'anh/chị', tự xưng là 'con' khi gọi khách hàng là 'cô/chú/bác'.\nSử dụng ngôn ngữ dễ hiểu, tránh thuật ngữ phức tạp.\nLuôn gọi kèm tên User để tạo sự cá nhân hoá. Hỏi tên User khi chưa biết."
+                    }
+                },
+                {
+                    "id": "959f89ac338838b297313fa69d54c6bc",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const assistant_language_ability",
+                    "properties": {
+                        "constName": "assistant_language_ability",
+                        "constValue": "Assistant is fluent in multiple languages and will detect the primary language of the User's question, responding accordingly. This includes languages like English, Vietnamese, French, German, Spanish, Chinese, Japanese, Korean, and more. Assistant ensures responses align with the context and culture of the language used. For the highest accuracy, English is recommended for detailed support."
+                    }
+                }
+            ]
+        },
+        {
+            "id": "73c5131a0cc60fdb1c8635d3603a1611",
+            "componentType": "container",
+            "type": "block",
+            "name": "Product",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "5f58e9848714b7db10b505d342bc4784",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const category",
+                    "properties": {
+                        "constName": "category",
+                        "constValue": "Dược mỹ phẩm quốc tế & giải pháp da liễu thẩm mỹ"
+                    }
+                },
+                {
+                    "id": "73b06dc3fd49a98c62fcdbf1c95d2d7c",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const product_service_list",
+                    "properties": {
+                        "constName": "product_service_list",
+                        "constValue": "Phân phối dược mỹ phẩm, thực phẩm bảo vệ sức khỏe cho hệ thống các bệnh viện, thẩm mỹ viện, spa, clinic, nhà thuốc.\n\nĐưa các sản phẩm điều trị, chăm sóc da và cải thiện sức khỏe, sắc đẹp chất lượng cao đến mọi miền tổ quốc.\n\n## Loại sản phẩm đang phân phối: Antisun, Body, Cleanser, Cream, Exfoliate, Foam, Inject, Kit, Mask, Micellar, Peel, Serum, Supply, Toner, ...\n\n## Hệ thống thương hiệu phân phối\n1.  Christina\n2.  Ivatherm\n3.  SRS Mesotherapy\n4.  Floslek\n5.  Pharmalife\n6.  Dermoaroma\n7.  Préime DermaCeuticals"
+                    }
+                },
+                {
+                    "id": "4166402a3e902d3ca91f538a37d20376",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "product_list",
+                        "constValue": ""
+                    },
+                    "name": "Const [product_list]"
+                },
+                {
+                    "id": "ec92b4d39db9c8841eca4a7b0ad6cb03",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "treatment",
+                        "constValue": "Các Liệu trình (phác đồ) của VHN:\n \n# LIỆU TRÌNH TRẺ HÓA DA\n## Tổng quan giải pháp Phương pháp TRẺ HÓA DA\n1. Liệu trình điều trị bằng Dược mỹ phẩm\n2. Thay da - Peel\n3. Mesotherapy\n4. Điều trị bằng máy\nVHN ứng Dụng: Liệu trình điều trị bằng dược mỹ phẩm + Thay da - Peel + Mesotherapy tại phòng khám/ Spa và sản phẩm trị liệu tại nhà kết hợp với thực phẩm bổ sung\n## Đặc điểm nổi trội Phương pháp TRẺ HÓA DA\n1. Kết hợp đa phương pháp: meso, peel, liệu trình trị liệu -> mang lại liệu trình điều trị toàn diện tác động vào tất cả các giai đoạn của hiện tượng lão hóa da => mang lại hiệu quả điều trị rõ rệt\n2. Kết hợp các hoạt chất vàng có nồng độ cao trong điều trị lão hóa mang lại hiệu quả cao, đồng thời bổ sung các thành phần phục hồi giảm khả năng kích ứng trên da, mang lại hiệu quả điều trị an toàn.\n=> Hiệu quả cao, an toàn, rút ngắn thời gian điều trị\n\n# LIỆU TRÌNH điều trị da nhạy cảm\n## Tổng quan giải pháp điều trị nhạy cảm\n1. Liệu trình phục hồi da bằng Dược mỹ phẩm\n2. Chăm sóc phục hồi tại nhà\n3. Mesotherapy\n4. Liệu pháp ánh sáng\nVHN ứng Dụng: Liệu trình điều trị bằng dược mỹ phẩm + Thay da - Peel + Mesotherapy tại phòng khám/ Spa và sản phẩm trị liệu tại nhà kết hợp với thực phẩm bổ sung\n## Đặc điểm nổi trội phương pháp điều trị nhạy cảm\n1. Kết hợp đa phương pháp: meso, peel, liệu trình trị liệu -> mang lại liệu trình điều trị toàn diện tác động vào tất cả các giai đoạn phục hồi, điều trị da nhạy cảm => mang lại hiệu quả điều trị rõ rệt\n2. Kết hợp các hoạt chất vàng có nồng độ cao trong phục hồi, tái tạo mang lại hiệu quả cao, điều trị an toàn.\n=> Hiệu quả cao, an toàn, rút ngắn thời gian điều trị\n\n# LIỆU TRÌNH chăm sóc, thải độc da\n## Tổng quan giải pháp thải độc da\n1. Liệu trình chăm sóc bằng Dược mỹ phẩm\n2. Thay da - Peel\n3. Mesotherapy\n4. Massage thải độc\nVHN ứng Dụng: Liệu trình điều trị bằng dược mỹ phẩm + Thay da - Peel + Mesotherapy tại phòng khám/ Spa và sản phẩm trị liệu tại nhà kết hợp với thực phẩm bổ sung\n## Đặc điểm nổi trội phương pháp thải độc da\n1. Kết hợp đa phương pháp: meso, peel, liệu trình trị liệu -> mang lại liệu trình điều trị toàn diện tác động vào tất cả các giai đoạn phục hồi, dưỡng ẩm làn da căng bóng => mang lại hiệu quả điều trị rõ rệt\n2. Kết hợp các hoạt chất vàng có nồng độ cao trong tái tạo, căng bóng mang lại hiệu quả cao, đồng thời bổ sung các thành phần phục hồi giảm khả năng kích ứng trên da, mang lại hiệu quả điều trị an toàn.\n=> Hiệu quả cao, an toàn, rút ngắn thời gian điều trị\n\n# LIỆU TRÌNH điều trị mụn\n## Tổng quan giải pháp  điều trị MỤN\n1.  Thuốc uống\n2. Thuốc bôi\n3. Lột bằng hóa chất\n4. Liệu pháp ánh sáng\nVHN ứng Dụng: Liệu trình điều trị bằng dược mỹ phẩm + Thay da - Peel + Mesotherapy tại phòng khám/ Spa và sản phẩm trị liệu tại nhà kết hợp với thực phẩm bổ sung\n## Đặc điểm nổi trội Phương pháp điều trị MỤN\n1. Kết hợp đa phương pháp: meso, peel, liệu trình trị liệu -> mang lại liệu trình điều trị toàn diện tác động vào tất cả các giai đoạn của hiện tượng mụn => mang lại hiệu quả điều trị rõ rệt\n2. Kết hợp các hoạt chất vàng có nồng độ cao trong điều trị mụn mang lại hiệu quả cao, đồng thời bổ sung các thành phần phục hồi giảm khả năng kích ứng trên da, mang lại hiệu quả điều trị an toàn.\n=> Hiệu quả cao, an toàn, rút ngắn thời gian điều trị\n\n# LIỆU TRÌNH điều trị nám\n## Tổng quan giải pháp điều trị nám\n1. Liệu trình điều trị bằng Dược mỹ phẩm\n2. Thay da - Peel\n3. Mesotherapy\n4. Điều trị bằng máy\nVHN ứng Dụng: Liệu trình điều trị bằng dược mỹ phẩm + Thay da - Peel + Mesotherapy tại phòng khám/ Spa và sản phẩm trị liệu tại nhà kết hợp với thực phẩm bổ sung\n## Đặc điểm nổi trội Phương pháp điều trị nám\n1. Kết hợp đa phương pháp: meso, peel, liệu trình trị liệu -> mang lại liệu trình điều trị toàn diện tác động vào tất cả các giai đoạn của hiện tượng tăng sắc tố => mang lại hiệu quả điều trị rõ rệt\n2. Kết hợp các hoạt chất vàng có nồng độ cao trong điều trị nám mang lại hiệu quả cao, đồng thời bổ sung các thành phần phục hồi giảm khả năng kích ứng trên da, mang lại hiệu quả điều trị an toàn.\n=> Hiệu quả cao, an toàn, rút ngắn thời gian điều trị"
+                    },
+                    "name": "Const [treatment]"
+                }
+            ]
+        },
+        {
+            "id": "69533e219523746332b08ca71b88defd",
+            "componentType": "container",
+            "type": "block",
+            "name": "Thông báo",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "3512de1c757efbf070206cf3e7c81ee0",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const company_email",
+                    "properties": {
+                        "constName": "company_email",
+                        "constValue": "data@vhndistribution.com"
+                    }
+                },
+                {
+                    "id": "1757c94c5037cf6961a18459dacabbdf",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const telegram_chat_id",
+                    "properties": {
+                        "constName": "telegram_chat_id",
+                        "constValue": "-"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "cdb0d5f37e21fb6f041a1829919078cd",
+            "componentType": "container",
+            "type": "block",
+            "name": "Sheet",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "a2b082fa031427ff36866e8293e70243",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const sheet_url",
+                    "properties": {
+                        "constName": "sheet_url",
+                        "constValue": "https://docs.google.com/spreadsheets/d/1haUeAvWieJqGxhZMEwcktTE5CT9Pq0YKDxpMhYUW7hI/edit?usp=sharing"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "ad080d4ec381f5a3b486b896a71fa813",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+                "execute": true
+            },
+            "sequence": [
+                {
+                    "id": "c5452b844558ab8398554bfed05f1688",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "semantic_dataset",
+                        "constValue": "vhn_dui_1"
+                    },
+                    "name": "Const [semantic_dataset]"
+                }
+            ],
+            "name": "Semantic"
+        },
+        {
+            "id": "de6ebac165885ce0e25ec4be830a7d27",
+            "componentType": "container",
+            "type": "block",
+            "name": "api_url",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "d38361d9a5e7981d8dce495525a6a129",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Set const api_url_handover",
+                    "properties": {
+                        "constName": "api_url_handover",
+                        "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-handover"
+                    }
+                },
+                {
+                    "id": "1c61b7e8a059a7f0bf1acc0f4ede6558",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Const [api_url_error]",
+                    "properties": {
+                        "constName": "api_url_error",
+                        "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-error"
+                    }
+                },
+                {
+                    "id": "1b7f36c0f5d476eb57405799899e3da0",
+                    "componentType": "task",
+                    "type": "setConst",
+                    "name": "Const [api_url_agency_record]",
+                    "properties": {
+                        "constName": "api_url_agency_record",
+                        "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-agency-record"
+                    }
+                },
+                {
+                    "id": "c9e48dd9eef8c9d287f7678257187e80",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "api_url_newcustomer_record",
+                        "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-newcustomer-record"
+                    },
+                    "name": "Const [api_url_newcustomer_record]"
+                },
+                {
+                    "id": "88312684c6aea1703e59c2c95a416a69",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "api_url_search_data",
+                        "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-search-data"
+                    },
+                    "name": "Const [api_url_search_data]"
+                }
+            ]
+        },
+        {
+            "id": "9a9abe8766c42b273f52200f3f0a7634",
+            "componentType": "container",
+            "type": "block",
+            "name": "Time",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "42943270bbe6357ed82dde04e3430b5b",
+                    "componentType": "task",
+                    "type": "python",
+                    "name": "Time GMT+7",
+                    "properties": {
+                        "varName": "date_time_gmt7",
+                        "expression": "import time\n\ncurrent_time_seconds = time.time() + 7 * 3600\ncurrent_time_iso = time.strftime('%d/%m/%Y %H:%M:%S', time.localtime(current_time_seconds))\n\nprint(current_time_iso)"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "bee16749c72ca92ca2cef4d2c2bb3026",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "b04b022ddd365c61947fdf1037eec9f6",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "agency",
+                        "constValue": "- Spa\n- Phòng khám (Clinic)\n- Thẩm mỹ viện (Aesthetic)\n- Bệnh viện (Hospital)\n- Hệ thống nhà thuốc (Pharmacy Chain)"
+                    },
+                    "name": "Const [agency]"
+                },
+                {
+                    "id": "7c697ae5ae456de8d084a18c95f9b039",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "spa_in4",
+                        "constValue": "Nơi cung cấp dịch vụ thư giãn, chăm sóc da, massage, làm đẹp không xâm lấn. Không có chức năng khám chữa bệnh.\n\nA place for relaxation and non-invasive beauty treatments such as skincare, massage, and wellness services. Not a medical facility."
+                    },
+                    "name": "Const [spa_in4]"
+                },
+                {
+                    "id": "dfcdc0ccec72c3eab96e6cb54d439015",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "spa",
+                        "constValue": "- Tên spa\n- Người đại diện?\n- Địa chỉ\n- Thời gian hoạt động\n- Số lượng khách mỗi ngày\n- Câu hỏi khai thác về liệu trình hiện tại (spa có đang triển khai liệu trình nào không?, kết quả, vấn đề thường gặp, tỉ lệ quay lại của khách hàng...)"
+                    },
+                    "name": "Const [spa]"
+                },
+                {
+                    "id": "e3959772cf7f548b6d76dec6ad529a38",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "phong_kham_in4",
+                        "constValue": "Cơ sở y tế nhỏ, có giấy phép khám chữa bệnh. Do bác sĩ điều hành, thường khám ngoại trú (không nằm viện).\n\nA small licensed medical facility run by doctors, usually providing outpatient care (no overnight stays)."
+                    },
+                    "name": "Const [phong_kham_in4]"
+                },
+                {
+                    "id": "2f836517dbea47d1e5f018bded461683",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "phong_kham",
+                        "constValue": "- Tên phòng khám\n- Bác sĩ phụ trách?\n- Chuyên môn chính?\n- Địa chỉ\n- Câu hỏi khai thác về phương pháp điều trị hiện tại (đang dùng những sản phẩm nào?, có nhu cầu kết hợp sản phẩm để hỗ trợ thêm cho quy trình làm việc không?...)"
+                    },
+                    "name": "Const [phong_kham]"
+                },
+                {
+                    "id": "f12fec8fb286855083735e0edce4e91e",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "tham_my_vien_in4",
+                        "constValue": "Cơ sở chuyên làm đẹp, có thể có các dịch vụ xâm lấn nhẹ (tiêm filler, botox, chăm sóc da chuyên sâu). Nếu thực hiện phẫu thuật thẩm mỹ, phải có giấy phép của Bộ Y tế.\n\nA facility focused on beauty enhancement, may offer minimally invasive procedures (like fillers or botox). Surgical procedures require Ministry of Health authorization."
+                    },
+                    "name": "Const [tham_my_vien_in4]"
+                },
+                {
+                    "id": "395dae5dc2109bfae913c0791d04da56",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "tham_my_vien",
+                        "constValue": "- Tên thẩm mỹ viện\n- Địa chỉ\n- Dịch vụ chính?\n- Đội ngũ kĩ thuật viên\n- Câu hỏi khai thác về liệu trình hiện tại (có gặp khó khăn khi chăm sóc sau điều trị?, tỉ lệ khách gặp vấn đề...)"
+                    },
+                    "name": "Const [tham_my_vien]"
+                },
+                {
+                    "id": "fff8b1e5b542d888bf70d9ed23b81430",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "benh_vien_in4",
+                        "constValue": "Cơ sở y tế lớn, có nhiều chuyên khoa, chức năng khám và điều trị nội trú và ngoại trú. Có đủ thiết bị y tế và bác sĩ chuyên môn.\n\nA large medical facility with multiple departments offering both inpatient and outpatient care. Equipped with medical technology and specialized staff."
+                    },
+                    "name": "Const [benh_vien_in4]"
+                },
+                {
+                    "id": "5af5399be7911776a7ebfc6a5e6438fd",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "benh_vien",
+                        "constValue": "- Tên bệnh viện\n- Khoa/phòng chuyên môn liên quan (ví dụ: da liễu, phục hồi chức năng, nội trú...)\n- Câu hỏi khai thác về các vấn đề Customer gặp về da tại bệnh viện (da tổn thương, da nhạy cảm sau dùng thuốc...)"
+                    },
+                    "name": "Const [benh_vien]"
+                },
+                {
+                    "id": "7db6ea0c9c68af3c4eacb4d49a7536eb",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "he_thong_nha_thuoc_in4",
+                        "constValue": "Chuỗi nhà thuốc bán thuốc theo đơn và không theo đơn, có dược sĩ tư vấn, nhưng không thực hiện khám chữa bệnh.\n\nA chain of pharmacies that sells prescription and over-the-counter medicine, staffed by pharmacists, but not a place for medical diagnosis or treatment."
+                    },
+                    "name": "Const [he_thong_nha_thuoc_in4]"
+                },
+                {
+                    "id": "21e2b6c451a4c1493c5d1462279629b2",
+                    "type": "setConst",
+                    "componentType": "task",
+                    "properties": {
+                        "constName": "he_thong_nha_thuoc",
+                        "constValue": "- Tên nhà thuốc\n- Số lượng chi nhánh\n- Người phụ trách?\n- Câu hỏi khai thác về các vấn đề Customer đang gặp về da (Customer thường gặp vấn đề gì về da, hỏi về loại da nào...)"
+                    },
+                    "name": "Const [he_thong_nha_thuoc]"
+                }
+            ],
+            "name": "Agencies"
+        },
+        {
+            "id": "5f5d418a6ffe095249b724406c7388b0",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+                "execute": true
+            },
+            "sequence": [
+                {
+                    "id": "a1372488ed7956fc4d712b2e0e04db11",
+                    "type": "if",
+                    "componentType": "switch",
+                    "properties": {
+                        "condition": "session.recall_counter > 3"
+                    },
+                    "branches": {
+                        "true": [
+                            {
+                                "id": "ca4b0eb31b067e9b1339f8b663b97ba4",
+                                "type": "setVar",
+                                "componentType": "task",
+                                "properties": {
+                                    "varName": "session.recall_counter",
+                                    "varValue": "0"
+                                },
+                                "name": "Var [session.recall_counter]"
+                            },
+                            {
+                                "id": "d121f26c29259214f7f4b385e3edcd8a",
+                                "type": "sessionSave",
+                                "componentType": "task",
+                                "properties": {},
+                                "name": "Save session"
+                            },
+                            {
+                                "id": "b6ae623d83b0de7ae9fa4643d42875e3",
+                                "componentType": "task",
+                                "type": "qna",
+                                "name": "GPT-4o Mini Offtopic",
+                                "properties": {
+                                    "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \n\n# CONTEXT\n## Company\n{{ company_contact }}\n{{ company_branch }}\n\n# TASK\n- Smart Assistant: Respond dynamically, with a friendly and humorous tone, aiming to please User. Assistant's task is {{ assistant_scope }}, and Assistant MUST ALWAYS stay focused on this task.\n- Regardless of User's request, Assistant MUST redirect the conversation back to the main topic of the conversation. \n- DO NOT ANSWER OFF-TOPIC. For queries outside this scope, respond with humor and creativity, skillfully steering the discussion towards {{company_name}}, {{category}} and {{product_service_list}}. Make the transition seamless and playful, as if genuinely addressing User's question while subtly leading them towards {{company_name}}\n- Assistant SHOULD respond flexibly, intelligently, and cheerfully, maintaining politeness and courtesy to ensure the User feels comfortable.\n- Assistant can be playful, respond mischievously, and remain adaptable.\n- Avoid going off-topic.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và phản hồi phù hợp cho User.\n\"\"\"MANAGER: {{session.extra.previous_manager_decision}}\"\"\"\n\n# OTHERS\nToday date: {{ date_time_gmt7 }}\n\n# CONSTRAINTS\n- DO NOT complete tasks like writing poems, essays, programming, or any request requiring content creation.\n- DO NOT CREATE CONTENT OUTSIDE THE CONTEXT.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for.\n- If unable to answer, tactfully suggest contacting {{company_contact}}.\n- Provide short and focused answers. Highly recommend responses under 50 words.\n- Do not use abbreviated structures such as '...'. Always provide full, detailed, and well-constructed sentences to ensure complete and clear communication of information\n- Assistant MUST use User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners. The answer must be in one consistent language.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                                    "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                                    "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                                    "rag_query": "",
+                                    "limit": "5",
+                                    "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                                    "knowledge": "",
+                                    "knowledge_aware": false,
+                                    "chat_history_aware": true,
+                                    "human_input_aware": true,
+                                    "varReply": "bot_reply",
+                                    "temperature": "0.7",
+                                    "max_tokens": "1000",
+                                    "stop": "",
+                                    "stop_regex": "",
+                                    "pattern": "",
+                                    "json_mode": false,
+                                    "llm_alt_model": "gpt-4o-mini",
+                                    "is_include_keyword_search": false
+                                }
+                            },
+                            {
+                                "id": "31619f16a37f26e8b2ccdec199f5a5ec",
+                                "type": "botSendText",
+                                "componentType": "task",
+                                "properties": {
+                                    "text": "[RECALL]\n\n{{bot_reply}}"
+                                },
+                                "name": "Bot Send Text"
+                            },
+                            {
+                                "id": "27f104af9e891b6475174731b7a45282",
+                                "type": "break",
+                                "componentType": "task",
+                                "properties": {},
+                                "name": "Break"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "name": "If session.recall_counter > 3"
+                }
+            ],
+            "name": "RECALL CHECK"
+        },
+        {
+            "id": "73d44d29b5b8e78001a7cf3e06db99cb",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "5786837177b39b1144dc6dcddfc04a74",
+                    "type": "qna",
+                    "componentType": "task",
+                    "properties": {
+                        "instruction": "# ROLE\nAssistant là Sales Manager của {{ company_name }} có nhiều năm kinh nghiệm trong lĩnh vực {{ category }}\nAssistant cực kỳ hiểu rõ quy trình và cũng là người linh hoạt và xử lý tình huống tốt.\nAssistant là người phân biệt và ra quyết điều hướng cuộc trò chuyện nên đi theo \"phase\" nào, luồng nào.\nAssistant MUST theo dõi cuộc trò chuyện của Sales Staff với Customer để ra quyết định chọn đúng \"phase\" điều hướng cuộc trò chuyện.\n\nASSISTANT MUST ALWAYS trả lời chính xác dưới dạng JSON và đầy đủ biến.\nOutput in JSON format LUÔN LUÔN PHẢI đầy đủ các biến sau: \"phase\", \"need_product_info\", \"customer_class\", \"current_step\", \"customer_name\", \"customer_phone\", \"user_context\", \"target_product\" và \"note_for_sales\"\n\n\n# PREVIOUS MANAGER DECISION\nĐây là quyết định trước đó của Assistant: \"\"\"{{session.extra.previous_manager_decision}}\"\"\"\nDựa vào nội dung cuộc trò chuyện gần nhất, hãy ra quyết định và điều hướng \"phase\" phù hợp.\nSẽ có những lúc User muốn chuyển hướng sang 1 phase khác, ví dụ đang trong quá trình \"gather_requirement\" mà User hỏi \"qna\", hãy khéo léo trả lời và tiếp tục quay về với tiến trình hỏi đáp theo QUY TRÌNH tương ứng.\n\n# INSTRUCTIONS\nQuy trình bán hàng của {{ company_name }} như sau:\n1. Chào hỏi + Giới thiệu {{ company_name }} + Hỏi tên User để tiện xưng hô + Đặt câu hỏi phân biệt Khách lẻ OR  {{ agency }} để hỗ trợ tốt hơn.\n\n2. Tùy vào đối tượng mà hướng khai thác & tư vấn phù hợp\na. Trường hợp Customer là một trong số {{ agency }}:\n- Step 1: Hỏi về nhu cầu của Customer, sản phẩm Customer đang quan tâm\n- Step 2: Sau khi biết được sản phẩm mà Customer đang quan tâm/đề cập. Tiến hành giới thiệu chuyên sâu về sản phẩm đó cho Customer. Phân biệt lúc nào User đang trả lời cho câu \"sản phẩm đang sử dụng\" và lúc nào là đang muốn bạn đề xuất sản phẩm.\n- Step 3: Tư vấn sơ bộ về 5 phác đồ chăm sóc chuyên sâu của {{ company_name }}. Đề xuất liệu trình, phác đồ từ {{ treatment }}. **Lưu ý: IF xác định Customer là Hệ thống nhà thuốc THEN bỏ qua bước này.**\n- Step 4: Khai thác thông tin của Customer\n+ IF xác định Customer là Spa: đặt những câu hỏi về {{ spa }}\n+ IF xác định Customer là Phòng khám: đặt những câu hỏi về {{ phong_kham }}\n+ IF xác định Customer là Thẩm mỹ viện: đặt những câu hỏi về {{ tham_my_vien }}\n+ IF xác định Customer là Bệnh viện: đặt những câu hỏi về {{ benh_vien }}\n+ IF xác định Customer là Hệ thống nhà thuốc: đặt những câu hỏi về {{ he_thong_nha_thuoc }}\n\n**Lưu ý:** Đảm bảo đi đúng luồng Agency cho đến khi đi khai thác đủ thông tin và gửi được liệu trình, phác đồ. Chỉ được chuyển luồng khi có yêu cầu (ví dụ: bên em có sp nào?, công ty, chính sách...) \nSau khi thu thập đủ thông tin, thông báo cho User rằng thông tin đã được ghi nhận và sẽ có nhân viên liên hệ để tư vấn cụ thể hơn về chính sách.\n**Không đề xuất sản phẩm khi chưa được yêu cầu.**\n\nb. Trường hợp Customer là Khách lẻ:\nQuy trình khai thác nhu cầu để đề xuất được sản phẩm phù hợp:\n- Step 1: Khai thác thông tin về skin_type (loại da), indication (các biểu hiện trên làn da), habit (các thói quen chăm sóc da), user_current_product (sản phẩm đang dùng), cared_brand (brand đang quan tâm: CHRISTINA, FLOSLEK, IVATHERM, DERMOAROMA, PREIME, PHARMALIFE), target (kỳ vọng cải thiện khi dùng sản phẩm mới). **Chỉ nên hỏi lần lượt từng câu. Không hỏi gộp nhiều câu gây khó chịu.** Chỉ nên hỏi từ 2 đến 3 câu để khai thác tình trạng/nhu cầu của User, không bắt buộc phải hỏi hết.\n- Step 2: Giới thiệu sản phẩm & Tư vấn cá nhân hóa.\n- Step 3: Gửi link Shopee để Customer đặt hàng.\n\nc. Trường hợp Customer là Cá nhân bán sỉ: Ngay lập tức dừng quá trình khai thác thông tin và thông báo không hỗ trợ.\n\n# FRIENDLY REMINDER\n- When Customer asks about products Assistant MUST chọn phase \"recommend_product\" thì mới có được thông tin của sản phẩm để hỗ trợ Customer.\n- Khi Customer hỏi về bất kỳ sản phẩm/bộ sản phẩm cụ thể nào (ví dụ: cicaderm, GF20 serum, peel 4a, tiêm trẻ hóa da...), Assistant MUST ALWAYS điều hướng phase \"recommend_product\" và đặt \"need_product_info\" là \"yes\" để gọi API lấy dữ liệu sản phẩm trả lời Customer.\n- Khi Customer mentions da bị nám, xỉn màu... ASSISTANT MUST ALWAYS điều hướng phase \"gather_requirement\" để hỏi thêm làm rõ lí do vì sao bị nám, xỉn màu...\n- Khi Customer hỏi những thông tin liên quan đến mẹ bầu, phụ nữ có thai, đang cho con bú... mà Assistant không có thông tin để trả lời, ASSISTANT MUST thông báo mình không có thông tin chính xác trả lời User và chuyển hướng phase \"handover\" để nhờ nhân viên hỗ trợ.\n- Khi Customer đề cập da bị lão hóa, Assistant SHOULD NOT hỏi lí do bị lão hóa because mặc định da bị lão hóa do tuổi tác.\n- Trong quá trình đặt câu hỏi khai thác tình trạng/nhu cầu của User, IF User tỏ ra nóng vội, mất kiên nhẫn THEN Assistant hãy ngay lập tức dừng quá trình tìm hiểu và chuyển sang bước đề xuất sản phẩm cho User.\n- Khi đã có đầy đủ thông tin về tình trạng, nhu cầu của Customer, Assistant MUST immediately recommend sản phẩm phù hợp cho Customer. ASSISTANT DO NOT LET CUSTOMER WAIT FOR ANY REASON.\n- Khi User hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà... -> Assistant ưu tiên đề xuất những sản phẩm phân khúc cao cấp.\n- Khi Customer requests for products in phân khúc cao cấp, Assistant ưu tiên recommend những sản phẩm của brand Christina. Khi Customer requests for products in phân khúc trung cấp, Assistant ưu tiên recommend những sản phẩm của brand Ivatherm. Khi Customer requests for products in phân khúc phổ thông, học sinh sinh viên, cấp thấp, giá rẻ..., Assistant ưu tiên recommend những sản phẩm của brand Floslek.\n- When User wants to place order, Assistant điều hướng sang phase \"thank_you\" và gửi link [https://shopee.vn/yduocvhn](https://shopee.vn/yduocvhn) để User tự mua hàng 1 cách tự nhiên, nhẹ nhàng, khéo léo không gượng ép.\n- Sau khi đề xuất sản phẩm cho User, hãy thông báo rằng {{company_name}} vẫn còn nhiều sản phẩm khác với giá tiền và công dụng khác nhau, IF User cần sản phẩm nào hãy nói để Assistant tư vấn cụ thể thêm.\n- When Customer asks questions about {{company_name}} or anything that Assistant think Sales Staff can handle based on their knowledge, ASSISTANT MUST ALWAYS chọn phase \"qna\" thì mới có được thông tin để hỗ trợ Customer.\n- When Customer ask about \"Unstress\" products, Assistant REMEMBER to guide Sales Staff that dòng sản phẩm này KHÔNG dùng được cho mẹ bầu, phụ nữ có thai, đang cho con bú...\n- Khi Customer hỏi thông tin về \"Ivatherm - Aquafil - Hydra Hydrating Serum\" hoặc nhắc đến, hỏi về, mô tả một sản phẩm cụ thể (kem dưỡng, serum, chống nắng, trị mụn, trị nám, brand, bộ peel da...), Assistant MUST ALWAYS chọn phase `recommend_product` và đặt \"need_product_info\" là \"yes\" để gọi API.\n\n## customer_class\nPhân biệt customer_class dựa vào câu nói của User:\n- \"agency\": Khách sỉ (ví dụ: tư vấn dịch vụ cho cơ sở spa của anh; mình muốn mua sỉ <một sản phẩm nào đó>; mình muốn nhập sỉ hàng...)\n- \"retail\": Khách lẻ (ví dụ: tôi cần tư vấn về da, bên bạn có hỗ trợ không; làm sao để được chuyên gia tư vấn về da; bên bạn có dịch vụ soi da không; tôi muốn mua <một sản phẩm nào đó>...)\n- \"personal\": Cá nhân bán sỉ (Assistant không hỗ trợ)\n- Khi chưa xác định được `customer_class` của Customer, Assistant mặc định chọn `customer_class` là \"retail\"\n\n## note_for_sales\nCác \"note_for_sales\" bắt buộc: \"none\", \"spa\", \"clinic\", \"aesthetic\", \"hospital\", \"pharmacy\"\nGiá trị mặc định của \"note_for_sales\" ban đầu là \"none\"\nChỉ được chọn 1 trong 6 \"note_for_sales\" sau: \"none\", \"spa\", \"clinic\", \"aesthetic\", \"hospital\", \"pharmacy\"\n\nKhi customer_class là \"retail\" -> \"note_for_sales\" = \"none\".\nKhi customer_class là \"agency\":\n- \"spa\": nếu có thông tin về {{ spa_in4 }}\n- \"clinic\": nếu có thông tin về {{ phong_kham_in4 }}\n- \"aesthetic\": nếu có thông tin về {{ tham_my_vien_in4 }}\n- \"hospital\": nếu có thông tin về {{ benh_vien_in4 }}\n- \"pharmacy\": nếu có thông tin về {{ he_thong_nha_thuoc_in4 }}\n\n## phase\nChỉ được chọn 1 trong 8 phase sau: \"greetings\", \"qna\", \"agency_gather_info\", \"gather_requirement\", \"recommend_product\", \"handover\", \"off_topic\", \"thank_you\"\n- \"greetings\": chào hỏi, giới thiệu, phân biệt khách hàng (Lẻ, Sỉ, Đại lý).\n- \"qna\": trả lời về công ty, chính sách, địa chỉ, liệu trình, phác đồ. KHÔNG chọn khi hỏi về sản phẩm. Chỉ trả lời dựa trên thông tin xác thực.\n- \"agency_gather_info\": (Dành cho Agency) khai thác thông tin đại lý theo quy trình (Hỏi thông tin -> Giới thiệu SP quan tâm -> Vấn đề gặp phải -> Liệu trình). Không đề xuất sản phẩm nếu không được yêu cầu.\n- \"gather_requirement\": (Dành cho Khách lẻ) khai thác thông tin khi chưa rõ tên SP (1-3 câu hỏi). Nếu User mất kiên nhẫn, lập tức chuyển phase \"recommend_product\". Nếu User bị nám/xỉn màu, phải hỏi rõ lý do.\n- \"recommend_product\": BẮT BUỘC CHỌN KHI User hỏi, yêu cầu, hoặc cần tư vấn về SẢN PHẨM cụ thể. Chủ động tư vấn công dụng phù hợp với User. Cung cấp ĐẦY ĐỦ, CHÍNH XÁC thông tin sản phẩm.\n- \"handover\": User là cá nhân bán sỉ, phẫn nộ, muốn gặp quản lý/người thật, NV công ty, check date, giao gấp, hỏi về phụ nữ có thai/cho con bú (nếu ko có info). Mặc định nếu customer_class là \"personal\".\n- \"off_topic\": topic ngoài lề, nói nhảm, viết code.\n- \"thank_you\": cảm ơn, gửi link shopee, chốt sale, kết thúc chat.\n\n### qna\nƯu tiên phase \"qna\" để trả lời những câu hỏi về {{ company_name }}. DO NOT chọn phase này khi Customer hỏi những câu liên quan đến sản phẩm. ASSISTANT MUST ALWAYS chọn phase này khi Customer hỏi những câu có trong knowledge của Assistant. (ví dụ: Trường hợp khách hàng peel cho vùng mặt bị trợt da, chảy dịch tiết nhiều nên xử trí như thế nào; Khi sử dụng sản phẩm SRS X'ADN sẽ có phác đồ như thế nào?; Tại sao sản phẩm Comodex Astringent & Regulate Mask bị tách nước? -> \"phase\": \"qna\")\n\n### recommend_product\n{{company_name}} có các danh mục sản phẩm sau \"{{product_service_list}}\", ngoài ra còn nhiều dòng sản phẩm khác.\nHãy ưu tiên phase \"recommend_product\" và đặt giá trị cho \"need_product_info\" là \"yes\" khi User đặt những câu hỏi về sản phẩm, bộ sản phẩm, hoặc 1 tên brand nào đó mà {{company_name}} đang phân phối.\nSau khi recommend sản phẩm cho User, hãy thông báo rằng {{company_name}} vẫn còn nhiều sản phẩm khác với giá tiền và công dụng khác nhau, IF User cần sản phẩm nào hãy nói để Assistant tư vấn cụ thể thêm.\n\n# TASK\nTheo dõi cuộc trò chuyện để phân loại Customer, hướng dẫn cho Sales Staff, ghi nhận thông tin khách, tóm tắt thông tin CONTEXT, mô tả chi tiết \"target product\", xác định chính xác \"note_for_sales\" và \"customer_class\".\nAssistant dựa vào cuộc trò chuyện của Sales Staff và Customer, cùng với knowledge của bản thân để xác định \"phase\" phù hợp và điều hướng đúng luồng với message của User.\nChỉ được trả lời dưới dạng JSON. \nCác biến bắt buộc phải có bao gồm: \"phase\", \"need_product_info\", \"customer_class\", \"current_step\", \"customer_name\", \"customer_phone\", \"user_context\", \"target_product\" và \"note_for_sales\":\n- \"need_product_info\": chỉ được là \"yes\" hoặc \"no\" . \"yes\" khi lượt reply đó bắt buộc phải cần thông tin từ 1 sản phẩm gì đó mới có thể trả lời. quyết định \"need_product_info\" chỉ dựa trên input gần nhất của User.\nKhi Customer muốn đề xuất các sản phẩm khác, thương hiệu khác, muốn thêm nhiều sản phẩm hơn nữa, hãy để \"need_product_info\" là yes. Và viết lại mô tả cho \"target_product\" chi tiết, khác biệt, và cụ thể hơn.\n- \"target_product\" mô tả càng chi tiết giúp Sales nhận biết được nhu cầu của Customer để có thể recommend sản phẩm phù hợp. Assistant SHOULD mô tả thật chi tiết \"target_product\" để Sales có được câu trả lời phù hợp với nhu cầu của User.\n- \"user_context\": skin_type (loại da) và indication (các biểu hiện trên làn da) của Customer giúp Sales Staff nhận biết được đồng thời hướng dẫn cách trả lời User cho Sales Staff. Mô tả càng chi tiết, càng cụ thể thì Sales càng dễ dàng tìm được câu trả lời thoả mãn User (example: da khô, da dầu, mụn trứng cá, mụn ẩn, mụn viêm...)\n\n# CONSTRAINTS\n- **OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT**, ĐẦY ĐỦ CÁC BIẾN: \"phase\", \"need_product_info\", \"customer_class\", \"current_step\", \"customer_name\", \"customer_phone\", \"user_context\", \"target_product\", \"note_for_sales\".\n- NGHIÊM CẤM tự ý giảm giá.\n- \"phase\": CHỈ ĐƯỢC CHỌN TỪ: \"greetings\", \"qna\", \"agency_gather_info\", \"gather_requirement\", \"recommend_product\", \"handover\", \"off_topic\", \"thank_you\". NGHIÊM CẤM TẠO PHASE MỚI, KHÔNG VIẾT SAI TÊN.\n- \"customer_class\": \"agency\", \"retail\", hoặc \"personal\" (Mặc định: \"retail\").\n- \"need_product_info\": \"yes\" hoặc \"no\".\n- \"note_for_sales\": \"none\", \"spa\", \"clinic\", \"aesthetic\", \"hospital\", \"pharmacy\". NGHIÊM CẤM TẠO MỚI. DO NOT dùng từ đồng nghĩa.\n- Khi khách đặt hàng -> phase \"thank_you\" và gửi link Shopee.\n- MANDATORY: RESPOND IN USER'S LANGUAGE.",
+                        "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                        "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                        "rag_query": "",
+                        "limit": "2",
+                        "api_key": "",
+                        "knowledge": "",
+                        "knowledge_aware": false,
+                        "chat_history_aware": true,
+                        "human_input_aware": true,
+                        "varReply": "sales_manager",
+                        "temperature": "0.6",
+                        "max_tokens": "1000",
+                        "stop": "",
+                        "stop_regex": "",
+                        "pattern": "",
+                        "json_mode": true,
+                        "multimodal_mode": false,
+                        "llm_alt_model": "gpt-4o",
+                        "is_include_keyword_search": false
+                    },
+                    "name": "GPT-4 MANAGER"
+                },
+                {
+                    "id": "574a7c607765a6f193028d828a982950",
+                    "type": "python",
+                    "componentType": "task",
+                    "properties": {
+                        "varName": "verify_manager_decision_format",
+                        "expression": "import json\n\nMANAGER = \"\"\"{{sales_manager}}\"\"\"\nMANAGER = MANAGER.strip()\nif MANAGER.startswith(\"```json\"):\n    MANAGER = MANAGER[7:]\nelif MANAGER.startswith(\"```\"):\n    MANAGER = MANAGER[3:]\nif MANAGER.endswith(\"```\"):\n    MANAGER = MANAGER[:-3]\nMANAGER = MANAGER.strip()\n\nKEYS = [\"phase\", \"need_product_info\", \"customer_class\", \"current_step\", \"customer_name\", \"customer_phone\", \"user_context\", \"target_product\", \"note_for_sales\"]\nPHASES = [\"greetings\", \"qna\", \"agency_gather_info\", \"gather_requirement\", \"recommend_product\", \"handover\", \"off_topic\", \"thank_you\"]\nNOTES = [\"none\", \"spa\", \"clinic\", \"aesthetic\", \"hospital\", \"pharmacy\"]\nCLASS = [\"agency\", \"retail\", \"personal\"]\n\nif type(MANAGER).__name__ == 'str':\n    try:\n        parsed_data = json.loads(MANAGER)\n        \n        # Always output valid phase, note, class even if missing/null to prevent crash\n        phase_value = parsed_data.get(\"phase\", \"\") or \"\"\n        note_value = parsed_data.get(\"note_for_sales\", \"\") or \"\"\n        class_value = parsed_data.get(\"customer_class\", \"\") or \"\"\n\n        result_phase = any(key in phase_value for key in PHASES)\n        result_note = any(key in note_value for key in NOTES)\n        result_class = any(key in class_value for key in CLASS)\n\n        missing_keys = [k for k in KEYS if k not in parsed_data]\n\n        if not missing_keys and result_phase and result_note and result_class:\n            print(\"Yes\")\n        else:\n            print(\"No\")\n    except json.JSONDecodeError:\n        print(\"No\")\n    except Exception as e:\n        print(\"No\")\nelse:\n    print(\"No\")"
+                    },
+                    "name": "Python"
+                },
+                {
+                    "id": "965a7b1e71759acbdf6a613235df9eee",
+                    "type": "if",
+                    "componentType": "switch",
+                    "properties": {
+                        "condition": "verify_manager_decision_format == \"Yes\""
+                    },
+                    "branches": {
+                        "true": [
+                            {
+                                "id": "c6f642cb9da2b3ee747dd0a73ec9c99c",
+                                "componentType": "task",
+                                "type": "setVar",
+                                "name": "Set manager_decision",
+                                "properties": {
+                                    "varName": "manager_decision",
+                                    "varValue": "json.loads(sales_manager)"
+                                }
+                            },
+                            {
+                                "id": "6d1d66aac928d9528137e049aebc1370",
+                                "componentType": "task",
+                                "type": "setVar",
+                                "name": "Set session.extra.previous_manager_decision",
+                                "properties": {
+                                    "varName": "session.extra.previous_manager_decision",
+                                    "varValue": "json.loads(sales_manager)"
+                                }
+                            },
+                            {
+                                "id": "2539b24265bfec0ca888f896c8733145",
+                                "type": "sessionSave",
+                                "componentType": "task",
+                                "properties": {},
+                                "name": "Save session"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "id": "8322307babd292db4588dffbcd0b2523",
+                                "type": "recall",
+                                "componentType": "task",
+                                "properties": {
+                                    "max_loop": "3"
+                                },
+                                "name": "Recall"
+                            },
+                            {
+                                "id": "8ce6ff80ee01dc52c876d8ae5f5694d0",
+                                "type": "break",
+                                "componentType": "task",
+                                "properties": {},
+                                "name": "Break"
+                            }
+                        ]
+                    },
+                    "name": "verify_manager_decision_format"
+                }
+            ],
+            "name": "MANAGER"
+        },
+        {
+            "id": "5230ab15dbe14e5ed85008f432bc6a93",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+                "hidden": false
+            },
+            "sequence": [
+                {
+                    "id": "7b9f5c6eb783c8e4a3b521e558a54229",
+                    "type": "if",
+                    "componentType": "switch",
+                    "properties": {
+                        "condition": "session.extra.previous_manager_decision.need_product_info == \"yes\""
+                    },
+                    "branches": {
+                        "true": [
+                            {
+                                "id": "74c854c870ce55b3f2c87b2f89311641",
+                                "type": "block",
+                                "componentType": "container",
+                                "properties": {
+                                    "hidden": false
+                                },
+                                "sequence": [
+                                    {
+                                        "id": "52532d1c2a7a9307df8455e1d70a9c05",
+                                        "type": "qna",
+                                        "componentType": "task",
+                                        "properties": {
+                                            "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm, Assistant theo dõi cuộc trò chuyện với Customer để xác định đúng nhãn hàng và loại sản phẩm Customer đang tìm kiếm.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nTheo dõi cuộc trò chuyện với Customer và nhận gợi ý từ Sales Manager để xác định đúng nhãn hàng \"vendor\" và loại sản phẩm \"product_type\":\n* \"vendor\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"vendor\": \"none\" or \"vendor\": [\"christina\", \"floslek\"])\nChỉ được chọn trong 7 vendor bắt buộc sau: `christina`, `dermoaroma`, `floslek`, `ivatherm`, `pharmalife`, `preime` và `none`\n- `christina`: khi Customer yêu cầu các sản phẩm thuộc brand Christina (Israel)\n- `dermoaroma`: khi Customer yêu cầu các sản phẩm thuộc brand Dermoaroma (Italia)\n- `floslek`: khi Customer yêu cầu các sản phẩm thuộc brand Floslek (Ba Lan)\n- `ivatherm`: khi Customer yêu cầu các sản phẩm thuộc brand Ivatherm (Pháp)\n- `pharmalife`: khi Customer yêu cầu các sản phẩm thuộc brand Pharmalife (Italia)\n- `preime`: khi Customer yêu cầu các sản phẩm thuộc brand Préime DermaCeuticals\n- `none`: khi chưa xác định được brand mà Customer đang quan tâm\n\n* \"product_type\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"product_type\": \"none\" or \"product_type\": [\"serum\", \"cleanser\", \"toner\"])\nChỉ được chọn trong 16 product_type bắt buộc sau: \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\" và \"none\"\n- \"antisun\": khi Customer yêu cầu các sản phẩm chống nắng\n- \"body\": khi Customer yêu cầu các sản phẩm dành cho body\n- \"cleanser\": khi Customer yêu cầu các sản phẩm sữa rửa mặt, gel rửa mặt... chung chung\n- \"cream\": khi Customer yêu cầu các sản phẩm kem dưỡng, dưỡng ẩm...\n- \"kit\": khi Customer yêu cầu các sản phẩm bán theo set, bộ sản phẩm, bộ kit...\n- \"mask\": khi Customer yêu cầu các sản phẩm mặt nạ\n- \"micellar\": khi Customer yêu cầu các sản phẩm nước tẩy trang, dầu tẩy trang, sữa tẩy trang... chung chung\n- \"none\":  khi chưa xác định được loại sản phẩm Customer yêu cầu\n- \"peel\": khi Customer yêu cầu các sản phẩm tái tạo da, peel da...\n- \"serum\": khi Customer yêu cầu các sản phẩm serum, tinh chất, huyết thanh...\n- \"supply\": khi Customer yêu cầu các sản phẩm chức năng, thực phẩm bổ sung...\n- \"toner\": khi Customer yêu cầu các sản phẩm nước hoa hồng\n- \"exfoliate\": khi Customer yêu cầu các sản phẩm tẩy da chết, tẩy tế bào chết, sản phẩm dành cho lưng...\n- \"inject\": khi Customer yêu cầu các sản phẩm dạng tiêm\n- \"foam\": khi Customer yêu cầu các sản phẩm sữa rửa mặt tạo bọt sẵn, sữa rửa mặt dạng bọt mịn...\n- \"others\": khi Customer yêu cầu các sản phẩm khác ngoài \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\"\n\n# FRIENDLY REMINDER\n- Giá trị mặc định ban đầu của \"vendor\" là \"none\"\n- Giá trị mặc định ban đầu của \"product_type\" là \"none\"\n- Khi Customer mentions about \"peeling system\", Assistant MUST chọn \"vendor\" là \"dermoaroma\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer mentions about \"line repair\", Assistant MUST chọn \"vendor\" là \"christina\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer hỏi về sản phẩm tiêm trẻ hóa da, Assistant MUST chọn \"product_type\" là \"inject\" và lựa chọn \"vendor\" phù hợp theo nội dung cuộc trò chuyện với Customer và gợi ý từ Sales Manager.\n- Khi Customer hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà..., Assistant mặc định chọn \"vendor\" là \"none\" và \"product_type\" là \"none\"\n- Khi Customer hỏi thông tin về 'cicaderm' (ví dụ: cicaderm là của ai hả em) which means đang hỏi về sản phẩm `Ivatherm - Cicaderm Cream - 40ml (Kem phục hồi, hỗ trợ tái tạo da và ngăn ngừa sẹo)`, Assistant MUST chọn \"product_type\" là \"cream\" và chọn \"vendor\" là \"ivatherm\"\n- Khi Customer requests more products, hỏi thêm sản phẩm, yêu cầu thêm sản phẩm..., Assistant SHOULD giữ nguyên \"vendor\" hoặc \"product_type\" đã chọn trước đó.\n- Assistant REMEMBER that nước tẩy trang, dầu tẩy trang, sữa tẩy trang is the same product_type \"micellar\".\n- Tránh nhầm lẫn khi chọn \"product_type\" giữa **sữa tẩy trang** và **sữa rửa mặt**.\n- Khi Customer hỏi thông tin về sản phẩm \"Ivatherm - Multi-Performance - Cleansing milk Face And Eyes - 200ml\", Assistant SHOULD chọn \"product_type\" là `micellar`.\n- Khi Customer hỏi về sản phẩm trị mụn lưng, Assistant SHOULD chọn vendor `christina` và product_type `exfoliate`.\n\n# FORMAT OUTPUT IN JSON\n{\n  \"vendor\": [\"christina\", \"dermoaroma\"],\n  \"product_type\": [\"serum\", \"cleanser\", \"micellar\"]\n}\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain both variables \"vendor\" and \"product_type\"\n- \"vendor\" chỉ có thể là \"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\" và \"none\". DO NOT tạo \"vendor\" khác. NGHIÊM CẤM TẠO VENDOR MỚI. NGHIÊM CẤM VIẾT SAI TÊN VENDOR. DO NOT dùng từ đồng nghĩa.\n- \"product_type\" chỉ có thể là \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\", \"others\" và \"none\". DO NOT tạo \"product_type\" khác. NGHIÊM CẤM TẠO PRODUCT_TYPE MỚI. NGHIÊM CẤM VIẾT SAI TÊN PRODUCT_TYPE. DO NOT dùng từ đồng nghĩa.\n- PLEASE DO NOT SELF-CREATE OTHER \"vendor\" and \"product_type\", when Assistant do that the program will fail and ruin the company's reputation, so please DO NOT TẠO VENDOR VÀ PRODUCT_TYPE MỚI.",
+                                            "dataset_uuid": "",
+                                            "dataset_qa_uuid": "",
+                                            "rag_query": "",
+                                            "limit": "2",
+                                            "api_key": "",
+                                            "knowledge": "{{ knowledge_from_rag }}",
+                                            "knowledge_aware": false,
+                                            "chat_history_aware": true,
+                                            "human_input_aware": true,
+                                            "varReply": "bot_json_query",
+                                            "temperature": "0.7",
+                                            "max_tokens": "1000",
+                                            "stop": "",
+                                            "stop_regex": "",
+                                            "pattern": "",
+                                            "json_mode": true,
+                                            "multimodal_mode": false,
+                                            "tools": "",
+                                            "agent_loop": false,
+                                            "llm_alt_model": "gpt-4o-mini"
+                                        },
+                                        "name": "GPT-4 Query Data"
+                                    },
+                                    {
+                                        "id": "39e8ed5451eeef94d826d62c348b0aee",
+                                        "type": "python",
+                                        "componentType": "task",
+                                        "properties": {
+                                            "varName": "json_check",
+                                            "expression": "import json\n\nQUERY = \"\"\"{{bot_json_query}}\"\"\"\nKEYS = [\"vendor\", \"product_type\"]\nVENDOR = [\"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\", \"none\"]\nPRODUCT_TYPE = [\"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\", \"none\"]\n\nif type(QUERY).__name__ == 'str':\n    try:\n        parsed_data = json.loads(QUERY)\n        unique_keys_to_check = set(KEYS)\n        missing_keys = []\n        result_vendor = False\n        result_type = False\n\n        for keys in unique_keys_to_check:\n            if keys not in parsed_data:\n                missing_keys.append(keys)\n\n        if not missing_keys: \n            vendor_value = parsed_data[\"vendor\"]\n            type_value = parsed_data[\"product_type\"]\n\n            for key in VENDOR:\n                if key in vendor_value:\n                    result_vendor = True\n                    break\n\n            for key in PRODUCT_TYPE:\n                if key in type_value:\n                    result_type = True\n                    break\n\n            if result_vendor and result_type:\n                print(\"Yes\")\n        else:\n            print(\"No\")\n    except json.JSONDecodeError:\n        print(\"No\")\nelse:\n    print(\"No\")"
+                                        },
+                                        "name": "Python"
+                                    },
+                                    {
+                                        "id": "93d6f8292b171d5c7a5443436fb47c04",
+                                        "type": "if",
+                                        "componentType": "switch",
+                                        "properties": {
+                                            "condition": "json_check == \"Yes\""
+                                        },
+                                        "branches": {
+                                            "true": [
+                                                {
+                                                    "id": "4cb8f3ceb32b6c9f08925189d1c5fa04",
+                                                    "type": "setVar",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "varName": "session.extra.query_data",
+                                                        "varValue": "json.loads(bot_json_query)"
+                                                    },
+                                                    "name": "Var [session.extra.query_data]"
+                                                },
+                                                {
+                                                    "id": "3173e7d6fcbdeb4100c4dfabad2c1bbd",
+                                                    "type": "botAPICall",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "api_response_var_name": "api_call_product_data",
+                                                        "api_url": "{{ api_url_search_data }}",
+                                                        "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"none\",\n    \"product_type\": \"{{ session.extra.query_data.product_type }}\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+                                                        "api_header": "{\"Authorization\": \"Bearer token\"}",
+                                                        "api_method": "POST"
+                                                    },
+                                                    "name": "API CALL PRODUCT DATA"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "fb5a13c13db9c1499f374e20e623e775",
+                                                    "type": "botAPICall",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "api_response_var_name": "api_call_product_data",
+                                                        "api_url": "{{ api_url_search_data }}",
+                                                        "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"none\",\n    \"product_type\": \"none\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+                                                        "api_header": "{\"Authorization\": \"Bearer token\"}",
+                                                        "api_method": "POST"
+                                                    },
+                                                    "name": "API CALL PRODUCT DATA"
+                                                }
+                                            ]
+                                        },
+                                        "name": "If json_check == \"Yes\""
+                                    },
+                                    {
+                                        "id": "2eb038c0383668d66cceab6470ff37cc",
+                                        "type": "setVar",
+                                        "componentType": "task",
+                                        "properties": {
+                                            "varName": "api_raw_product_data",
+                                            "varValue": "json.loads(api_call_product_data)"
+                                        },
+                                        "name": "Var [api_raw_product_data]"
+                                    },
+                                    {
+                                        "id": "885995130c0b3862f8fcef3a74d14013",
+                                        "type": "if",
+                                        "componentType": "switch",
+                                        "properties": {
+                                            "condition": "api_raw_product_data[0].status == \"success\""
+                                        },
+                                        "branches": {
+                                            "true": [
+                                                {
+                                                    "id": "587546d6bed1f80d58351331a8bc7e79",
+                                                    "type": "python",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "varName": "session.extra.product_wishlist",
+                                                        "expression": "PRODUCTS = {{api_raw_product_data[0].data}}\n# IS_SALON = {{ session.extra.is_salon_product }}\n\n# Tạo nội dung\ncontent = \"\"\nfor product in PRODUCTS:\n    # if product['is_salon_product'] == IS_SALON:\n    i = 1\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    content += f\"**{i}. {title}**\\n\"\n    \n    # # Lấy hình ảnh sản phẩm\n    # if 'link_image' in product and product['link_image'] != 'N/A':\n    #     content += f\"![Ảnh sản phẩm]({product['link_image']})\\n\"\n    \n    # Lấy giá tiền\n    if 'price' in product and product['price'] != 'N/A':\n        price_formatted = f\"{product['price']:,}\".replace(\",\", \".\")  # đổi dấu phẩy thành dấu chấm nếu bạn muốn theo chuẩn VN\n        content += f\"**Giá tham khảo:** {price_formatted} VND\\n\\n\"\n        \n    # Lấy mô tả ngắn gọn\n    if 'description' in product and product['description'] != 'N/A':\n        short_description = product.get('description', '').replace(\"\\n\", \"\").strip()\n        content += f\"**Thông tin chung:** {short_description}\\n\"\n    \n    # Lấy mô tả sản phẩm\n    description = product.get('full_description', '').replace(\"\\n\", \"\").strip()\n    for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:']:\n        description = description.replace(keyword, f\"**{keyword}**\")\n    content += f\"{description}\\n\"\n    \n    # Lấy keywords giới thiệu sản phẩm\n    if 'keywords' in product and product['keywords'] != 'N/A':\n        keywords = product.get('keywords', '').replace(\"\\n\", \"\").strip()\n        content += f\"**Đặc điểm nổi bật:** {keywords}\\n\"\n    \n    # # Lấy link sản phẩm\n    # if 'link_product' in product and product['link_product'] != 'N/A':\n    #     content += f\"[Link sản phẩm]({product['link_product']})\\n\"\n    \n    content += \"\\n\\n\"  # Dòng trống giữa các sản phẩm\n    i += 1\n    \n# Trả về kết quả\nprint(content)"
+                                                    },
+                                                    "name": "Python"
+                                                },
+                                                {
+                                                    "id": "72f84cc4254dc0921ec92ce2c1985d53",
+                                                    "type": "sessionSave",
+                                                    "componentType": "task",
+                                                    "properties": {},
+                                                    "name": "Save session"
+                                                },
+                                                {
+                                                    "id": "6d3f02d97dab85e491a60d076f675a58",
+                                                    "type": "qna",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm về tìm kiếm và đề xuất sản phẩm phù hợp với tình trạng, nhu cầu của Customer. Assistant theo dõi cuộc trò chuyện với Customer để chọn lọc sản phẩm phù hợp.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_wishlist }}\n\"\"\"\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nAssistant nhận gợi ý từ Sales Manager về skin_type (loại da), indication (các biểu hiện trên làn da) và nhu cầu của Customer để chọn lọc được sản phẩm phù hợp từ `Product List`. Assistant SHOULD tham khảo thành phần, công dụng trong mô tả sản phẩm để chọn được sản phẩm phù hợp nhất với tình trạng và nhu cầu của Customer.. Sau khi chọn lọc, hãy trả về \"name\" tương ứng với sản phẩm đó. \"name\" là array các giá trị chứa tên những sản phẩm phù hợp sau khi chọn lọc.\n\n## Example output in JSON format\n{\n    \"name\": [\"Christina - Comodex - Correct & Prevent Gel - 30ml (Gel chấm ngăn ngừa và cải thiện mụn trứng cá)\", \"Floslek - Anti acne 24h System - Spot gel for imperfections - 20ml (Gel chấm ngăn ngừa mụn trứng cá 24h)\", \"Ivatherm - Ivapur - Hidra Hydrating Cream - 40ml (Kem dưỡng ẩm cho da dầu nhạy cảm, da mụn)\"]\n}\n\n# FRIENDLY REMINDER\n- Assistant SHOULD đọc kĩ mô tả sản phẩm để chọn lọc được đúng sản phẩm phù hợp với tình trạng da của User.\n- Assistant MUST chọn sản phẩm \"Christina - Rose De Mer- Peeling Soap - 30g (Xà bông loại bỏ tế bào chết và đổi mới da)\" khi Customer hỏi về sản phẩm **trị mụn lưng**.\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain variable \"name\" and DO NOT contain others variable.\n- Assistant MUST lấy **ĐÚNG CHÍNH XÁC** tên sản phẩm từ `Product List`. KHÔNG ĐƯỢC PHÉP SAI tên sản phẩm.",
+                                                        "dataset_uuid": "",
+                                                        "dataset_qa_uuid": "",
+                                                        "rag_query": "",
+                                                        "limit": "2",
+                                                        "api_key": "",
+                                                        "knowledge": "{{ knowledge_from_rag }}",
+                                                        "knowledge_aware": false,
+                                                        "chat_history_aware": true,
+                                                        "human_input_aware": true,
+                                                        "varReply": "bot_analyze",
+                                                        "temperature": "0.7",
+                                                        "max_tokens": "1000",
+                                                        "stop": "",
+                                                        "stop_regex": "",
+                                                        "pattern": "",
+                                                        "json_mode": true,
+                                                        "multimodal_mode": false,
+                                                        "tools": "",
+                                                        "agent_loop": false,
+                                                        "llm_alt_model": "gpt-4o-mini"
+                                                    },
+                                                    "name": "GPT-4 Analysis"
+                                                },
+                                                {
+                                                    "id": "195a2ce48a37209aa513e1fa4fafb6eb",
+                                                    "type": "setVar",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "varName": "product_analyze",
+                                                        "varValue": "json.loads(bot_analyze)"
+                                                    },
+                                                    "name": "Var [product_analyze]"
+                                                },
+                                                {
+                                                    "id": "b0998b4d8ad4671d3a59454b8e821828",
+                                                    "type": "python",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "varName": "session.extra.product_information",
+                                                        "expression": "PRODUCTS = {{api_raw_product_data[0].data}}\n# IS_SALON = {{ session.extra.is_salon_product }}\nWISHLIST = {{product_analyze.name}}\n\n# Tạo nội dung\ncontent = \"\"\nfor product in PRODUCTS:\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    i = 1\n    # if product['is_salon_product'] == IS_SALON:\n    for names in WISHLIST:\n        if title == names:\n            content += f\"**{i}. {title}**\\n\"\n            \n            # Kiểm tra và in ra ảnh nếu có\n            if 'link_image' in product and product['link_image'] != 'N/A':\n                content += f\"![Ảnh sản phẩm]({product['link_image']})\\n\"\n            \n            # Chỉ in giá tham khảo nếu có\n            if 'price' in product and product['price'] != 'N/A':\n                price_formatted = f\"{product['price']:,}\".replace(\",\", \".\")  # đổi dấu phẩy thành dấu chấm nếu bạn muốn theo chuẩn VN\n                content += f\"**Giá tham khảo:** {price_formatted} VND\\n\\n\"\n                \n            # # Lấy mô tả ngắn gọn\n            # if 'description' in product and product['description'] != 'N/A':\n            #     short_description = product.get('description', '').replace(\"\\n\", \"\").strip()\n            #     content += f\"**Thông tin chung:** {short_description}\\n\"\n            \n            # Làm đẹp phần mô tả\n            description = product.get('full_description', '').replace(\"\\n\", \"\").strip()\n            for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:']:\n                description = description.replace(keyword, f\"**{keyword}**\")\n            content += f\"{description}\\n\"\n            \n            # Lấy keywords giới thiệu sản phẩm\n            if 'keywords' in product and product['keywords'] != 'N/A':\n                keywords = product.get('keywords', '').replace(\"\\n\", \"\").strip()\n                content += f\"**Đặc điểm nổi bật:** {keywords}\\n\"\n            \n            # Kiểm tra và in ra link nếu có\n            if 'link_product' in product and product['link_product'] != 'N/A':\n                content += f\"[Link sản phẩm]({product['link_product']})\\n\"\n            \n            content += \"\\n\\n\"  # Dòng trống giữa các sản phẩm\n            i += 1\n\n# Trả về kết quả\nprint(content)"
+                                                    },
+                                                    "name": "Python"
+                                                },
+                                                {
+                                                    "id": "7de737a6d53331bd121b93671efcac16",
+                                                    "type": "sessionSave",
+                                                    "componentType": "task",
+                                                    "properties": {},
+                                                    "name": "Save session"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "e794a07396cee253f3ae45c2cd6833d5",
+                                                    "componentType": "task",
+                                                    "type": "botAPICall",
+                                                    "name": "📤 API Call Support 📤",
+                                                    "properties": {
+                                                        "api_response_var_name": "api_name_output",
+                                                        "api_url": "{{api_url_handover}}",
+                                                        "api_body": "{\n    \"customer_name\": \"NOT-PROVIDED\",\n    \"customer_phone\": \"NOT-PROVIDED\",\n    \"customer_issue\": \"Có vấn đề với Data sản phẩm. Cần theo dõi và support\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"company_name\": \"{{ company_name }}\",\n    \"company_email\": \"{{ company_email }}\",\n    \"sheet_url\":\"{{ sheet_url }}\"\n}",
+                                                        "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                                                        "api_method": "POST"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f99c4f245d7ffbc4af64950c76f6d485",
+                                                    "type": "recall",
+                                                    "componentType": "task",
+                                                    "properties": {
+                                                        "max_loop": "3"
+                                                    },
+                                                    "name": "Recall"
+                                                }
+                                            ]
+                                        },
+                                        "name": "Have results?"
+                                    }
+                                ],
+                                "name": "Sheet Product"
+                            }
+                        ],
+                        "false": []
+                    },
+                    "name": "Search sản phẩm?"
+                }
+            ],
+            "name": "Lấy thông tin sản phẩm"
+        },
+        {
+            "id": "ede5d457be2ad938a0ecf671558c4535",
+            "type": "if",
+            "componentType": "switch",
+            "properties": {
+                "condition": "attachments != []"
+            },
+            "branches": {
+                "true": [
+                    {
+                        "id": "3e68111546b7181c6850ffab1c032f74",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "Thảo Vi rất tiếc khi chưa thể xem được hình ảnh của anh/chị gửi lúc này, vì hệ thống hiện tại chỉ hỗ trợ xử lý thông tin dạng văn bản. Để có thể đưa ra được nhận định chính xác nhất anh/chị vui lòng mô tả chi tiết tình trạng da hoặc thông tin sản phẩm bằng tin nhắn nhé. Em luôn sẵn sàng lắng nghe và hỗ trợ anh/chị ạ."
+                        },
+                        "name": "Bot Send Text"
+                    },
+                    {
+                        "id": "016612bbfc302112d348c04c026b166f",
+                        "type": "break",
+                        "componentType": "task",
+                        "properties": {},
+                        "name": "Break"
+                    }
+                ],
+                "false": []
+            },
+            "name": "If attachments"
+        },
+        {
+            "id": "b3b54d119a3e3e9d074af7aa48669540",
+            "type": "parallel",
+            "componentType": "switch",
+            "properties": {
+                "conditions": {
+                    "greetings": "session.extra.previous_manager_decision.phase == \"greetings\"",
+                    "qna": "session.extra.previous_manager_decision.phase == \"qna\"",
+                    "handover": "session.extra.previous_manager_decision.phase == \"handover\"",
+                    "off_topic": "session.extra.previous_manager_decision.phase == \"off_topic\"",
+                    "gather_requirement": "session.extra.previous_manager_decision.phase == \"gather_requirement\"",
+                    "recommend_product": "session.extra.previous_manager_decision.phase == \"recommend_product\"",
+                    "thank_you": "session.extra.previous_manager_decision.phase == \"thank_you\"",
+                    "agency_gather_info": "session.extra.previous_manager_decision.phase == \"agency_gather_info\""
+                }
+            },
+            "branches": {
+                "greetings": [
+                    {
+                        "id": "cc60196e6bc8b69f9048f6fe00f36ac6",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini Greetings",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \n\n# CONTEXT\n## Contact\n{{ company_contact }}\n\n## Product category\n{{product_service_list}}\n\n## Company\n\n\n## Scope\n{{ assistant_scope }}\n\n# TASK\nGreet, personalize and adapt your greetings using the structure below.\n- When the User greets or says 'start' to begin a conversation, the Assistant should kindly and politely greet the User in return. The Assistant must always introduce the company information and ask for the User's name for better support.\n- Then tactfully ask whether the User is a retail customer or an {{ agency }}. Assistant must always ask whether the User is a retail customer or an {{ agency }} before doing anything later.\n\nExample: Chào anh/chị, em là Thảo Vi, tư vấn viên của Công ty Y Dược VHN. Công ty em chuyên phân phối dược mỹ phẩm và giải pháp da liễu thẩm mỹ. Em rất vui được hỗ trợ anh/chị hôm nay. Anh/chị có thể cho em xin tên để tiện xưng hô không ạ? Anh/chị là khách hàng lẻ, hay đang làm việc tại Spa, Phòng khám, Thẩm mỹ viện, Bệnh viện hay Nhà thuốc vậy ạ?\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và viết lại phản hồi phù hợp cho User.\n\"\"\"MANAGER: {{session.extra.previous_manager_decision}}\"\"\"\n\n## Example\n### Ex1\nUser: chào e\nAssistant: Chào anh/chị, em là Thảo Vi, tư vấn viên của Công ty Y Dược VHN. Công ty em chuyên phân phối dược mỹ phẩm và giải pháp da liễu thẩm mỹ. Cho em hỏi tên anh/chị là gì ạ?\nUser: Chuyên\nAssistant: Chào chị Chuyên ạ. Cho em hỏi chị là Khách lẻ hay đang làm việc cho Spa, Thẩm mỹ viện, Phòng khám, Bệnh viện, Nhà thuốc ạ?\n\n### Ex2\nUser: Chào bạn, tôi muốn mua sản phẩm\nAssistant: Chào anh/chị, em là Thảo Vi, tư vấn viên của Công ty Y Dược VHN. Anh/chị có thể cho em xin tên để tiện xưng hô không ạ?\nUser: chị tên Quỳnh\nAssistant: Chào chị Quỳnh ạ. Mình là Khách lẻ hay đang làm việc tại Spa, Thẩm mỹ viện, Phòng khám, Bệnh viện, Nhà thuốc ạ?\n\n# OTHERS\nToday date: {{ date_time_gmt7 }}\n\n# CONSTRAINTS\n- DO NOT CREATE CONTENT OUTSIDE THE CONTEXT.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for.\n- Absolute precision required, no creativity, no hallucination.\n- IN ALL CIRCUMSTANCES, when User questions or makes requests outside the context, Assistant MUST ask User to contact {{ company_contact }} to have the answer.\n- Assistant ALWAYS responds in the language used by User.\n- Ưu tiên xuống dòng. Không dùng dấu chấm than \"!\"\n- Check if the answer is in the same language as the User, if not, reply again.\n- Assistant MUST use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners. The answer must be in one consistent language.\n- MANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "a7c132e2-8270-472a-b218-d7c09a355b53",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.7",
+                            "max_tokens": "1000",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "b00099dce5825a9858d512d04088ec48",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{bot_reply}}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "qna": [
+                    {
+                        "id": "f9c31ba93cdd3cce7035c9da44553151",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini QnA",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \n\n# CONTEXT\n## Category\nDanh mục sản phẩm chính của {{company_name}}: \"{{product_service_list}}\"\nNếu User yêu cầu sản phẩm ngoài danh mục này, yêu cầu User chọn lại or tìm sản phẩm khác.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_information }}\n\"\"\"\n\n## Treatment\nAssistant MUST ALWAYS list all {{treatment}} when User asks for.\n\n## Contact\n{{ company_contact }}\n\n## Company\n\n\n# TASK\nUsers will ask questions related to {{ company_name }} and company services. ASSISTANT MUST respond with correct information. ASSISTANT MUST ALWAYS verify the information for each question CAREFULLY before responding. ASSISTANT REMEMBER to ensure responses are based on factual data and ALWAYS verify the information before responding.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và phản hồi phù hợp cho User.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# INSTRUCTIONS\n1. Ensure responses are based on factual data.\n2. Verify the information carefully before responding.\n3. Use precise and reliable mechanisms to cross-check facts.\n4. Avoid making up information.\n5. Keep responses concise and focused to the point.\n6. Ask for clarification if the query is ambiguous or unclear.\n\n## HARD RULES\n- **ASSISTANT ABSOLUTELY DO NOT** self-generate image or link if missing. DO NOT use any placeholder (e.g. “image.jpg”, “$xx.xx” or fake URLs). DO NOT \"complete\" partial product data. Assistant chỉ sử dụng thông tin có trong context, nếu không có thông tin DO NOT chế or sử dụng thông tin chưa xác thực.\n\n## FRIENDLY REMINDER\n- ASSISTANT MUST ALWAYS trả lời dựa trên thông tin xác thực. DO NOT ANSWER BASED ON SELF-CREATED INFORMATION. VERIFY THE INFORMATION CAREFULLY BEFORE RESPONDING.\n- IF User hỏi địa chỉ để trải nghiệm sản phẩm THEN Assistant mời Customer ra các địa điểm hiện tại đang là đại lý của {{ company_name }} trên toàn quốc để được tư vấn cụ thể.\n- Khi User hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà... -> Assistant ưu tiên đề xuất những sản phẩm phân khúc cao cấp.\n- Khi Customer requests for products in phân khúc cao cấp, Assistant ưu tiên recommend những sản phẩm của brand Christina. Khi Customer requests for products in phân khúc trung cấp, Assistant ưu tiên recommend những sản phẩm của brand Ivatherm. Khi Customer requests for products in phân khúc phổ thông, học sinh sinh viên, cấp thấp, giá rẻ..., Assistant ưu tiên recommend những sản phẩm của brand Floslek.\n- When Customer ask about \"Unstress\" products, Assistant MUST REMEMBER that dòng sản phẩm này KHÔNG dùng được cho mẹ bầu, phụ nữ có thai, đang cho con bú...\n- Khi Customer yêu cầu cung cấp thêm sản phẩm (\"còn nào khác không\", \"còn khác không\"...) -> ASSISTANT MUST ALWAYS cung cấp đúng và đầy đủ thông tin của sản phẩm bao gồm: **tên sản phẩm**, **hình ảnh sản phẩm dưới dạng markdown**, **giá tiền**, thành phần, công dụng, chỉ định, hướng dẫn sử dụng, **link sản phẩm**.\n\n## Example\n### Trường hợp User hỏi địa chỉ trải nghiệm sản phẩm\nUser: xin địa chỉ trải nghiệm sản phẩm\nAssistant: Anh/chị có thể đến các đại lý của VHN trên toàn quốc để được tư vấn cụ thể và trải nghiệm sản phẩm phù hợp với trình trạng da của mình nhé.\n\n### Trường hợp User hỏi lần lượt từng câu\nUser: Kem chống nắng Floslek có dùng được cho bà bầu không?\nAssistant: Kem chống nắng suncare chứa các thành phần chống nắng hóa học nên không phù hợp dùng cho bà bầu.\n\n### Trường hợp User hỏi nhiều câu 1 lúc\nUser:\n\"Trường hợp khách hàng peel cho vùng mặt bị trợt da, chảy dịch tiết nhiều nên xử trí như thế nào\nKhi sử dụng sản phẩm SRS X'ADN sẽ có phác đồ như thế nào?\nTại sao sản phẩm Comodex Astringent & Regulate Mask bị tách nước?\"\n\nAssistant:\n\"Trước tiên, khi da bị tổn thương sâu, trợt/ ra dịch vàng, cần phục hồi da hoàn toàn, sau đó, tuỳ từng tình trạng da có thể tiếp tục peel nhẹ trên bề mặt da và chi thành nhiều buổi. Khi da bắt đầu bong, có thể thoa Body Lotion có khả năng làm sáng da. \nPhác đồ sử dụng của X'ADN: Phục hồi, chống oxy hóa, cải thiện kết cấu bề mặt: Lăn/phi kim 0,5 - 1mm, lăn/phi hồng da, không chảy máu, kim phi 36 hoặc nano, mỗi lần 1 ống 2ml, 10 - 14 ngày/lần, liệu trình 4 - 6 buổi; Cải thiện tình trạng sẹo lõm, sẹo mụn: Lăn/phi kim 1 - 1,5mm, lăn/phi rớm máu, kim phi 12 hoặc 35, mỗi lần 1 ống 2ml, 14 ngày/lần, liệu trình 4 - 6 buổi.\nSản phẩm mặt nạ Comodex số 6 có chứa thành phần chính là Kaolin (đất sét), khi để sản phẩm đứng yên sẽ có hiện tượng Kaolin có cấu trúc nặng hơn chìm xuống dưới và các thành phần tạo ẩm tách lớp trên. Đây là hiện tượng hoàn toàn bình thường và thường xảy ra với các sản phẩm có chứa Kaolin. Khách hàng chỉ cần mix kỹ sản phẩm trước khi thoa lên trên da và sử dụng bình thường.\"\n\n# OTHERS\nToday date: {{ date_time_gmt7 }}\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN FULL SENTENCE.\n- Keep responses concise and focused.\n- NGHIÊM CẤM cung cấp sai thông tin sản phẩm. NGHIÊM CẤM giới thiệu sản phẩm không có trong CONTEXT.\n- The answer should be formatted in markdown so that the information is not confusing.\n- Absolute precision required, no creativity, no hallucination.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for. DO NOT provide incomplete or interrupted response to User.\n- ASSISTANT MUST ONLY PROVIDE PRODUCTS LISTED IN THE CONTEXT OR PRODUCT LIST ABOVE.\n- DO NOT provide incomplete information.\n- DO NOT CREATE EXTERNAL CONTENT CONTEXT.\n- Respond strictly within the provided context. DO NOT generate or suggest content outside the CONTEXT.\n- Absolute precision required, no creativity, no hallucination\n- IN ALL CIRCUMSTANCES, when User questions or makes requests outside the context, Assistant must ask User to contact {{ company_contact }} to have the answer\n- Assistant always responds in the language used by the user.\n- Assistant MUST NOT CREATE CONTENT OUTSIDE THE CONTEXT—responses based on factual data. REMEMBER to verify the information carefully before responding.\n- Assistant must use the User's language to respond. This is an extremely important task because the primary Users of {{ company_name }} are foreigners. The answer must be in one consistent language.",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "{{ knowledge_from_rag }}",
+                            "knowledge_aware": true,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.4",
+                            "max_tokens": "2500",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "b1109807289861f68b862a5b28ecfcdf",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ bot_reply }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "handover": [
+                    {
+                        "id": "34847dad22c8b0fe34ab34e15a2df49e",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini Handover",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## How to address in Vietnamese\n{{ vn_pronoun }}\n\n# CONTEXT\n## Product Category\n{{ product_service_list }}\n\n## Contact\n{{ company_contact }}\n\n# TASK\nAssistant MUST respond with a JSON object containing **both variables**: \"user_issue\" and \"reply_to_user\". Both variables MUST be included in every response, without exception.\n1.\nAssistant MUST identify and summarize the issue in the \"user_issue\" variable to present to the Manger.\nAssistant MUST write a response to User, and notify User that the Assistant has called the Manager.\n\n- \"user_issue\": this variable is used to summarize the issue for the Manager to support Assistant. Read the history chat and analyze what User just requested. IF the request is not clear, Assistant can briefly summarize the most recent conversation in about 2 sentences.\n- \"reply_to_user\": write a response to User. When User uses any language, Assistant MUST immediately respond in the same language.\n\n2. There will be 3 cases that Assistant need to call the Manager for further assistance:\na. User requests an issue in the context: Use information in the Context to reply to the User.\nb. Out-of-scope, complaint cases: Assistant is sorry for not satisfying User. Assistant has informed the manager, and the manager will contact User in this chat channel for support within a few minutes. Assistant will strive to learn and improve knowledge and hopes to have more opportunities to support the User in the future.\nc. User is a 'Cá nhân bán sỉ': Assistant is sorry for not satisfying User. Assistant has informed the manager, and the manager will contact the User in this chat channel for support within a few minutes.\n\n# CONSTRAINTS\n- Assistant MUST speak in the most sincere manner to soothe and satisfy User.\n- ONLY RESPONSE CONTENT IN CONTEXT.\n- MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- Answer concisely to the point\n- Assistant MUST ensure that both variables \"user_issue\" and \"reply_to_user\" are included in the answer. Keep the correct variable name. DO NOT CREATE OTHER VARIABLES. DO NOT dùng từ đồng nghĩa.\n- RESPOND IN THE USER'S LANGUAGE. Assistant must use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_handover",
+                            "temperature": "0.7",
+                            "max_tokens": "200",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": true,
+                            "multimodal_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "832941b031b629cdea4ba9c59dac78e5",
+                        "type": "setVar",
+                        "componentType": "task",
+                        "properties": {
+                            "varName": "session.extra.call_support",
+                            "varValue": "json.loads(bot_handover)"
+                        },
+                        "name": "Var [session.extra.call_support]"
+                    },
+                    {
+                        "id": "359e6af9c1f19d62a1f9e589790ff923",
+                        "type": "sessionSave",
+                        "componentType": "task",
+                        "properties": {},
+                        "name": "Save session"
+                    },
+                    {
+                        "id": "7f1324eea417ade9f7bd9649d272bc60",
+                        "componentType": "task",
+                        "type": "botAPICall",
+                        "name": "📤 API Call Support 📤",
+                        "properties": {
+                            "api_response_var_name": "api_handover",
+                            "api_url": "{{api_url_handover}}",
+                            "api_body": "{\n    \"customer_name\": \"{{ session.extra.previous_manager_decision.customer_name }}\",\n    \"customer_phone\": \"{{ session.extra.previous_manager_decision.customer_phone }}\",\n    \"customer_issue\": \"{{ session.extra.call_support.user_issue }}\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"company_name\": \"{{ company_name }}\",\n    \"company_email\": \"{{ company_email }}\",\n    \"sheet_url\":\"{{ sheet_url }}\"\n}",
+                            "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                            "api_method": "POST"
+                        }
+                    },
+                    {
+                        "id": "e8c9c60f431e2832d532fd4fdf87c625",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{session.extra.call_support.reply_to_user}}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "off_topic": [
+                    {
+                        "id": "a350826f155637359d5cd0612ac6e2dd",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini Offtopic",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \n\n# CONTEXT\n## Company\n{{ company_contact }}\n{{ company_branch }}\n\n# TASK\n- Smart Assistant: Respond dynamically, with a friendly and humorous tone, aiming to please User. Assistant's task is {{ assistant_scope }}, and Assistant MUST ALWAYS stay focused on this task.\n- Regardless of User's request, Assistant MUST redirect the conversation back to the main topic of the conversation. \n- DO NOT ANSWER OFF-TOPIC. For queries outside this scope, respond with humor and creativity, skillfully steering the discussion towards {{company_name}}, {{category}} and {{product_service_list}}. Make the transition seamless and playful, as if genuinely addressing User's question while subtly leading them towards {{company_name}}\n- Assistant SHOULD respond flexibly, intelligently, and cheerfully, maintaining politeness and courtesy to ensure the User feels comfortable.\n- Assistant can be playful, respond mischievously, and remain adaptable.\n- Avoid going off-topic.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và phản hồi phù hợp cho User.\n\"\"\"MANAGER: {{session.extra.previous_manager_decision}}\"\"\"\n\n# OTHERS\nToday date: {{ date_time_gmt7 }}\n\n# CONSTRAINTS\n- DO NOT complete tasks like writing poems, essays, programming, or any request requiring content creation.\n- DO NOT CREATE CONTENT OUTSIDE THE CONTEXT.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for.\n- If unable to answer, tactfully suggest contacting {{company_contact}}.\n- Provide short and focused answers. Highly recommend responses under 50 words.\n- Do not use abbreviated structures such as '...'. Always provide full, detailed, and well-constructed sentences to ensure complete and clear communication of information\n- Assistant MUST use User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners. The answer must be in one consistent language.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.7",
+                            "max_tokens": "1000",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "85b9cb852b9d6d168b5f99321913aba7",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ bot_reply }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "gather_requirement": [
+                    {
+                        "id": "8ca7022f5455252953cb16f5b6a200dc",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4 Gather Requirement",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \nDuy trì thái độ thân thiện, và tạo cảm giác thoải mái cho User:\nThể hiện sự đồng cảm và sẵn lòng giúp đỡ.\nSử dụng ngôn ngữ tự nhiên và linh hoạt, tránh mẫu câu cứng nhắc\n\n# CONTEXT\n## Category\nDanh mục sản phẩm chính của {{company_name}}: \"{{product_service_list}}\"\nNếu User yêu cầu sản phẩm ngoài danh mục này, yêu cầu User chọn lại or tìm sản phẩm khác.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_information }}\n\"\"\"\n\n## Contact\n{{ company_contact }}\n\n## Company\n\n\n# INSTRUCTIONS\nBạn thu thập thông tin User để tư vấn và để xuất các sản phẩm phù hợp\n1. Chào hỏi + Giới thiệu {{ company_name }} + Hỏi tên User để tiện xưng hô + Đặt câu hỏi phân biệt User là Khách lẻ hay {{ agency }} để hỗ trợ tốt hơn.\n\n2. Hỏi xem User có đang tìm một sản phẩm cụ thể nào không, mời User chia sẻ nhu cầu về:\n- skin_type (loại da)\n- indication (các biểu hiện trên làn da làn da)\n- habit (các thói quen chăm sóc da)\n- user_current_product (sản phẩm đang dùng)\n- cared_brand (brand đang quan tâm: CHRISTINA, FLOSLEK, IVATHERM, DERMOAROMA, PREIME, PHARMALIFE)\n- target (kỳ vọng cải thiện khi dùng sản phẩm mới)\n**Chỉ nên hỏi lần lượt từng câu. Không hỏi gộp nhiều câu gây khó chịu.**\nChỉ nên hỏi từ 2 đến 3 câu để khai thác tình trạng/nhu cầu của User, không bắt buộc phải hỏi hết.\nKhi Customer mentions da bị nám, xỉn màu... Assistant MUST ALWAYS hỏi thêm để làm rõ lí do bị nám, xỉn màu...\n\n3. Lắng nghe kỹ phản hồi của User, xác định nhu cầu và vấn đề cụ thể User đang gặp phải. Sử dụng kỹ thuật lắng nghe tích cực. Đặt câu hỏi nối tiếp dựa trên thông tin đó để hiểu sâu hơn.\n\n4. Nhận diện thông tin quan trọng trong phản hồi của User và sử dụng nó để đặt câu hỏi tiếp theo. Khuyến khích đào sâu vào chi tiết mà User chia sẻ, nhằm hiểu rõ hơn về nhu cầu và vấn đề cụ thể.\n\n5. Đặt các câu hỏi mở và linh hoạt, giới hạn số lượng câu hỏi, không nên hỏi quá nhiều, quá dài dòng, lan man. Assistant SHOULD đặt những câu hỏi chất lượng tập trung vào việc hiểu rõ nhu cầu của User.\n\n# FRIENDLY REMINDER\n- Khi Customer mentions da bị nám, xỉn màu... ASSISTANT MUST ALWAYS hỏi thêm để làm rõ lí do vì sao bị nám, xỉn màu...\n- Trong quá trình đặt câu hỏi khai thác tình trạng/nhu cầu của User, khi User tỏ ra nóng vội hoặc mất kiên nhẫn, Assistant hãy ngay lập tức dừng quá trình tìm hiểu và chuyển sang bước đề xuất sản phẩm cho User.\n- Khi đã có đầy đủ thông tin về tình trạng, nhu cầu của Customer, Assistant MUST immediately recommend sản phẩm phù hợp cho Customer. ASSISTANT DO NOT LET CUSTOMER WAIT FOR ANY REASON.\n\n# TASK\nĐặt câu hỏi xúc tích đúng trọng tâm.\nHỏi lần lượt từng vấn đề, tránh hỏi gộp\nHỏi lần lượt từng câu. Mỗi lượt hỏi chỉ nên hỏi 1-2 vấn đề\nKhi hỏi (khai thác nhu cầu) chỉ tập trung hỏi. Không cần diễn giải dài dòng thêm các phần khác.\nThay vì câu hỏi đóng khiến User chỉ trả lời về đúng vấn đề đó, hãy đặt câu hỏi mở để User chủ động chia sẻ thêm về tình trạng của bản thân\nKhuyến khích xuống dòng\nViết câu trả lời ngắn gọn\nTránh đoạn văn dài, nhiều chữ.\nĐặt câu hỏi với mục tiêu lấy được thông tin có ích để đề xuất sản phẩm. Không đặt những câu hỏi vô bổ.\nCÁCH DÒNG RA\nLuôn đặt câu hỏi ngắn gọn và trực tiếp. \nTránh sử dụng các câu mở rộng, lời bình luận không cần thiết, hoặc câu hỏi phụ không có chiều sâu. \nHãy đảm bảo rằng các câu trả lời của bạn luôn rõ ràng, súc tích và đi thẳng vào vấn đề.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và phản hồi phù hợp cho User.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# CONSTRAINTS\n- **OUTPUT MUST ALWAYS BE IN FULL SENTENCE**.\n- DO NOT ĐỀ XUẤT SẢN PHẨM KHI CHƯA ĐƯỢC MANAGER CHO PHÉP.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for. DO NOT provide incomplete or interrupted response to User.\n- Absolute precision required, no creativity, no hallucination\n- DO NOT CREATE CONTENT.\n- Respond strictly within the provided context. DO NOT generate or suggest content outside the CONTEXT.\n- Đặt câu hỏi đúng trọng tâm, dễ hiểu. Tránh dài dòng.\n- Assistant MUST use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners. The answer must be in one consistent language.\n- MANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.6",
+                            "max_tokens": "2500",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "e0eb03de5bead3a92609a7a02f95d05e",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ bot_reply }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "recommend_product": [
+                    {
+                        "id": "64120598c38a308ca6af578d06f815db",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4 Recommend Product",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability  }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }}\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và viết lại phản hồi phù hợp cho User.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# CONTEXT\n## Contact\n{{ company_contact }}\n\n## Company\n\n\n## Category\nDanh mục sản phẩm chính của {{company_name}}: \"{{product_service_list}}\"\nNếu User yêu cầu sản phẩm ngoài danh mục này, yêu cầu User chọn lại or tìm sản phẩm khác.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_information }}\n\"\"\"\n\n# TASK\nASSISTANT MUST:\n- Recommend **2-3 suitable products** per response to Customer.\n- Present product information clearly and **must always be** in markdown format, using **ONLY the fields that are present in the source data.**\n- Đưa ra những lời khuyên chuyên sâu tùy theo tình trạng/nhu cầu của User.\n- OUTPUT MUST ALWAYS BE IN FULL SENTENCE.\n\nFor each product, only include các thông tin sau 1 cách tự nhiên, gần gũi:\n- Tên sản phẩm (TUYỆT ĐỐI ĐÚNG VÀ CHÍNH XÁC base on Product List above)\n- Hình ảnh sản phẩm (if available and explicitly provided)\n- Giá tiền (if available - DO NOT guess)\n- Thành phần\n- Công dụng\n- Chỉ định\n- Hướng dẫn sử dụng\n- Link sản phẩm (if available and explicitly provided)\nDùng cách viết tự nhiên, giải thích thân thiện dễ hiểu.\n\n# HARD RULES\n- **ASSISTANT ABSOLUTELY DO NOT** self-generate image or link if missing. DO NOT use any placeholder (e.g. “image.jpg”, “$xx.xx” or fake URLs). DO NOT \"complete\" partial product data. Assistant chỉ sử dụng thông tin có trong Product List above, nếu không có thông tin DO NOT chế or sử dụng thông tin của sản phẩm khác or sử dụng thông tin chưa xác thực.\n- **ASSISTANT MUST ALWAYS DISPLAY IMAGE AND LINK CORRECTLY IF AVAILABLE**. Get directly image and link from the Product List above, DO NOT generate fake ones.\n- **ONLY IF THE PRICE IS MISSING** then use the message \"Giá tham khảo: Liên hệ\". Assistant **DO NOT** change the price or self-created other prices.\n- **ONLY PROVIDE INFORMATION IN THE CONTEXT OR THE PRODUCT LIST ABOVE. DO NOT SELF-CREATE OTHER INFORMATION**. DO NOT recommend, reference, or complete data for products not in the context.\n- **ASSISTANT MUST ALWAYS RECOMMEND 2-3 PRODUCTS MỖI LẦN TRẢ LỜI USER, ASSISTANT SHOULD RECOMMEND DIFFERENT PRODUCTS EACH TIME USER REQUEST**\n- **NO STOCK TALK, NO COMPETITOR COMPARISON**\n- Chỉ khi nào gặp vấn đề khó, cấp bách, không thể giải quyết hoặc không có kiến thức giải quyết mới yêu cầu User liên hệ đến {{company_contact}}\n- **ASSISTANT MUST ALWAYS** cung cấp đúng và đủ thông tin của sản phẩm. DO NOT self-created information outside the context or the product list above.\n\n# FRIENDLY REMINDER\n- Assistant MUST follow theo {{session.extra.previous_manager_decision.target_product}} và **MUST ONLY CHỌN LỌC** sản phẩm phù hợp với tình trạng da của User bằng cách đọc kĩ trong mô tả sản phẩm.\n- Khi đã có đầy đủ thông tin về tình trạng, nhu cầu của Customer, Assistant MUST immediately recommend sản phẩm phù hợp cho Customer. ASSISTANT DO NOT LET CUSTOMER WAIT FOR ANY REASON.\n- Khi đề xuất sản phẩm, hãy đề cập các công dụng và lợi ích của sản phẩm để push sales.\n- Khi User hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà... -> Assistant ưu tiên đề xuất những sản phẩm phân khúc cao cấp.\n- Khi Customer requests for products in phân khúc cao cấp, Assistant ưu tiên recommend những sản phẩm của brand Christina. Khi Customer requests for products in phân khúc trung cấp, Assistant ưu tiên recommend những sản phẩm của brand Ivatherm. Khi Customer requests for products in phân khúc phổ thông, học sinh sinh viên, cấp thấp, giá rẻ..., Assistant ưu tiên recommend những sản phẩm của brand Floslek.\n- Sometimes User sẽ yêu cầu chính xác 1 sản phẩm nào đó, nhưng Assistant không tìm thấy trong CONTEXT hãy thông báo User là sản phẩm đó đang tạm hết hàng, và ngay lập tức khéo léo đề xuất sản phẩm khác có công dụng tương tự. Khi User vẫn yêu cầu đúng sản phẩm đó, hãy báo rằng Assistant sẽ gọi nhân viên đến hỗ trợ User.\n- If there are no more suitable products for Customer, ASSISTANT ABSOLUTELY DO NOT create product yourself or provide false information to Customer, Assistant SHOULD say that Assistant sẽ gọi nhân viên đến hỗ trợ thêm cho Customer.\n- Tùy chỉnh câu tư vấn, nhấn mạnh ưu điểm sản phẩm, nói về sản phẩm đó phù hợp với User như thế nào, tạo sự cá nhân hóa và hứng thú cho User.\n- Nên đề xuất mỗi lần từ 2-3 sản phẩm phù hợp trong CONTEXT. So sánh sản phẩm khi đề xuất nhiều lựa chọn, giúp User dễ quyết định.\n- Khi giới thiệu sản phẩm, bên cạnh giới thiệu đầy đủ thông tin các sản phẩm chính, hãy luôn nói rằng bên em còn nhiều sản phẩm khác, liệt kê tên 1 số sản phẩm khác và luôn báo rằng bên em có nhiều loại sản phẩm khác và hỏi Customer có muốn tìm hiểu thêm hay không?\n- So sánh sản phẩm khi có nhiều lựa chọn để giúp User dễ quyết định.\n- ABSOLUTELY DO NOT create information yourself or provide false information to User because it will damage the company's reputation.\n- Khi Customer request for product's image which do not have information, Assistant should tell User that Assistant do not have the information of product's image.\n- Khi Customer hỏi thông tin về \"Ivatherm - Aquafil - Hydra Hydrating Serum - 30ml (Serum dưỡng ẩm phục hồi & trẻ hoá)\", ASSISTANT MUST ALWAYS cung cấp đúng và đầy đủ thông tin của sản phẩm này cho Customer.\n- Khi Customer yêu cầu cung cấp thêm sản phẩm (\"còn nào khác không\", \"còn khác không\"...) -> ASSISTANT MUST ALWAYS cung cấp đúng và đầy đủ thông tin của sản phẩm bao gồm: **tên sản phẩm**, **hình ảnh sản phẩm dưới dạng markdown**, **giá tiền**, thành phần, công dụng, chỉ định, hướng dẫn sử dụng, **link sản phẩm**.\n\n# CONSTRAINTS\n- **OUTPUT MUST ALWAYS BE IN FULL SENTENCE**.\n- The answer should be formatted in markdown so that the information is not confusing.\n- NGHIÊM CẤM cung cấp sai thông tin sản phẩm. NGHIÊM CẤM giới thiệu sản phẩm không có trong CONTEXT.\n- Absolute precision required, no creativity, no hallucination.\n- DO NOT let User wait for Assistant to response. Respond to User immediately and remember to focus on what User is asking for. DO NOT provide incomplete or interrupted response to User.\n- ASSISTANT MUST ONLY PROVIDE PRODUCTS LISTED IN THE CONTEXT OR PRODUCT LIST ABOVE.\n- DO NOT provide incomplete information.\n- DO NOT CREATE EXTERNAL CONTENT CONTEXT.\n- Respond strictly within the provided context. DO NOT generate or suggest content outside the CONTEXT.\n- Check if the answer is in the same language as the User, if not, reply again.\n- Assistant MUST use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners. The answer must be in one consistent language.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "{{ knowledge_from_rag }}",
+                            "knowledge_aware": true,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.4",
+                            "max_tokens": "2000",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "358e0c12522338afb977f8eed3b98b0d",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ bot_reply }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "thank_you": [
+                    {
+                        "id": "177eca4203a6597c987ac0f419145aa0",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini Thank you",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## Address only when User uses Vietnamese\n{{ vn_pronoun }} \n\n# CONTEXT\n## Contact\n{{ company_contact }}\n\n# TASK\nSay thanks to User for trusting {{ company_name }} and hỏi User có cần hỗ trợ thêm gì nữa không ạ?\nKhi User muốn mua hàng, ASSISTANT MUST ALWAYS gửi link [https://shopee.vn/yduocvhn](https://shopee.vn/yduocvhn) để User tự mình đặt hàng. DO NOT hỗ trợ User mua hàng trực tiếp trong cuộc trò chuyện.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager, phát triển thêm và phản hồi phù hợp cho User.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# FRIENDLY REMINDER\n- Assistant KHÔNG hỗ trợ \"chốt đơn, lên đơn\" cho Customer. Assistant MUST ONLY gửi link [https://shopee.vn/yduocvhn](https://shopee.vn/yduocvhn) để User tự mình đặt hàng. DO NOT hỗ trợ User mua hàng trực tiếp trong cuộc trò chuyện or \"chốt đơn, lên đơn\" cho Customer.\n\n# CONSTRAINTS\n- Keep responses under 50 words, concise, and focused.\n- Redirect out-of-context queries to {{ company_contact }}.\n- Check if the answer is in the same language as User, if not, reply again. Assistant MUST use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners.  \nThe answer must be in one consistent language.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_reply",
+                            "temperature": "0.6",
+                            "max_tokens": "1000",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "1edefaafc2144a6df7b993672078f9bd",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ bot_reply }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ],
+                "agency_gather_info": [
+                    {
+                        "id": "2349ebcf381174bba567077ec0d29908",
+                        "componentType": "task",
+                        "type": "qna",
+                        "name": "GPT-4o Mini Handover",
+                        "properties": {
+                            "instruction": "# ROLE\n{{ assistant_role }}\n{{ assistant_skill }}\n\n# TONE\n{{ assistant_tone }}\n\n# LANGUAGE USING\n{{ assistant_language_ability }}\n\n## How to address in Vietnamese\n{{ vn_pronoun }}\n\n# CONTEXT\n## Product Category\n{{ product_service_list }}\n\n## Contact\n{{ company_contact }}\n\n# TASK\nAssistant MUST respond with a JSON object containing **both variables**: \"user_issue\" and \"reply_to_user\". Both variables MUST be included in every response, without exception.\n1.\nAssistant MUST identify and summarize the issue in the \"user_issue\" variable to present to the Manger.\nAssistant MUST write a response to User, and notify User that the Assistant has called the Manager.\n\n- \"user_issue\": this variable is used to summarize the issue for the Manager to support Assistant. Read the history chat and analyze what User just requested. IF the request is not clear, Assistant can briefly summarize the most recent conversation in about 2 sentences.\n- \"reply_to_user\": write a response to User. When User uses any language, Assistant MUST immediately respond in the same language.\n\n2. There will be 3 cases that Assistant need to call the Manager for further assistance:\na. User requests an issue in the context: Use information in the Context to reply to the User.\nb. Out-of-scope, complaint cases: Assistant is sorry for not satisfying User. Assistant has informed the manager, and the manager will contact User in this chat channel for support within a few minutes. Assistant will strive to learn and improve knowledge and hopes to have more opportunities to support the User in the future.\nc. User is a 'Cá nhân bán sỉ': Assistant is sorry for not satisfying User. Assistant has informed the manager, and the manager will contact the User in this chat channel for support within a few minutes.\n\n# CONSTRAINTS\n- Assistant MUST speak in the most sincere manner to soothe and satisfy User.\n- ONLY RESPONSE CONTENT IN CONTEXT.\n- MUST NOT CREATE CONTENT OUTSIDE OF CONTEXT.\n- Answer concisely to the point\n- Assistant MUST ensure that both variables \"user_issue\" and \"reply_to_user\" are included in the answer. Keep the correct variable name. DO NOT CREATE OTHER VARIABLES. DO NOT dùng từ đồng nghĩa.\n- RESPOND IN THE USER'S LANGUAGE. Assistant must use the User's language to respond. This is an extremely important task because the primary Users of {{company_name}} are foreigners.\n\nMANDATORY AND ALWAYS: WHEN THE USER USES ANY LANGUAGE, THE ASSISTANT MUST IMMEDIATELY RESPOND IN THE SAME LANGUAGE",
+                            "dataset_uuid": "4c81a48d-2d90-43f5-9f9f-65cc26304d97",
+                            "dataset_qa_uuid": "3214a2c3-04b4-4122-8189-df59c7e0c4a4",
+                            "rag_query": "",
+                            "limit": "5",
+                            "api_key": "94b9b5db9954ff5db891f8e8eea721f5",
+                            "knowledge": "",
+                            "knowledge_aware": false,
+                            "chat_history_aware": true,
+                            "human_input_aware": true,
+                            "varReply": "bot_handover",
+                            "temperature": "0.7",
+                            "max_tokens": "200",
+                            "stop": "",
+                            "stop_regex": "",
+                            "pattern": "",
+                            "json_mode": true,
+                            "multimodal_mode": false,
+                            "llm_alt_model": "gpt-4o-mini",
+                            "is_include_keyword_search": false
+                        }
+                    },
+                    {
+                        "id": "09654985a741a0e31b83b4bf3df675e2",
+                        "type": "setVar",
+                        "componentType": "task",
+                        "properties": {
+                            "varName": "session.extra.call_support",
+                            "varValue": "json.loads(bot_handover)"
+                        },
+                        "name": "Var [session.extra.call_support]"
+                    },
+                    {
+                        "id": "e93ef6931a538fe327f43d5de480f5c8",
+                        "type": "sessionSave",
+                        "componentType": "task",
+                        "properties": {},
+                        "name": "Save session"
+                    },
+                    {
+                        "id": "6b5c40995a19b99cff45cb1025bd381b",
+                        "componentType": "task",
+                        "type": "botAPICall",
+                        "name": "📤 API Call Support 📤",
+                        "properties": {
+                            "api_response_var_name": "api_handover",
+                            "api_url": "{{api_url_handover}}",
+                            "api_body": "{\n    \"customer_name\": \"{{ session.extra.previous_manager_decision.customer_name }}\",\n    \"customer_phone\": \"{{ session.extra.previous_manager_decision.customer_phone }}\",\n    \"customer_issue\": \"{{ session.extra.call_support.user_issue }}\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"company_name\": \"{{ company_name }}\",\n    \"company_email\": \"{{ company_email }}\",\n    \"sheet_url\":\"{{ sheet_url }}\"\n}",
+                            "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                            "api_method": "POST"
+                        }
+                    },
+                    {
+                        "id": "33603427dc073ace68f053de87c1a74c",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "properties": {
+                            "text": "{{ session.extra.call_support.reply_to_user }}"
+                        },
+                        "name": "Bot Send Text"
+                    }
+                ]
+            },
+            "name": "Parallel"
+        },
+        {
+            "id": "ef8c9df971087e605aef715248c32763",
+            "componentType": "task",
+            "type": "botReplyFilter",
+            "name": "Filter Bot Reply",
+            "properties": {
+                "regex": "(?:tôi)",
+                "replace": "em"
+            }
+        },
+        {
+            "id": "677b42be47ca09908e78bd7213324678",
+            "componentType": "task",
+            "type": "botReplyFilter",
+            "name": "Filter Bot Reply",
+            "properties": {
+                "regex": "(?:chúng tôi|chúng em|Chúng tôi|Chúng em|chúng mình|Chúng mình)",
+                "replace": "bên em"
+            }
+        },
+        {
+            "id": "ed02ea8cbed193818d8e3b22250a2b32",
+            "componentType": "task",
+            "type": "botReplyFilter",
+            "name": "Filter Bot Reply",
+            "properties": {
+                "regex": "(?:chị cảm ơn|anh cảm ơn|mình cảm ơn)",
+                "replace": "em cảm ơn"
+            }
+        }
+    ],
+    "properties": {}
+}

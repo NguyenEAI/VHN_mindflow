@@ -1,0 +1,3 @@
+Node name: Save human_input
+Node type: saveHumanInput
+varValue: None

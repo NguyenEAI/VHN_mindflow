@@ -1,0 +1,3 @@
+Name: If action EXIT
+Type: if
+Properties: {'condition': 'order_info.action == "EXIT"'}

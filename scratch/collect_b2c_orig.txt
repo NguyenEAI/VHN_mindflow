@@ -1,0 +1,14 @@
+﻿
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:918:              "expression": "output = 
+'''{{session.extra.chat_history_b2c}}'''\noutput = output + \"Customer: \" \noutput =  output + 
+'''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + 
+'''{{bot_b2c_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:919:            },
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:920:            "name": "Collect chat_history_b2c"
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:921:          },
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:922:          {
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:923:            "id": "b2c3_extract_product",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:924:            "type": "qna",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien.json:925:            "componentType": "task",
+
+

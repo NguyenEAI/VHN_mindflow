@@ -1,0 +1,4 @@
+IF node: If action EXIT
+  TRUE: If still has products
+  FALSE: If action CONFIRMED
+

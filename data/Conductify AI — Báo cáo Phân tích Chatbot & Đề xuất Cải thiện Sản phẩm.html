@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///Users/xnohat/work/conductifyai/ai_report/report.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conductify AI — Báo cáo Phân tích Chatbot &amp; Đề xuất Cải thiện Sản phẩm</title>
+<style>
+  :root{
+    --bg:#0f1419; --panel:#fff; --ink:#1a2230; --muted:#5b6878; --line:#e6eaf0;
+    --brand:#4f46e5; --brand2:#7c3aed; --ok:#16a34a; --warn:#d97706; --bad:#dc2626;
+    --soft:#f6f8fc; --chip:#eef2ff;
+    --ai:#4f46e5; --human:#f59e0b;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Apple Color Emoji",sans-serif;
+    color:var(--ink);background:#eef1f6;line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  header.hero{background:linear-gradient(135deg,#1e1b4b 0%,#4f46e5 55%,#7c3aed 100%);color:#fff;padding:54px 0 60px}
+  header.hero .wrap{position:relative}
+  .kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;opacity:.8;font-weight:600}
+  h1{font-size:34px;line-height:1.2;margin:10px 0 8px;font-weight:800;letter-spacing:-.5px}
+  .sub{opacity:.92;font-size:16px;max-width:760px}
+  .meta{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+  .meta span{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:13px}
+  section{padding:38px 0 8px}
+  h2{font-size:24px;margin:6px 0 4px;font-weight:800;letter-spacing:-.3px}
+  h2 .n{color:var(--brand);font-weight:800}
+  .lead{color:var(--muted);margin:0 0 20px;font-size:15px}
+  h3{font-size:18px;margin:26px 0 10px;font-weight:700}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:14px 0;
+    box-shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px rgba(16,24,40,.04)}
+  .grid{display:grid;gap:14px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:840px){.g3,.g4,.g2{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.g3,.g4,.g2{grid-template-columns:1fr}}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+  .kpi .v{font-size:28px;font-weight:800;letter-spacing:-.5px}
+  .kpi .l{font-size:13px;color:var(--muted);margin-top:2px}
+  .kpi.accent{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;border:0}
+  .kpi.accent .l{color:rgba(255,255,255,.85)}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;background:var(--soft)}
+  td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+  tr:hover td{background:#fafbff}
+  .bar{height:9px;border-radius:6px;background:#eef0f5;overflow:hidden;display:flex;min-width:110px}
+  .bar i{display:block;height:100%}
+  .bar i.ai{background:var(--ai)}
+  .bar i.hu{background:var(--human)}
+  .legend{display:flex;gap:16px;font-size:13px;color:var(--muted);margin:4px 0 14px;align-items:center}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle}
+  .pill{display:inline-block;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700}
+  .p-ok{background:#dcfce7;color:#15803d}.p-warn{background:#fef3c7;color:#b45309}.p-bad{background:#fee2e2;color:#b91c1c}
+  .p-info{background:var(--chip);color:#4338ca}
+  .score{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px}
+  .gauge{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:15px;font-weight:800;flex:none}
+  .pagehead{display:flex;align-items:center;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:6px}
+  .pagehead .title{font-size:19px;font-weight:800}
+  .pagehead .ws{color:var(--muted);font-size:13px}
+  .tag{font-size:12px;background:var(--chip);color:#4338ca;border-radius:8px;padding:2px 9px;font-weight:600}
+  .quote{border-left:3px solid var(--line);padding:8px 14px;margin:8px 0;background:var(--soft);border-radius:0 8px 8px 0;font-size:13.5px}
+  .quote.good{border-left-color:var(--ok);background:#f0fdf4}
+  .quote.bad{border-left-color:var(--bad);background:#fef2f2}
+  .quote .who{font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+  .rec{display:flex;gap:12px;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .rec:last-child{border-bottom:0}
+  .rec .ix{flex:none;width:26px;height:26px;border-radius:8px;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px}
+  .rec.crit .ix{background:var(--bad)}
+  .rec.big .ix{background:var(--warn)}
+  ul.clean{margin:8px 0;padding-left:18px}ul.clean li{margin:5px 0}
+  .callout{border-radius:14px;padding:16px 18px;margin:14px 0;font-size:14.5px}
+  .callout.bad{background:#fef2f2;border:1px solid #fecaca}
+  .callout.ok{background:#f0fdf4;border:1px solid #bbf7d0}
+  .callout.info{background:#eff6ff;border:1px solid #bfdbfe}
+  .callout b{display:block;margin-bottom:3px}
+  .small{font-size:12.5px;color:var(--muted)}
+  footer{margin-top:30px;padding:26px 0 50px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);background:var(--panel)}
+  .toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+  .toc a{font-size:13px;text-decoration:none;color:var(--brand);background:var(--chip);padding:6px 12px;border-radius:8px;font-weight:600}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:720px){.split{grid-template-columns:1fr}}
+  .barrow{display:flex;align-items:center;gap:10px}
+  .barrow .nm{width:200px;font-size:13.5px;font-weight:600;flex:none}
+  .barrow .pc{width:54px;text-align:right;font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+  @media(max-width:560px){.barrow .nm{width:120px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Conductify AI · Product Intelligence Report</div>
+    <h1>Phân tích Token, Chất lượng Chatbot &amp; Đề xuất Cải thiện Sản phẩm</h1>
+    <p class="sub">Đối soát mức tiêu thụ token theo workspace/agent, đo mức độ ứng dụng AI thật trên từng page Facebook/Zalo, và phân tích nội dung hội thoại để chỉ ra AI đang làm tốt ở đâu, hỏng ở đâu, và cần cải thiện gì cho từng khách hàng.</p>
+    <div class="meta">
+      <span>📅 Kỳ: 19/06 → 26/06/2026 (7 ngày)</span>
+      <span>🗄️ Nguồn: Postgres <code>plan_usage</code> + CouchDB chat_history</span>
+      <span>🧪 8 page phân tích nội dung sâu</span>
+      <span>📊 ~8.4k tin nhắn / 11 bot</span>
+    </div>
+    <div class="toc">
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#sum">Tóm tắt điều hành</a>
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#usage">1 · Token usage</a>
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#adopt">2 · Mức dùng AI</a>
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#deep">3 · Phân tích từng page AI</a>
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#manual">4 · Page 100% người trực</a>
+      <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#prod">5 · Đề xuất sản phẩm</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- EXEC SUMMARY -->
+<section id="sum">
+  <h2>Tóm tắt điều hành</h2>
+  <p class="lead">Những phát hiện quan trọng nhất từ kỳ phân tích.</p>
+
+  <div class="grid g4">
+    <div class="kpi accent"><div class="v">33.8M</div><div class="l">Tổng token 7 ngày</div></div>
+    <div class="kpi"><div class="v">4,824</div><div class="l">Tin nhắn (billable)</div></div>
+    <div class="kpi"><div class="v">9</div><div class="l">Workspace hoạt động</div></div>
+    <div class="kpi"><div class="v">~1.85×</div><div class="l">OpenAI bill / platform tracked</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:6px">5 phát hiện chính</h3>
+    <div class="rec"><div class="ix">1</div><div><b>Mức độ dùng AI thật rất chênh lệch.</b> 7 page lớn (Y Dược VHN, đào tạo lái xe, Chuyên Viên Tư Vấn, Ladalat, Cici…) đang <b>tắt AI hoàn toàn</b> — nhân viên trực tay 100%. Khách trả tiền nền tảng nhưng AI gần như không tạo giá trị tự động → đây là nhóm <span class="pill p-warn">rủi ro churn &amp; cơ hội bật AI</span>.</div></div>
+    <div class="rec"><div class="ix">2</div><div><b>Các page có bật AI thì chất lượng chỉ trung bình.</b> Điểm: HIU 7/10, nhưng 1Man 4/10, Vạn Tường 4/10, Lekofe 4.5/10. Vấn đề chung: <b>bịa/sai dữ liệu</b> (giá, địa chỉ, chính sách) và <b>không có công cụ hành động</b> (tạo đơn, đặt lịch, gửi QR).</div></div>
+    <div class="rec"><div class="ix">3</div><div><b>1Man đốt token lãng phí.</b> Token cao <u>không</u> do câu hỏi khó, mà do trả lời dài/lặp khuôn, <b>663 lượt gọi LLM trả về rỗng</b>, và nạp toàn bộ lịch sử + tài liệu 4 sản phẩm mỗi lượt. Có thể cắt token đáng kể mà không giảm chất lượng.</div></div>
+    <div class="rec"><div class="ix">4</div><div><b>Lỗi kỹ thuật lộ ra mặt khách.</b> HIU đôi lúc gửi thẳng <code>{'answer':…, 'status':'unanswered'}</code> hoặc <code>[]</code> cho người dùng — rò rỉ output thô của tầng RAG.</div></div>
+    <div class="rec"><div class="ix">5</div><div><b>"Lê Thành Group 0 token" là dương tính giả.</b> Tracking <b>không hỏng</b> — page chính Ladalat do nhân viên trả lời tay, AI không chạy nên 0 token là đúng. <a href="file:///Users/xnohat/work/conductifyai/ai_report/report.html#manual">Chi tiết ↓</a></div></div>
+  </div>
+</section>
+
+<!-- 1. USAGE -->
+<section id="usage">
+  <h2><span class="n">1</span> · Token usage theo Workspace &amp; Agent</h2>
+  <p class="lead">Nguồn: Postgres <code>plan_usage</code> (workspace, view billable) và CouchDB <code>total_token_num</code> (agent, raw per-call ≈ mức OpenAI bill).</p>
+
+  <div class="split">
+    <div class="card">
+      <h3 style="margin-top:4px">Top Workspace</h3>
+      <table>
+        <tbody><tr><th>Workspace</th><th class="num">Tokens</th><th class="num">%</th><th class="num">Msgs</th></tr>
+        <tr><td>1MAN</td><td class="num">13.9M</td><td class="num">41%</td><td class="num">1,347</td></tr>
+        <tr><td>ĐH QT Hồng Bàng</td><td class="num">7.2M</td><td class="num">21%</td><td class="num">361</td></tr>
+        <tr><td>Hunix</td><td class="num">6.2M</td><td class="num">18%</td><td class="num">1,325</td></tr>
+        <tr><td>Tống Minh Triết</td><td class="num">3.5M</td><td class="num">10%</td><td class="num">719</td></tr>
+        <tr><td>Dương Thành Trí</td><td class="num">1.4M</td><td class="num">4%</td><td class="num">392</td></tr>
+        <tr><td>stanfordpines257</td><td class="num">1.15M</td><td class="num">3%</td><td class="num">393</td></tr>
+        <tr><td>phong.loi</td><td class="num">0.40M</td><td class="num">1%</td><td class="num">78</td></tr>
+        <tr><td>Lê Thành Group <span class="small">*</span></td><td class="num">0</td><td class="num">0%</td><td class="num">205</td></tr>
+      </tbody></table>
+      <p class="small">* 0 token vì page chính do người trực tay — xem Mục 4.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:4px">Top Agent (CouchDB, raw)</h3>
+      <table>
+        <tbody><tr><th>Agent</th><th class="num">Tokens</th><th class="num">Msgs</th><th class="num">Tok/msg</th></tr>
+        <tr><td>1Man Agent</td><td class="num">35.3M</td><td class="num">1,472</td><td class="num">23,970</td></tr>
+        <tr><td>HIU Admission 2026</td><td class="num">9.4M</td><td class="num">234</td><td class="num"><span class="pill p-warn">40,137</span></td></tr>
+        <tr><td>VanHien2</td><td class="num">4.9M</td><td class="num">486</td><td class="num">10,016</td></tr>
+        <tr><td>Đại Học Văn Hiến (CNTT)</td><td class="num">3.8M</td><td class="num">298</td><td class="num">12,620</td></tr>
+        <tr><td>Trung Cấp Vạn Tường</td><td class="num">3.6M</td><td class="num">348</td><td class="num">10,217</td></tr>
+        <tr><td>test_Ag</td><td class="num">2.0M</td><td class="num">297</td><td class="num">6,849</td></tr>
+        <tr><td>Cong Ty VHN</td><td class="num">0.25M</td><td class="num">5</td><td class="num"><span class="pill p-bad">50,636</span></td></tr>
+      </tbody></table>
+      <p class="small">Tok/msg cao bất thường (HIU ~40K, Cong Ty VHN ~50K) = prompt + RAG context quá lớn (HIU prompt_token đo được ~38K/lượt).</p>
+    </div>
+  </div>
+</section>
+
+<!-- 2. ADOPTION -->
+<section id="adopt">
+  <h2><span class="n">2</span> · Mức độ ứng dụng AI thật trên FB/Zalo</h2>
+  <p class="lead">Một lượt LLM luôn có <code>prompt_token &gt; 0</code>. Tin có <code>token = 0</code> ⇒ AI không sinh phản hồi (người trực tay hoặc AI bị tắt). Đây là chỉ số "AI utilization" thật, không phải số khách hàng cài đặt.</p>
+
+  <div class="legend">
+    <span><span class="dot" style="background:var(--ai)"></span>AI xử lý</span>
+    <span><span class="dot" style="background:var(--human)"></span>Người trực / không AI</span>
+  </div>
+
+  <div class="card">
+    <div class="barrow" style="font-weight:700;color:var(--muted);font-size:12px"><div class="nm">Page (agent)</div><div class="bar" style="background:none"></div><div class="pc">AI%</div></div>
+    <!-- HIU 100 -->
+    <div class="barrow"><div class="nm">HIU Admission 2026 <span class="small">· Hồng Bàng</span></div><div class="bar"><i class="ai" style="width:100%"></i></div><div class="pc" style="color:var(--ok)">100%</div></div>
+    <div class="barrow"><div class="nm">1Man Agent <span class="small">· 1MAN</span></div><div class="bar"><i class="ai" style="width:78%"></i><i class="hu" style="width:22%"></i></div><div class="pc" style="color:var(--ok)">78%</div></div>
+    <div class="barrow"><div class="nm">Lekofe <span class="small">· Lê Thành</span></div><div class="bar"><i class="ai" style="width:52%"></i><i class="hu" style="width:48%"></i></div><div class="pc" style="color:var(--warn)">52%</div></div>
+    <div class="barrow"><div class="nm">Trung Cấp Vạn Tường <span class="small">· Hunix</span></div><div class="bar"><i class="ai" style="width:44%"></i><i class="hu" style="width:56%"></i></div><div class="pc" style="color:var(--warn)">44%</div></div>
+    <div class="barrow"><div class="nm">Ladalat Hotel <span class="small">· Lê Thành</span></div><div class="bar"><i class="hu" style="width:100%"></i></div><div class="pc" style="color:var(--bad)">0%</div></div>
+    <div class="barrow"><div class="nm">Y Dược VHN <span class="small">· VHN Official</span></div><div class="bar"><i class="hu" style="width:100%"></i></div><div class="pc" style="color:var(--bad)">0%</div></div>
+    <div class="barrow"><div class="nm">TT đào tạo lái xe <span class="small">· daotaolaixe</span></div><div class="bar"><i class="hu" style="width:100%"></i></div><div class="pc" style="color:var(--bad)">0%</div></div>
+    <div class="barrow"><div class="nm">Chuyên Viên Tư Vấn <span class="small">· Hồng Duy</span></div><div class="bar"><i class="hu" style="width:100%"></i></div><div class="pc" style="color:var(--bad)">0%</div></div>
+    <div class="barrow"><div class="nm">Cici <span class="small">· VINAKO GSC</span></div><div class="bar"><i class="hu" style="width:100%"></i></div><div class="pc" style="color:var(--bad)">0%</div></div>
+  </div>
+
+  <div class="callout info">
+    <b>Đọc nhanh</b>
+    Chỉ <b>2 page (HIU, 1Man)</b> thực sự để AI gánh phần lớn hội thoại. 2 page dùng AI một nửa (Vạn Tường, Lekofe) — nửa còn lại người phải vào sửa/chốt. <b>5+ page tắt AI hoàn toàn.</b> Tin tốt: cả 5 page 0% đều được xác nhận là <b>người trực chủ động</b>, KHÔNG phải AI lỗi câm (xem Mục 4).
+  </div>
+</section>
+
+<!-- 3. DEEP DIVE -->
+<section id="deep">
+  <h2><span class="n">3</span> · Phân tích sâu các page CÓ dùng AI</h2>
+  <p class="lead">Mỗi page: điểm chất lượng, loại câu hỏi AI gặp, ví dụ trả lời tốt/kém thật, và lý do AI phải nhường cho người.</p>
+
+  <!-- HIU -->
+  <div class="card">
+    <div class="pagehead">
+      <div class="gauge" style="background:var(--ok)">7</div>
+      <div><div class="title">HIU Admission Assistant 2026</div><div class="ws">ĐH Quốc tế Hồng Bàng · tư vấn tuyển sinh · ~100% AI</div></div>
+      <span class="tag">Tốt nhất nhóm</span><span class="tag">Token/msg cao</span>
+    </div>
+    <p><b>AI xử lý gì:</b> nơi thực tập (~22%), học phí (~20%), cơ hội việc làm (~16%), phương thức xét tuyển/điểm chuẩn (~13%), cấu trúc ngành/tín chỉ (~12%), giảng viên–học bổng–hành chính.</p>
+    <div class="split">
+      <div>
+        <div class="quote good"><span class="who">✓ Tốt — bác bỏ tiền đề sai</span><br>Khách: "ra Bệnh viện Nhi Đồng 1 nộp giấy vô trường được đúng không" → AI: <i>"Bạn KHÔNG thể nộp hồ sơ tại BV Nhi Đồng 1. Đó chỉ là nơi sinh viên HIU thực tập…"</i></div>
+        <div class="quote good"><span class="who">✓ Tốt — xử lý câu gài</span><br>"trường cho đút lót không" → <i>"Mọi hình thức gian lận, đút lót đều không được chấp nhận."</i></div>
+      </div>
+      <div>
+        <div class="quote bad"><span class="who">✗ Kém — rò rỉ output kỹ thuật</span><br>AI gửi thẳng cho khách: <code>{'answer':'Tôi chưa có đủ thông tin…','status':'unanswered','citations':[…]}</code>, có lúc trả <code>[]</code> hoặc rỗng → khách phải hỏi lại 4 lần.</div>
+        <div class="quote bad"><span class="who">✗ Kém — mâu thuẫn dữ liệu</span><br>Cùng địa chỉ Cơ sở 3 lúc ghi "P. Tân Phú", lúc "P. Phú Thạnh".</div>
+      </div>
+    </div>
+    <p class="small"><b>Handover:</b> hầu như không có escalation theo nội dung; người chỉ vào khi tin dài bị lỗi gửi ("hệ thống gặp lỗi, gửi lại giúp…"). AI cố tự trả lời mọi thứ, kể cả khi nên chuyển người (khách nài nỉ, cần tra cứu hồ sơ cá nhân).</p>
+    <h3 style="font-size:15px">Khuyến nghị</h3>
+    <div class="rec crit"><div class="ix">!</div><div><b>Chặn rò rỉ JSON/empty ra khách</b> — guard ở post-processing: <code>status=unanswered</code> → render câu xin lỗi + mời chuyên viên, không in raw.</div></div>
+    <div class="rec"><div class="ix">2</div><div><b>Làm sạch knowledge</b> (địa chỉ, học phí, tín chỉ) — một "single source of truth".</div></div>
+    <div class="rec"><div class="ix">3</div><div><b>Handover chủ động theo tín hiệu:</b> lặp câu ≥2-3 lần không trả lời được, cảm xúc tiêu cực, cần tra cứu hồ sơ cá nhân.</div></div>
+    <div class="rec"><div class="ix">4</div><div><b>Tự chia nhỏ tin dài</b> dưới ngưỡng ký tự FB/Zalo để khỏi phải nhờ người gửi lại.</div></div>
+  </div>
+
+  <!-- 1MAN -->
+  <div class="card">
+    <div class="pagehead">
+      <div class="gauge" style="background:var(--bad)">4</div>
+      <div><div class="title">1Man Agent</div><div class="ws">1Man.io · phần mềm marketing automation (FBTool/ZaloTool/TopTopTool) · ~78% AI</div></div>
+      <span class="tag">Đốt token nhiều nhất</span><span class="tag">Hỗ trợ kỹ thuật</span>
+    </div>
+    <p><b>AI xử lý gì:</b> lỗi "out/văng Facebook" (~25%), lỗi đăng bài/lịch CLOUD (~20%), xin hỗ trợ từ xa/gặp người thật (~15%), cách dùng/đồng bộ (~12%), tư vấn–mua gói (~12%), lỗi ZaloTool (~8%), khiếu nại–đòi tiền (~5%).</p>
+    <div class="callout bad">
+      <b>⚠️ Vì sao tốn token (không phải do khách hỏi khó)</b>
+      Câu khách trung bình chỉ ~39 ký tự. Token bị đốt vì: (1) trả lời dài/lặp khuôn — cụm "bộ phận kỹ thuật" xuất hiện <b>238 lần</b>, link FAQ dán <b>132 lần</b>; (2) <b>663 lượt gọi LLM trả về RỖNG</b> (khách gõ rời từng mảnh, mỗi mảnh vẫn nạp full context); (3) thread dài tới ~130 turn vẫn tái nạp toàn bộ lịch sử + tài liệu 4 sản phẩm mỗi lượt.
+    </div>
+    <div class="split">
+      <div>
+        <div class="quote good"><span class="who">✓ Tốt — hướng dẫn cụ thể</span><br>Chỉ từng bước kiểm tra phiên bản Chrome trên MacBook; nói thẳng giới hạn: <i>"FBTool không quét được bài đăng ẩn danh…"</i></div>
+      </div>
+      <div>
+        <div class="quote bad"><span class="who">✗ Kém — mâu thuẫn sản phẩm</span><br>Lúc "1Man chưa có Zalotool", lúc "có hỗ trợ Zalotool" — knowledge không nhất quán.</div>
+        <div class="quote bad"><span class="who">✗ Kém — khen hành vi rủi ro</span><br>Khách: "Acc này em quét xài của người ta" → AI: <i>"Wow, nghe thật ấn tượng! Bạn đã làm rất tốt…"</i></div>
+      </div>
+    </div>
+    <p class="small"><b>Handover:</b> khách gửi mã remote (AnyDesk/UltraViewer) → cần người; lỗi không fix sau 1-2 lượt; đòi gặp người/bức xúc; nghiệp vụ AI không có dữ liệu (hoa hồng, rút tiền).</p>
+    <h3 style="font-size:15px">Khuyến nghị</h3>
+    <div class="rec big"><div class="ix">$</div><div><b>Cắt ngắn &amp; chống lặp trả lời</b> (giảm token output ngay): giới hạn ~80-120 từ; thay đoạn "xin lỗi + chuyển kỹ thuật + link" bằng <b>canned response không qua LLM</b>.</div></div>
+    <div class="rec big"><div class="ix">$</div><div><b>Gom tin nhắn (debounce 3-5s) trước khi gọi LLM</b> → diệt 663 lượt inference rỗng, giảm 30-40% lần gọi.</div></div>
+    <div class="rec"><div class="ix">3</div><div><b>Định tuyến sớm sang người</b> cho 5 trigger (mã remote, "người thật/quản lý/rút tiền/hoa hồng", lỗi lặp lần 2) — không để AI đốt token vòng vo trước đó.</div></div>
+    <div class="rec"><div class="ix">4</div><div><b>Hợp nhất KB (đặc biệt ZaloTool)</b> + bài giải dứt điểm 2 lỗi top; <b>RAG theo chủ đề</b> thay vì nạp cả 4 sản phẩm; tóm tắt lịch sử thread dài; guardrail không khen hành vi rủi ro.</div></div>
+  </div>
+
+  <!-- VAN TUONG -->
+  <div class="card">
+    <div class="pagehead">
+      <div class="gauge" style="background:var(--bad)">4</div>
+      <div><div class="title">Trung Cấp Vạn Tường</div><div class="ws">Hunix · tư vấn tuyển sinh trung cấp · 44% AI / 56% người</div></div>
+      <span class="tag">Handover cao</span><span class="tag">Hay bịa dữ liệu</span>
+    </div>
+    <p><b>AI xử lý gì:</b> học phí (~30%), địa chỉ/chi nhánh (~18%), ngành nghề (~15%), hình thức học online/tối (~13%), liên thông–bằng cấp (~10%), hồ sơ (~7%), đối tượng đặc biệt (~5%).</p>
+    <div class="callout bad">
+      <b>⚠️ Vì sao 56% phải chuyển người</b>
+      Không phải khách khó tính — mà AI <b>thiếu dữ liệu thật về nghiệp vụ cốt lõi và hay bịa</b>, buộc người vào vừa <b>đính chính</b> vừa <b>chốt lead</b>. Trigger #1: hỏi "có học online/buổi tối không" (~23 lần AI bỏ cuộc). Người phải bổ sung: <i>"4 ngành online buổi tối: Kế toán DN, Thư ký VP, Tin học VP, Thiết kế đồ hoạ"</i>.
+    </div>
+    <div class="split">
+      <div>
+        <div class="quote good"><span class="who">✓ Tốt — trấn an khách rớt tốt nghiệp</span><br><i>"Trường xét tuyển, KHÔNG thi tuyển, KHÔNG lấy điểm đầu vào. Chỉ cần tốt nghiệp THCS là đủ điều kiện."</i></div>
+      </div>
+      <div>
+        <div class="quote bad"><span class="who">✗ Bịa — sai địa chỉ</span><br>AI: "469 Lê Hồng Phong, <b>Quận 12</b>" (đúng là Quận 10) — lặp nhiều lần, người phải sửa.</div>
+        <div class="quote bad"><span class="who">✗ Sai — phủ nhận sản phẩm của trường</span><br>"KHÔNG liên kết ĐH Mở Hà Nội" → người sửa ngay: <i>"Vạn Tường LÀ trạm liên kết ĐH Mở Hà Nội…"</i> (suýt mất khách đã đăng ký).</div>
+      </div>
+    </div>
+    <h3 style="font-size:15px">Khuyến nghị (mục tiêu: giảm handover)</h3>
+    <div class="rec crit"><div class="ix">!</div><div><b>Bổ sung GẤP knowledge "học online/buổi tối"</b> — xoá trigger handover số 1.</div></div>
+    <div class="rec"><div class="ix">2</div><div><b>Chuẩn hoá bảng học phí + script Nghị định 238</b> (cơ chế đóng trước → địa phương hoàn lại) thành 1 nguồn sự thật, rõ đơn vị /kỳ vs /năm.</div></div>
+    <div class="rec crit"><div class="ix">!</div><div><b>Sửa 3 dữ kiện AI đang nói SAI</b> (địa chỉ Q10, CÓ liên kết ĐH Mở HN, lịch học nghề sáng/văn hoá chiều) + guardrail cấm bịa ngành ngoài danh mục.</div></div>
+    <div class="rec"><div class="ix">4</div><div><b>Trang bị tool hành động:</b> gửi QR Zalo OA + hotline, đặt lịch tham quan — để AI tự chốt lead thay vì 100% đổ về người.</div></div>
+  </div>
+
+  <!-- LEKOFE -->
+  <div class="card">
+    <div class="pagehead">
+      <div class="gauge" style="background:var(--warn)">4.5</div>
+      <div><div class="title">Lekofe [Product]</div><div class="ws">Lê Thành Group · bán cà phê hoà tan · ~52% AI</div></div>
+      <span class="tag">Bán hàng</span><span class="tag">Sai giá</span>
+    </div>
+    <p><b>AI xử lý gì:</b> chốt/đặt đơn (khách quen), hỏi giá &amp; ưu đãi, quy cách (1 hộp mấy gói), hỏi sản phẩm/còn hàng, hỏi quán/chi nhánh offline, tuyển dụng.</p>
+    <div class="split">
+      <div>
+        <div class="quote good"><span class="who">✓ Tốt — upsell tự nhiên</span><br><i>"Combo 3 hộp đủ 3 vị tổng 207.000đ, miễn ship, tặng kèm 2 gói dừa + 2 gói sầu riêng. Anh/Chị cho em xin SĐT + địa chỉ nha!"</i></div>
+      </div>
+      <div>
+        <div class="quote bad"><span class="who">✗ Kém — BÁO SAI GIÁ</span><br>AI: đồng giá "69.000đ/hộp" → người sửa: giá thật 3in1 <b>43k</b>, 4in1 <b>57k</b>, ship 15k.</div>
+        <div class="quote bad"><span class="who">✗ Kém — không tạo được đơn</span><br>Khách đưa đủ địa chỉ+SĐT, AI chỉ "đã ghi nhận, sẽ lên đơn" → khách phải giục 4-5 lần.</div>
+      </div>
+    </div>
+    <p class="small"><b>Handover:</b> mọi giao dịch giá trị đều phải người vào — đính chính giá, chốt đơn thật, sản phẩm không có trong danh mục, câu hỏi về quán offline (AI nhầm "đi 4-5 người" thành "mua 4-5 hộp").</p>
+    <h3 style="font-size:15px">Khuyến nghị (mục tiêu: chốt đơn)</h3>
+    <div class="rec crit"><div class="ix">!</div><div><b>Sửa nguồn bảng giá</b> (43k/57k, ship 15k, mua 2 tặng 1 ly) + cấm AI tự bịa số.</div></div>
+    <div class="rec big"><div class="ix">⚙</div><div><b>Tích hợp tool TẠO ĐƠN thật</b> (function calling): đủ {SP, SL, tên, SĐT, địa chỉ, ngày} → gọi API tạo đơn, trả mã xác nhận.</div></div>
+    <div class="rec"><div class="ix">3</div><div><b>Phân luồng ý định</b> Quán offline vs Bán online; đồng bộ giờ/dịch vụ từng chi nhánh; re-order 1 chạm cho khách quen ("như tuần rồi").</div></div>
+  </div>
+</section>
+
+<!-- 4. MANUAL -->
+<section id="manual">
+  <h2><span class="n">4</span> · Các page 100% người trực — lành mạnh hay AI lỗi câm?</h2>
+  <p class="lead">5 page có token=0 trên hàng trăm/nghìn tin. Đã đọc nội dung để phân loại: <b>người trực chủ động</b> (bình thường) vs <b>AI bật nhưng hỏng</b> (nguy hiểm). Kết quả: <b>tất cả đều là người trực chủ động — không page nào AI lỗi câm.</b></p>
+
+  <div class="callout ok">
+    <b>✓ Tin tốt: không có sự cố "AI hỏng mà không ai biết"</b>
+    Cả 5 page đều có hồi đáp đa dạng, tự nhiên, kèm thông tin thật (giá, địa chỉ, SĐT, lên đơn) — đặc trưng người gõ tay. AI chỉ đơn giản đang bị tắt. Đây là <b>cơ hội bật AI tier-1</b> chứ không phải lỗi cần vá gấp.
+  </div>
+
+  <div class="grid g2">
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>Y Dược VHN Assistant</b><span class="pill p-ok">Người trực · OK</span></div>
+      <p class="small" style="margin:8px 0">VHN Official · mỹ phẩm da liễu (phân phối Christina, Ivatherm). Khách: chủ spa/clinic xin chính sách sỉ, khách lẻ hỏi giá/link mua.</p>
+      <p class="small"><b>Cơ hội:</b> bật AI tier-1 cho FAQ giá + link gian hàng + thu lead spa/clinic; giữ người cho khiếu nại giá &amp; tư vấn da chuyên sâu.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>TT đào tạo lái xe</b><span class="pill p-ok">Người trực · OK</span></div>
+      <p class="small" style="margin:8px 0">daotaolaixe · giá trọn gói A1/A/B/C, gói VIP, lệ phí thi, luật mới vs cũ, lịch thi, chi nhánh. Đội sale trực tay tốt.</p>
+      <p class="small"><b>Lưu ý nếu bật AI:</b> dữ liệu đang vênh (đậu 21/25 vs 23/25, lệ phí "vài trăm k" vs "245k") — phải chuẩn hoá trước khi nạp.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>Chuyên Viên Tư Vấn</b><span class="pill p-ok">Người trực · OK</span></div>
+      <p class="small" style="margin:8px 0">Hồng Duy · bán khoá học "Workmate AI Agent". Kịch bản: hỏi lĩnh vực → xin Zalo → tư vấn ngoài nền tảng.</p>
+      <p class="small"><b>Cơ hội:</b> để AI trả thẳng FAQ giá/nội dung/số buổi thay vì luôn đẩy sang Zalo (nhiều khách rơi rớt khi bị "trôi tin").</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>Cici</b><span class="pill p-ok">Người trực · OK</span></div>
+      <p class="small" style="margin:8px 0">VINAKO GSC · dược mỹ phẩm nam (GSC Men's Peeling). Người trực chốt đơn + xử lý phản đối giá tốt.</p>
+      <p class="small"><b>Lưu ý:</b> giá đang KHÔNG nhất quán (Peeling 325k/380k/390k) — chuẩn hoá bảng giá trước khi bật AI.</p>
+    </div>
+    <div class="card">
+      <div style="display:flex;justify-content:space-between;align-items:center"><b>Ladalat Hotel AI</b><span class="pill p-ok">Người trực · OK</span></div>
+      <p class="small" style="margin:8px 0">Lê Thành Group · đặt phòng khách sạn Đà Lạt. Nhân viên gửi ảnh phòng, tính giá, gửi SĐT tay → 491/491 tin token=0 (đúng).</p>
+      <p class="small"><b>Đây chính là nguồn cảnh báo "0 token" của Lê Thành Group — đã xác nhận KHÔNG hỏng.</b></p>
+    </div>
+  </div>
+
+  <div class="callout info">
+    <b>⚠️ Bắt buộc khi bật AI cho nhóm này</b>
+    Cross-check knowledge KHÔNG rỗng trước khi go-live (tránh tái diễn lỗi <code>knowledge_aware=false</code> / hybrid-search dead-key) — nếu không sẽ biến một page đang chạy ổn thành page bịa/câm. Và phải chuẩn hoá bảng giá trước (nhiều page giá đang vênh giữa các nhân viên).
+  </div>
+</section>
+
+<!-- 5. PRODUCT RECS -->
+<section id="prod">
+  <h2><span class="n">5</span> · Đề xuất cải thiện sản phẩm AI Chatbot (xuyên suốt)</h2>
+  <p class="lead">Những vấn đề lặp lại ở nhiều khách → nên fix ở tầng nền tảng, không chỉ từng page.</p>
+
+  <div class="card">
+    <h3 style="margin-top:4px">🛡️ Độ tin cậy &amp; chống bịa (ưu tiên cao nhất)</h3>
+    <div class="rec crit"><div class="ix">1</div><div><b>Guard chống rò rỉ output kỹ thuật.</b> Không bao giờ gửi JSON thô / <code>[]</code> / tin rỗng ra khách (gặp ở HIU). Khi <code>status=unanswered</code> → fallback chuẩn + handover.</div></div>
+    <div class="rec crit"><div class="ix">2</div><div><b>Guardrail chống bịa số liệu.</b> Giá, địa chỉ, chính sách, danh mục ngành/sản phẩm — bịa sai gặp ở Vạn Tường (địa chỉ, liên kết ĐH) và Lekofe (giá). Bắt AI chỉ trả lời từ KB, ngoài KB phải nói "để bên em xác nhận" thay vì chế.</div></div>
+    <div class="rec"><div class="ix">3</div><div><b>Công cụ "single source of truth" cho KB</b> + cảnh báo mâu thuẫn/versioning. Nhiều page giá vênh nhau ngay giữa các nhân viên.</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:4px">⚙️ Năng lực hành động (Tools / Function Calling)</h3>
+    <div class="rec big"><div class="ix">4</div><div><b>Tool TẠO ĐƠN</b> cho bot bán hàng (Lekofe…): đủ thông tin → gọi API tạo đơn + trả mã. Hiện AI "chốt mồm" không tạo đơn → mất đơn.</div></div>
+    <div class="rec big"><div class="ix">5</div><div><b>Tool THU LEAD / ĐẶT LỊCH / gửi QR Zalo OA</b> cho bot tuyển sinh &amp; dịch vụ (Vạn Tường…). Đây là lý do lớn khiến mọi hội thoại có thiện chí đều phải handover.</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:4px">🔀 Handover thông minh</h3>
+    <div class="rec"><div class="ix">6</div><div><b>Auto-escalate theo tín hiệu</b> (không chờ khách gõ "gặp tư vấn"): lặp câu ≥2-3 lần bot không trả lời được, cảm xúc tiêu cực/khiếu nại, yêu cầu hỗ trợ từ xa, cần tra cứu hồ sơ cá nhân.</div></div>
+    <div class="rec"><div class="ix">7</div><div><b>Khi escalate, gửi kèm tóm tắt ngữ cảnh</b> cho nhân viên để khỏi hỏi lại từ đầu (khách 1Man than "hỏi đi hỏi lại, PHIỀN").</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:4px">💰 Tối ưu chi phí token</h3>
+    <div class="rec big"><div class="ix">8</div><div><b>Debounce gom tin nhắn</b> trước khi gọi LLM (khách hay gõ rời từng dòng) → diệt hàng trăm lượt inference rỗng, giảm 30-40% lần gọi. Tác động lớn nhất ở 1Man.</div></div>
+    <div class="rec"><div class="ix">9</div><div><b>RAG theo chủ đề + tóm tắt lịch sử thread dài</b> thay vì nạp toàn bộ tài liệu &amp; full history mỗi lượt (HIU prompt ~38K token/lượt; 1Man thread ~130 turn).</div></div>
+    <div class="rec"><div class="ix">10</div><div><b>Canned response không qua LLM</b> cho các câu lặp khuôn (xin lỗi/chuyển kỹ thuật/FAQ cơ bản) + giới hạn độ dài trả lời.</div></div>
+  </div>
+
+  <div class="card">
+    <h3 style="margin-top:4px">📈 Tăng mức ứng dụng AI (mở rộng doanh thu)</h3>
+    <div class="rec"><div class="ix">11</div><div><b>Dashboard "AI Utilization" cho khách:</b> hiển thị % tin do AI xử lý vs người trực. Giúp khách thấy giá trị và phát hiện page đang tắt AI.</div></div>
+    <div class="rec"><div class="ix">12</div><div><b>Chương trình "bật AI tier-1"</b> cho 5+ page đang 100% người trực — bắt đầu từ FAQ giá/sản phẩm/thu lead (scriptable), giữ người cho ca phức tạp. Bắt buộc cross-check KB không rỗng trước khi go-live.</div></div>
+  </div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <b>Phương pháp &amp; nguồn dữ liệu.</b> Token theo workspace: Postgres <code>conductify.plan_usage</code> (view billable). Token theo agent + nội dung hội thoại: CouchDB <code>app_…3543386</code> bảng <code>chat_history</code> (<code>total_token_num</code>, <code>prompt_token_num</code>, <code>user_msg</code>, <code>bot_msg</code>). Phân loại AI vs người trực dựa trên nguyên tắc: mọi lượt LLM guidance_v2 đều có <code>prompt_token &gt; 0</code>; tin có token=0 = không gọi LLM. Phân tích nội dung trên mẫu ~25-60 thread/page do 8 agent đọc độc lập. Cửa sổ: 19/06–26/06/2026.
+    <br><br>
+    <span class="small">Lưu ý độ chính xác: % loại câu hỏi là ước lượng trên mẫu, không phải thống kê toàn bộ. Điểm chất lượng là đánh giá định tính. Trích dẫn được rút gọn từ hội thoại thật.</span>
+  </div>
+</footer>
+
+
+
+</body></html>

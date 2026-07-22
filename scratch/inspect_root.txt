@@ -1,0 +1,165 @@
+- Session Manager (type: session)
+- Sheet (type: block)
+  - Set const sheet_url (type: setConst)
+- API Constants (type: block)
+  - Const [api_url_search_data] (type: setConst)
+- Router (type: router)
+- If session.recall_counter > 3 (Safety Net) (type: if)
+  Branch: true
+    - Reset session.recall_counter (type: setVar)
+    - Set topic (type: setVar)
+    - Bot Send Text - Recall Safety (type: botSendText)
+    - Break (type: break)
+  Branch: false
+- Flows Switch (type: flowSwitch)
+  Branch: greetings
+    - AI QnA Greetings (type: qna)
+    - Clear topic (type: clearTopic)
+  Branch: off_topic
+    - AI QnA Off-topic (type: qna)
+    - Clear topic (type: clearTopic)
+  Branch: handover
+    - AI Analyze Handover Reason (type: qna)
+    - Set handover (type: setVar)
+    - AI QnA Handover Reply (type: qna)
+    - Clear topic (type: clearTopic)
+  Branch: promotion
+    - AI QnA Promotion (type: qna)
+    - Clear Topic (type: clearTopic)
+  Branch: internal_staff
+    - AI QnA Internal Handler (type: qna)
+    - Clear Topic (type: clearTopic)
+  Branch: order
+    - Save human_input (type: saveHumanInput)
+    - AI Decide Order Action (type: qna)
+    - Set order_info (type: setVar)
+    - Collect Register Chat History (type: python)
+    - Save session (type: sessionSave)
+    - If action EXIT (type: if)
+      Branch: true
+        - If still has products (type: if)
+          Branch: true
+            - Bot Send Text - Exit (type: botSendText)
+            - Clear registration_chat_history (type: setVar)
+            - Save session (type: sessionSave)
+            - Clear findproduct_data (type: setVar)
+            - Clear chat_history_b2c (type: setVar)
+            - Clear findproduct_chat_history (type: setVar)
+            - Save session after cleanup (type: sessionSave)
+            - Clear Topic (type: clearTopic)
+          Branch: false
+            - Bot Send Text - Go To Consult (type: botSendText)
+            - Clear Topic (type: clearTopic)
+      Branch: false
+        - If action CONFIRMED (type: if)
+          Branch: true
+            - If missing info (type: if)
+              Branch: true
+                - Bot Send Text - Ask Missing (type: botSendText)
+              Branch: false
+                - Bot Send Text - Success (type: botSendText)
+                - Save old_order_customer_information (type: python)
+                - Clear registration_chat_history (type: setVar)
+                - Save session (type: sessionSave)
+                - Clear findproduct_data (type: setVar)
+                - Clear chat_history_b2c (type: setVar)
+                - Clear findproduct_chat_history (type: setVar)
+                - Save session after cleanup (type: sessionSave)
+                - Clear Topic (type: clearTopic)
+          Branch: false
+            - Bot Send Text - Reply (type: botSendText)
+  Branch: b2c_consult
+    - Save human_input (type: saveHumanInput)
+    - AI Decide b2c_consult (type: qna)
+    - Save Decision (type: setVar)
+    - Init product_info (type: setVar)
+    - If need product info (type: if)
+      Branch: true
+        - Sheet Product (type: block)
+          - GPT-4 Query Data (type: qna)
+          - Python (type: python)
+          - If json_check == "Yes" (type: if)
+            Branch: true
+              - Clean bot_json_query (type: python)
+              - Var [session.extra.query_data] (type: setVar)
+              - API CALL PRODUCT DATA (type: botAPICall)
+            Branch: false
+              - API CALL PRODUCT DATA (type: botAPICall)
+          - Var [api_raw_product_data] (type: setVar)
+          - Have results? (type: if)
+            Branch: true
+              - Python (type: python)
+              - Save session (type: sessionSave)
+              - GPT-4 Analysis (type: qna)
+              - Var [product_analyze] (type: setVar)
+              - Python (type: python)
+              - Save session (type: sessionSave)
+              - Save findproduct_data (type: setVar)
+            Branch: false
+              - 📤 API Call Support 📤 (type: botAPICall)
+              - Recall (type: recall)
+      Branch: false
+    - AI Chuyên trách B2C (type: qna)
+    - Verify URLs in B2C Reply (type: python)
+    - Collect chat_history_b2c (type: python)
+    - Save session (type: sessionSave)
+    - AI Check B2C Status (type: qna)
+    - Set b2c_status (type: setVar)
+    - If ready (type: if)
+      Branch: true
+        - Set topic [order] (type: setTopic)
+        - Recall (type: recall)
+      Branch: false
+        - If exit (type: if)
+          Branch: true
+            - Bot Send Text - Exit (type: botSendText)
+            - Clear Topic (type: clearTopic)
+          Branch: false
+            - Bot Send B2C Reply (type: botSendText)
+  Branch: b2b_consult
+    - Save human_input (type: saveHumanInput)
+    - AI Decide b2b_consult (type: qna)
+    - Save Decision (type: setVar)
+    - Init product_info (type: setVar)
+    - If need product info (type: if)
+      Branch: true
+        - GPT-4 Query Data (type: qna)
+        - Set Query (type: setVar)
+        - API CALL PRODUCT DATA (type: botAPICall)
+        - Set API Raw (type: setVar)
+        - Format Wishlist (type: python)
+        - AI Analyze Product Names (type: qna)
+        - Set Analyze (type: setVar)
+        - Exact Match Info (type: python)
+        - Save findproduct_data (type: setVar)
+      Branch: false
+    - AI Chuyên trách B2B (type: qna)
+    - Verify URLs in B2B Reply (type: python)
+    - Collect chat_history_b2b (type: python)
+    - Save session (type: sessionSave)
+    - AI Phân tích thu thập thông tin B2B (type: qna)
+    - Var [b2b_info] (type: setVar)
+    - If got lead (type: if)
+      Branch: true
+        - Bot Send Text - Thank you B2B (type: botSendText)
+        - Clear chat_history_b2b (type: setVar)
+        - Save session (type: sessionSave)
+        - Clear Topic (type: clearTopic)
+      Branch: false
+        - If exit (type: if)
+          Branch: true
+            - Bot Send Text - Exit B2B (type: botSendText)
+            - Clear Topic (type: clearTopic)
+          Branch: false
+            - Bot Send B2B Reply (type: botSendText)
+  Branch: brand_info
+    - AI QnA Brand Info (type: qna)
+    - Clear Topic (type: clearTopic)
+  Branch: company_info
+    - AI QnA Company Info (type: qna)
+    - Clear Topic (type: clearTopic)
+- Filter Bot Reply - tôi → em (type: botReplyFilter)
+- Filter Bot Reply - chúng tôi → bên em (type: botReplyFilter)
+- Filter Bot Reply - bot/AI → tư vấn viên (type: botReplyFilter)
+- Filter Bot Reply - bạn → Anh/Chị (type: botReplyFilter)
+- Filter Bot Reply - tôi không biết → em chưa có thông tin (type: botReplyFilter)

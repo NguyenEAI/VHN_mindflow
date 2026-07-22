@@ -1,0 +1,4 @@
+Found Set topic at path: [4, 'branches', 'true', 1]
+Prev: Reset session.recall_counter | {'varName': 'session.recall_counter', 'varValue': '0'}
+Curr: Set topic | {'varName': 'topic', 'varValue': 'json.dumps(session)'}
+Next: Bot Send Text - Recall Safety | {'text': 'Dạ, em vừa gặp chút vấn đề với đường truyền. Anh/Chị vui lòng gửi lại thông tin vừa rồi giúp em nhé ạ.'}

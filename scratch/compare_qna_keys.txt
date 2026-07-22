@@ -1,0 +1,4 @@
+AI Decide b2c_consult keys: ['id', 'type', 'componentType', 'name', 'properties']
+AI Chuyên trách B2C keys: ['id', 'type', 'componentType', 'properties', 'name']
+AI Decide properties: ['instruction', 'dataset_uuid', 'dataset_qa_uuid', 'rag_query', 'limit', 'api_key', 'knowledge', 'knowledge_aware', 'chat_history_aware', 'human_input_aware', 'varReply', 'temperature', 'max_tokens', 'stop', 'stop_regex', 'pattern', 'json_mode', 'multimodal_mode', 'tools', 'agent_loop', 'llm_alt_model']
+AI Chuyên trách properties: ['instruction', 'dataset_uuid', 'dataset_qa_uuid', 'rag_query', 'limit', 'api_key', 'knowledge', 'knowledge_aware', 'chat_history_aware', 'human_input_aware', 'varReply', 'temperature', 'max_tokens', 'stop', 'stop_regex', 'pattern', 'json_mode', 'multimodal_mode', 'tools', 'agent_loop', 'llm_alt_model']

@@ -1,0 +1,1 @@
+{'id': 'setVar_save_findproduct_data_999', 'name': 'Save findproduct_data', 'type': 'setVar', 'componentType': 'task', 'properties': {'varName': 'session.extra.findproduct_data', 'varValue': 'session.extra.product_information'}}

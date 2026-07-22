@@ -1,0 +1,37 @@
+Bot Send Text - Recall Safety
+Dạ, em vừa gặp chút vấn đề với đường truyền. Anh/Chị vui lòng gửi lại thông tin vừa rồi giúp em nhé ạ.
+Bot Send Text - Exit
+{{ order_info.reply_text }}
+Bot Send Text - Go To Consult
+{{ order_info.reply_text }}
+Bot Send Text - Ask Missing
+Dạ, trước khi hoàn tất đơn hàng, Anh/Chị vui lòng bổ sung giúp em đầy đủ thông tin **Họ tên, SĐT và Địa chỉ giao hàng** (số nhà, đường, quận/huyện, tỉnh/thành) để nhân viên VHN liên hệ xác nhận chính xác nhé!
+Bot Send Text - Success
+Dạ, em đã ghi nhận đơn hàng của Anh/Chị thành công ạ:
+- Họ tên: {{order_info.customer_name}}
+- SĐT: {{order_info.customer_phone}}
+- Địa chỉ: {{order_info.customer_address}}
+- Sản phẩm: {{order_info.product_requirement}}
+- Phí vận chuyển: {{order_info.shipping_fee}}
+- Thanh toán: {{order_info.payment_method}}
+- Tổng thanh toán: {{order_info.total_price}}
+
+Nhân viên VHN sẽ liên hệ xác nhận đơn trong thời gian sớm nhất. Y dược VHN cảm ơn Anh/Chị đã tin tưởng ạ!
+Bot Send Text - Reply
+{{ order_info.reply_text }}
+Bot Send Text - Exit
+Dạ, em cảm ơn Anh/Chị đã quan tâm đến sản phẩm bên Y dược VHN ạ. Khi nào Anh/Chị cần tư vấn thêm, cứ nhắn em nhé!
+Bot Send B2C Reply
+{{ bot_b2c_reply }}
+Bot Send Text - Thank you B2B
+Dạ, em đã ghi nhận thông tin Anh/Chị:
+- Họ tên: {{b2b_info.name}}
+- SĐT: {{b2b_info.phone}}
+- Cơ sở: {{b2b_info.facility}}
+- Địa chỉ: {{b2b_info.address}}
+
+Chuyên viên kinh doanh sẽ liên hệ trong thời gian sớm nhất để tư vấn chính sách đại lý phù hợp ạ. Y dược VHN xin cảm ơn Anh/Chị!
+Bot Send Text - Exit B2B
+Dạ, em cảm ơn Anh/Chị đã quan tâm đến sản phẩm của Y dược VHN ạ. Khi nào cần hỗ trợ, cứ nhắn em nhé!
+Bot Send B2B Reply
+{{ bot_b2b_reply }}

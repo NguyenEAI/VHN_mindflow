@@ -1,0 +1,38 @@
+Save human_input (saveHumanInput)
+AI Decide Order Action (qna)
+Set order_info (setVar)
+Collect Register Chat History (python)
+Save session (sessionSave)
+IF node: If action EXIT
+  TRUE:
+    IF node: If still has products
+      TRUE:
+        Bot Send Text - Exit (botSendText)
+        Clear registration_chat_history (setVar)
+        Save session (sessionSave)
+        Clear findproduct_data (setVar)
+        Clear chat_history_b2c (setVar)
+        Clear findproduct_chat_history (setVar)
+        Save session after cleanup (sessionSave)
+        Clear Topic (clearTopic)
+      FALSE:
+        Bot Send Text - Go To Consult (botSendText)
+        Clear Topic (clearTopic)
+  FALSE:
+    IF node: If action CONFIRMED
+      TRUE:
+        IF node: If missing info
+          TRUE:
+            Bot Send Text - Ask Missing (botSendText)
+          FALSE:
+            Bot Send Text - Success (botSendText)
+            Save old_order_customer_information (python)
+            Clear registration_chat_history (setVar)
+            Save session (sessionSave)
+            Clear findproduct_data (setVar)
+            Clear chat_history_b2c (setVar)
+            Clear findproduct_chat_history (setVar)
+            Save session after cleanup (sessionSave)
+            Clear Topic (clearTopic)
+      FALSE:
+        Bot Send Text - Reply (botSendText)

@@ -1,0 +1,25 @@
+﻿
+  all_decoded.json:1247:          },
+  all_decoded.json:1248:          {
+  all_decoded.json:1249:            "id": "b2c_url_verify",
+  all_decoded.json:1250:            "type": "python",
+  all_decoded.json:1251:            "componentType": "task",
+> all_decoded.json:1252:            "name": "Verify URLs in B2C Reply",
+  all_decoded.json:1253:            "properties": {
+  all_decoded.json:1254:              "varName": "bot_b2c_reply",
+  all_decoded.json:1255:              "expression": "reply = '''{{bot_b2c_reply}}'''\nknowledge = 
+'''{{knowledge_from_rag}}'''\n\ndef extract_urls(text):\n    urls = []\n    i = 0\n    while i < len(text):\n        
+start = -1\n        if text[i:i+8] == 'https://':\n            start = i\n        elif text[i:i+7] == 'http://':\n     
+       start = i\n        if start >= 0:\n            end = start\n            while end < len(text) and text[end] not 
+in ' \\n\\r\\t)]\\\"\\'>':\n                end = end + 1\n            url = text[start:end].rstrip('.,;:!?')\n        
+    if len(url) > 10:\n                urls.append(url)\n            i = end\n        else:\n            i = i + 1\n   
+ return urls\n\nurls_in_reply = extract_urls(reply)\n\nif len(urls_in_reply) > 0 and len(knowledge.strip()) > 0:\n    
+urls_in_knowledge = extract_urls(knowledge)\n    knowledge_url_set = {}\n    for u in urls_in_knowledge:\n        
+knowledge_url_set[u] = True\n\n    for url in urls_in_reply:\n        if url not in knowledge_url_set:\n            
+lines = reply.split('\\n')\n            new_lines = []\n            for line in lines:\n                if url not in 
+line:\n                    new_lines.append(line)\n            reply = '\\n'.join(new_lines)\n\nwhile '\\n\\n\\n' in 
+reply:\n    reply = reply.replace('\\n\\n\\n', '\\n\\n')\n\noutput = reply\nprint(output)"
+  all_decoded.json:1256:            }
+  all_decoded.json:1257:          },
+
+

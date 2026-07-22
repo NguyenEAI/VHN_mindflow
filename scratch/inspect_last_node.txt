@@ -1,0 +1,2 @@
+Last node of true branch: Clear Topic
+Properties: {}

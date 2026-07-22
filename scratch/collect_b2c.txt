@@ -1,0 +1,31 @@
+﻿
+  all_decoded.json:1264:              "expression": "output = '''{{session.extra.chat_history_b2c}}'''\noutput = 
+output + \"Customer: \" \noutput =  output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + 
+\"Supporter: \"\noutput = output + '''{{bot_b2c_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+  all_decoded.json:1265:            },
+> all_decoded.json:1266:            "name": "Collect chat_history_b2c"
+  all_decoded.json:1267:          },
+  all_decoded.json:1268:          {
+  all_decoded.json:1269:            "id": "b2c5_save_session",
+  all_decoded.json:1270:            "type": "sessionSave",
+  all_decoded.json:1271:            "componentType": "task",
+  all_decoded.json:1272:            "properties": {},
+  all_decoded.json:1273:            "name": "Save session"
+  all_decoded.json:1274:          },
+  all_decoded.json:1275:          {
+  all_decoded.json:1276:            "id": "26023ca493ba85ccddbd4449c59a6d88",
+  all_decoded.json:1277:            "type": "qna",
+  all_decoded.json:1278:            "componentType": "task",
+  all_decoded.json:1279:            "properties": {
+  all_decoded.json:1280:              "instruction": "Phân tích cuộc hội thoại B2C, khách đã sẵn sàng đặt hàng 
+chưa?\n\n- \"READY\": User muốn đặt hàng, chốt đơn (VD: \"cho em đặt\", \"chốt đơn\", \"em lấy\", \"mua luôn\")\n- 
+\"CONTINUE\": User đang tìm hiểu, cần tư vấn thêm\n- \"EXIT\": User muốn kết thúc / hủy / chuyển chủ đề khác\n\nTrả 
+lời JSON: {\"status\": \"READY|CONTINUE|EXIT\"}",
+  all_decoded.json:1281:              "dataset_uuid": "",
+  all_decoded.json:1282:              "dataset_qa_uuid": "",
+  all_decoded.json:1283:              "rag_query": "",
+  all_decoded.json:1284:              "limit": "2",
+  all_decoded.json:1285:              "api_key": "",
+  all_decoded.json:1286:              "knowledge": "{{ knowledge_from_rag }}",
+
+

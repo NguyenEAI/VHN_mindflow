@@ -1,0 +1,3205 @@
+# DANH SÁCH SẢN PHẨM B2B (is_salon_product = True)
+
+**Tổng số sản phẩm B2B:** 177
+---
+## Christina - Unstress - Step 1: Gentle Cleansing Milk - 300ml (Sữa tẩy trang rửa mặt dành cho da nhạy cảm)
+- **ID:** 1
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,398,000 VNĐ
+- **Giá gốc:** 2,398,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả đầy đủ
+Thành phần:
+- Calendula: giảm viêm và ngứa, làm dịu da
+- Vitamin E: chất chống oxy hóa mạnh, ngăn ngừa sự hình thành các gốc tự do, củng cố hàng rào bảo vệ da, giảm mất nước qua biểu bì.
+- Centheal: tác dụng chống viêm.
+
+Công dụng:
+Nhẹ nhàng rửa sạch lớp trang điểm,
+kem chống nắng, bụi bẩn và dầu thừa trên da, cho làn da cảm giác mịn màng và thông thoáng.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Dùng một lượng vừa đủ massage nhẹ nhàng sản phẩm lên da mặt rồi lau sạch
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/1-sua-tay-trang-rua-mat-danh-cho-da-nhay-cam-gentle-cleansing-milk-300-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-10.png
+---
+## Christina - Unstress - Step 2: Revitalizing Toner - 300ml (Nước hoa hồng cân bằng, làm dịu và đổi mới da)
+- **ID:** 2
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,266,000 VNĐ
+- **Giá gốc:** 2,266,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 2: Revitalizing Toner - 300ml (Nước hoa hồng cân bằng, làm dịu và đổi mới da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Biodetox peptide (lá lô hội, bioflavonoid, brocolli): bảo vệ da khỏi các chất ô nhiễm và căng thẳng từ môi trường.
+- Glycolic acid và acid lactic: làm sạch và kích thích tái tạo tế bào.
+- Chiết xuất dưa chuột: làm dịu kích ứng, giảm viêm.
+
+Công dụng:
+Làm sạch, làm dịu, giảm đỏ, giúp tăng cường tái tạo tế bào.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Lấy 1 ml nước cân bằng vào bông cotton, sau đó thoa đều theo chiều cấu tạo da, làm sạch và cân bằng da.
+
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2-nuoc-hoa-hong-tai-tao-can-bang-da-revitalazing-toner-300-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-4.png
+---
+## Christina - Unstress - Step 3:  Probiotic peel - 250ml (Peel thanh lọc và đổi mới da dịu nhẹ)
+- **ID:** 3
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 7,282,000 VNĐ
+- **Giá gốc:** 7,282,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 3:  Probiotic peel - 250ml (Peel thanh lọc và đổi mới da dịu nhẹ)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+- Probiotic: bảo vệ DNA và màng tế bào.
+- Squalane: ngăn ngừa mất độ ẩm và phục hồi độ đàn hồi.
+- Glycolic acid: tẩy tế bào chết, kích thích tái tạo tế bào.
+-Bơ hạt mỡ: giữ ẩm và phục hồi da, làm mịn và cải thiện độ đàn hồi.
+
+Công dụng:
+Pro-biotic Peel nhẹ nhàng tẩy tế bào chết, giúp làm sạch, thải độc mà không gây kích ứng, cải thiện cơ chế bảo vệ tự nhiên và phục hồi hàng rào bảo vệ da.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Thoa 1 lớp mỏng (1-2ml) lên bề mặt da, để nguyên sản phẩm trên da từ 1-3 phút, không massage thẩm thấu.
+
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3-tay-da-chet-thanh-loc-va-tai-tao-da-diu-nhe-probiotic-peel-250-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/3-4.png
+---
+## Christina - Unstress -Step 4: Frangipani Concentrate - 300ml (Huyết thanh làm dịu bảo vệ da)
+- **ID:** 4
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,800,000 VNĐ
+- **Giá gốc:** 2,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress -Step 4: Frangipani Concentrate - 300ml (Huyết thanh làm dịu bảo vệ da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất Frangipani: thải độc & làm giảm kích ứng.
+- Lipigenine (chiết xuất hạt lanh): tăng tổng hợp các axit béo thiết yếu.
+- Rosanic (phức hợp thảo dược): làm dịu, giảm viêm và giảm đỏ.
+
+Công dụng:
+Chiết xuất cô đặc, làm dịu da đồng thời tạo một lớp bảo vệ chống lại các chất ô nhiễm môi trường, các gốc tự do, và vi khuẩn.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Lấy 1ml chấm đều, vỗ nhẹ lên da, không lau đi
+
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4-huyet-thanh-lam-diu-bao-ve-da-frangipany-concentrate-300-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/4-5.png
+---
+## Christina - Unstress - Step 5: Total Serenity Serum - 100ml (Huyết thanh phục hồi và làm dịu da)
+- **ID:** 5
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 7,150,000 VNĐ
+- **Giá gốc:** 7,150,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 5: Total Serenity Serum - 100ml (Huyết thanh phục hồi và làm dịu da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+- Phức hợp Phytoceramide: công nghệ tiên tiến giúp cải thiện chức năng hàng rào da, độ đàn hồi và mềm mại của da. Tăng khả năng giữ ẩm và giảm ngứa.
+- Squalane: ngăn ngừa mất độ ẩm và phục hồi độ đàn hồi.
+- BSASM: kháng viêm, kháng khuẩn và chống oxy hóa
+- Peptide, Venuceane (chiết xuất từ tảo)
+
+Công dụng:
+Tăng cường hoạt động chống oxy hóa, ngăn ngừa glycation và làm dịu làn da bị kích thích. Tăng cường cấu trúc da và phục hồi da khỏe mạnh.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Lấy 1ml chấm đều, vỗ nhẹ lên da, không lau đi
+Dung tích: 100ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-huyet-thanh-phuc-hoi-va-lam-diu-da-total-serenity-serum-100-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/5-3.png
+---
+## Christina - Unstress - Step 6a: relaxing Massage cream - 500ml (Kem massage dưỡng ẩm và phục hồi da)
+- **ID:** 6
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,300,000 VNĐ
+- **Giá gốc:** 3,300,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 6a: relaxing Massage cream - 500ml (Kem massage dưỡng ẩm và phục hồi da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Phức hợp Phytoceramide (ceramide, omega 3, 6, 9 từ chiết xuất thực vật): công nghệ tiên tiến giúp cải thiện chức năng hàng rào da, độ đàn hồi và mềm mại của da. Tăng khả năng giữ ẩm và giảm ngứa.
+- Squalane: ngăn ngừa mất độ ẩm và phục hồi độ đàn hồi.
+- Vitamin E: chất chống oxy hóa mạnh, ngăn ngừa sự hình thành các gốc tự do, củng cố hàng rào bảo vệ da, giảm mất nước qua biểu bì.
+- Sodium hyaluronat
+
+Công dụng:
+Làm dịu và cấp ẩm cho làn da. Tăng cường sự bảo vệ ở cấp độ tế bào đồng thời cải thiện độ đàn hồi, độ mềm mịn và khả năng phục hồi của da.
+
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+Hướng dẫn sử dụng:
+Dùng 1-2 giọt tinh dầu của bước 6b trộn với 1 lượng kem của bước 6a vừa đủ, thoa một lớp mỏng lên da, massage nhẹ nhàng theo chiều cấu tạo da từ 10-15 phút, massage thẩm thấu hoàn toàn, đối với làn da quá khô hoặc nhiễm corticoid bị mẩn đỏ thì vỗ đều cho thẩm thấu.
+Lưu ý: nếu còn thấy độ bóng trên bề mặt da, dùng giấy tissue thấm bớt dư lượng sản phẩm trước khi đắp mặt nạ.
+
+Dung tích: 500ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6a-kem-massage-duong-am-va-phuc-hoi-da-relaxing-massage-cream-500-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6A-Unstress.jpg
+---
+## Christina - Unstress - Step 6b: Multi Vitamin Supplement - 100ml (Tinh chất bổ sung Vitamin cho da)
+- **ID:** 7
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,246,000 VNĐ
+- **Giá gốc:** 4,246,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 6b: Multi Vitamin Supplement - 100ml (Tinh chất bổ sung Vitamin cho da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+- Kalpariane: loại bỏ gốc tự do, thúc đẩy tổng hợp HA, collagen và elastin.
+- Multi-dầu ACE: chất chống oxy hóa, nuôi dưỡng và làm mờ nếp nhăn.
+- Vitamin F: nuôi dưỡng làn da, giảm khô và bong tróc, cho làn da cảm giác thoải mái.
+- Tinh dầu hướng dương, lúa mì
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Cung cấp nhiều dinh dưỡng, giàu chất chống oxy hóa, kháng viêm và ngân ngừa lão hóa. Tăng cường hàng rào bảo vệ biểu bì và cấp nước cho da.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6b-tinh-chat-bo-sung-vitamin-cho-da-multi-vitamin-supplement-100ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-4.png
+---
+## Christina - Unstress - Step 7: Clarifying Mask - 250ml (Mặt nạ thải độc và làm dịu da)
+- **ID:** 8
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,900,000 VNĐ
+- **Giá gốc:** 2,900,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 7: Clarifying Mask - 250ml (Mặt nạ thải độc và làm dịu da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+- Zinc oxide: chống viêm, bảo vệ da khỏi tia UVA và ngăn ngừa lão hóa da
+- Venuceane: bảo vệ DNA & sợi cơ, ngăn ngừa viêm nhiễm, giảm TEWL, bảo vệ chống lại tác hại của tia cực tím & hồng ngoại.
+- Chiết xuất cam thảo: làm sáng và đồng đều màu da
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Giúp giảm thiểu các tổn thương ngoài môi trường, giảm đỏ, làm dịu da. Công thức giàu chất chống oxy hóa giải độc giúp làm giảm dấu hiệu lão hóa da sớm, chống lại các gốc tự do và làm đều màu da. Tăng cường hàng rào phòng thủ da và duy trì kết cấu da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 2 ml mặt nạ dùng cọ silicon, quét đều theo chiều cấu tạo da, để thư giãn trong đúng 10 phút.
+Sau đó, làm sạch với nước trước, rồi sử dụng khăn ấm để lau sạch bề mặt da.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-mat-na-thai-doc-lam-diu-da-clarifying-mask-250-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/7-8.png
+---
+## Christina - Unstress - Step 8: Optimal hydration mask - 250ml (Mặt nạ dưỡng ẩm và phục hồi da)
+- **ID:** 9
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,916,000 VNĐ
+- **Giá gốc:** 3,916,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 8: Optimal hydration mask - 250ml (Mặt nạ dưỡng ẩm và phục hồi da)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Phức hợp Phytoceramide: công nghệ tiên tiến giúp cải thiện chức năng hàng rào da, độ đàn hồi và mềm mại của da. Tăng khả năng giữ ẩm và giảm ngứa.
+- Probiotic: bảo vệ DNA và màng tế bào.
+- Lipigenine: tăng tổng hợp các axit béo thiết yếu.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Tăng cường sức khoẻ của ớp sừng và cải thiện hydrat hóa. Giảm cảm giác ngứa và khó chịu. Cải thiện kết cấu và độ đàn hồi
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 2 ml mặt nạ dùng cọ silicon, quét đều theo chiều cấu tạo da, để thư giãn 10 phút cho sản phẩm thẩm thấu. Sau đó, massage nhẹ 2 phút để sản phẩm thẩm thấu, dùng khăn ấm lau sạch.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/8-mat-na-duong-am-phuc-hoi-da-optimal-hydration-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/8-7.png
+---
+## Christina - Unstress - Step 9: ProBiotic Moisturizer SPF 15 - 150ml (Kem dưỡng ẩm làm dịu và bảo vệ da SPF15)
+- **ID:** 10
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 7,315,000 VNĐ
+- **Giá gốc:** 7,315,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Unstress - Step 9: ProBiotic Moisturizer SPF 15 - 150ml (Kem dưỡng ẩm làm dịu và bảo vệ da SPF15)
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Quintescine peptide: chất chống oxy hóa, chống phản ứng glycation, bảo vệ DNA, giảm stress do oxy hóa.
+- Venuceane: bảo vệ DNA & sợi cơ, ngăn ngừa viêm nhiễm, giảm TEWL, bảo vệ chống lại tác hại của tia cực tím & hồng ngoại.
+- Eco-skin: chống viêm, giảm thiểu biểu hiện rối loạn của da
+- Sun filters: thành phần chống nắng bảo vệ da trước tia UV
+Công dụng:
+Kem ngày tăng cường khả năng miễn dịch. Bảo vệ da chống lại tia UV và bức xạ. Chống lại các gốc tự do, kháng viêm và ngăn ngừa lão hóa da sớm.
+Chỉ định:
+Dành cho làn da mỏng yếu, nhạy cảm, suy yếu do điều trị, sau thực hiện công nghệ cao, tổn thương do hóa chất, Laser, Peel, Treatment mạnh.
+Làn da dùng phải các sản phẩm có tính chất bào mòn, chứa thành phần corticoid, da lộ mao mạch, kích ứng, mẩn đỏ.
+Hướng dẫn sử dụng:
+Lấy một lượng vừa đủ (0,2– 0,3 ml) chia đều
+ 5 điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+Dung tích: 150ML
+
+### Công dụng
+Kem ngày tăng cường khả năng miễn dịch. Bảo vệ da chống lại tia UV và bức xạ. Chống lại các gốc tự do, kháng viêm và ngăn ngừa lão hóa da sớm.
+
+### Hướng dẫn sử dụng
+Lấy một lượng vừa đủ (0,2– 0,3 ml) chia đều
+ 5 điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/9-kem-duong-am-lam-diu-va-bao-ve-da-probiotic-moiturizer-spf15-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/9-5.png
+---
+## Christina - Bio Phyto -1 Mild Facial Cleanser - 500ml (Sữa rửa mặt làm sạch sâu)
+- **ID:** 17
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,390,000 VNĐ
+- **Giá gốc:** 2,390,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -1 Mild Facial Cleanser - 500ml (Sữa rửa mặt làm sạch sâu)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Advanced cleansers: có nguồn gốc từ dầu dừa, dịu nhẹ, không gây kích ứng.
+- Trà xanh: chống viêm, chống vi khuẩn và chống oxy hóa tốt.
+- Dưa chuột: chất chống oxy hóa, làm dịu, chống viêm và cấp ẩm.
+
+Dung tích: 500ML
+
+### Công dụng
+Làm sạch toàn bộ lượng dầu thừa, lớp trang điểm và bụi bẩn trên bề mặt da.
+
+### Chỉ định
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm, da nhạy cảm ở cấp độ nhẹ đến vừa.
+
+### Hướng dẫn sử dụng
+Tạo ẩm khuôn mặt, lấy 1 ml sản phẩm vào lòng bàn tay, tạo bọt, thoa đều toàn mặt theo chiều cấu tạo da.
+Massage, rửa mặt trong 1-2 phút. Sau đó, rửa sạch với nước.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/1-sua-rua-mat-lam-sach-sau-mild-facial-cleanser-500ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-7.png
+---
+## Christina - Bio Phyto -2 Refreshing Toner - 500ml (Nước hoa hồng dịu nhẹ từ thảo dược)
+- **ID:** 18
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,508,000 VNĐ
+- **Giá gốc:** 2,508,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -2 Refreshing Toner - 500ml (Nước hoa hồng dịu nhẹ từ thảo dược)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Phức hợp Bio - Astringent: điều tiết bã nhờn giúp thu nhỏ lỗ chân lông, duy trì độ ẩm tối ưu.
+- Phức hợp Moisture: nhân tố giữ ẩm NMF làm mềm, mịn và dưỡng ẩm.
+- Chiết xuất gừng: tính chất chống oxy hóa và chống viêm.
+
+Dung tích: 500ML
+
+### Công dụng
+Làm sạch, cân bằng da và loại bỏ bã nhờn nhưng không gây khô da.
+
+### Hướng dẫn sử dụng
+Lấy 1ml nước cân bằng vào bông cotton, sau đó thoa đều theo chiều cấu tạo da, làm sạch và cân bằng da.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2-nuoc-hoa-hong-diu-nhe-tu-thao-duoc-refreshing-toner-500ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-2.png
+---
+## Christina - Bio Phyto -3 Suppling Gel - 250ml (Gel làm tăng độ đàn hồi của da)
+- **ID:** 19
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 1,880,000 VNĐ
+- **Giá gốc:** 1,880,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -3 Suppling Gel - 250ml (Gel làm tăng độ đàn hồi của da)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất Artemisia (hoa trong họ cúc): làm dịu và thư giãn da giúp lấy mụn hiệu quả
+- Chiết xuất Aloe vera - chống kích ứng, liên kết độ ẩm cho da, cung cấp một cảm giác sảng khoái. Có tác dụng chống viêm, chống oxy hóa, và đặc tính kháng khuẩn.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Gel nhẹ nhàng làm mềm và cải thiện tính đàn hồi của da. Làm thông thoáng lỗ chân lông để dễ dàng làm sạch mụn cám mà không cảm thấy khó chịu, là một bước chuẩn bị da lý tưởng cho các trị liệu tiếp theo.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 2 ml gel thoa đều lên bề mặt da, để nguyên sản phẩm trên da, không mát xa thẩm thấu. Có thể kết hợp với máy xông từ 3- 5 phút để tăng hiệu quả tẩy da chết.
+Làm sạch bằng khăn ấm, hoặc khăn ẩm.
+Lưu ý: Nếu khách hàng không có cảm giác châm chích, nóng đỏ bề mặt da ở bước này thì dùng tiếp bước 4a.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3-gel-lam-tang-do-dan-hoi-cua-da-suppling-gel-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/3-2.png
+---
+## Christina - Bio Phyto -4a Herbal Peel - 250ml (Mặt nạ làm sạch sâu từ thảo dược)
+- **ID:** 20
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,356,000 VNĐ
+- **Giá gốc:** 4,356,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -4a Herbal Peel - 250ml (Mặt nạ làm sạch sâu từ thảo dược)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- BHA: hoạt chất keratolitic hỗ trợ loại bỏ tế bào chết hiệu quả.
+- Hoa hồi: một chất chống oxy hóa mạnh với đặc tính kháng khuẩn.
+- Capsicum: kích thích và làm ấm da, tăng cường lưu thông và cải thiện quá trình trao đổi chất.
+- Chiết xuất quế: đặc tính chống vi khuẩn và thanh lọc.
+- Hoa bạc hà khô: đặc tính chống nhiễm trùng và chống nhiễm khuẩn.
+- Tinh dầu bạc hà: đặc tính chống vi khuẩn, tăng cường lưu thông và có tác dụng làm mát.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Có tác dụng giải độc, loại bỏ bã nhờn và tế bào bị hư hỏng. Tăng cường sự lưu thông vi lượng và sự linh hoạt vi mao mạch để cung cấp oxy đến tế bào, hỗ trợ chuyển đổi bề mặt tế bào và tăng cường tính phòng vệ.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1- 2ml dung dịch, dùng chổi quét đều sản phẩm lên bề mặt da, để thư giãn trên da khoảng 1-3 phút tùy tình trạng da.
+Sau đó lau sạch bằng khăn ẩm.
+Note: Da sưng đỏ, kích ứng thì lau ngay
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4a-mat-na-lam-sach-sau-tu-thao-duoc-herbal-peel-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/4-3.png
+---
+## Christina - Bio Phyto -5 Comforting Massage Cream - 500ml (Kem massage cung cấp dưỡng chất)
+- **ID:** 21
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,910,000 VNĐ
+- **Giá gốc:** 3,910,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -5 Comforting Massage Cream - 500ml (Kem massage cung cấp dưỡng chất)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Phyto – Ceramide Complex: tăng cường hàng rào bảo vệ tự nhiên, ngăn ngừa thoát ẩm, giảm châm chích, củng cố cấu trúc đàn hồi da.
+- Phức hợp vitamin B: duy trì hoạt động của tế bào khỏe mạnh, giải quyết các vấn đề về rối loạn của da.
+- Bơ hạt mỡ: giữ ẩm và phục hồi da, làm mịn và cải thiện độ đàn hồi
+
+Dung tích: 500ML
+
+### Công dụng
+Công dụng:
+Bổ sung dưỡng chất và độ ẩm, tái thiết lại hàng rào bảo vệ da, tăng cường và bảo vệ chống lại các tác nhân gây tổn hại. Giúp cải thiện kết cấu và độ đàn hồi của làn da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 2ml sản phẩm, mát xa nhẹ nhàng cho thẩm thấu hoàn toàn trong 10-15 phút lên toàn bộ vùng mặt (cổ).
+Không lau lại với nước, để nguyên trên da để đắp mặt nạ tiếp theo.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-kem-massage-cung-cap-duong-chat-comforting-massage-cream-500ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-2.png
+---
+## Christina - Bio Phyto -6a Seb-Adjustor Mask - 250ml (Mặt nạ phục hồi và se khít lỗ chân lông)
+- **ID:** 22
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,190,000 VNĐ
+- **Giá gốc:** 2,190,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -6a Seb-Adjustor Mask - 250ml (Mặt nạ phục hồi và se khít lỗ chân lông)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Phức hợp Bio - Astringent: điều tiết bã nhờn giúp thu nhỏ lỗ chân lông, duy trì độ ẩm tối ưu.
+-  BioSulphur: giúp giảm dầu cho da và ngăn ngừa sự hình thành lỗ chân lông.
+-  Colophonium: đóng vai trò quan trọng trong việc thu nhỏ lỗ chân lông lớn.
+
+### Công dụng
+Công dụng:
+Mặt nạ làm se khít lỗ chân lông, tác dụng điều chỉnh và giảm sự tiết bã nhờn, giúp làm mờ vết thâm
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+
+
+Dùng 2-3 ml mặt nạ thoa đều lên bề mặt da, để thư giãn trên da 10 phút.
+Sau đó, làm sạch với nước trước, rồi sử dụng khăn ấm để lau sạch bề mặt da.
+Lưu ý: Mặt nạ dạng kem, nên không để quá khô trên bề mặt da, tránh hình thành nếp nhăn giả.
+Phải sử dụng khăn ấm lau lại để làm tan lớp kem mặt nạ, tránh phát sinh tình trạng lên mụn.
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6a-mat-na-phuc-hoi-va-se-khit-lo-chan-long-seb-adjustor-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/7-3.png
+---
+## Christina - Bio Phyto -6b Zaatar Mask - 250ml (Mặt nạ làm dịu, giảm vi khuẩn và trẻ hóa da)
+- **ID:** 23
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,250,000 VNĐ
+- **Giá gốc:** 3,250,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto -6b Zaatar Mask - 250ml (Mặt nạ làm dịu, giảm vi khuẩn và trẻ hóa da)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Tinh dầu Thyme: chất chống oxy hóa mạnh, giúp kích thích, phục hồi, trẻ hóa da
+- Tinh dầu Majoram: làm dịu và thư giãn da
+- Retinol viên cầu: tăng cường cấu trúc da, chống lão hóa
+- Vitamin E: chất chống oxy hóa mạnh, ngăn ngừa sự hình thành gốc tự do, tăng cường hàng rào bảo vệ da, giảm mất nước qua biểu bì
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Cung cấp độ ẩm, làm dịu kích ứng da, giảm viêm do các yếu tố môi trường. Chất chống oxy hóa mạnh, thúc đẩy tái tạo và bảo vệ da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+
+Dùng 2-3 ml mặt nạ thoa đều lên bề mặt da, để thư giãn trên da 10 phút.
+Sau đó, làm sạch với nước trước, rồi sử dụng khăn ấm để lau sạch bề mặt da.
+Lưu ý: Mặt nạ dạng kem, nên không để quá khô trên bề mặt da, tránh hình thành nếp nhăn giả.
+Phải sử dụng khăn ấm lau lại để làm tan lớp kem mặt nạ, tránh phát sinh tình trạng lên mụn.
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6b-mat-na-lam-diu-khang-khuan-va-tre-hoa-da-zaatar-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/8-3.png
+---
+## Christina - Bio Phyto - 7 Alluring Serum - 100ml (Tinh chất làm căng bóng và tăng cường đàn hồi cho da)
+- **ID:** 24
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,916,000 VNĐ
+- **Giá gốc:** 3,916,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto - 7 Alluring Serum - 100ml (Tinh chất làm căng bóng và tăng cường đàn hồi cho da)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Sodium hyaluronate: giúp cấp ẩm tối ưu do tính chất giữ nước.
+- Vitamin C: chất chống oxy hóa mạnh mẽ, bảo vệ da khỏi các gốc tự do. Giúp tăng cường collagen, làm sáng da.
+- Chiết xuất Prodizia: bảo vệ và sửa chữa cấu trúc protein bị hư hỏng do glycation.
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Cung cấp độ ẩm, cải thiện sự đàn hồi và hàng rào bảo vệ da. Tăng cường tái tạo tế bào, cấp nước, làm sáng da xỉn màu.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy một lượng vừa đủ (0,2– 0,5 ml) chia đều 5
+điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-tinh-chat-lam-cang-bong-va-tang-do-dan-hoi-cho-da-alluring-serum-100ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/10.png
+---
+## Christina - Bio Phyto - 8a Zaatar Cream - 250ml (Kem dưỡng thải độc và bảo vệ da từ thảo dược)
+- **ID:** 25
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,058,000 VNĐ
+- **Giá gốc:** 3,058,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Bio Phyto - 8a Zaatar Cream - 250ml (Kem dưỡng thải độc và bảo vệ da từ thảo dược)
+Độ tuổi từ 15 trở lên. Thích hợp với mọi loại da: Da thường, da dầu, da hỗn hợp, dày sừng, lỗ chân lông rộng. Da xỉn màu, mất nước, thiếu cân bằng độ ẩm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Tinh dầu Thyme: chất chống oxy hóa mạnh, giúp kích thích, phục hồi, trẻ hóa da.
+- Tinh dầu Majoram: làm dịu và thư giãn da.
+- Retinol viên cầu: tăng cường cấu trúc da, chống lão hóa.
+- Vitamin E: chất chống oxy hóa mạnh, ngăn ngừa sự hình thành gốc tự do, tăng cường hàng rào bảo vệ da, giảm mất nước qua biểu bì.
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Thải độc, làm tinh khiết, cân bằng và hỗ trợ hoạt động của tế bào, làm dịu da, trị liệu da bị khô tróc và điều hòa tuyến bã.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy một lượng vừa đủ 0,2– 0,3 ml chia đều
+ 5 điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/8a-kem-duong-thai-doc-va-bao-ve-da-tu-thao-moc-zaatar-cream-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/11.png
+---
+## Christina - Comodex - 1 Clean & Clear Cleanser - 500ml (Sữa rửa mặt làm sạch và kháng khuẩn)
+- **ID:** 28
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,800,000 VNĐ
+- **Giá gốc:** 2,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 1 Clean & Clear Cleanser - 500ml (Sữa rửa mặt làm sạch và kháng khuẩn)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Marine C thiopeptide: kháng viêm và kháng khuẩn
+- Citric acid: làm sáng, thúc đẩy sự hình thành collagen, cải thiện sự đàn hồi của da
+- Lycopene: kháng vi khuẩn, kháng viêm, ngăn chặn sự nhiễm độc, chống oxy hóa
+
+Dung tích: 500 ml
+
+### Công dụng
+Công dụng:
+Thúc đẩy quá trình làm sạch mà không làm khô da, giảm viêm nhiễm và loại bỏ lớp dầu thừa trên da.
+
+### Chỉ định
+Chỉ định:
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1ml tạo bọt, rửa mặt theo kỹ thuật.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/1-sua-rua-mat-lam-sach-va-khang-khuan-clean-clear-cleanser-500ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-8.png
+---
+## Christina - Comodex - 2 Scrub & Smooth Exfoliator - 250ml (Tẩy da chết làm sạch sâu ngăn ngừa mụn)
+- **ID:** 29
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,700,000 VNĐ
+- **Giá gốc:** 2,700,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 2 Scrub & Smooth Exfoliator - 250ml (Tẩy da chết làm sạch sâu ngăn ngừa mụn)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Hạt mơ: thành phần tẩy da chết tuyệt vời
+- Chiết xuất cam thảo và quýt: làm sáng, có khả năng chống oxy hóa và làm dịu
+
+Dung tích: 250 ml
+
+### Công dụng
+Công dụng:
+Tẩy da chết nhẹ nhàng dạng kem giúp loại bỏ bụi bẩn và cặn dầu từ lỗ chân lông giúp mịn màng bề mặt da và đồng đều màu da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1 ml sản phẩm bôi một lớp mỏng lên những vùng da cần loại bỏ lớp sừng, da sần dày bì thô ráp, mụn đầu đen, mụn đầu trắng. Dùng tay mát xa hình tròn theo chiều cấu tạo da nhẹ nhàng cho lớp kem rơi xuống. Sau đó lau sạch đi.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2-tay-da-chet-thanh-loc-da-scrubsmooth-exfoliator-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-3.png
+---
+## Christina - Comodex - 3A Treat&Regenerate Peel - 150ml (Peel làm sạch sâu và thanh lọc da)
+- **ID:** 30
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,245,000 VNĐ
+- **Giá gốc:** 3,245,000 VNĐ
+
+### Mô tả ngắn
+Christina - Comodex - 3A Treat&Regenerate Peel - 150ml (Peel làm sạch sâu và thanh lọc da)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Glycolic & lactic acid: kích thích tái tạo tế bào.
+- Chiết xuất Kojic & bearberry: ức chế sự hình thành melanin.
+- Salicylic acid dạng viên: hình thành loại bỏ các tế bào chết, giảm dầu và giảm vi khuẩn.
+
+Dung tích: 150 ml
+
+### Công dụng
+Công dụng:
+Loại bỏ vi khuẩn, lớp sừng dư thừa, điều tiết bã nhỡn, tăng cường tái tạo tế bào, ức chế sản sinh melanin.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1 ml sản phẩm, dùng chổi quét đều lên mặt, để khoảng 1-3 phút tùy theo tình trạng da, sau đó rửa lại thật sạch bằng nước.
+---
+## Christina - Comodex - 3B Peel&Renew Peel Forte - 150ml (Peel làm sạch sâu và tái tạo da)
+- **ID:** 31
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,520,000 VNĐ
+- **Giá gốc:** 3,520,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 3B Peel&Renew Peel Forte - 150ml (Peel làm sạch sâu và tái tạo da)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Retinol dạng viên: đảm bảo sự thẩm thấu ở mức tối đa và tổng hợp tế bào, tăng cường sản sinh collagen và HA.
+- Perfection Peptide: tăng cường tái tạo da và hydrat hóa của da.
+- Salicylic acid dạng viên: hình thành loại bỏ các tế bào chết, giảm dầu và giảm vi khuẩn.
+- Glycolic acid: kích thích tái tạo tế bào.
+Dung tích: 150 ml
+
+### Công dụng
+Công dụng:
+Điều trị chuyên sâu giúp tăng cường tái tạo da. Loại bỏ tế bào chết, dầu thừa & vi khuẩn còn lại trên da. Tăng cường sản sinh collagen, giúp đồng màu da, cải thiện cấu trúc da
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1 ml sản phẩm, dùng chổi quét đều lên mặt, để khoảng 1-3 phút, sau đó rửa lại thật sạch bằng nước.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3b-mat-na-lam-sach-sau-va-tai-tao-da-peelrenew-peel-forte-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/4-4.png
+---
+## Christina - Comodex - 4 Stimulate&Detox Solution - 300ml (Dung dịch kích thích tái tạo và thanh lọc da)
+- **ID:** 32
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,800,000 VNĐ
+- **Giá gốc:** 2,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 4 Stimulate&Detox Solution - 300ml (Dung dịch kích thích tái tạo và thanh lọc da)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất quế: kháng khuẩn và làm se
+- Chiết xuất ớt: kích thích và làm ấm da, tăng cường lưu thông và chuyển hóa tế bào
+- Chiết xuất trà xanh: chống vi khuẩn, chống viêm và loại bỏ gốc tự do
+
+Dung tích: 300 ml
+
+### Công dụng
+Công dụng:
+Tăng cường lưu thông máu và chuyển hóa tế bào, thải độc và tăng oxy trong tế bào, giúp kháng khuẩn và hỗ trợ lấy mụn dễ dàng.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1 ml sản phẩm đổ ra bông tẩy trang, lau đều lên mặt, kết hợp máy xông từ 5-7 phút, sau đó lấy mụn. Không lau lại bằng nước.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4-dung-dich-kich-thich-tai-tao-va-khu-doc-da-stimulate-detox-solution-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-3.png
+---
+## Christina - Comodex - 5 Bright&Balance Solution - 300ml (Dung dịch làm sáng và cân bằng da)
+- **ID:** 33
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,800,000 VNĐ
+- **Giá gốc:** 2,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 5 Bright&Balance Solution - 300ml (Dung dịch làm sáng và cân bằng da)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất Kojic & bearberry: ức chế sự hình thành melanin.
+- Retinol dạng viên: đảm bảo sự thẩm thấu ở mức tối đa và tổng hợp tế bào, tăng cường sản sinh collagen và HA.
+- Vitamin C ổn định: chống oxy hoá, giảm viêm và kích ứng, tăng cường tổng hợp collagen
+
+Dung tích: 300 ml
+
+### Công dụng
+Công dụng:
+Cân bằng da, giảm thâm, thúc đẩy 1 làn da đều màu, ngăn ngừa tăng sắc tố sau viêm.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 1 ml sản phẩm đổ ra bông tẩy trang, lau đều lên mặt. Không lau lại bằng nước chuyển sang bước 6.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-dung-dich-lam-sang-can-bang-da-bright-balance-solution-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/7-4.png
+---
+## Christina - Comodex - 6 Astringe&Regulate Mask - 250ml (Mặt nạ kiểm soát dầu và làm dịu)
+- **ID:** 34
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,420,000 VNĐ
+- **Giá gốc:** 2,420,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 6 Astringe&Regulate Mask - 250ml (Mặt nạ kiểm soát dầu và làm dịu)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Kaolin, calamine & zinc oxide: hấp thu lượng dầu thừa và làm khô các nốt mụn
+- Sulfur: kiểm soát sự tiết bã nhờn
+- Pore-reductyl: chống viêm, làm se, và thu nhỏ lỗ chân lông
+- Lycopene: kháng khuẩn, kháng viêm, chống oxy hóa.
+Dung tích: 250 ml
+
+### Công dụng
+Công dụng:
+Giảm bã nhờn, kháng khuẩn, giúp hấp thụ dầu dư thừa. Làm dịu làn da bị kích ứng giúp thu nhỏ lỗ chân lông.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Lấy 2ml sản phẩm thoa đều lên mặt, để khoảng 10 phút. Lau sạch bằng khăn ấm.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6-mat-na-kiem-soat-dau-va-lam-diu-astringe-regulate-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/8-5.png
+---
+## Christina - Comodex - 7 Mattify&Protect Cream SPF 15 - 150ml (Kem dưỡng kiềm dầu và bảo vệ cho da mụn)
+- **ID:** 35
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,500,000 VNĐ
+- **Giá gốc:** 2,500,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Comodex - 7 Mattify&Protect Cream SPF 15 - 150ml (Kem dưỡng kiềm dầu và bảo vệ cho da mụn)
+Điều trị các loại mụn cấp độ từ nhẹ đến nặng vừa. Da dầu, da hỗn hợp, lỗ chân lông to. Da bít tắc thô sần.
+
+### Mô tả đầy đủ
+Thành phần:
+- Kollaren- peptide sinh học: tăng cường sự đàn hồi, cải thiện tái tạo da và làm lành vết thương.
+- Pentavitin: cung cấp chất dinh dưỡng và độ ẩm
+- UV sun filter: ngăn chặn sự ảnh hưởng có hại của mặt trời.
+
+Dung tích: 150 ml
+
+### Công dụng
+Công dụng:
+Làm giàu với các chất dưỡng ẩm, tăng cường tái tạo tự nhiên, giảm sự sáng bóng quá mức.
+
+### Hướng dẫn sử dụng
+Sử dụng 0,3ml, dùng tay vỗ đều sản phẩm lên da mặt.
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-kem-kiem-soat-dau-va-bao-ve-da-spf-15-mattify-protect-cream-spf15-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/9-4.png
+---
+## Christina - Nuance - 1 Pre-Peel Cleanser - 300ml (Sữa rửa mặt và chuẩn bị da trước peel)
+- **ID:** 45
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Nuance - 1 Pre-Peel Cleanser - 300ml (Sữa rửa mặt và chuẩn bị da trước peel)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất quả mâm xôi: kháng viêm, chống oxy hoá, giàu Vitamin C, kích thích tăng sinh collagen.
+- Chiết xuất lựu: chống oxy hoá, chống lão hoá
+- Chiết xuất nho: giàu resveratrol, giảm sự xuất hiện của các dấu hiệu lão hoá trên da.
+Dung tích: 300ML
+
+### Công dụng
+Công dụng:
+Sự kết hợp giữa các thành phần từ trái cây, quả mọng với đặc tính chống oxy hoá cao, giúp làm sạch da nhẹ nhàng và làm mềm da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa một lượng nhỏ lên miếng bông ướt và làm sạch mặt và cổ theo chuyển động tròn. Lau nhẹ bằng khăn ẩm. Dùng khăn giấy thấm khô da
+### Links
+- **Link sản phẩm:** N/A
+- **Link hình ảnh:** N/A
+---
+## Christina - Nuance - 2 Glyco-Mineral Peel - 100ml (Dung dịch peel da đa acid AHA, BHA, PHA)
+- **ID:** 46
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 2 Glyco-Mineral Peel - 100ml (Dung dịch peel da đa acid AHA, BHA, PHA)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Tổ hợp 20% nhóm AHA, BHA, PHA
++ AHA: bạt sừng, loại bỏ tế bào sừng già, sừng chết trên bề mặt da. Làm sáng da, ngăn chặn những dấu hiệu lão hoá da.
++ BHA: làm sạch sâu lỗ chân lông, loại bỏ bã nhờn, bít tắc. Làm sạch sâu da.
++ PHA: làm sáng da, làm ẩm da, hỗ trợ chức năng bảo vệ da, giúp khoá ẩm và làm giảm sự xuất hiện của các nếp nhăn.
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Loại bỏ tế bào chết, cải thiện toàn diện các vấn đề về da, từ tình trạng da xỉn màu, kết cấu không đồng đều đến nếp nhăn và tăng sắc tố.
+
+### Chỉ định
+N/A
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Dùng cọ thoa một lớp mỏng, đều lên vùng mặt và cổ, từ ngoài vào trong. Lưu trên da trong 3-5 phút, tùy theo phản ứng của da rồi lau sạch bằng nước ấm.
+---
+## Christina - Nuance - 3 Glyco-Mineral Peel Mask - 250ml (Mặt nạ khoáng chất hỗ trợ peel da)
+- **ID:** 47
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 3 Glyco-Mineral Peel Mask - 250ml (Mặt nạ khoáng chất hỗ trợ peel da)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Kaolin: làm sạch sâu bã nhờn, dầu thừa, thanh lọc làn da.
+- Calamine, kẽm, đồng, magiê: cung cấp những khoáng chất cần thiết cho da.
+- Niacinamide: cung cấp độ ẩm, làm dịu da.
+- Panthenol: làm dịu da
+- Citric acid: làm sáng da
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Mặt nạ giúp làm sạch sâu, cung cấp các khoáng chất và dinh dưỡng cần thiết cho da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Dùng cọ thoa một lớp mỏng, đều lên vùng mặt và cổ, từ ngoài vào trong. Lưu trên da trong 3-5 phút, tùy theo phản ứng của da.
+---
+## Christina - Nuance - 4 Grape-Dew Hydrating Tonic 100 (Toner cân bằng và trẻ hóa da)
+- **ID:** 48
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 4 Grape-Dew Hydrating Tonic 100 (Toner cân bằng và trẻ hóa da)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất gừng: có tính ấm, kích thích lưu thông tuần hoàn máu
+- Chiết xuất cây phỉ: kháng viêm, chống oxy hoá, làm sạch da nhẹ nhàng
+- Chiết xuất nho xanh: chống oxy hoá cao
+- Hyaluronic acid: duy trì độ ẩm trên da, phục hồi làn da khoẻ mạnh.
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Bổ sung độ ẩm và làm săn chắc da, thúc đẩy sự hấp thụ tối ưu của các sản phẩm tiếp theo
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Xịt từ khoảng cách 20 cm lên mặt đã rửa sạch. Vỗ nhẹ bằng đầu ngón tay cho đến khi sản phẩm thẩm thấu hoàn toàn.
+---
+## Christina - Nuance - 5 Eyes-Up Booster Mask - 75ml (Mặt nạ tăng cường trẻ hóa da vùng mắt)
+- **ID:** 49
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 5 Eyes-Up Booster Mask - 75ml (Mặt nạ tăng cường trẻ hóa da vùng mắt)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất cây phỉ: kháng viêm, chống oxy hoá, làm sạch nhẹ nhàng.
+- Panthenol: làm dịu da
+- Bơ hạt mỡ (Theobroma Grandiflorum Seed Butter): cung cấp chất béo cần thiết, nuôi dưỡng làn da
+
+Dung tích: 75ML
+
+### Công dụng
+Công dụng:
+Được bào chế chuyên nghiệp để làm mờ nếp nhăn và làm cho làn da mỏng manh quanh mắt trông trẻ trung hơn. Có đặc tính nâng cơ và thẩm thấu dễ dàng, giúp đôi mắt trẻ trung và rạng rỡ hơn
+
+### Chỉ định
+N/A
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Dùng cọ nhỏ, thoa một lớp mỏng, đều lên vùng mắt. Massage cho đến khi thẩm thấu hoàn toàn.
+---
+## Christina - Nuance - 6 Intense Repair Cream Rich - 500ml	 (Kem massage giàu dưỡng chất, tăng cường sửa chữa da)
+- **ID:** 50
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 6 Intense Repair Cream Rich - 500ml	 (Kem massage giàu dưỡng chất, tăng cường sửa chữa da)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Cây bất tử: kháng viêm, làm dịu da, chống oxy hoá cao.
+- Collagen acid amin: phục hồi độ đàn hồi, độ ẩm trên da. Kích thích tăng sinh collagen, elastin.
+- Squalane: cấp ẩm, nuôi dưỡng da.
+
+Dung tích: 500ML
+
+### Công dụng
+Công dụng:
+Giàu dinh dưỡng và Omega giúp phục hồi độ đàn hồi và độ ẩm, chống oxy hóa và tăng cường sức đề kháng cho da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Dùng cọ /thìa, thoa đều lên mặt, cổ và vùng quai xanh. Massage cho đến khi thẩm thấu hoàn toàn. Lau sạch phần còn lại bằng khăn ẩm.
+---
+## Christina - Nuance - 7 Marine Algae Cooling Mask - 150ml (Mặt nạ tảo biển làm mát)
+- **ID:** 51
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 7 Marine Algae Cooling Mask - 150ml (Mặt nạ tảo biển làm mát)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Tảo xoắn xanh: kháng viêm mạnh mẽ, chống oxy hoá cao.
+- Peptide: chống lão hoá, ngăn chặn sự hình thành của các dấu hiệu lão hoá sớm.
+- Chiết xuất hạt diêm mạch thuỷ phân: giữ ẩm cho da, giàu axit béo cần thiết, khôi phục chức năng rào cản da, giúp giữ ẩm và duy trì sự mềm mại cho làn da. Giàu Vitamin C, bảo vệ da khỏi tác hại từ tia UV.
+
+Dung tích: 150ML
+
+### Công dụng
+Công dụng:
+Mang lại hiệu ứng săn chắc và làm mịn da, mang lại vẻ ngoài trẻ trung hơn.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Trộn 3 thìa bột mặt nạ với 5 thìa nước lạnh từ từ thêm vào để tạo thành hỗn hợp sệt, mịn. Dùng thìa, quét lên mặt và cổ. Để khô trong 7-10 phút. Lột nhẹ nhàng từ dưới lên trên.
+---
+## Christina - Nuance - 8 Immortelle-Infused Elixir Serum - 100ml	 (Serum tăng cường trẻ hóa và bảo vệ da từ cây bất tử)
+- **ID:** 52
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 8 Immortelle-Infused Elixir Serum - 100ml	 (Serum tăng cường trẻ hóa và bảo vệ da từ cây bất tử)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Cây Immortelle: chất chống oxy hóa, flavonoid, chất dưỡng ẩm và đặc tính làm dịu
+- Collagen acid amin: phục hồi độ đàn hồi, độ ẩm trên da. Kích thích tăng sinh collagen, elastin.
+- Squalane: cấp ẩm, nuôi dưỡng da.
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Giàu dinh dưỡng và Omega giúp phục hồi độ đàn hồi và độ ẩm, chống oxy hóa và tăng cường sức đề kháng cho da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa một vài giọt lên mặt và cổ, massage nhẹ nhàng thẩm thấu.
+---
+## Christina - Nuance - 9A Protective Day Wear SPF 30 -  150ml (Kem dưỡng ban ngày trẻ hóa và bảo vệ da SPF30)
+- **ID:** 53
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 9A Protective Day Wear SPF 30 -  150ml (Kem dưỡng ban ngày trẻ hóa và bảo vệ da SPF30)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Ferulic acid: đặc tính chống oxy hoá cao,
+- Chiết xuất Yacon: cây sâm đất có nguồn gốc từ Nam Mỹ, là nguồn fructooligosaccharides (FOS) dồi dào, giúp duy trì hệ vi sinh vật khỏe mạnh, chống lại các tác nhân gây hại từ môi trường bên ngoài.
+- Acetyl Tetrapeptide-2: kích thích tăng sinh và tổng hợp collagen.
+- Tocopheryl Acetate (vitamin E): chống oxy hoá, dưỡng ẩm và làm mềm da.
+
+Dung tích: 150ML
+
+### Công dụng
+Công dụng:
+Phức hợp peptide mạnh mẽ được tăng cường với axit ferulic cung cấp khả năng bảo vệ mạnh mẽ chống lại các gốc tự do, giúp làn da luôn tươi trẻ và đàn hồi. Được làm giàu với chiết xuất yacon, tăng cường sức đề kháng và độ tươi mới cho làn da
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Sử dụng hàng ngày dành cho vùng da mặt và cổ. Vỗ nhẹ bằng đầu ngón tay cho đến khi thẩm thấu hoàn toàn.
+---
+## Christina - Nuance - 9B Pro-Collagen Radiance Cream - 150ml	 (Kem dưỡng trẻ hóa và làm rạng rỡ da)
+- **ID:** 54
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nuance - 9B Pro-Collagen Radiance Cream - 150ml	 (Kem dưỡng trẻ hóa và làm rạng rỡ da)
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Collagen axit amin: phục hồi độ đàn hồi, độ ẩm trên da. Kích thích tăng sinh collagen, elastin.
+- Melatonin liposome: chống oxy hoá, chống viêm.
+- Chiết xuất hạt diêm mạch thuỷ phân: giữ ẩm cho da, giàu axit béo cần thiết, khôi phục chức năng rào cản da, giúp giữ ẩm và duy trì sự mềm mại cho làn da. Giàu Vitamin C, bảo vệ da khỏi tác hại từ tia UV.
+
+Dung tích: 150ML
+
+### Công dụng
+Công dụng:
+Công nghệ tiên tiến, kem dưỡng ẩm hiệu suất cao trong công thức lai kết hợp các mảnh collagen axit amin mới và melatonin liposome. Cải thiện độ săn chắc, kết cấu và làm mờ đường nhăn nhăn và nếp nhăn nhỏ.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa lên mặt đã rửa sạch. Massage nhẹ nhàng cho đến khi thẩm thấu hoàn toàn.
+---
+## Christina - Nude - 1 Balancing Cleanser - 500ml ()
+- **ID:** 66
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 1 Balancing Cleanser - 500ml ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Salicylic acid – điều tiết bã nhờn, duy trì mức bã nhờn của da cân bằng và ngăn ngừa sự hình thành các vết thâm mới. Thúc đẩy quá trình thay mới tế bào tự nhiên của da, giúp da mềm mại và mịn màng hơn.
+- Niacinamide - giúp cân bằng da, đồng thời bổ sung độ ẩm cần thiết, giúp da mềm mại và dịu nhẹ. Bổ sung lipid thiết yếu giúp bảo vệ chức năng hàng rào bảo vệ da.
+- Trà xanh và cải xoăn – siêu thực phẩm với hàm lượng chất chống oxy hoá cao giúp bảo vệ da khỏi các gốc tự do, các tác nhân gây hại và ô nhiễm từ môi trường. Giúp làm dịu da, giảm mẩn đỏ và kích ứng. Tăng cường làm đồng đều màu da và rạng rỡ hơn.
+
+Dung tích: 500ML
+
+### Công dụng
+Công dụng:
+Sữa tắm làm sạch dịu nhẹ có chứa Salicylic acid và Niacinamide. Loại bỏ tạp chất và loại bỏ bã nhờn dư thừa từ lỗ chân lông, giúp làm sạch sâu làn da cơ thể. Chiết xuất trà xanh và cải xoăn giúp giải độc, làm dịu và bảo vệ da.
+
+### Chỉ định
+N/A
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Làm ướt tay và tạo bọt một lượng nhỏ sản phẩm. Thoa lên da ẩm và massage theo chuyển động tròn. Lau sạch bằng khăn ấm.
+---
+## Christina - Nude - 2A Berries Smoothing Scrub - 250ml ()
+- **ID:** 67
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 2A Berries Smoothing Scrub - 250ml ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Axit trái cây (Glycolic, Malic, Mandelic Acid) – Các chất tẩy tế bào chết mạnh này hòa tan các tế bào da chết và giúp thông thoáng lỗ chân lông, giúp da mịn màng và đàn hồi hơn. Chúng có tác dụng tăng cường quá trình tái tạo tự nhiên của da, giúp da tươi mới và rạng rỡ.
+- Gluconolactone – Một loại axit polyhydroxy (PHA) được biết đến là có hiệu quả như AHA, thúc đẩy quá trình tái tạo bề mặt da và giúp giữ lại các phân tử nước trong da, mang lại làn da căng mọng, ẩm mượt.
+- Bột hạt mơ – Một chất tẩy tế bào chết cơ học tự nhiên giúp loại bỏ các tế bào da chết, đặc biệt là ở những vùng da khô và dày hơn. Các kích thước hạt khác nhau của nó mang lại hiệu ứng làm mịn ngay lập tức, giúp da mềm mại và mượt mà khi chạm vào.
+- Hợp chất quả mọng (Goji, Bearberry, Mulberry) – Hỗn hợp có nguồn gốc từ thực vật này rất giàu cả AHA và axit amin, thúc đẩy quá trình tái tạo tế bào và mang lại làn da mịn màng hơn. Chứa nhiều chất chống oxy hóa, nó giúp dưỡng ẩm, làm mềm và cải thiện độ đàn hồi của da, đồng thời tăng cường chức năng hàng rào bảo vệ da.
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Tẩy tế bào chết 2 trong 1 mạnh mẽ kết hợp các chất tẩy tế bào chết hóa học và vật lý bao gồm axit trái cây, bột hạt mơ và phức hợp quả mọng nuôi dưỡng. Làm mịn kết cấu da ngay lập tức đồng thời thúc đẩy quá trình tái tạo tự nhiên của da. Nó loại bỏ hiệu quả các tế bào da chết, giúp da mềm mại, ngậm nước và tươi mới mà không gây khô hoặc kích ứng.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Nhẹ nhàng massage hỗn hợp tẩy tế bào chết lên da ướt và lau sạch.
+---
+## Christina - Nude - 2B Deep Herbal Peel - 250ml ()
+- **ID:** 68
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 2B Deep Herbal Peel - 250ml ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Antioxidant peptide-FA Peptide chống oxy hóa-FA – Một phức hợp chống oxy hóa mạnh mẽ kết hợp Acetyl Tetrapeptide-2 và axit ferulic. Nó cung cấp khả năng bảo vệ toàn diện chống lại lão hóa do ánh sáng và duy trì sức khỏe làn da.
+- Caffeine – Kích thích và dẫn lưu, mang lại làn da mịn màng, tươi sáng. Nó làm co mạch máu và giảm lưu lượng máu, giúp da sáng hơn và săn chắc hơn. Axit salicylic và benzoic – Điều trị các rối loạn về da bằng phương pháp tác động kép.
+- Axit salicylic: giúp làm sạch bụi bẩn và kiểm soát dầu lỗ chân lông.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Giúp da hô hấp tốt hơn và tăng cường lưu thông máu, mang lại làn da sáng hơn, săn chắc hơn. Peel có tác dụng ở cả cấp độ nhìn thấy được, cải thiện tông màu và kết cấu da, và ở cấp độ vô hình, loại bỏ các gốc tự do.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa với động tác massage nhẹ nhàng và để trên da trong 5-7 phút hoặc ít hơn, tùy thuộc vào phản ứng của da. Lau sạch hoàn toàn.
+---
+## Christina - Nude - 2C FRANGIPANI MILD PEEL ()
+- **ID:** 69
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 2C FRANGIPANI MILD PEEL ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Glycolic acid 3,5% – Loại bỏ hiệu quả các tế bào da chết và tạp chất trên bề mặt da đồng thời kích thích tái tạo da để có kết cấu mịn màng hơn, đều màu hơn và làn da tươi mới hơn
+- Phức hợp Tripeptide – Một peptide mô phỏng sinh học được thiết kế để đẩy nhanh quá trình thay đổi tế bào, mang lại làn da trẻ trung và rạng rỡ hơn. Nó nhắm vào lớp sừng ngoài cùng, nơi nó phá vỡ các liên kết giữa các tế bào chết, thúc đẩy quá trình bong tróc nhẹ nhàng.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Sản phẩm peel tác động kép đặc biệt này, với kết cấu dạng kem sang trọng, kết hợp sức mạnh tẩy tế bào chết của axit glycolic và tripeptide để tái tạo da tối ưu. Được làm giàu với squalane, bơ hạt mỡ, chiết xuất thực vật và tinh chất làm dịu của hoa sứ, sản phẩm nuôi dưỡng sâu làn da mới tẩy tế bào chết, giúp da mịn màng hơn, tươi trẻ hơn và đều màu hơn. Lý tưởng để có được làn da rạng rỡ đồng thời cung cấp độ ẩm và chăm sóc làm dịu cho quá trình phục hồi sau khi tẩy tế bào chết.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa đều kem lên da. Để trong 5–10 phút, điều chỉnh dựa trên độ nhạy cảm của da. Lau sạch hoàn toàn.
+---
+## Christina - Nude - 2D SEA HERBS PEEL - 30GR ()
+- **ID:** 70
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 2D SEA HERBS PEEL - 30GR ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Bột san hô – Một chất kích thích mạnh mẽ quá trình thay đổi tế bào. Loại lột da không có tính axit này, được làm giàu với các loại thảo mộc biển và chiết xuất thực vật, giúp tăng cường tái tạo tế bào và kích thích tái tạo da.
+- Chiết xuất Boswellia – Làm giảm mẩn đỏ và viêm. Nó hỗ trợ cải thiện kết cấu da, tính toàn vẹn và giúp làm chậm sự phát triển của các khuyết điểm trên da.
+- Tảo xoắn – Một chiết xuất tảo thực vật có chất chống oxy hóa và chống viêm giúp làm dịu da và bảo vệ chống lại các gốc tự do.
+- Axit salicylic – Điều chỉnh sản xuất dầu để duy trì mức bã nhờn cân bằng và ngăn ngừa sự hình thành các vết thâm mới.
+- Axit ascorbic – Làm sáng da xỉn màu, làm mờ các đốm đen và làm đều màu da.
+
+Dung tích: 30GR
+
+### Công dụng
+Công dụng:
+Xà phòng peel sử dụng các chất tẩy tế bào chết tự nhiên, bao gồm hàng triệu silicat san hô thu nhỏ để tái tạo da. Nhắm vào các vùng da không đều màu, tăng khả năng phục hồi và giúp ngăn ngừa các biểu hiện không mong muốn của da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Làm mềm xà phòng trước khi sử dụng bằng cách ngâm trong nước ấm trong vài phút. Tạo bọt xà phòng vào đầu ngón tay và massage lên vùng da được điều trị trong 1-2 phút. Lau sạch hoàn toàn.
+---
+## Christina - Nude - 3A PHYTO-REPAIR MASSAGE CREAM ()
+- **ID:** 71
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 3A PHYTO-REPAIR MASSAGE CREAM ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Hỗn hợp tảo biển – Hỗn hợp mạnh mẽ này gồm tảo xanh lam, xanh lục và nâu giúp tăng cường
+độ ẩm cho da, bảo vệ da khỏi stress oxy hóa và cải thiện chất lượng mô.
+- Phyto Ceramides – Một hỗn hợp thực vật được điều chế để tăng cường và bảo vệ làn da khô, lão hóa và bị tổn thương. Tăng cường chức năng hàng rào bảo vệ của da, giảm mất nước qua biểu bì (TEWL) và cải thiện độ đàn hồi.
+- Marine Moist – Chứa các axit amin dưỡng ẩm và tái tạo mạnh mẽ mang lại sự thoải mái đặc biệt cho làn da, ngay cả trong điều kiện khắc nghiệt
+
+Dung tích: 500ML
+
+### Công dụng
+Công dụng:
+Kem massage body có kết cấu nhẹ, mượt mang lại hiệu quả tức thì và hydrat hóa lâu dài. Công thức tăng cường khả năng giữ ẩm trong mọi điều kiện thời tiết, giữ cho làn da mịn màng và dẻo dai suốt cả ngày. Giàu amino axit, phyto-ceramides và tảo biển, kem giúp tăng khả năng bảo vệ của hàng rào tự nhiên của da, khóa ẩm và mang lại cảm giác mềm mại, mượt mà. Ngoài ra, nó còn tăng cường độ đàn hồi của da, giúp da mềm mại hơn, đàn hồi hơn và được nuôi dưỡng sâu hơn.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa một lượng vừa đủ và massage body
+---
+## Christina - Nude - 3B CALMING MASK ()
+- **ID:** 72
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 3B CALMING MASK ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất từ củ Yacon (Địa tàng thiên) - chiết xuất này rất giàu fructo oligosaccharides (FOS), hoạt động như prebiotic. Nó bảo vệ và tăng cường hệ vi sinh vật của da, cải thiện chức năng và tính toàn vẹn của hàng rào bảo vệ da.
+- Kaolin và kẽm: Đất sét tự nhiên có tác dụng giải độc bằng cách hấp thụ dầu thừa và loại bỏ cặn bã, giúp lỗ chân lông thông thoáng, làm dịu kích ứng và giảm khó chịu.
+- Tảo xoắn: Một loại tảo siêu nhỏ có tác dụng chống oxy hóa, nuôi dưỡng và giữ ẩm cho da đồng thời cung cấp đặc tính bảo vệ da khỏi tác hại của các gốc tự do.
+
+Dung tích: 250ML
+
+### Công dụng
+Công dụng:
+Mặt nạ đất sét làm dịu và cân bằng các vấn đề về da cơ thể. Công thức phục hồi này nhắm vào các khuyết điểm, mang lại hiệu quả giúp làm da dịu, ngậm nước và sáng hơn. Sản phẩm lý tưởng giúp giải quyết các rối loạn về da body, giúp tăng cường độ sáng và mềm mại trong khi vẫn duy trì độ ẩm tối ưu.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa một lớp đều lên vùng điều trị và để trong 10 phút. Lau nhẹ bằng khăn ướt, ấm để tránh gây kích ứng.
+---
+## Christina - Nude - 4A RADIANCE SERUM ()
+- **ID:** 73
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả ngắn
+Christina - Nude - 4A RADIANCE SERUM ()
+Mọi loại da
+
+### Mô tả đầy đủ
+Thành phần:
+- Radiance active (phức hợp quả mọng): Một hỗn hợp của quả mâm xôi, dâu tằm, dâu đen và dâu gấu, giàu vitamin C tự nhiên. Phức hợp này làm sáng làn da xỉn màu, thúc đẩy quá trình tổng hợp collagen và thúc đẩy làn da đều màu, rạng rỡ hơn.
+- Niacinamide (Vitamin B3): Một thành phần hoạt tính đa chức năng giúp cải thiện kết cấu và vẻ ngoài của da.
+
+Dung tích: 100ML
+
+### Công dụng
+Công dụng:
+Serum dưỡng ẩm nhẹ nhàng với sắc tố sapphire phản chiếu, vitamin C có nguồn gốc từ quả mọng đỏ và niacinamide giúp cải thiện tông màu và kết cấu da không đều, mang lại vẻ rạng rỡ tươi mới. Axit hyaluronic và polysaccharides tăng cường khả năng giữ ẩm, cung cấp độ ẩm lâu dài, thúc đẩy độ đàn hồi của da và bảo vệ hàng rào bảo vệ da.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Thoa một lượng vừa đủ massage cho đến khi thẩm thấu hoàn toàn, tập trung vào những vùng cần làm sáng hơn.
+---
+## Christina - Nude - 4B PROTECTING MIST ()
+- **ID:** 74
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất nhũ hương (Boswellia) - ức chế hai loại enzyme gây viêm, 5-lipoxygenase và elastase chịu trách nhiệm sản xuất các chất trung gian gây viêm, từ đó, hỗ trợ hiệu ứng chống viêm, giảm đỏ, cải thiện kết cấu da và tính toàn vẹn của da cũng như làm chậm quá trình lão hóa da.
+- Chiết xuất cúc vạn thọ (Calendula) - làm giảm mẩn đỏ và ngứa, ngăn ngừa sự hình thành các gốc tự do, tăng cường hàng rào bảo vệ da.
+​​- Chiết xuất thực vật - Phức hợp thúc đẩy tác dụng làm dịu và tái tạo, lý tưởng cho làn da nhạy cảm hoặc bị kích ứng
+
+Dung tích: 150ML
+
+### Công dụng
+Công dụng:
+Xịt toàn thân trong suốt, mát lạnh mang đến tác động nhanh chóng đến những vùng khó tiếp cận, hiệu quả nổi trội trong việc ngăn ngừa mụn toàn cơ thể. Giàu dưỡng chất với chiết xuất ​​cây nhũ hương (Boswellia) và cúc vạn thọ (Calendula), sản phẩm bảo vệ da khỏi ô nhiễm, vi khuẩn và các gốc tự do. Hợp chất làm dịu của cây sáng mắt (Euphrasia), bạc hà (Mint) và mộc lan (Magnolia) giúp giảm kích ứng, cung cấp độ ẩm và lợi ích làm dịu cho làn da sáng hơn, khỏe mạnh hơn.
+
+### Hướng dẫn sử dụng
+Hướng dẫn sử dụng:
+Giữ bình xịt cách cơ thể khoảng 30 cm và xịt lên vùng da sau khi làm sạch và lau khô. Để khô trong 30-60 giây trước khi mặc quần áo.
+---
+## Christina - Rose De Mer - 1 Savon Supreme - 150ml (Xà bông giảm vi khuẩn và làm sạch sâu)
+- **ID:** 79
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,156,000 VNĐ
+- **Giá gốc:** 2,156,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Rose De Mer - 1 Savon Supreme - 150ml (Xà bông giảm vi khuẩn và làm sạch sâu)
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất Arnica: kháng khuẩn và sát khuẩn
+- Chiết xuất trà xanh: làm dịu kích ứng, đỏ và bảo vệ da khỏi tia UV
+- Glycolic acid: kích thích loại bỏ tế bào chết
+- Chiết xuất cà chua: đặc tính kháng khuẩn, làm sạch
+
+Dung tích: 150 ml
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/1-xa-bong-khang-khuan-lam-sach-sau-savon-supreme-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-21.png
+---
+## Christina - Rose de mer 2A+2B sea Herbal Deep peel kit (20 sachets) (Bộ kit Rose Der Mer 2A+2B)
+- **ID:** 80
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 22,000,000 VNĐ
+- **Giá gốc:** 22,000,000 VNĐ
+
+### Mô tả ngắn
+Christina - Rose de mer 2A+2B sea Herbal Deep peel kit (20 sachets) (Bộ kit Rose Der Mer 2A+2B)
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+
+### Mô tả đầy đủ
+Thành phần:
+- Bột san hô: thúc đẩy sản sinh tế bào mới
+- Ascorbic acid: chống oxy hóa và làm sáng da
+- Chiết xuất Arnica: kháng khuẩn và sát khuẩn
+Công dụng:
+Cải thiện kết cấu da, màu sắc và sự đều màu trên da để giảm thiểu các rãnh nhăn, tăng cường collagen và tái tạo tế bào, đồng thời cải thiện lưu thông máu và sự dẫn lưu mạch bạch huyết.
+Chỉ định:
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+Hướng dẫn sử dụng:
+Trộn 1/4 gói Sea Herbal Deep Peel với khoảng 3ml Herbal Peel Activator. Thoa hỗn hợp peel đồng đều lên da và bắt đầu với chuyển động tròn. Massage mặt trong 3-9 phút. Để lại trên da khoảng 5-10 phút rồi lau sạch lại bằng nước.
+Dung tích: 4.5g x 20 gói
+---
+## Christina - Rose De Mer - 3 Soothing mask - 250ml (Mặt nạ giảm vi khuẩn làm dịu da)
+- **ID:** 82
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,800,000 VNĐ
+- **Giá gốc:** 2,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Rose De Mer - 3 Soothing mask - 250ml (Mặt nạ giảm vi khuẩn làm dịu da)
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+
+### Mô tả đầy đủ
+Thành phần:
+- Phức hợp Zinc Oxide, Kaolin và Sulfur: làm dịu da bị kích thích và thu nhỏ lỗ chân lông
+- Salicylic acid: chất làm trẻ hóa
+- Chiết xuất cam thảo: thành phần chống oxy hóa và làm dịu da mạnh mẽ
+- Chiết xuất Boswellia: ngăn ngừa viêm, kháng khuẩn, chống vi khuẩn và sát trùng
+Công dụng:
+Tăng cường phục hồi, làm dịu da. Công thức tiên tiến giúp se khít lỗ chân lông, hấp thụ lượng dầu thừa, khóa chặt những thành phần hoạt tính trong các lớp da để tiếp tục quá trình tái tạo tế bào.
+Chỉ định:
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+Hướng dẫn sử dụng:
+Lấy 3ml sản phẩm vừa phải, dùng chổi thoa đều sản phẩm lên mặt. Để khoảng 10 phút. Rửa sạch bằng nước.
+Dung tích: 250 ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3-mat-na-duong-am-lam-diu-da-soothing-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-17.png
+---
+## Christina - Rose De Mer - 4 Post Peeling protective gel - 150ml (Gel giảm vi khuẩn, đổi mới và bảo vệ da)
+- **ID:** 83
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,475,000 VNĐ
+- **Giá gốc:** 2,475,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Rose De Mer - 4 Post Peeling protective gel - 150ml (Gel giảm vi khuẩn, đổi mới và bảo vệ da)
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+
+### Mô tả đầy đủ
+Thành phần:
+- Chiết xuất Boswellia: ngăn ngừa viêm, kháng khuẩn, chống vi khuẩn và sát trùng.
+- Chiết xuất lô hội: chống vi khuẩn và chống viêm
+- Chiết xuất Calendula: chất sát trùng và chống vi khuẩn, tăng cường hoạt động bảo vệ da.
+- Pentavitin: cung cấp hydrat hóa phong phú.
+
+Công dụng:
+Bảo vệ làn da nhạy cảm, hoạt động như một tấm màn chống lại các yếu tố môi trường và cải thiện kết quả của việc thay da. Giúp kháng khuẩn, chống viêm hiệu quả.
+Chỉ định:
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+Hướng dẫn sử dụng:
+Lấy 1ml sản phẩm thoa đều lên mặt. Massage cho đến khi hấp thụ hoàn toàn. Khi da vẫn ẩm chuyển sang luôn bước 5
+Dung tích: 150 ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4-gel-khang-khuan-tai-tao-va-bao-ve-da-post-peeling-protective-gel-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/3-16.png
+---
+## Christina - Rose De Mer - 5 Post peeling cover cream - 20ml (Kem giảm vi khuẩn, đổi mới và bảo vệ da)
+- **ID:** 84
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,586,000 VNĐ
+- **Giá gốc:** 3,586,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Rose De Mer - 5 Post peeling cover cream - 20ml (Kem giảm vi khuẩn, đổi mới và bảo vệ da)
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+
+### Mô tả đầy đủ
+Thành phần:
+- Bơ hạt mỡ: làm mịn và cải thiện độ đàn hồi
+- Vitamin A, C, E Complex: ngăn ngừa tổn thương do oxy hóa, tăng collagen
+- Tinh dầu Calendula: chất sát trùng và chống vi khuẩn
+- Kalpariane: loại bỏ gốc tự do và tăng cường sản xuất collagen
+Công dụng:
+Giúp kháng khuẩn, làm dịu da và ngăn cản tia UV có hại, tạo ra lớp bảo vệ hiệu quả cho làn da sau trị liệu.
+Chỉ định:
+Mọi đối tượng từ tuổi thiếu niên cần điều trị. Da dày sừng, lỗ chân lông to, thiếu độ mịn màng. Sắc tố da không đồng đều (nám, tàn nhang, …), da có dấu hiệu lão hóa (nhăn, trùng chảy xệ).
+Hướng dẫn sử dụng:
+Thoa 1 lớp mỏng đều kem lên toàn bộ da mặt. Kết thúc quá trình thay da
+Dung tích: 20 ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-kem-khang-khuan-tai-tao-va-bao-ve-da-post-peeling-cover-cream-20ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-15.png
+---
+## Christina - Illustrious - 1 Micellar water - 300ml (Nước tẩy trang làm sạch và làm sáng da)
+- **ID:** 90
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 1,800,000 VNĐ
+- **Giá gốc:** 1,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 1 Micellar water - 300ml (Nước tẩy trang làm sạch và làm sáng da)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+- Dưa chuột: chất chống oxy hóa, làm dịu, chống viêm và cấp ẩm
+- Chiết xuất lô hội: cung cấp độ ẩm cho da, chống viêm, chống oxy hóa và kháng khuẩn.
+- Bisabolo từ hoa cúc: chống viêm và làm dịu
+
+Công dụng:
+Các hạt micelle hoạt động như một thỏi nam châm, hút và loại bỏ các chất bẩn và make up. Có chứa hoạt chất làm ẩm và làm dịu.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy 1ml sản phẩm vào bông tẩy trang, lau nhẹ nhàng toàn mặt theo chiều cấu tạo da. Lau lại 2- 3 lần nếu khách sử dụng trang điểm đậm.
+Không cần lau lại với nước.
+
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/1-nuoc-tay-trang-lam-sach-va-lam-sang-da-micellar-water-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/36.png
+---
+## Christina - Illustrious - 2A Peel Powder - 30pcsX4.5 (Bột tẩy da chết chuyên sâu)
+- **ID:** 91
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,400,000 VNĐ
+- **Giá gốc:** 4,400,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 2A Peel Powder - 30pcsX4.5 (Bột tẩy da chết chuyên sâu)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+- Ascorbic acid: chống oxy hóa, làm sáng, đồng đều màu da, ức chế sản sinh melanin
+- Tetrahydrodiferuloylmethane: thay thế cho hydroquninoe, ức chế men tyrosinase, ngăn ngừa sản sinh melanin, giảm sắc tố và giảm thâm.
+- Kojic acid: làm sáng, giảm thâm
+
+Công dụng:
+Công thức hoạt động 2 tầng kích thích sự trao đổi chất để tăng cường cung cấp oxy và làm sáng ngay tức thì. Trung hoà các gốc tự do là nguyên nhân gây nám, ngăn ngừa hoạt đồng của tyrosinase và hoạt động hình thành vết thâm sau mụn.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy 2gram Bột 2A+ 4ml dung dịch 2B, trộn đều, dùng chổi đánh tạo bông bọt, đến khi tan hết bột 2A (Đánh càng bông bọt, sản phẩm hoạt hóa càng tốt trên da).
+Dùng chổi quét đều lên mặt, để thư giãn trên mặt từ 3-5 phút tùy tình trạng da, không massage, sau đó rửa lại bằng nước sạch và khăn ấm.
+(Nếu sau 2 phút, khách vẫn còn cảm giác châm chích thì dùng nước sạch lau đi, sau đó sử dụng bước 1: Micellar Water để làm dịu và cân bằng da).
+
+Dung tích: 4.5GR x 30 gói
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2a-bot-tay-da-chet-chuyen-sau-peel-powder/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/37-1.png
+---
+## Christina - Illustrious - 2B Peel Activator - 300ml (Dung dịch hoạt hóa bột tẩy da chết)
+- **ID:** 92
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,400,000 VNĐ
+- **Giá gốc:** 4,400,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 2B Peel Activator - 300ml (Dung dịch hoạt hóa bột tẩy da chết)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+- AHA + BHA: loại bỏ tế bào chết và làm mới tế bào, giảm không đồng đều màu da, cải thiện bề mặt da.
+- Retinol dạng viên cầu: tái tạo da, giảm vết thâm và đồng đều màu da, tăng sinh collagen
+- Chiết xuất plankton: thanh lọc, thải độc da, làm sáng da
+
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+
+Dung tích: 300 ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2b-dung-dich-hoat-hoa-bot-tay-da-chet-peel-activator-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/38.png
+---
+## Christina - Illustrious - 3 Hydro Fusion - 30X1.5 (Dung dịch làm dịu tăng cường hiệu quả làm trắng sáng)
+- **ID:** 93
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,980,000 VNĐ
+- **Giá gốc:** 3,980,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 3 Hydro Fusion - 30X1.5 (Dung dịch làm dịu tăng cường hiệu quả làm trắng sáng)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+- Tetrahydrocurcumin: thay thế cho hydroquinone, ức chế men tyrosinase, ngăn ngừa sản sinh melanin, giảm sắc tố và giảm thâm.
+- Vitamin C ổn định: chống oxy hóa, loại bỏ gốc tự do, giảm sản xuất eumelanin, tăng pheomelanin và thúc đẩy tổng hợp collagen.
+- Chiết xuất kelp: giúp cấp nước, thanh lọc, giảm nhăn.
+
+Công dụng:
+Công thức tươi mới, siêu dịu nhẹ mang lại hiệu quả trắng sáng tức thì.
+Hoạt chất thảo dược làm dịu và làm mát tức thì sau khi peel. Chuỗi Oligosaccharide làm ẩm, tăng cường sáng da xỉn màu, cung cấp các khoáng chất để mang lại làn da trắng sáng và đầy sự sống.
+
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy nửa gói bột với 1 lượng nước khoảng 25ml, trộn đều, bôi lên vùng mặt, cổ và massage trong vòng 10-15 phút cho đến khi thẩm thấu.
+
+Dung tích: 1GR x 30 gói
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3-dung-dich-lam-diu-tang-cuong-hieu-qua-lam-trang-sang-hydro-fusion/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/39.png
+---
+## Christina - Illustrious - 4 Mask - 250ml (Mặt nạ màu xanh làm giảm vết thâm nám)
+- **ID:** 94
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,530,000 VNĐ
+- **Giá gốc:** 2,530,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 4 Mask - 250ml (Mặt nạ màu xanh làm giảm vết thâm nám)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+ - Phức hợp khoáng chất: làm trắng, bảo vệ và cung cấp khoáng chất cho da
+- Chiết xuất cam thảo: hoạt chất làm trắng mạnh mẽ, chống oxy hoá và chống viêm.
+- Resveratrol: làm chậm quá trình tích tụ melanin, sáng da, tăng khả năng chống lão hóa
+
+Công dụng:
+Mặt nạ có tác dụng tái tạo bề mặt cho làn da xỉn màu, lão hóa. Giảm đáng kể các đốm đen cho làn da đều màu và trắng sáng hơn.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy 2ml mặt nạ, dùng chổi quét đều sản phẩm lên trên lớp dung dịch Bước 3, để thư giãn trên da khoảng 7-10 phút. Sau đó lau lại bằng nước.
+Lưu ý: Không lau hết, để lại 1 lớp mỏng mặt nạ trên da
+
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4-mat-na-mau-xanh-lam-giam-vet-tham-nam-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/40.png
+---
+## Christina - Illustrious - 5 Algae Mask - 150gr (Mặt nạ trắng sáng và căng bóng từ tinh chất tảo)
+- **ID:** 95
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,685,000 VNĐ
+- **Giá gốc:** 3,685,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 5 Algae Mask - 150gr (Mặt nạ trắng sáng và căng bóng từ tinh chất tảo)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+ - Vitamin C ổn định: chống oxy hóa, loại bỏ gốc tự do, giảm sản xuất eumelanin, tăng pheomelanin  và thúc đẩy tổng hợp collagen
+- Tetrahydrodiferuloylmethane: thay thế cho hydroquninoe, ức chế men tyrosinase, ngăn ngừa sản sinh melanin, giảm sắc tố và giảm thâm.
+- Niacinamide: ức chế melanosome, giúp đồng đều và làm sáng da.
+- Alga White: làm sáng, ức chế nám, chống lão hóa và cấp ẩm cho da.
+
+Công dụng:
+Thúc đẩy đồng đều tông màu và làm sáng da. Tăng sản xuất collagen để giảm các nếp nhăn. Phục hồi hàng rào bảo vệ da và ngăn ngừa mất nước qua da. Giúp làm dịu và cung cấp độ ẩm cho da.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy 6 gram bột trộn 25 ml nước vào bát, khuấy đều.
+Dùng cọ silicon thoa đều lên da, thoa lên trên lớp mỏng mặt nạ xanh còn lại từ bước 4, để khoảng 10-15 phút.
+Sau đó bóc mặt nạ theo chiều từ dưới lên trên, lau lại bằng nước những gì còn sót lại trên mặt.
+Lưu ý: Không để mặt nạ quá khô trên bề mặt da khách, khi đó bóc mặt nạ sẽ có cảm giác căng, khó chịu.
+
+Dung tích: 150GR
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-mat-na-trang-sang-va-cang-bong-tu-tinh-chat-tao-algae-mask-150ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/41.png
+---
+## Christina - Illustrious - 6 Serum - 50ml (Tinh chất làm sáng da)
+- **ID:** 96
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,300,000 VNĐ
+- **Giá gốc:** 3,300,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 6 Serum - 50ml (Tinh chất làm sáng da)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+ - Vitamin C ổn định: chống oxy hóa, loại bỏ gốc tự do, giảm sản xuất eumelanin, tăng pheomelanin và thúc đẩy tổng hợp collagen.
+- Resveratrol: làm chậm quá trình tích tụ melanin, sáng da, tăng khả năng chống lão hóa.
+- Chiết xuất cây Boldo chilean: ức chế tyrosinase, ngăn ngừa sắc tố và tổng hợp melanin gây ra bởi tia cực tím.
+
+Công dụng:
+Cung cấp độ ẩm, làm sáng da, mang lại làn da đồng màu tươi sáng. Giúp chống oxy hóa và chống lão hóa. Công thức độc đáo giúp dễ dàng thẩm thấu sản phẩm.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy một lượng vừa đủ (0,2 – 0,5 ml) chia đều 5 điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+
+Dung tích: 50ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6-tinh-chat-lam-sang-da-serum-50ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/42.png
+---
+## Christina - Illustrious - 7 Day Cream SPF 50 - 100ml (Kem làm sáng da ban ngày có chỉ số chống nắng SPF50)
+- **ID:** 97
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,850,000 VNĐ
+- **Giá gốc:** 3,850,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Illustrious - 7 Day Cream SPF 50 - 100ml (Kem làm sáng da ban ngày có chỉ số chống nắng SPF50)
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+
+### Mô tả đầy đủ
+Thành phần:
+ - UVA + UVB sun filters: bảo vệ da khỏi tia cực tím do ánh nắng mặt trời.
+- Whitening peptide: hiệu quả làm trắng tối ưu thông qua ức chế enzym tham gia vào sản sinh melanin.
+- Chiết xuất cam thảo: hoạt chất làm trắng mạnh mẽ, chống oxy hoá và chống viêm.
+
+Công dụng:
+Chống lão hóa da và chống nắng, thúc đẩy các quá trình tái tạo giúp da tăng cường độ trắng sáng và cung cấp độ ẩm mang lại cho làn da tươi sáng và rạng rỡ.
+Chỉ định:
+Chỉ định: Dùng cho làn da không đồng đều sắc tố (thâm, nám, tàn nhang, …) do nhiều nguyên nhân như UV, thay đổi nội tiết tố, sau điều trị da liễu, thâm viêm. Da thâm nám, tàn nhang, đồi mồi.
+Sản phẩm lý tưởng mang lại hiệu quả vượt trội trong điều trị nám da khi kết hợp cùng công nghệ cao như laser, Meso, Peel da
+Hướng dẫn sử dụng:
+Lấy một lượng vừa đủ (0,2 – 0,5 ml) chia đều 5 điểm trên khuôn mặt, dùng hai ngón tay vỗ đều cho thẩm thấu.
+Dung tích: 100ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-kem-lam-sang-da-ban-ngay-co-chi-so-chong-nang-spf50-day-cream-spf50-100ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/43.png
+---
+## Christina - Line Repair -1 Moisturizing Micellar Milk - 500ml (Làm sạch da mặt và vùng cổ)
+- **ID:** 110
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,255,000 VNĐ
+- **Giá gốc:** 2,255,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -1 Moisturizing Micellar Milk - 500ml (Làm sạch da mặt và vùng cổ)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Hạt micelle: làm sạch các chất trang điểm một cách an toàn và không gây kích ứng da.
+- Chiết xuất hoa xà phòng: làm sạch dịu nhẹ, không gây kích ứng.
+- Chiết xuất hoa cúc: kháng khuẩn và chống viêm cho da
+- 3D moisture: tăng khả năng giữ ẩm cho da.
+
+Công dụng:
+Làm sạch da mặt, cổ. Kết hợp chất làm sạch và chiết xuất hoa xà phòng để làm sạch lớp trang điểm và tạp chất. Làm dịu và dưỡng ẩm, thúc đẩy sự tươi mát và độ đàn hồi.
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Lấy 1ml thoa đều lên mặt và cổ, thoa đều bằng các vòng tròn nhỏ. Sau đó nhũ hóa và rửa lại sạch bằng nước.
+Dung tích: 500ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/lam-sach-da-mat-va-vung-co-moisturizing-micellar-milk-500ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-16.png
+---
+## Christina - Line Repair -2 Oxygen Peel - 250ml (Peel da tăng cường oxy)
+- **ID:** 111
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,860,000 VNĐ
+- **Giá gốc:** 2,860,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -2 Oxygen Peel - 250ml (Peel da tăng cường oxy)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Sinh vật phù du: bổ sung oxy cho tế bào, tăng cường năng lượng, kích thích thay mới tế bào.
+- Phức hợp keratolytic: phá vỡ liên kết tế bào, từ đó loại bỏ tế bào chết một cách nhẹ nhàng. Tăng cường tái tạo và làm đều màu da.
+- Chiết xuất cây phỉ: chứa lượng lớn tannin, làm giảm viêm, mẩn đỏ.
+
+Bước peeling của LINE REPAIR - thúc đẩy sự thâm nhập của các hoạt chất vào sâu của lớp biểu bì.
+Công dụng:
+Làm mới những làn da trông mệt mỏi. Enzyme thực vật loại bỏ tế bào chết để lại làn da mịn màng và đàn hồi. Công thức độc đáo giúp cải thiện các quá trình kích thích sinh học giúp tăng cường lưu thông máu, cung cấp oxy và chuyển hóa tế bào. Việc tẩy da chết tạo điều kiện cho AHA phát huy hiệu quả tối đa, đồng thời làn da nhận được sự tăng cường oxy và năng lượng theo hướng đổi mới.
+
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Thoa 1 lớp mỏng lên da khô. Để trong 3-5 phút. Rửa sạch.
+
+LƯU Ý: Để tăng cường tẩy da chết, có thể dùng bông để lau với chuyển động tròn.
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/2-tay-te-bao-chet-oxygen-peel-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/3-18.png
+---
+## Christina - Line Repair -3 Glow Mask - 250ml (Mặt nạ đẩy nhanh quá trình thay mới tế bào da)
+- **ID:** 112
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 1,800,000 VNĐ
+- **Giá gốc:** 1,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -3 Glow Mask - 250ml (Mặt nạ đẩy nhanh quá trình thay mới tế bào da)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Glycolic acid: làm đều màu da và kết cấu da, kích thích sản sinh Collagen. Thu nhỏ lỗ chân lông.
+- Malic acid: làm mềm mịn da và cải thiện sắc diện da, làm giảm nếp nhăn.
+- Phytic acid: chống Oxy hoá và Gốc tự do, nhẹ nhàng loại bỏ tế bào chết.
+- Chiết xuất dâu tằm: làm đều màu da và chống viêm
+- Hyaluronic acid: tăng cường săn chắc da, giữ ẩm cho da. Ngăn ngừa hình thành nếp nhăn.
+- Bio-cellulose: tạo nên một lớp màng sợi giúp phân tán đồng đều các hoạt chất trong sâu của da.
+Bước dưỡng ẩm trong các giai đoạn peeling của LINE REPAIR - thúc đẩy quá trình đổi mới da, kích thích các quá trình sinh học chuyên sâu ,cần thiết trong việc trì hoãn quá trình lão hóa.
+
+Công dụng:
+15%  AHA đẩy nhanh quá trình đổi mới tế bào, cải thiện đáng kể kết cấu. Phức hợp của axit trái cây, vitamin C và hyaluronic acid thúc đẩy sự hình thành của các tế bào và protein mới, khỏe mạnh, làm mờ nếp nhăn và rãnh nhăn, tăng cường độ ẩm cho da. Xenluloza sinh học tạo ra một lớp màng sợi giúp phân tán đồng đều các hoạt chất trong sâu của da. Được đóng gói với các chất dinh dưỡng tăng cường sắc đẹp như AHA, làm tăng hiệu quả hoạt động của tế bào để có một vẻ ngoài trẻ trung hơn.
+
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Quét 1 lớp mỏng (1-2ml) lên bề mặt da, để nguyên sản phẩm trên da từ 3-5 phút. Làm sạch lại với nước.
+
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/3-mat-na-day-nhanh-qua-trinh-thay-moi-te-bao-da-glow-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/4-19.png
+---
+## Christina - Line Repair -4 Ultra Nourish Mask - 250ml (Mặt nạ phục hồi hàng rào bảo vệ da)
+- **ID:** 113
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 1,518,000 VNĐ
+- **Giá gốc:** 1,518,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -4 Ultra Nourish Mask - 250ml (Mặt nạ phục hồi hàng rào bảo vệ da)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Dầu hạnh nhân: giảm kích ứng, bảo vệ da khỏi những yếu tố từ tia UV, ngăn ngừa lão hoá sớm.
+- Dầu jojoba: dưỡng ẩm tự nhiên, làm mềm nhanh chóng, mang lại làn da mềm mại, mịn màng.
+- Bơ hạt mỡ: dưỡng ẩm, nuôi dưỡng, làm mềm, làm dịu và bảo vệ da.
+- Vitamin E: chống oxy hóa mạnh, giảm viêm và cung cấp độ ẩm.
+- Squalene: đặc tính làm mềm vượt trội, ngăn ngừa mất nước xuyên biểu bì (TEWL) và phục hồi sự mềm mại, đàn hồi của da.
+
+Công dụng:
+Mặt nạ giàu axit thiết yếu, ít gây dị ứng từ các siêu thực phẩm cung cấp cho da nồng độ cao của vitamin, axit béo và khoáng chất giúp phục hồi hàng rào bảo vệ da, giảm khô và kích ứng, mang lại làn da hồi sinh và mềm mại, đầy đủ độ ẩm lý tưởng. Mang lại hiệu quả mềm mượt căng bóng rõ rệt sau khi massage.
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Thoa một lượng vừa đủ lên mặt, cổ. Lưu lại trên da trong 10 phút và sau đó, massage cho đến khi hoàn toàn hấp thụ. Không rửa lại.
+
+Cách dùng khác:
+Có thể sử dụng bông gạc ướt che mặt và cổ, sau đó, đắp Lift Define Mask lên phía trên.
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/4-mat-na-phuc-hoi-hang-rao-bao-ve-da-ultra-nourish-mask-250ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/5-15.png
+---
+## Christina - Line Repair -5 Lift Define Mask - 150gr (Mặt nạ làm săn chắc da tức thì, chống oxy hóa và giữ ẩm)
+- **ID:** 114
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,629,000 VNĐ
+- **Giá gốc:** 2,629,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -5 Lift Define Mask - 150gr (Mặt nạ làm săn chắc da tức thì, chống oxy hóa và giữ ẩm)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Bột tảo: cải thiện hàng rào bảo vệ da, ngăn ngừa mất nước ở lớp biểu bì
+- Hyaluronic acid: tăng cường săn chắc da, giữ ẩm cho da. Ngăn ngừa hình thành nếp nhăn.
+- Magnesium ascorbyl phosphate (phái sinh vitamin C): thúc đẩy tổng hợp collagen và ức chế quá trình peroxid hóa lipid
+- Ginkgo biloba: chống oxy hóa mạnh, giàu vitamin C và axit asparaginic, làm đều màu, chống viêm, bảo vệ chống lại các yếu tố môi trường.
+
+Công dụng:
+Tái tạo da với mặt nạ làm săn chắc da tức thì với tảo và chất căng tự nhiên. Giàu chất chống oxy hóa và chất giữ ẩm. Trong khi ôm khít bề mặt da, nó giải phóng các thành phần hoạt tính dẫn đến tắc nghẽn da, từ đó kích hoạt một chuỗi các quá trình sinh học cần thiết để cải thiện chức năng, giúp da săn chắc với hiệu quả rõ rệt.
+
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Trộn 1 muỗng Bột mặt nạ Lift Define (6 gr)
+với 25 ml nước, thêm nước dần dần vào mặt nạ. Sau đó, thoa đều lên toàn bộ khuôn mặt và cổ.
+Lưu lại trên da trong 10 phút, đến khi mặt nạ đông rồi nhẹ nhàng gỡ mặt nạ. Nếu cần, lau sạch lượng dư thừa bằng bông ướt.
+
+Dung tích: 150GR
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5-mat-na-lam-san-chac-da-tuc-thi-chong-oxy-hoa-va-giu-am-lift-define-mask-150gr/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-28.png
+---
+## Christina - Line Repair -6 Hydra Fusion Concentrate - 50ml (Huyết thanh cung cấp vitamin và độ ẩm)
+- **ID:** 115
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,090,000 VNĐ
+- **Giá gốc:** 2,090,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -6 Hydra Fusion Concentrate - 50ml (Huyết thanh cung cấp vitamin và độ ẩm)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Niacinamide (vitamin B3): tăng cường sự đàn hồi, giảm nếp nhăn, thu nhỏ lỗ chân lông và làm đều màu da.
+- Panthenol (vitamin B5): làm dịu da và tăng cường hàng rào tự nhiên của da.
+- Vitamin E: chống oxy hóa và giảm viêm da.
+- Chiết xuất dâu tằm: chống oxy hóa, chống viêm và làm đều màu da.
+- Botanical hydrator: tăng lượng nước cho từng tế bào da, cải thiện sự mất nước.
+- Hyaluronic acid: tăng cường săn chắc da, giữ ẩm cho da. Ngăn ngừa hình thành nếp nhăn.
+
+Công dụng:
+Huyết thanh cô đặc cung cấp cho da các vitamin và độ ẩm lý tưởng giúp phục hồi, bảo vệ da chống lại các gốc tự do. Sản phẩm cải thiện hoạt động của tế bào, làm dịu, tăng cường năng lượng, giúp da thư thái, sáng và đều màu. Hoạt chất dưỡng, giữ ẩm mang lại độ ẩm lý tưởng, tăng cường độ sáng bóng tức thì của da.
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Thoa lên toàn bộ vùng mặt và cổ. Massage nhẹ nhàng đến khi tinh chất hoàn toàn thẩm thấu.
+Dung tích: 50ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6-huyet-thanh-cung-cap-vitamin-va-do-am-hydra-fusion-concentrate-50ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-23.png
+---
+## Christina - Line Repair -7 Radiance Firm Day Cream - 100ml (Kem dưỡng căng bóng, chống lão hóa da ban ngày)
+- **ID:** 116
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 1,650,000 VNĐ
+- **Giá gốc:** 1,650,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -7 Radiance Firm Day Cream - 100ml (Kem dưỡng căng bóng, chống lão hóa da ban ngày)
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Radiance enhancer: tăng cường tuần hoàn máu và cung cấp oxy cho da, mang lại làn da sáng khỏe, sáng và đều màu hơn.
+- Skin tighten: mang lại hiệu ứng làn da săn chắc nhanh chóng.
+- Botanical hydrator: tăng lượng nước cho từng tế bào da, cải thiện sự mất nước.
+- Moisture complex: dưỡng ẩm sâu, mang lại hiệu quả cân bằng độ ẩm, bất chấp thời tiết và khí hậu.
+
+Công dụng:
+Kem dưỡng cao cấp giàu các thành phần hoạt tính độc đáo giúp dưỡng ẩm căng bóng, làm săn chắc da ban ngày. Sản phẩm chống lại sự mệt mỏi và uể oải, tăng cường năng lượng cho da suốt cả ngày. Cải thiện lưu thông máu và kết quả là làn da trở nên tươi sáng , đầy sức sống. Sản phẩm được tăng cường chất giữ ẩm thế hệ mới cung cấp dưỡng ẩm lâu dài tối đa, thoải mái và cải thiện độ đàn hồi.
+Chỉ định:
+Chỉ định: Mọi đối tượng khách hàng, mọi type da từ 16 tuổi trở lên. Lý tưởng nhất cho các tình trạng da:
+1/ Chăm sóc cơ bản, dưỡng ẩm, ngăn ngừa lão hoá da hàng tuần.
+2/ Sau treatment - điều trị da bằng công nghệ cao, peel, mesotherapy.
+3/ Phục hồi làn da yếu, xỉn màu, thiếu sức sống.
+4/ Làn da mong muốn đạt đến độ khoẻ mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Thoa lên toàn bộ vùng mặt và cổ. Massage nhẹ nhàng đến khi tinh chất hoàn toàn thẩm thấu.
+Dung tích: 100ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-kem-duong-ngay-radiance-firm-day-cream-100ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-18.png
+---
+## Christina - Line Repair -1 Moisturizing Micellar Milk - 300ml (Sữa tẩy trang sạch sâu và cấp ẩm tức thì)
+- **ID:** 123
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 990,000 VNĐ
+- **Giá gốc:** 990,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Line Repair -1 Moisturizing Micellar Milk - 300ml (Sữa tẩy trang sạch sâu và cấp ẩm tức thì)
+Độ tuổi từ 16 trở lên. Thích hợp với mọi loại da: Chăm sóc cơ bản dưỡng ẩm, ngăn ngừa lão hóa. Da sau trị liệu điều trị bằng công nghệ cao. Da yếu, xỉn màu, thiếu sức sống. Làn da mong muốn đạt đến độ khỏe mạnh, căng bóng.
+
+### Mô tả đầy đủ
+Thành phần:
+- Hạt micelle: làm sạch các chất trang điểm một cách an toàn và không gây kích ứng da.
+- Chiết xuất hoa xà phòng: làm sạch dịu nhẹ, không gây kích ứng.
+- Chiết xuất hoa cúc: kháng khuẩn và chống viêm cho da.
+- 3D moisture: tăng khả năng giữ ẩm cho da.
+Công dụng:
+Làm sạch da mặt, cổ. Kết hợp chất làm sạch và chiết xuất  hoa xà phòng để làm sạch lớp trang điểm và tạp chất. Làm dịu và dưỡng ẩm, thúc đẩy sự tươi mát và độ đàn hồi.
+Chỉ định:
+Độ tuổi từ 16 trở lên. Thích hợp với mọi loại da: Chăm sóc cơ bản dưỡng ẩm, ngăn ngừa lão hóa. Da sau trị liệu điều trị bằng công nghệ cao. Da yếu, xỉn màu, thiếu sức sống. Làn da mong muốn đạt đến độ khỏe mạnh, căng bóng.
+Hướng dẫn sử dụng:
+Lấy 1ml thoa đều lên mặt và cổ, thoa đều bằng các vòng tròn nhỏ. Sau đó nhũ hóa và rửa lại sạch bằng nước.
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/sua-tay-trang-sach-sau-va-cap-am-tuc-thi-moisturizing-micellar-milk-350ml-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/06/LR_GLOW_milk_300ml.jpg
+---
+## Christina - Forever Young - 1 Purifying gel - 300ml (Sữa rửa mặt kiêm tẩy trang)
+- **ID:** 154
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,530,000 VNĐ
+- **Giá gốc:** 2,530,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 1 Purifying gel - 300ml (Sữa rửa mặt kiêm tẩy trang)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Quillaja Saponaria, chiết xuất cây phỉ và latic acid: làm sạch da, loại bỏ lớp make up, các chất ô nhiễm từ môi trường và lượng dầu thừa trên da.
+- Tannin: làm săn chắc, căng bóng da.
+Công dụng:
+Gel không chứa dầu và cồn loại bỏ bụi bẩn, bã nhờn, lớp trang điểm trên da. Bắt đầu quá trình săn chắc và làm sạch mịn da
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Lấy 1ml sản phẩm vào bông tẩy trang, lau nhẹ nhàng toàn mặt theo chiều cấu tạo da trong 1-2 phút. Lau lại 2-3 lần nếu khách sử dụng trang điểm đậm.
+Rửa sạch bằng nước ấm.
+
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/sua-rua-mat-kiem-tay-trang-purifying-gel-300-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/1-13.png
+---
+## Christina - Forever Young - 2 Infra-peel lotion - 300ml (Lotion kiêm tẩy da chết nhẹ)
+- **ID:** 155
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,805,000 VNĐ
+- **Giá gốc:** 2,805,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 2 Infra-peel lotion - 300ml (Lotion kiêm tẩy da chết nhẹ)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Lactic acid + glycolic acid: loại bỏ tế bào chết và giảm độ pH
+- Quillaja saponaria, Saponaria offcinalis và cây phỉ: làm sạch sâu
+- Công thức giảm độ pH độc quyền: giúp mở rộng lỗ chân lông giúp hấp thụ tối ưu các hoạt chất
+
+Công dụng:
+Loại bỏ tế bào chết trên da, làm thông thoáng lỗ chân lông, giúp dưỡng chất dễ dàng thẩm thấu, hấp thụ vào da tối đa. Bước chuẩn bị cho quá trình peel sau được hiệu quả hơn.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Lấy 1 ml nước cân bằng vào bông cotton, sau đó thoa đều theo chiều cấu tạo da, làm sạch và cân bằng da.
+
+Dung tích: 300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/lotion-kiem-tay-da-chet-nhe-infra-peel-lotion-300-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/2-7.png
+---
+## Christina - Forever Young - 3 Red wine peel - 150ml (Red Wine Peel /Tẩy da chết chiết xuất từ rượu vang đỏ)
+- **ID:** 156
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,950,000 VNĐ
+- **Giá gốc:** 4,950,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 3 Red wine peel - 150ml (Red Wine Peel /Tẩy da chết chiết xuất từ rượu vang đỏ)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+ - 6 loại AHA (glycolic acid, lactic acid, malic acid,...): loại bỏ tế bào chết, làm mềm bề mặt, tái tạo da
+- Polyphenol và tannin trong rượu vang đỏ: kích thích lưu thông tuần hoàn, giúp trẻ hóa và săn chắc da
+
+Công dụng:
+Loại bỏ tế bào chết, làm mềm mịn bề mặt da, giảm nếp nhăn sâu, hỗ trợ đồng đều màu da, làm sáng da, kích thích tổng hợp collagen và elastin.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Dùng chổi hoặc tăm bông, quét đều toàn mặt, tránh tiếp xúc với vùng mắt, để nguyên trên da từ 1-3 phút (phụ thuộc vào tình trạng da). Rửa sạch bằng nước, khăn ấm tới khi không còn cảm giác châm chích trên da.
+
+Dung tích: 150ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/tay-da-chet-chiet-xuat-tu-ruou-vang-do-red-wine-peel-150-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/3-8.png
+---
+## Christina - Forever Young - 4 Regenerating under-mask - 250ml (Mặt nạ đổi mới da, làm săn chắc, tăng cường cấu trúc da)
+- **ID:** 157
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 2,926,000 VNĐ
+- **Giá gốc:** 2,926,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 4 Regenerating under-mask - 250ml (Mặt nạ đổi mới da, làm săn chắc, tăng cường cấu trúc da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Phytosterol và các nhân tố thúc đẩy tăng trưởng: làm săn chắc và dưỡng ẩm cho da
+- Peptide: tăng tốc chuyển hóa tế bào, giúp cung cấp độ ẩm, hỗ trợ làm mờ nếp nhăn, da sáng hơn
+- Sữa, váng sữa và hạnh nhân: giúp cấp ẩm cho da
+
+Công dụng:
+Mặt nạ massage tăng cường cấu trúc da, cung cấp độ ẩm, tăng chuyển hóa tái tạo tế bào, củng cố cấu trúc da săn chắc, hỗ trợ làm đầy nếp nhăn.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Dùng một lượng vừa đủ mặt nạ massage nâng cơ trên bề mặt da từ 10-15 phút, thêm nước để massage tới khi mặt nạ hoàn toàn thẩm thấu vào da. Để nguyên trên da, không lau đi.
+
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/mat-na-tai-tao-san-chac-tang-cuong-cau-truc-da-regenerating-under-mask-250-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/4-10.png
+---
+## Christina - Forever Young - 5a Bio-firming serum - 300ml (Bột nâng cơ + Serum hỗ trợ săn chắc cấu trúc da)
+- **ID:** 158
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 5,200,000 VNĐ
+- **Giá gốc:** 5,200,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 5a Bio-firming serum - 300ml (Bột nâng cơ + Serum hỗ trợ săn chắc cấu trúc da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Húng tây, đậu lupin, tảo và protein lúa mì thủy phân: giúp săn chắc da
+- Favonoid, tannin: làm se khít lỗ chân lông
+- Acetyl Pentapeptide-1: xây dựng ma trận hạ bì
+
+Công dụng:
+Serum nâng cơ, định hình khuôn mặt, đẩy căng các nếp nhăn, duy trì hiệu quả săn chắc, căng bóng, củng cố cấu trúc da trùng nhão, chảy sệ.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Trộn đều 1 gram bột Bio Lifting với 2 ml serum Bio Firming thành một dung dịch dạng sệt, không vón bột. Quét đều lên toàn mặt theo chiều nâng cơ, từ dưới lên, quét cả vùng mắt và môi. Không nói chuyện cử động khuôn mặt cho tới khi mặt nạ khô. Không lau đi, chuyển sang bước 6.
+
+Dung tích: 150ML
+300ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5a5b-bot-nang-co-bio-lifting-powder-150ml-serum-ho-tro-san-chac-cau-truc-da-bio-firming-serum-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-8.png
+---
+## Christina - Forever Young - 5b Bio lifting powder - 75g (Bột nâng cơ + Serum hỗ trợ săn chắc cấu trúc da)
+- **ID:** 159
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,950,000 VNĐ
+- **Giá gốc:** 4,950,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 5b Bio lifting powder - 75g (Bột nâng cơ + Serum hỗ trợ săn chắc cấu trúc da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Húng tây, đậu lupin, tảo và protein lúa mì thủy phân: giúp săn chắc da
+- Favonoid, tannin: làm se khít lỗ chân lông
+- Acetyl Pentapeptide-1: xây dựng ma trận hạ bì
+
+Công dụng:
+Serum nâng cơ, định hình khuôn mặt, đẩy căng các nếp nhăn, duy trì hiệu quả săn chắc, căng bóng, củng cố cấu trúc da trùng nhão, chảy sệ.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Trộn đều 1 gram bột Bio Lifting với 2 ml serum Bio Firming thành một dung dịch dạng sệt, không vón bột. Quét đều lên toàn mặt theo chiều nâng cơ, từ dưới lên, quét cả vùng mắt và môi. Không nói chuyện cử động khuôn mặt cho tới khi mặt nạ khô. Không lau đi, chuyển sang bước 6.
+
+Dung tích:
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/5a5b-bot-nang-co-bio-lifting-powder-150ml-serum-ho-tro-san-chac-cau-truc-da-bio-firming-serum-300ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/6-8.png
+---
+## Christina - Forever Young - 6 Radiance moisturizing mask - 250ml (Mặt nạ siêu cấp ẩm làm sáng, kích thích tự tăng trưởng tế bào da)
+- **ID:** 160
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,300,000 VNĐ
+- **Giá gốc:** 3,300,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 6A Radiance moisturizing mask - 250ml (Mặt nạ siêu cấp ẩm làm sáng, kích thích tự tăng trưởng tế bào da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Vitamin A, C và K, và beta-carotene giúp chống oxy hóa, chống gốc tự do
+- Acetyl Pentapeptide-1: xây dựng ma trận hạ bì
+- ETF: giúp tăng cường chất sừng và fillagrin giúp tái tạo và trẻ hóa da
+- Melano-Dermostatyl (DM): ức chế tăng sắc tố
+- Phytocohesine PSP: giữ ẩm và phục hồi hàng rào da
+
+Công dụng:
+Mặt nạ cung cấp độ ẩm tối đa cho da, chống gốc tự do, ngăn ngừa dấu hiệu lão hóa da, giảm thâm nám, phục hồi hàng rào bảo vệ da, kích thích tự tăng trưởng tế bào, mềm mịn bề mặt da.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Lấy 1.5 - 2 ml mặt nạ dùng chổi silicon, quét đều theo chiều cấu tạo da, để thư giãn, massage nâng cơ 5-7phút,sau đó dùng khăn ấm, lau sạch lại.
+
+Dung tích: 250ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/mat-na-sieu-cap-am-lam-sang-kich-thich-tu-tang-truong-te-bao-da-radiance-moisturizing-mask-250ml-buoc-6/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/7-13.png
+---
+## Christina - Forever Young - 6B Active firming algae mask - 150ml (Mặt nạ tảo nâng cơ, săc chắc cấu trúc da)
+- **ID:** 161
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,330,000 VNĐ
+- **Giá gốc:** 3,330,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 6B Active firming algae mask - 150ml (Mặt nạ tảo nâng cơ, săc chắc cấu trúc da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Tảo Spirulina có hàm lượng axit amin tối ưu
+- Axit béo thiết yếu
+- Nguyên tố vi lượng
+- Vitamin, protein và chất chống oxy hóa giúp cải thiện chức năng của da
+Công dụng:
+Tăng cường sức sống cho da và tái tạo mô tế bào đồng thời cân bằng độ ẩm cho tầng biểu bì
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Cho 1 muỗng bột gạt vào bát, trộn đều nhanh tay với 25ml nước thành mặt nạ dạng sệt, đắp một lớp dày lên toàn mặt trừ vùng da quanh mắt. Chuyển sang bước tiếp theo mặt nạ mắt 6b.
+Dung tích: 150GR
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6b-mat-na-tao-nang-co-san-chac-cau-truc-da-active-firming-algea-mask-150-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/8-11.png
+---
+## Christina - Forever Young - 6BAnti–Puff Eye Mask - 150ml (Mặt nạ mắt làm sáng, xóa nhăn, ngăn ngừa hình thành bọng mắt.)
+- **ID:** 162
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 3,245,000 VNĐ
+- **Giá gốc:** 3,245,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 6BAnti–Puff Eye Mask - 150ml (Mặt nạ mắt làm sáng, xóa nhăn, ngăn ngừa hình thành bọng mắt.)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Collagen từ tảo: giúp làm mịn nếp nhăn, làm săn chắc da và giảm bọng mắt.
+- Bột gạo cùng với rong biển kết nối các tế bào và tăng hàng rào bảo vệ da tự nhiên chống lại bụi bẩn và chất ô nhiễm môi trường.
+
+Công dụng:
+Mặt nạ mắt xóa nhăn, căng bóng vùng da quanh mắt, giảm bọng mắt, kích thích tăng sinh tế bào, gia tăng cấu trúc bảo vệ vùng da mắt.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Cho 1/3 muỗng bột vào bát, trộn cùng nước với tỷ lệ 1:3 nước thành mặt nạ dạng sệt, đắp quanh mắt. Đợi mặt nạ khô, bóc cùng mặt nạ mặt theo chiều từ dưới lên trên. Sau đó rửa sạch phần còn lại với khăn ấm.
+Dung tích: 150GR
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/6b-mat-na-mat-lam-sang-xoa-nhan-ngan-ngua-hinh-thanh-bong-mat-anti-puff-eye-mask-150-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/9-8.png
+---
+## Christina - Forever Young - 7 Total renewal serum - 100ml (Huyết thanh trẻ hóa, đổi mới, hồi sinh làn da)
+- **ID:** 163
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 4,950,000 VNĐ
+- **Giá gốc:** 4,950,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 7 Total renewal serum - 100ml (Huyết thanh trẻ hóa, đổi mới, hồi sinh làn da)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+ - Epidermal Thymic Factor (ETF), Acetyl Pentapeptide-1: kích thích tổng hợp chất sừng và flaggrin.
+- Polysilicone-11: làm mờ nếp nhăn và làm sáng da cho kết quả rõ rệt tức thì.
+- Yếu tố tăng trưởng: tăng trưởng và đổi mới biểu bì.
+
+Công dụng:
+Huyết thanh kích thích tự tăng trưởng tế bào, làm đầy các nếp nhăn, phục hồi bề mặt da mềm mịn, căng bóng.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Dùng lượng vừa đủ chia đều trên khuôn mặt, vỗ đều cho tới khi thẩm thấu toàn bộ.
+Dung tích: 100ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/7-huyet-thanh-tre-hoa-tai-tao-hoi-sinh-lan-da-total-renewal-serum-100-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/10-2.png
+---
+## Christina - Forever Young - 8 Hydra Protective Day cream SPF- 25 - 150ml (Kem dưỡng trẻ hóa và bảo vệ da SPF 25)
+- **ID:** 164
+- **Nhãn hàng (Vendor):** Christina
+- **Giá bán:** 5,720,000 VNĐ
+- **Giá gốc:** 5,720,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Christina - Forever Young - 8 Hydra Protective Day cream SPF- 25 - 150ml (Kem dưỡng trẻ hóa và bảo vệ da SPF 25)
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+
+### Mô tả đầy đủ
+Thành phần:
+- Peptide tiên tiến: phục hồi làn da ở cấp độ tế bào.
+- Dưỡng ẩm: bảo vệ hàng rào bảo vệ da và giảm nếp nhăn.
+- UV sun filter: giúp ngăn ngừa và giảm dấu hiệu lão hóa, bảo vệ da khỏi ánh nắng mặt trời và gốc tự do.
+
+Công dụng:
+Hiệu quả dưỡng ẩm và bảo vệ lâu dài, không gây chùng da và tắc lỗ chân lông.
+Chỉ định:
+Dành cho đối tượng khách hàng từ 30 tuổi trở lên với mọi loại da. Khách hàng có nhu cầu điều trị làn da lão hoá, lão hoá sớm, da chùng nhão, chảy xệ, nếp nhăn, làn da sạm, không đều màu.
+Hướng dẫn sử dụng:
+Dùng lượng vừa đủ chia đều 5 điểm trên khuôn mặt, vỗ đều cho tới khi thẩm thấu toàn bộ.
+Dung tích: 150ML
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/8-kem-duong-tre-hoa-va-bao-ve-da-spf-25-hydra-protective-day-cream-spf-25-150-ml/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2023/04/11-2.png
+---
+## Preime - SKIN RENEW Skin Renewal Solution ()
+- **ID:** 220
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** 6,600,000 VNĐ
+- **Giá gốc:** 6,600,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - SKIN RENEW Skin Renewal Solution ()
+1. Da có nếp nhăn trên vùng mặt.
+2. Da xỉn màu, tối màu, máu sắc không đồng đều.
+3. Da yếu, tổn thương cần phục hồi
+4. Hỗ trợ điều trị sẹo rỗ
+
+### Mô tả đầy đủ
+Thành phần:
+METHYLSILANOL MANNURONATE +
+HYALURONIC ACID +
+ASCORBIC ACID +
+
+Công dụng:
+Kết cấu da được cải thiện
+Da rạng rỡ và ngậm nước
+Giảm sự xuất hiện của nếp nhăn và tăng sắc tố
+
+Chỉ định:
+1. Da có nếp nhăn trên vùng mặt.
+2. Da xỉn màu, tối màu, máu sắc không đồng đều.
+3. Da yếu, tổn thương cần phục hồi
+4. Hỗ trợ điều trị sẹo rỗ
+
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim,
+phi kim, điện di hoặc bôi thoa.
+Dung tích: 5ml/ ống x 5/ hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/skin-renew-skin-renewal-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/Skin_Renew_vial-1.png
+---
+## Preime - SKIN LIFT Multipeptide Lifting Solution ()
+- **ID:** 221
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** 7,920,000 VNĐ
+- **Giá gốc:** 7,920,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - SKIN LIFT Multipeptide Lifting Solution ()
+1. Da chảy xệ, lão hóa
+2. Da có nếp nhăn trên vùng mặt( nếp nhăn cảm xúc).
+3. Da đàn hồi kém thiếu săn chắc.
+
+### Mô tả đầy đủ
+Thành phần:
+DMEA +
+RESVERATROL +
+PEPTIDES +
+
+Công dụng:
+Cải thiện độ đàn hồi và kết cấu của da
+Giảm nếp nhăn và nếp nhăn
+Da mịn màng, rạng rỡ
+Chỉ định:
+1. Da chảy xệ, lão hóa
+2. Da có nếp nhăn trên vùng mặt( nếp nhăn cảm xúc).
+3. Da đàn hồi kém thiếu săn chắc.
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim,
+phi kim, điện di hoặc bôi thoa.
+Dung tích: 5ml/ ống x 5/ hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/skin-lift-multipeptide-lifting-solution-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/Skin_Lift_vial-1.png
+---
+## Preime - PDRN Booster Nucleotide Rejuvenating Solution ()
+- **ID:** 222
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - PDRN Booster Nucleotide Rejuvenating Solution ()
+Da bị lão hóa, nhăn trùng, chảy xệ.
+Da nhạy cảm, yếu, cần phục hồi
+Bề mặt da sần sùi, khô ráp, lỗ chân lông to,
+Da bị sẹo rỗ lâu năm
+Các trường hợp rạn da.
+
+### Mô tả đầy đủ
+Thành phần:
+POLYDEOXYRIBONUCLEOTIDE +
+HYALURONIC ACID  +
+GLUTATHIONE +
+
+Công dụng:
+Tái tạo, phục hồi da mạnh mẽ
+Da rạng rỡ và ngậm nước, căng bóng
+Tăng sinh Collagen, giảm sự xuất hiện của các nếp nhăn, tăng độ săn chắc, đàn hồi cho da
+
+Chỉ định:
+Da bị lão hóa, nhăn trùng, chảy xệ.
+Da nhạy cảm, yếu, cần phục hồi
+Bề mặt da sần sùi, khô ráp, lỗ chân lông to,
+Da bị sẹo rỗ lâu năm
+Các trường hợp rạn da.
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim,
+phi kim, điện di hoặc bôi thoa.
+Dung tích: 5 ống/ hộp x 3ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/pdrn-booster-nucleotide-rejuvenating-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/PDRN-Booster_vial-1.png
+---
+## Preime - TXA Bright Melablock Brightening Solution  ()
+- **ID:** 223
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả đầy đủ
+Thành phần:
+TRANEXAMIC ACID+
+HYALURONIC ACID +
+OLIGOPEPTIDE +
+
+Công dụng:
+Làm sáng, nâng tone da.
+Làm đồng đều màu da.
+Làm mờ rõ rệt các vết thâm,nám tàn nhang.
+Làm giảm đỏ da giãn mạch những làn da nhạy cảm,
+ trứng cá đỏ.
+Làm giảm tác hại của ánh sáng mặt trời trên da.
+Chỉ định:
+
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim,
+phi kim, điện di hoặc bôi thoa.
+Dung tích: 5 ống/ hộp x 5ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/txa-bright-melablock-brightening-solution-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/TXA_Bright-1.png
+---
+## Preime - HA 3.5 Dual Hydrating Solution ()
+- **ID:** 224
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** 6,800,000 VNĐ
+- **Giá gốc:** 6,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - HA 3.5 Dual Hydrating Solution ()
+Da mất nước, da có nhiều nếp nhăn
+
+### Mô tả đầy đủ
+Thành phần:
+HYALURONIC ACID
+
+### Công dụng:
+Cải thiện độ ẩm cho da
+Giảm sự xuất hiện của đường nhăn và nếp nhăn
+Da mịn màng, rạng rỡ
+Chỉ định:
+Da mất nước, da có nhiều nếp nhăn
+Hướng dẫn sử dụng:
+Meso, lăn kim, phi kim,
+ bôi thoa, điện di.
+Dung tích: 5ml/ống x 5 ống/ hộp
+
+### Key giới thiệu sản phẩm
+- HA đa trọng lượng phân tử (kích thước nhỏ và kích thước lớn) tạo ra tác động dưỡng ẩm đa tầng ( ở cả sâu dưới da và nông trên bề mặt)
+- Nồng độ 3.5% là nồng độ HA cao nhất được cho phép trên thị trường cho các sản phẩm meso chăm sóc da.
+- Linh hoạt trong việc kết hợp với các sản phẩm hoạt chất khác để tăng cường độ ẩm cho da.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/ha-3-5-dual-hydrating-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/HA_3.5_1.png
+---
+## Preime - GLUTATHIONE + B3 Brightening Solution ()
+- **ID:** 225
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** 2,948,000 VNĐ
+- **Giá gốc:** 2,948,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - GLUTATHIONE + B3 Brightening Solution ()
+Da bị sạm nám, tàn nhang,
+da không đều màu, lão hóa.
+
+### Mô tả đầy đủ
+Thành phần:
+GLUTATHIONE +
+ NIACINAMIDE + 
+
+Công dụng:
+Làm sáng da
+Giảm tình trạng tăng sắc tố
+Chống oxy hóa
+Chỉ định:
+Da bị sạm nám, tàn nhang,
+da không đều màu, lão hóa.
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim, phi kim,
+ bôi thoa, điện di.
+Dung tích: 5ml/ ống x 5/ hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/glutathione-b3-brightening-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/GlutathioneB3_1.png
+---
+## Preime - ASCORBIC ACID + NT Antioxidant Radiance Solution ()
+- **ID:** 226
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** 3,179,000 VNĐ
+- **Giá gốc:** 3,179,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - ASCORBIC ACID + NT Antioxidant Radiance Solution ()
+Sử dụng cho các bệnh nhân rám má,
+tàn nhang, xỉn màu, lão hóa, rạn da.
+
+### Mô tả đầy đủ
+Thành phần:
+ASCORBIC ACID +
+ NIACINAMIDE + 
+TOCOPHERYL ACETATE +
+
+Công dụng:
+Làm sáng da
+Cải thiện tông màu da
+Chống oxy hoá và  phối hợp điều trị tổn thương da do ánh sáng, viêm, tăng sắc tố và da khô nhạy cảm
+
+Chỉ định:
+Sử dụng cho các bệnh nhân rám má,
+tàn nhang, xỉn màu, lão hóa, rạn da.
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim, phi kim,
+ bôi thoa, điện di.
+Dung tích: 5ml x 5 lọ/hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/ascorbic-acid-nt-antioxidant-radiance-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/7.-Ascorbic_AcidNT_1.png
+---
+## Preime - Retinol + TC Retexture Finish Solution ()
+- **ID:** 227
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - Retinol + TC Retexture Finish Solution ()
+Cải thiện bề mặt da dày sừng, thô sần, lỗ chân lông to
+mụn đầu đen, mụn viêm nhẹ, da nhiều bã nhờn
+nếp nhăn trên bề mặt, da sần vỏ cam.
+hỗ trợ điều trị rạn da
+
+### Mô tả đầy đủ
+Thành phần:
+RETINYL PALMITATE
+TOCOPHERYL +
+CENTELLA ASIATICA +
+
+Công dụng:
+Cải thiện kết cấu da
+Da rạng rỡ
+Làn da mịn màng, tươi sáng
+Hỗ trợ điều trị mụn trứng cá, lỗ chân lông rộng
+Tăng sinh collagen, trẻ hóa da
+
+Chỉ định:
+Cải thiện bề mặt da dày sừng, thô sần, lỗ chân lông to
+mụn đầu đen, mụn viêm nhẹ, da nhiều bã nhờn
+nếp nhăn trên bề mặt, da sần vỏ cam.
+hỗ trợ điều trị rạn da
+Hướng dẫn sử dụng:
+Lăn kim, phi kim,
+ điện di, bôi thoa
+Dung tích: 5ml x 5 ống/hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/retinol-tc-retexture-finish-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/Retinol_vial-1.png
+---
+## Preime - PPC + Deox Contouring Solution ()
+- **ID:** 228
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - PPC + Deox Contouring Solution ()
+Tích mỡ cục bộ
+
+### Mô tả đầy đủ
+Thành phần:
+PHOSPHATIDYCHOLINE +
+DEOXYCHOLATE +
+
+Công dụng:
+Giảm tích tụ mỡ
+Đường nét cơ thể được cải thiện
+
+Chỉ định:
+Tích mỡ cục bộ
+Hướng dẫn sử dụng:
+Meso, lăn kim, phi kim,
+ bôi thoa, điện di.
+Dung tích: 5ml/ống x 5 ống/hộp
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/ppc-deox-contouring-solution/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/ppc-1.png
+---
+## Preime - Renew Bio - Exosome Solution ()
+- **ID:** 229
+- **Nhãn hàng (Vendor):** Preime
+- **Giá bán:** LIÊN HỆ
+- **Giá gốc:** N/A
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Preime - Renew Bio - Exosome Solution ()
+ Da lão hóa, nếp nhăn
+ Da yếu, tổn thương cần phục hồi
+ Hỗ trợ điều trị sẹo rỗ
+
+### Mô tả đầy đủ
+Thành phần:
+PLANT EXOSOME ( 10 -30 BILLION)
+PLANT EXTRACT ( 0,1%)
+SODIUM HYALURONATE ( 0,5%)
+PEPTIDE  (1%)
+CYANOCOBALAMI ( 0,1%)
+Công dụng:
+Tăng tốc độ tái tạo da
+Trẻ hóa da tự nhiên
+Cải thiện kết cấu da
+Chỉ định:
+ Da lão hóa, nếp nhăn
+ Da yếu, tổn thương cần phục hồi
+ Hỗ trợ điều trị sẹo rỗ
+
+Hướng dẫn sử dụng:
+Cấy meso, lăn kim, phi kim, bôi thoa, điện di.
+Dung tích:
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/renew-bio-exosome-solution-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/Renew_vial-1.png
+---
+## Dermoaroma - Peeling System - Juvena - 50ml (Liệu trình thay da, đổi mới trẻ hóa da)
+- **ID:** 230
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 9,800,000 VNĐ
+- **Giá gốc:** 9,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Juvena - 50ml (Liệu trình thay da, đổi mới trẻ hóa da)
+1. Làn da lão hóa do tuổi tác và lão hóa do ánh sáng: nhăn, chùng, chảy xệ.
+2. Làn da khô, thô sần nhẹ đến trung bình.
+
+### Mô tả đầy đủ
+Thành phần:
+- Trichloroacetic acid 30%
+- Mandelic acid 10%
+- Phytic acid 1%
+- Hyaluronic acid
+- Sodium DNA
+- Olea Europaea (Tế bào gốc cây Ooliu)
+- Zanthoxylum Pipertium (Tế bào gốc cây hạt tiêu)
+- Retinol
+- Oligopeptide-20
+Công dụng:
+Sản phẩm Peel Juvena trẻ hoá toàn diện cho làn da giúp tái tạo làn da thô ráp ngay tức thì, đồng thời tăng cường độ săn chắc, đàn hồi cho làn da, giảm thiểu nhanh chóng nếp nhăn trên bề mặt da. Kết hợp cùng công nghệ tiên tiến sẽ bảo vệ độ tinh khiết và thúc đẩy khả năng thẩm thấu của sản phẩm.
+
+Hiệu quả trẻ hoá và tái tạo làn da thô ráp, lão hoá ngay tức thì:
+Juvena chứa 30% TCA, hoạt chất có tác động mạnh mẽ trên làn da thô ráp, trả lại làn da sự mềm mại và mịn màng.
+Thành phần PDRN giúp điều hòa phản ứng viêm, thúc đẩy tăng sinh nguyên bào sợi, cải thiện vi tuần hoàn, tăng tốc độ sửa chữa DNA tế bào.
+Tế bào gốc mầm cây Olive hoang dã mang hiệu quả sạc năng lượng cho các tế bào da, tăng cường sản sinh protein cấu trúc, phục hồi độ săn chắc và đàn hồi của làn da.
+
+Tăng cường độ săn chắc, đàn hồi cho làn da, giảm nếp nhăn trên bề mặt da:
+Các tế bào chưa biệt hoá của hoa tiêu Nhật Bản mang hiệu quả ngăn ngừa tổn thương da do tia UV, làm chậm quá trình lão hóa.
+Oligopeptide 20 mang hiệu quả thúc đẩy tăng trưởng tế bào nhanh chóng trong 72h
+
+Ứng dụng công nghệ tiên tiến giúp các hoạt chất trong sản phẩm có tính ổn định cao và khả năng thẩm thấu sâu hơn, mang đến hiệu quả nhanh chóng và giảm hiện tượng kích ứng rõ rệt:
+Dẫn xuất Hyaluronic acid nanogel - kích thước Nano giảm mất nước qua da, giảm viêm và giảm gốc tự do (ROS), đồng thời bảo vệ tế bào khi tiếp xúc với tia UV.
+Retinol viên nang làm giảm hiện tượng kích ứng nhờ quá trình thẩm thấu nhanh chóng, giải phóng và khuếch tán ngay lập tức, tăng cường sự đàn hồi & giảm nếp nhăn trên bề mặt da.
+
+Chỉ định:
+1. Làn da lão hóa do tuổi tác và lão hóa do ánh sáng: nhăn, chùng, chảy xệ.
+2. Làn da khô, thô sần nhẹ đến trung bình.
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 10 ống, mỗi ống 5ml
+
+### Key giới thiệu sản phẩm
+- Peel da mức độ trung bình nhẹ nhờ 30% TCA và 10% Mandelic
+- Cải thiện đồng thời, toàn diện các biểu hiện liên quan tới lão hóa da (nếp nhăn, da chùng nhão, chảy xệ) và tăng sắc tố
+- Tăng cường cấu trúc da, hỗ trợ làm mờ sẹo rỗ và giảm tình trạng lỗ chân lông rộng.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/juvena-bio-booster-lieu-trinh-tai-tao-tre-hoa-da-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/1.-juvena_box-1.png
+---
+## Dermoaroma - Peeling System - Restructa - 50ml (Liệu trình thay da giảm mụn và ngừa thâm sẹo)
+- **ID:** 231
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 9,800,000 VNĐ
+- **Giá gốc:** 9,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Restructa - 50ml (Liệu trình thay da giảm mụn và ngừa thâm sẹo)
+1. Phù hợp với da dầu, da hỗn hợp, lỗ chân lông rộng và bít tắc.
+2. Làn da mụn trứng cá
+3. Da dày sừng
+4. Làn da gặp hiện tượng tăng sắc tố sau mụn viêm.
+
+### Mô tả đầy đủ
+Thành phần:
+- Lactic acid 9%
+- Mandelic acid 5%
+- Shikimic acid 3%
+- Pyruvic acid 1.97%
+- Ascorbyl Glucoside
+- DMAE
+- Copper PCA
+Công dụng:
+Sản phẩm Peel - Restructa tái cấu trúc da, là liệu pháp đặc trị cải thiện rõ rệt làn da dày sừng, thô ráp, sần sùi, dễ nổi mụn trứng cá nhờ các hoạt chất có khả năng kháng khuẩn, kháng viêm. Restructa còn có hiệu quả trong việc tăng cường hàng rào bảo vệ, thúc đẩy phục hồi da, mang lại làn da khoẻ mạnh.
+
+Kháng khuẩn, làm giảm các nốt viêm và điều tiết bã nhờn, cải thiện nền da mụn.
+Shimiki acid giúp ức chế quá trình nhiễm trùng do vi khuẩn, giảm các nốt viêm, thông thoáng lỗ chân lông, ngăn ngừa hình thành nhân mụn.
+Mandelic acid giúp tẩy da chết nhẹ nhàng, làm sạch bã nhờn, hỗ trợ kháng khuẩn gây mụn.
+Lactic acid giúp lấy đi tế bào chết trên bề mặt đồng thời khôi phục hàng rào bảo vệ da.
+
+Tăng cường hàng rào bảo vệ da, thúc đẩy phục hồi da mang đến làn da khoẻ mạnh:
+DMAE giúp ổn định màng tế bào, chống oxy hóa, đồng thời tăng khả năng tổng hợp Collagen & Elastin giúp tăng độ săn chắc và đàn hồi cho da.
+Pyrolidone Carboxylic Acid (PCA) giúp giữ ẩm, thúc đẩy tổng hợp lipid và biệt hóa biểu bị; khôi phục hàng rào bảo vệ da.
+Cải thiện kết cấu và sắc diện da.
+Bakuchiol giúp kích thích đổi mới tế bào da, làm mờ nếp nhăn và rãnh nhăn và cải thiện tông màu và kết cấu da
+
+Chỉ định:
+1. Phù hợp với da dầu, da hỗn hợp, lỗ chân lông rộng và bít tắc.
+2. Làn da mụn trứng cá
+3. Da dày sừng
+4. Làn da gặp hiện tượng tăng sắc tố sau mụn viêm.
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 10 ống, mỗi ống 5ml
+
+### Key giới thiệu sản phẩm
+- Peel có tác dụng giảm viêm và kháng khuẩn mạnh cho những nền da mụn nhờ các hoạt chất như Mandelic acid, Lactic, Pyruvic và Shikimic acid
+- Cải thiện đồng thời kết cấu da trong quá trình điều trị mụn, giảm hình thành sẹo và tăng sắc tố sau viêm
+- Phục hồi hàng rào bảo vệ da nhờ tăng cường hàng rào hydro-lipid với Copper PCA và lactic acid
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/restructa-bio-booster-lieu-trinh-tri-mun-va-giam-tham-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/3.-restructa_bottle.png
+---
+## Dermoaroma - Peeling System - Radiance - 50ml (Liệu trình thay da làm sáng và giảm đốm sậm màu)
+- **ID:** 232
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 9,800,000 VNĐ
+- **Giá gốc:** 9,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Radiance - 50ml (Liệu trình thay da làm sáng và giảm đốm sậm màu)
+1. Phù hợp với làn da có hiện tượng nám, da tăng sắc tố sau viêm.
+2. Làn da có đốm nâu, tàn nhang
+3. Điều trị rối loạn sắc tố do lão hóa ánh sáng
+
+### Mô tả đầy đủ
+Thành phần:
+- Citric acid 20%
+- Glycolic acid 7%
+- Tranexamic acid 5%
+- Ascorbyl glucoside
+- Resorcinol
+- Azelaic acid
+- Postassium Azeloyl Diglycinate
+- Glutathione
+- Retinol
+- Oligopeptide-34
+Công dụng:
+Sản phẩm Peel Radiance làm sáng da sẽ mang đến sự tươi sáng, mịn màng và rạng rỡ nhờ hiệu quả làm mờ vết thâm nám, ngăn chặn hình thành những đốm nám mới. Bên cạnh đó, sản phẩm còn chứa các hoạt chất chống Oxy hoá, ngăn ngừa tăng sắc tố sau viêm, cải thiện kết cấu và sắc diện da.
+
+Làm mờ vết thâm nám trên bề mặt da, ngăn chặn hình thành những đốm nám mới
+Tranexamic acid giúp giảm tương tác giữa tế bào sừng và tế bào sắc tố, từ đấy ức chế hình thành sắc tố đậm màu mới.
+Oligopeptide 34 giúp giảm vận chuyển Melanosome lên tế bào sừng, giảm hoạt động của tế bào T, từ đó tăng tác dụng chống viêm, đồng thời cải thiện sắc diện da.
+Azelaic acid được hoạt hóa để chống lại các tế bào hắc tố tăng hoạt, đồng thời có đặc tính kháng viêm, kháng khuẩn.
+Zeloglycine làm giảm hoạt động của tyrosine từ đó, giảm sản sinh Melanin trong da. Tăng cường độ đàn hồi và điều tiết bã nhờn.
+
+Chống Oxy hoá, ngăn ngừa tăng sắc tố sau viêm
+Glutathion là chất chống oxy hóa mạnh, hỗ trợ làm sáng da.
+
+Cải thiện kết cấu và sắc diện da.
+Retinol dạng vi nang thẩm thấu nhanh chóng, giải phóng có kiểm soát. Tăng cường sự đàn hồi & giảm nếp nhăn trên bề mặt da.
+Chỉ định:
+1. Phù hợp với làn da có hiện tượng nám, da tăng sắc tố sau viêm.
+2. Làn da có đốm nâu, tàn nhang
+3. Điều trị rối loạn sắc tố do lão hóa ánh sáng
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 10 ống, mỗi ống 5ml
+
+### Key giới thiệu sản phẩm
+- Peel nông cùng công nghệ liposome giúp hạn chế tối đa nguy cơ tăng sắc tố sau điều trị
+- Tập hợp các hoạt chất ức chế sắc tố và làm sáng da nổi bật, an toàn như Tranexamic, Glycolic, Azelaic, Resorcinol, Glutathion, Vitamin C
+- Dưỡng trắng, sáng da an toàn và toàn diện
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/radiance-bio-booster-lieu-trinh-tri-nam-lam-sang-da-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/2.-radiance_bottle.png
+---
+## Dermoaroma - Peeling System - Intima - 50ml (Liệu trình thay da dành cho da vùng kín, nhạy cảm)
+- **ID:** 233
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 9,800,000 VNĐ
+- **Giá gốc:** 9,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Intima - 50ml (Liệu trình thay da dành cho da vùng kín, nhạy cảm)
+Lý tưởng cho những vùng da kín như:
+Khu vực môi lớn
+ Khu vực quanh hậu môn
+ Vùng bẹn
+ Nách, khuỷu tay, đầu gối
+ Mông và quầng vú
+
+### Mô tả đầy đủ
+Thành phần:
+- Trichloroacetic acid 3%
+- Mandelic acid 5%
+- Tranexamic acid 3%
+- Ascorbyl glycoside
+- Resorcinol
+- Urea
+- Phytic acid
+- Alpha arbutin
+- Copper PCA
+- Daucus Carota Sativa (tế bào gốc cà rốt)
+Công dụng:
+Sản phẩm Peel Intima dành cho vùng da kín như một liệu pháp chăm sóc tinh tế sẽ mang đến sự nâng niu cho vùng da nhạy cảm. Với nồng độ các hoạt chất lý tưởng, sản phẩm sẽ nhẹ nhàng loại bỏ tế bào chết và làm sáng da, đồng thời, giúp làn da vùng kín trở nên săn chắc và đàn hồi hơn.
+
+Loại bỏ tế bào chết và làm sáng vùng kín một cách nhẹ nhàng và êm ái
+Resorcinol - tiền chất của Hydroquinone có tác dụng giảm sắc tố đậm màu, đồng thời tác động trực tiếp lên tyrosinase, ức chế sản xuất melanin.
+Alfa arbutin có tác dụng làm đều màu da, làm giảm hiện tượng sạm da và ngăn ngừa hình thành các vết tăng sắc tố.
+Tranexamic acid giảm tương tác giữa tế bào sừng và tế bào sắc tố, từ đấy hạn chế tăng tổng hợp sắc tố đậm màu mới.
+
+Mang lại làn da săn chắc, đàn hồi cho làn da vùng kín
+Trichloroacetic acid 3% với hiệu quả kích thích sản sinh Collagen & Elastin từ đó, tăng cường sự săn chắc và đàn hồi cho da.
+Pyrolidone carboxylic acid (PCA) giúp tăng cường hàng rào độ ẩm của da, tăng cường tổng hợp và biệt hóa các lipid biểu, mang đến sự mềm mại, mịn màng và khoẻ mạnh cho da.
+
+Hoàn toàn an toàn và hiệu quả
+Được bào chế bởi Công nghệ sinh học, sản phẩm Intima sẽ giúp các hoạt chất trong sản phẩm đảm bảo được độ tinh khiết và khả năng thẩm thấu cao mang đến hiệu quả và sự an toàn cho vùng da nhạy cảm nhất.
+Chỉ định:
+Lý tưởng cho những vùng da kín như:
+Khu vực môi lớn
+ Khu vực quanh hậu môn
+ Vùng bẹn
+ Nách, khuỷu tay, đầu gối
+ Mông và quầng vú
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 10 ống, mỗi ống 5ml
+
+### Key giới thiệu sản phẩm
+- Peel nhẹ nhàng, tinh tế cho cả những vùng da nhạy cảm nhất
+- Tập trung cải thiện vấn đề sắc tố, giúp da sáng hồng, khỏe mạnh
+- Khả năng bạt sừng nhẹ, nhưng vẫn đủ hỗ trợ cho sự thâm nhập của các hoạt chất làm trắng sáng khác vào trong da
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/intima-bio-booster-lieu-trinh-tre-hoa-vung-kin-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/5.-intima_bottle.png
+---
+## Dermoaroma - Peeling System - Cell Renew - 50ml (Liệu trình thay da, đổi mới toàn diện)
+- **ID:** 234
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 9,800,000 VNĐ
+- **Giá gốc:** 9,800,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Cell Renew - 50ml (Liệu trình thay da, đổi mới toàn diện)
+DÙNG CHO MỌI TÌNH TRẠNG DA
+1. Làn da thô sẩn, không đều màu.
+2. Tình trạng tăng sắc tố da, nám, nám biểu bì tàn nhang, đồi mồi.
+3. Thâm, sẹo do mụn trứng cá.
+4. Trẻ hóa bề mặt da
+
+### Mô tả đầy đủ
+Thành phần:
+- Trichloroacetic acid 35%
+- Glycolic acid 3,5%
+- Urea
+- Aminobutyric acid
+- Daucus Carota Sativa (tế bào gốc cà rốt)
+Công dụng:
+Sản phẩm Peel Cell Renewal - tái tạo tế bào là liệu pháp chăm sóc toàn diện và phù hợp với mọi tình trạng da. Chứa những hoạt chất với nồng độ cao, Cell Renewal sẽ thúc đẩy làn da săn chắc hơn, làm sáng và đồng đều màu da, kích thích vi tuần hoàn nhằm mang lại làn da hồng hào và tăng cường sắc diện da, đồng thời nhanh chóng mang đến sự mềm mại và mịn màng cho làn da.
+
+Thúc đẩy làn da săn chắc hơn, làm sáng và đồng đều màu da.
+Trichloroacetic acid 35% giúp lấy đi tế bào sừng chết, kích thích sản sinh collagen và elastin, làm đầy những đường nhăn, nếp nhăn sâu. Hỗ trợ điều trị vấn đề về sẹo.
+Aminobutyric acid, còn được gọi là GABA - là một loại acid amin tự nhiên sẽ hỗ trợ tổng hợp collagen và hyaluronic acid, làm tăng độ đàn hồi, bổ sung độ ẩm cho da.
+
+Kích thích vi tuần hoàn nhằm mang lại làn da hồng hào và tăng cường sắc diện da.
+Tế bào phân sinh của daucus carota Sativa callus lysate chứa nguồn anthocyanin mạnh mẽ - là một loại flavonoid, có đặc tính chống oxy hóa mạnh, chống lại các tác động của lão hóa và stress oxy hóa, mang đặc tính kháng viêm, làm dịu và giảm đỏ, cải thiện vi tuần hoàn máu, tăng cường hàng rào bảo vệ da tự nhiên và bảo vệ da khỏi tác động từ tia UV.
+
+Nhanh chóng loại bỏ sự thô ráp sần sùi, tối xỉn, trả lại sự mềm mại và mịn màng cho làn da.
+Trichloroacetic acid kết hợp cùng Glycolic acid se mang đến hiệu quả loại bỏ tế bào chết, mang lại làn da sáng, đều màu, mịn màng và rạng rỡ hơn, làm sạch sâu lỗ chân lông.
+
+Chỉ định:
+DÙNG CHO MỌI TÌNH TRẠNG DA
+1. Làn da thô sẩn, không đều màu.
+2. Tình trạng tăng sắc tố da, nám, nám biểu bì tàn nhang, đồi mồi.
+3. Thâm, sẹo do mụn trứng cá.
+4. Trẻ hóa bề mặt da
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 10 ống, mỗi ống 5ml
+
+### Key giới thiệu sản phẩm
+- Peel TCA mức độ trung bình nhưng giảm thiểu tối đa những cảm giác khó chịu trên da khi peel
+- Cải thiện toàn diện, tổng thể làn da, giúp làm mờ các đốm tăng sắc tố, nếp nhăn và tình trạng sẹo lõm
+- Tăng cường hiệu quả cho các liệu trình peel khác.
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/cell-renew-bio-booster-lieu-trinh-tai-tao-toan-dien-be-mat-da-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/4.-cell_bottle.png
+---
+## Dermoaroma - Peeling System - Pre-peel pH Prep Solution - 200ml (Dung dịch chuẩn bị da trước peel)
+- **ID:** 235
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 6,000,000 VNĐ
+- **Giá gốc:** 6,000,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Pre-peel pH Prep Solution - 200ml (Dung dịch chuẩn bị da trước peel)
+Dành cho mọi loại da trước khi thực hiện trị liệu peel tại cơ sở.
+
+### Mô tả đầy đủ
+Thành phần:
+- Glycolic acid 20%
+- Mandelic acid 5%
+- Tartaric acid 1%
+Công dụng:
+Sản phẩm Pre-peeling là giải pháp giúp làn da sẵn sàng tiếp nhận bước peel bằng cách đưa độ pH tự nhiên của da dần trở về mức thấp hơn.
+Mandelic acid, glycolic acid, tataric acid - Tổ hợp AHA giúp chuẩn bị nền da trước peel, các dưỡng chất được hoạt động hiệu quả hơn.
+pH 4: Hạ độ pH tự nhiên của da, chuẩn bị da trước bước peel có chứa nồng độ acid cao
+Chỉ định:
+Dành cho mọi loại da trước khi thực hiện trị liệu peel tại cơ sở.
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 1 chai 200ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/pre-peeling-ph-prep-solution-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/7.-bottle_01.png
+---
+## Dermoaroma - Peeling System - Neutralizer Toner pH Balancer - 200ml (Dung dịch trung hòa sau peel)
+- **ID:** 236
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 6,000,000 VNĐ
+- **Giá gốc:** 6,000,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - Neutralizer Toner pH Balancer - 200ml (Dung dịch trung hòa sau peel)
+Dành cho mọi loại da sau khi thực hiện trị liệu peel tại cơ sở.
+
+### Mô tả đầy đủ
+Thành phần:
+- Glycerin 10%
+- Sodium bicarbonate 5%
+- Aloe Vera (chiết xuất lá nha đam)
+- Ocimum Bacilicum (chiết xuất lá húng tây)
+- Panthenol
+- Polyquaternium-7
+Công dụng:
+Sản phẩm trung hoà sau peel được thiết kế để tăng độ pH tự nhiên của da sau khi hoàn thành quá trình peel, giúp tăng khả năng hấp thu của sản phẩm dưỡng phục hồi.
+Bisabol, chiết xuất nha đam, chiết xuất hoa cúc mang đặc tính làm dịu, kháng viêm mạnh mẽ.
+Sodium carbonat có đặc tính kiềm hóa.
+
+Chỉ định:
+Dành cho mọi loại da sau khi thực hiện trị liệu peel tại cơ sở.
+Hướng dẫn sử dụng:
+Sử dụng ngoài da tại chỗ, theo chỉ định và hướng dẫn của chuyên gia
+Dung tích: Hộp 1 chai 200ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/neutralizer-ph-toner-balancer-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/8.-bottle_02.png
+---
+## Dermoaroma - Peeling System - GF20 Exosomes Boost skin serum - 200ml (Serum tăng cường phục hồi da với exosome và yếu tố tăng trưởng)
+- **ID:** 237
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 11,000,000 VNĐ
+- **Giá gốc:** 11,000,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả ngắn
+Dermoaroma - Peeling System - GF20 Exosomes Boost skin serum - 200ml (Serum tăng cường phục hồi da với exosome và yếu tố tăng trưởng)
+Sử dụng chăm sóc tại salon. Dành cho mọi loại da sau khi thực hiện trị liệu peel, mesotherapy, công nghệ cao tại cơ sở.
+
+### Mô tả đầy đủ
+Thành phần:
+- Sodium Lactate 5%
+- Colostrum (công nghệ AMPLEX+) 5%
+- Panthenol 3%
+- Tocopheryl Acetate 2.5%
+- Vitis vinifera seed oil (dầu hạt nho)
+- Macadamia Ternìolia seed oil (dầu hạt mắc ca)
+- Ocimum Basilicum Leaf extract (chiết xuất lá húng tây)
+- Tocopherol
+- Butyrospermum parkii butter (bơ hạt mỡ)
+- Zinc hydrolyzed hyaluronate
+- Squalene
+- Simmondia Chinensis seed oil (dầu hạt jojoba)
+- Lactic acid
+- Bisabolol
+- Rosmarinus Officinalis extract (chiết xuất hương thảo)
+- Sodium DNA
+- Bacillus Ferment
+Công dụng:
+
+Tinh chất phục hồi da cao cấp GF20 Exosome chứa các thành phần hác thành phần hoạt tính sinh học để tăng cường kết quả điều trị và bảo vệ da khỏi tác hại của môi trường, mang hiệu quả nuôi dưỡng và phục hồi da nhanh chóng sau quá trình peel
+Công nghệ độc quyền với 20 tỷ Exosome và 20 yếu tố tăng trưởng.
+PDRN (sodium DNA) giúp phục hồi các lớp hàng rào bảo vệ da, cung cấp các chất dinh dưỡng cho da, thúc đẩy tổng hợp Collagen, mang lại bề mặt da săn chắc, mịn màng, khôi phục lại sự khoẻ mạnh cho làn da.
+Seadermium mang hiệu quả cải thiện nếp nhăn sâu, mang lại làn da đàn hồi và săn chắc. Cung cấp độ ẩm cho da.
+Sodium Lactate có tác dụng trong việc dưỡng ẩm, phục hồi độ ẩm nhanh chóng cho da.
+Lactic acid giúp tăng cường độ ẩm cho da.
+Chỉ định:
+Sử dụng chăm sóc tại salon. Dành cho mọi loại da sau khi thực hiện trị liệu peel, mesotherapy, công nghệ cao tại cơ sở.
+Hướng dẫn sử dụng:
+Sử dụng vào buổi sáng và buổi tối trước khi thực hiện trị liệu peel tại cơ sở 2 tuần.
+
+Dung tích: Hộp 1 chai 200ml
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/gf20-exosomes-boost-skin-cream-coming-soon/
+- **Link hình ảnh:** https://vhndistribution.com/wp-content/uploads/2024/11/6.-GF-20.png
+---
+## Purasomes Skin Glow Complex -Exosome phục hồi và làm sáng da ( 3x 5ml)
+- **ID:** 240
+- **Nhãn hàng (Vendor):** Dermoaroma
+- **Giá bán:** 15,000,000 VNĐ
+- **Giá gốc:** 15,000,000 VNĐ
+- **is_salon_product:** True
+
+### Mô tả đầy đủ
+Thành phần:
+AMPLEX+ (20 tỷ đơn vị exosome, 200mg 20 yếu tố tăng trưởng mạnh mẽ nhất)
+- 100mg HA (50mg HWM, 50mg LWM)
+- Dẫn xuất vitamin C ổn định
+- Amino acid – Peptide – 3 chất chống oxy hóa
+- Tế bào gốc từ lựu
+Chỉ định
+- Đảo ngược quá trình tổng hợp và vận chuyển melanin. Giảm rõ rệt sự hình thành đốm sắc tố. Giảm tổng hợp protein mang melanophilin.
+- Phục hồi sức sống và độ rạng rỡ của làn da. Tăng cường vẻ sáng bóng. Ngăn ngừa các gốc tự do.
+- Xây dựng lại hàng rào bảo vệ da kéo dài và chống oxy hóa mạnh trước các bức xạ mặt trời.
+
+### Key giới thiệu sản phẩm
+- Công nghệ AMPLEX+ độc quyền được cấp bằng sáng chế về Y học tái tạo và thẩm mỹ
+- Phục hồi sức khỏe làn da nhờ exosome và các yếu tố tăng trưởng
+- Tập trung cải thiện vấn đề tăng sắc tố nhờ các phức hợp peptide độc quyền như GenoWhite và MelaTrepein 5000
+
+### Links
+- **Link sản phẩm:** https://vhndistribution.com/san-pham/purasomes-sgc100-skin-glow-complex/
+- **Link hình ảnh:** https://vhndistribution.com/san-pham/purasomes-sgc100-skin-glow-complex/#&gid=1&pid=1

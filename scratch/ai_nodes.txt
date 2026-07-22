@@ -1,0 +1,1 @@
+Node: Filter Bot Reply - bot/AI → tư vấn viên | has_history_in_prompt: False | chat_history_aware: None

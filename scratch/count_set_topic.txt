@@ -1,0 +1,2 @@
+Found Set topic at path: [4, 'branches', 'true', 1]
+Previous node: Reset session.recall_counter properties: {'varName': 'session.recall_counter', 'varValue': '0'}

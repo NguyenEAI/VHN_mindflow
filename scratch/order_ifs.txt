@@ -1,0 +1,4 @@
+If action EXIT
+  true: 1
+  false: 1
+  -> nested false if: If action CONFIRMED

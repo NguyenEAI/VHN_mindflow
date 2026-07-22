@@ -1,0 +1,2 @@
+q = """{{bot_json_query}}"""
+print(q.replace("json", "").replace("```", "").strip())

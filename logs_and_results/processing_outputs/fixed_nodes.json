@@ -1,0 +1,80 @@
+{
+  "GPT-4 Query Data": {
+    "id": "b2b_consult_query_data",
+    "type": "qna",
+    "componentType": "task",
+    "name": "GPT-4 Query Data",
+    "properties": {
+      "instruction": "Nhiệm vụ: đọc tin nhắn mới nhất và context, chọn vendor/product_type từ enum.\nChỉ trả JSON hợp lệ:\n{\n  \"vendor\": [\"christina\", \"floslek\", \"ivatherm\", \"dermoaroma\", \"preime\", \"pharmalife\", \"none\"],\n  \"product_type\": [\"serum\", \"cream\", \"cleanser\", \"antisun\", \"peel\", \"toner\", \"mask\", \"body\", \"none\"]\n}\nKhông tạo enum mới. Nếu không chắc, dùng [\"none\"].",
+      "dataset_uuid": "",
+      "dataset_qa_uuid": "",
+      "rag_query": "",
+      "limit": "2",
+      "api_key": "",
+      "knowledge": "{{ knowledge_from_rag }}",
+      "knowledge_aware": false,
+      "chat_history_aware": false,
+      "human_input_aware": true,
+      "varReply": "ai_query_data",
+      "temperature": "0.1",
+      "max_tokens": "200",
+      "stop": "",
+      "stop_regex": "",
+      "pattern": "",
+      "json_mode": true,
+      "multimodal_mode": false,
+      "tools": "",
+      "agent_loop": false,
+      "llm_alt_model": "gpt-4o-mini"
+    }
+  },
+  "Format Wishlist": {
+    "id": "b2b_consult_py_wishlist",
+    "type": "python",
+    "componentType": "task",
+    "name": "Format Wishlist",
+    "properties": {
+      "varName": "session.extra.product_wishlist",
+      "expression": "try:\n    PRODUCTS = api_raw_product_data[0].get('data', [])\n    if len(PRODUCTS) > 10: PRODUCTS = PRODUCTS[:10]\n    content = \"Danh sách SP:\\n\"\n    for p in PRODUCTS:\n        content += f\"- Tên: {p.get('name')}, Giá: {p.get('price')}\\n\"\n    print(content)\nexcept:\n    print('empty')"
+    }
+  },
+  "GPT-4 Analysis": {
+    "id": "6d3f02d97dab85e491a60d076f675a58",
+    "type": "qna",
+    "componentType": "task",
+    "name": "GPT-4 Analysis",
+    "properties": {
+      "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm về tìm kiếm và đề xuất sản phẩm phù hợp với tình trạng, nhu cầu của Customer. Assistant theo dõi cuộc trò chuyện với Customer để chọn lọc sản phẩm phù hợp.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_wishlist }}\n\"\"\"\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nAssistant nhận gợi ý từ Sales Manager về skin_type (loại da), indication (các biểu hiện trên làn da) và nhu cầu của Customer để chọn lọc được sản phẩm phù hợp từ `Product List`. Assistant SHOULD tham khảo thành phần, công dụng trong mô tả sản phẩm để chọn được sản phẩm phù hợp nhất với tình trạng và nhu cầu của Customer.. Sau khi chọn lọc, hãy trả về \"name\" tương ứng với sản phẩm đó. \"name\" là array các giá trị chứa tên những sản phẩm phù hợp sau khi chọn lọc.\n\n## Example output in JSON format\n{\n    \"name\": [\"Christina - Comodex - Correct & Prevent Gel - 30ml (Gel chấm ngăn ngừa và cải thiện mụn trứng cá)\", \"Floslek - Anti acne 24h System - Spot gel for imperfections - 20ml (Gel chấm ngăn ngừa mụn trứng cá 24h)\", \"Ivatherm - Ivapur - Hidra Hydrating Cream - 40ml (Kem dưỡng ẩm cho da dầu nhạy cảm, da mụn)\"]\n}\n\n# FRIENDLY REMINDER\n- Assistant SHOULD đọc kĩ mô tả sản phẩm để chọn lọc được đúng sản phẩm phù hợp với tình trạng da của User.\n- Assistant MUST chọn sản phẩm \"Christina - Rose De Mer- Peeling Soap - 30g (Xà bông loại bỏ tế bào chết và đổi mới da)\" khi Customer hỏi về sản phẩm **trị mụn lưng**.\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain variable \"name\" and DO NOT contain others variable.\n- Assistant MUST lấy **ĐÚNG CHÍNH XÁC** tên sản phẩm từ `Product List`. KHÔNG ĐƯỢC PHÉP SAI tên sản phẩm.",
+      "dataset_uuid": "",
+      "dataset_qa_uuid": "",
+      "rag_query": "",
+      "limit": "2",
+      "api_key": "",
+      "knowledge": "{{ knowledge_from_rag }}",
+      "knowledge_aware": false,
+      "chat_history_aware": true,
+      "human_input_aware": true,
+      "varReply": "bot_analyze",
+      "temperature": "0.7",
+      "max_tokens": "1000",
+      "stop": "",
+      "stop_regex": "",
+      "pattern": "",
+      "json_mode": true,
+      "multimodal_mode": false,
+      "tools": "",
+      "agent_loop": false,
+      "llm_alt_model": "gpt-4o-mini"
+    }
+  },
+  "Format Product Info": {
+    "id": "b0998b4d8ad4671d3a59454b8e821828",
+    "type": "python",
+    "componentType": "task",
+    "name": "Format Product Info",
+    "properties": {
+      "varName": "session.extra.product_information",
+      "expression": "import re\n\ndef normalize(s):\n    if not isinstance(s, str): return \"\"\n    s = re.sub(r'[^\\w\\s]', '', s)\n    s = re.sub(r'\\s+', ' ', s)\n    return s.strip().lower()\n\nraw_data = api_raw_product_data\nPRODUCTS = []\nif isinstance(raw_data, list) and len(raw_data) > 0:\n    if isinstance(raw_data[0], dict) and 'data' in raw_data[0]:\n        PRODUCTS = raw_data[0]['data']\n    elif isinstance(raw_data[0], dict):\n        PRODUCTS = raw_data\nelif isinstance(raw_data, dict) and 'data' in raw_data:\n    PRODUCTS = raw_data['data']\n\nWISHLIST = []\nif isinstance(product_analyze, dict):\n    WISHLIST = product_analyze.get('name', [])\nelif isinstance(product_analyze, list):\n    WISHLIST = product_analyze\n\nif not isinstance(WISHLIST, list):\n    WISHLIST = [WISHLIST]\n\ncontent = \"\"\ni = 1\nfor product in PRODUCTS:\n    if not isinstance(product, dict):\n        continue\n    title = str(product.get('name', '')).replace(\"\\n\", \"\").strip()\n    title_norm = normalize(title)\n    \n    matched = False\n    for name in WISHLIST:\n        name_norm = normalize(str(name))\n        if title_norm == name_norm or name_norm in title_norm or title_norm in name_norm:\n            matched = True\n            break\n            \n    if matched:\n        content += f\"**{i}. {title}**\\n\"\n        \n        if 'link_image' in product and product['link_image'] and str(product['link_image']) != 'N/A':\n            content += f\"![Ảnh sản phẩm]({product['link_image']})\\n\"\n        \n        if 'price' in product and product['price'] and str(product['price']) != 'N/A':\n            try:\n                p_val = int(str(product['price']).replace('.', '').replace(',', ''))\n                price_formatted = f\"{p_val:,}\".replace(\",\", \".\")\n            except:\n                price_formatted = str(product['price'])\n            content += f\"**Giá tham khảo:** {price_formatted} VND\\n\\n\"\n            \n        description = str(product.get('full_description', '')).replace(\"\\n\", \"\").strip()\n        for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:']:\n            description = description.replace(keyword, f\"**{keyword}**\")\n        if description and description != 'N/A':\n            content += f\"{description}\\n\"\n            \n        if 'keywords' in product and product['keywords'] and str(product['keywords']) != 'N/A':\n            keywords = str(product.get('keywords', '')).replace(\"\\n\", \"\").strip()\n            content += f\"**Đặc điểm nổi bật:** {keywords}\\n\"\n            \n        if 'link_product' in product and product['link_product'] and str(product['link_product']) != 'N/A':\n            content += f\"[Link sản phẩm]({product['link_product']})\\n\"\n            \n        content += \"\\n\\n\"\n        i += 1\n\nif not content:\n    content = \"empty\"\n\nimport sys\nsys.stdout.write(content)\n"
+    }
+  }
+}

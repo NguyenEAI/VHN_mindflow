@@ -1,0 +1,22 @@
+[
+  {
+    "id": "b2c2_python_history",
+    "type": "python",
+    "componentType": "task",
+    "properties": {
+      "varName": "session.extra.chat_history_b2c",
+      "expression": "output = '''{{session.extra.chat_history_b2c}}'''\noutput = output + \"Customer: \" \noutput =  output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_b2c_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+    },
+    "name": "Collect chat_history_b2c"
+  },
+  {
+    "id": "b2b2_python_history",
+    "type": "python",
+    "componentType": "task",
+    "properties": {
+      "varName": "session.extra.chat_history_b2b",
+      "expression": "output = '''{{session.extra.chat_history_b2b}}'''\noutput = output + \"Customer: \" \noutput =  output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_b2b_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+    },
+    "name": "Collect chat_history_b2b"
+  }
+]

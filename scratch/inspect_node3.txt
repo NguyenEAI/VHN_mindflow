@@ -1,0 +1,5 @@
+Name: If need product info
+Type: if
+Properties: {'condition': 'session.extra.previous_manager_decision.need_product_info == "yes"'}
+Branches: ['true', 'false']
+False branch length: 0

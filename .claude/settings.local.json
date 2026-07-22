@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import pdfplumber; print\\(pdfplumber.__version__\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)",
+      "Bash(python update_report.py)",
+      "Bash(python update_report_v2.py)",
+      "Bash(ls \"C:/Users/Administrator/.claude/skills/\" 2>/dev/null || echo \"no skills dir\"; ls \"C:/Users/Administrator/Desktop/Hoc_python/.claude/\" 2>/dev/null || echo \"no project .claude\")",
+      "Bash(mkdir -p \"C:/Users/Administrator/Desktop/Hoc_python/.claude/skills/conductify-mindflow-vhn\")"
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+Node name: If action EXIT
+False branch 0: If action CONFIRMED (if)

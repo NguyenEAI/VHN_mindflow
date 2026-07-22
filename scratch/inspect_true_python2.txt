@@ -1,0 +1,50 @@
+True Node 3 (Var [product_analyze]): json.loads(bot_analyze)
+True Node 4 (Python): 
+PRODUCTS = {{api_raw_product_data[0].data}}
+WISHLIST = {{product_analyze.name}}
+
+content = ""
+i = 1
+
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    title_lower = title.lower()
+    
+    # Robust matching
+    match_found = False
+    for names in WISHLIST:
+        names_lower = names.strip().lower()
+        if names_lower in title_lower or title_lower in names_lower:
+            match_found = True
+            break
+            
+    if match_found:
+        content += f"**{i}. {title}**\n"
+        
+        if 'link_image' in product and product['link_image'] != 'N/A':
+            content += f"![Ảnh sản phẩm]({product['link_image']})\n"
+            
+        if 'price' in product and product['price'] != 'N/A':
+            try:
+                price_num = float(product['price'].replace(',', '').replace('.', ''))
+                price_formatted = f"{int(price_num):,}".replace(",", ".")
+            except:
+                price_formatted = product['price']
+            content += f"**Giá bán lẻ:** {price_formatted} VNĐ\n\n"
+            
+        description = product.get('full_description', '').replace("\n", "").strip()
+        for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:', 'Cách dùng:']:
+            description = description.replace(keyword, f"**{keyword}**")
+        content += f"{description}\n"
+        
+        if 'keywords' in product and product['keywords'] != 'N/A':
+            keywords = product.get('keywords', '').replace("\n", "").strip()
+            content += f"**Đặc điểm nổi bật:** {keywords}\n"
+            
+        if 'link_product' in product and product['link_product'] != 'N/A':
+            content += f"[Link sản phẩm]({product['link_product']})\n"
+            
+        content += "\n\n"
+        i += 1
+
+print(content)

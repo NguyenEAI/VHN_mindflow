@@ -1,0 +1,10 @@
+﻿
+  all_decoded.json:1637:              "expression": "output = '''{{session.extra.chat_history_b2b}}'''\noutput = 
+output + \"Customer: \" \noutput =  output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + 
+\"Supporter: \"\noutput = output + '''{{bot_b2b_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+  all_decoded.json:1638:            },
+> all_decoded.json:1639:            "name": "Collect chat_history_b2b"
+  all_decoded.json:1640:          },
+  all_decoded.json:1641:          {
+
+

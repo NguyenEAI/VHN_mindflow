@@ -1,0 +1,223 @@
+Found empty_str() at 56413
+        "name": "If still has products",
+                  "properties": {
+                    "condition": "order_info.product_requirement == \"NOT-PROVIDED\""
+                  },
+                  "branches": {
+                    "true": [
+                      {
+                        "id": "or_exit_msg",
+                        "type": "botSendText",
+                        "componentType": "task",
+                        "name": "Bot Send Text - Exit",
+                        "properties": {
+                          "text": "{{ order_info.reply_text }}"
+                        }
+                      },
+                      {
+                        "id": "or_exit_clear_hist",
+                        "type": "setVar",
+                        "componentType": "task",
+                        "name": "Clear registration_chat_history",
+                        "properties": {
+                          "varName": "session.extra.registration_chat_history",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+Found empty_str() at 57146
+ar",
+                        "componentType": "task",
+                        "name": "Clear registration_chat_history",
+                        "properties": {
+                          "varName": "session.extra.registration_chat_history",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+                        "id": "or_exit_save",
+                        "type": "sessionSave",
+                        "componentType": "task",
+                        "name": "Save session",
+                        "properties": {}
+                      },
+                      {
+                        "id": "c9f09bd9660440b88e40bb7af9b0a680",
+                        "componentType": "task",
+                        "type": "setVar",
+                        "name": "Clear findproduct_data",
+                        "properties": {
+                          "varName": "session.extra.findproduct_data",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+Found empty_str() at 57589
+": "sessionSave",
+                        "componentType": "task",
+                        "name": "Save session",
+                        "properties": {}
+                      },
+                      {
+                        "id": "c9f09bd9660440b88e40bb7af9b0a680",
+                        "componentType": "task",
+                        "type": "setVar",
+                        "name": "Clear findproduct_data",
+                        "properties": {
+                          "varName": "session.extra.findproduct_data",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+                        "id": "or_exit_clear_b2c_hist",
+                        "componentType": "task",
+                        "type": "setVar",
+                        "name": "Clear chat_history_b2c",
+                        "properties": {
+                          "varName": "session.extra.chat_history_b2c",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+Found empty_str() at 58056
+                   "varName": "session.extra.findproduct_data",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+                        "id": "or_exit_clear_b2c_hist",
+                        "componentType": "task",
+                        "type": "setVar",
+                        "name": "Clear chat_history_b2c",
+                        "properties": {
+                          "varName": "session.extra.chat_history_b2c",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+                        "id": "or_exit_clear_findproduct_hist",
+                        "componentType": "task",
+                        "type": "setVar",
+                        "name": "Clear findproduct_chat_history",
+                        "properties": {
+                          "varName": "session.extra.findproduct_chat_history",
+                          "varValue": "empty_str()"
+                        }
+                      },
+                      {
+Found empty_str() at 63110
+                  "name": "Save old_order_customer_information",
+                              "properties": {
+                                "varName": "session.extra.old_order_customer_information",
+                                "expression": "output = \"customer name: \" + '''{{order_info.customer_name}}'''\noutput = output + \"   \\n   customer phone: \" + '''{{order_info.customer_phone}}'''\noutput = output + \"   \\n   customer address: \" + '''{{order_info.customer_address}}'''\nprint(output)"
+                              }
+                            },
+                            {
+                              "id": "or_done_clear_hist",
+                              "type": "setVar",
+                              "componentType": "task",
+                              "name": "Clear registration_chat_history",
+                              "properties": {
+                                "varName": "session.extra.registration_chat_history",
+                                "varValue": "empty_str()"
+                              }
+                            },
+           
+Found empty_str() at 63945
+
+                              "properties": {
+                                "varName": "session.extra.registration_chat_history",
+                                "varValue": "empty_str()"
+                              }
+                            },
+                            {
+                              "id": "or_done_save",
+                              "type": "sessionSave",
+                              "componentType": "task",
+                              "name": "Save session",
+                              "properties": {}
+                            },
+                            {
+                              "id": "701b871eaa484fb683b8354a2038579c",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Clear findproduct_data",
+                              "properties": {
+                                "varName": "session.extra.findproduct_data",
+                                "varValue": "empty_str()"
+                              }
+                            },
+           
+Found empty_str() at 64448
+                         "properties": {}
+                            },
+                            {
+                              "id": "701b871eaa484fb683b8354a2038579c",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Clear findproduct_data",
+                              "properties": {
+                                "varName": "session.extra.findproduct_data",
+                                "varValue": "empty_str()"
+                              }
+                            },
+                            {
+                              "id": "or_done_clear_b2c_hist",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Clear chat_history_b2c",
+                              "properties": {
+                                "varName": "session.extra.chat_history_b2c",
+                                "varValue": "empty_str()"
+                              }
+                            },
+           
+Found empty_str() at 64975
+                          }
+                            },
+                            {
+                              "id": "or_done_clear_b2c_hist",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Clear chat_history_b2c",
+                              "properties": {
+                                "varName": "session.extra.chat_history_b2c",
+                                "varValue": "empty_str()"
+                              }
+                            },
+                            {
+                              "id": "or_done_clear_findproduct_hist",
+                              "componentType": "task",
+                              "type": "setVar",
+                              "name": "Clear findproduct_chat_history",
+                              "properties": {
+                                "varName": "session.extra.findproduct_chat_history",
+                                "varValue": "empty_str()"
+                              }
+                            },
+           
+Found empty_str() at 137233
+{
+              "condition": "b2b_info.status == \"YES\""
+            },
+            "branches": {
+              "true": [
+                {
+                  "id": "6c0cff0aa74a7b3ae0c8adf815cdd5a8",
+                  "type": "botSendText",
+                  "componentType": "task",
+                  "properties": {
+                    "text": "Dạ, em đã ghi nhận thông tin Anh/Chị:\n- Họ tên: {{b2b_info.name}}\n- SĐT: {{b2b_info.phone}}\n- Cơ sở: {{b2b_info.facility}}\n- Địa chỉ: {{b2b_info.address}}\n\nChuyên viên kinh doanh sẽ liên hệ trong thời gian sớm nhất để tư vấn chính sách đại lý phù hợp ạ. Y dược VHN xin cảm ơn Anh/Chị!"
+                  },
+                  "name": "Bot Send Text - Thank you B2B"
+                },
+                {
+                  "id": "b2b4_clear_history",
+                  "type": "setVar",
+                  "componentType": "task",
+                  "properties": {
+                    "varName": "session.extra.chat_history_b2b",
+                    "varValue": "empty_str()"
+                  },
+                  "name": "Clear chat_history_b2b"
+  

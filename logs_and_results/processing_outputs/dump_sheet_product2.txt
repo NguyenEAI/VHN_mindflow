@@ -1,0 +1,178 @@
+Node: Sheet Product (Type: block)
+  Node: GPT-4 Query Data (Type: qna)
+    Instruction: # ROLE
+Assistant là Sales Staff có nhiều năm kinh nghiệm, Assistant theo dõi cuộc trò chuyện với Customer để xác định đúng nhãn hàng và loại sản phẩm Customer đang tìm kiếm.
+
+# MANAGER_DECISION
+Đây là...
+    varReply: bot_json_query
+  Node: Python (Type: python)
+    Expression:
+import json
+
+QUERY = """{{bot_json_query}}"""
+KEYS = ["vendor", "product_type"]
+VENDOR = ["christina", "dermoaroma", "floslek", "ivatherm", "pharmalife", "preime", "none"]
+PRODUCT_TYPE = ["antisun", "body", "cleanser", "cream", "kit", "mask", "micellar", "peel", "serum", "supply", "toner", "exfoliate", "others", "inject", "foam", "none"]
+
+if type(QUERY).__name__ == 'str':
+    try:
+        parsed_data = json.loads(QUERY)
+        unique_keys_to_check = set(KEYS)
+        missing_keys = []
+        result_vendor = False
+        result_type = False
+
+        for keys in unique_keys_to_check:
+            if keys not in parsed_data:
+                missing_keys.append(keys)
+
+        if not missing_keys: 
+            vendor_value = parsed_data["vendor"]
+            type_value = parsed_data["product_type"]
+
+            for key in VENDOR:
+                if key in vendor_value:
+                    result_vendor = True
+                    break
+
+            for key in PRODUCT_TYPE:
+                if key in type_value:
+                    result_type = True
+                    break
+
+            if result_vendor and result_type:
+                print("Yes")
+        else:
+            print("No")
+    except json.JSONDecodeError:
+        print("No")
+else:
+    print("No")
+    varName: json_check
+  Node: If json_check == "Yes" (Type: if)
+    Condition: json_check == "Yes"
+    Branch [true]:
+      Node: Var [session.extra.query_data] (Type: setVar)
+        varName: session.extra.query_data
+        varValue: json.loads(bot_json_query)
+      Node: API CALL PRODUCT DATA (Type: botAPICall)
+        API Body: {
+    "bot_uuid": "{{ bot_uuid }}",
+    "channel_type": "{{ channel_type }}",
+    "channel_id": "{{ channel_id }}",
+    "thread_id": "{{ thread_id }}",
+    "user_msg_id": "{{ user_msg_id }}",
+    "vendor": "{{ session.extra.query_data.vendor }}",
+    "product_type": "{{ session.extra.query_data.product_type }}",
+    "sheet_url":"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing"
+}
+        API Response Var: api_call_product_data
+    Branch [false]:
+      Node: API CALL PRODUCT DATA (Type: botAPICall)
+        API Body: {
+    "bot_uuid": "{{ bot_uuid }}",
+    "channel_type": "{{ channel_type }}",
+    "channel_id": "{{ channel_id }}",
+    "thread_id": "{{ thread_id }}",
+    "user_msg_id": "{{ user_msg_id }}",
+    "vendor": "{{ session.extra.query_data.vendor }}",
+    "product_type": "none",
+    "sheet_url":"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing"
+}
+        API Response Var: api_call_product_data
+  Node: Var [api_raw_product_data] (Type: setVar)
+    varName: api_raw_product_data
+    varValue: json.loads(api_call_product_data)
+  Node: Have results? (Type: if)
+    Condition: api_raw_product_data[0].status == "success"
+    Branch [true]:
+      Node: Python (Type: python)
+        Expression:
+PRODUCTS = {{api_raw_product_data[0].data}}
+
+# Tạo nội dung rút gọn TỐI ĐA (Chỉ lấy Tên SP) cho LLM Analysis để tiết kiệm token
+content = ""
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    content += f"- {title}\n"
+    
+print(content)
+        varName: session.extra.product_wishlist
+      Node: Save session (Type: sessionSave)
+      Node: GPT-4 Analysis (Type: qna)
+        Instruction: # ROLE
+Assistant là Sales Staff có nhiều năm kinh nghiệm về tìm kiếm và đề xuất sản phẩm phù hợp với tình trạng, nhu cầu của Customer. Assistant theo dõi cuộc trò chuyện với Customer để chọn lọc sản p...
+        varReply: bot_analyze
+      Node: Var [product_analyze] (Type: setVar)
+        varName: product_analyze
+        varValue: json.loads(bot_analyze)
+      Node: Python (Type: python)
+        Expression:
+PRODUCTS = {{api_raw_product_data[0].data}}
+# IS_SALON = {{ session.extra.is_salon_product }}
+WISHLIST = {{product_analyze.name}}
+
+# Tạo nội dung
+content = ""
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    i = 1
+    # if product['is_salon_product'] == IS_SALON:
+    for names in WISHLIST:
+        if title == names:
+            content += f"**{i}. {title}**\n"
+            
+            # Kiểm tra và in ra ảnh nếu có
+            if 'link_image' in product and product['link_image'] != 'N/A':
+                content += f"![Ảnh sản phẩm]({product['link_image']})\n"
+            
+            # Chỉ in giá tham khảo nếu có
+            if 'price' in product and product['price'] != 'N/A':
+                price_formatted = f"{product['price']:,}".replace(",", ".")  # đổi dấu phẩy thành dấu chấm nếu bạn muốn theo chuẩn VN
+                content += f"**Giá tham khảo:** {price_formatted} VND\n\n"
+                
+            # # Lấy mô tả ngắn gọn
+            # if 'description' in product and product['description'] != 'N/A':
+            #     short_description = product.get('description', '').replace("\n", "").strip()
+            #     content += f"**Thông tin chung:** {short_description}\n"
+            
+            # Làm đẹp phần mô tả
+            description = product.get('full_description', '').replace("\n", "").strip()
+            for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:']:
+                description = description.replace(keyword, f"**{keyword}**")
+            content += f"{description}\n"
+            
+            # Lấy keywords giới thiệu sản phẩm
+            if 'keywords' in product and product['keywords'] != 'N/A':
+                keywords = product.get('keywords', '').replace("\n", "").strip()
+                content += f"**Đặc điểm nổi bật:** {keywords}\n"
+            
+            # Kiểm tra và in ra link nếu có
+            if 'link_product' in product and product['link_product'] != 'N/A':
+                content += f"[Link sản phẩm]({product['link_product']})\n"
+            
+            content += "\n\n"  # Dòng trống giữa các sản phẩm
+            i += 1
+
+# Trả về kết quả
+print(content)
+        varName: session.extra.product_information
+      Node: Save session (Type: sessionSave)
+    Branch [false]:
+      Node: 📤 API Call Support 📤 (Type: botAPICall)
+        API Body: {
+    "customer_name": "NOT-PROVIDED",
+    "customer_phone": "NOT-PROVIDED",
+    "customer_issue": "Có vấn đề với Data sản phẩm. Cần theo dõi và support",
+    "bot_uuid": "{{ bot_uuid }}",
+    "channel_type": "{{ channel_type }}",
+    "channel_id": "{{ channel_id }}",
+    "thread_id": "{{ thread_id }}",
+    "user_msg_id": "{{ user_msg_id }}",
+    "company_name": "{{ company_name }}",
+    "company_email": "{{ company_email }}",
+    "sheet_url":"{{ sheet_url }}"
+}
+        API Response Var: api_name_output
+      Node: Recall (Type: recall)

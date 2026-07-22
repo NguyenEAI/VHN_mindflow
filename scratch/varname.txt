@@ -1,0 +1,12 @@
+Collect Register Chat History -> session.extra.registration_chat_history
+Save old_order_customer_information -> session.extra.old_order_customer_information
+Python -> json_check
+Clean bot_json_query -> session.extra.clean_query
+Python -> session.extra.product_wishlist
+Python -> session.extra.product_information
+Verify URLs in B2C Reply -> bot_b2c_reply
+Collect chat_history_b2c -> session.extra.chat_history_b2c
+Format Wishlist -> session.extra.product_wishlist
+Exact Match Info -> session.extra.product_information
+Verify URLs in B2B Reply -> bot_b2b_reply
+Collect chat_history_b2b -> session.extra.chat_history_b2b

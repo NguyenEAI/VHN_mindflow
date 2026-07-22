@@ -1,0 +1,163 @@
+Session Manager
+Sheet
+  Set const sheet_url
+API Constants
+  Const [api_url_search_data]
+Router
+If session.recall_counter > 3 (Safety Net)
+Branch: true
+  Reset session.recall_counter
+  Set topic
+  Bot Send Text - Recall Safety
+  Break
+Branch: false
+Flows Switch
+Branch: greetings
+  AI QnA Greetings
+  Clear topic
+Branch: off_topic
+  AI QnA Off-topic
+  Clear topic
+Branch: handover
+  AI Analyze Handover Reason
+  Set handover
+  AI QnA Handover Reply
+  Clear topic
+Branch: promotion
+  AI QnA Promotion
+  Clear Topic
+Branch: internal_staff
+  AI QnA Internal Handler
+  Clear Topic
+Branch: order
+  Save human_input
+  AI Decide Order Action
+  Set order_info
+  Collect Register Chat History
+  Save session
+  If action EXIT
+  Branch: true
+    If still has products
+    Branch: true
+      Bot Send Text - Exit
+      Clear registration_chat_history
+      Save session
+      Clear findproduct_data
+      Clear chat_history_b2c
+      Clear findproduct_chat_history
+      Save session after cleanup
+      Clear Topic
+    Branch: false
+      Bot Send Text - Go To Consult
+      Clear Topic
+  Branch: false
+    If action CONFIRMED
+    Branch: true
+      If missing info
+      Branch: true
+        Bot Send Text - Ask Missing
+      Branch: false
+        Bot Send Text - Success
+        Save old_order_customer_information
+        Clear registration_chat_history
+        Save session
+        Clear findproduct_data
+        Clear chat_history_b2c
+        Clear findproduct_chat_history
+        Save session after cleanup
+        Clear Topic
+    Branch: false
+      Bot Send Text - Reply
+Branch: b2c_consult
+  Save human_input
+  AI Decide b2c_consult
+  Save Decision
+  If need product info
+  Branch: true
+    Sheet Product
+      GPT-4 Query Data
+      Python
+      If json_check == "Yes"
+      Branch: true
+        Clean bot_json_query
+        Var [session.extra.query_data]
+        API CALL PRODUCT DATA
+      Branch: false
+        API CALL PRODUCT DATA
+      Var [api_raw_product_data]
+      Have results?
+      Branch: true
+        Python
+        Save session
+        GPT-4 Analysis
+        Var [product_analyze]
+        Python
+        Save session
+        Save findproduct_data
+      Branch: false
+        📤 API Call Support 📤
+        Recall
+  Branch: false
+  AI Chuyên trách B2C
+  Verify URLs in B2C Reply
+  Collect chat_history_b2c
+  Save session
+  AI Check B2C Status
+  Set b2c_status
+  If ready
+  Branch: true
+    Set topic [order]
+    Recall
+  Branch: false
+    If exit
+    Branch: true
+      Bot Send Text - Exit
+      Clear Topic
+    Branch: false
+      Bot Send B2C Reply
+Branch: b2b_consult
+  Save human_input
+  AI Decide b2b_consult
+  Save Decision
+  If need product info
+  Branch: true
+    GPT-4 Query Data
+    Set Query
+    API CALL PRODUCT DATA
+    Set API Raw
+    Format Wishlist
+    AI Analyze Product Names
+    Set Analyze
+    Exact Match Info
+    Save findproduct_data
+  Branch: false
+  AI Chuyên trách B2B
+  Verify URLs in B2B Reply
+  Collect chat_history_b2b
+  Save session
+  AI Phân tích thu thập thông tin B2B
+  Var [b2b_info]
+  If got lead
+  Branch: true
+    Bot Send Text - Thank you B2B
+    Clear chat_history_b2b
+    Save session
+    Clear Topic
+  Branch: false
+    If exit
+    Branch: true
+      Bot Send Text - Exit B2B
+      Clear Topic
+    Branch: false
+      Bot Send B2B Reply
+Branch: brand_info
+  AI QnA Brand Info
+  Clear Topic
+Branch: company_info
+  AI QnA Company Info
+  Clear Topic
+Filter Bot Reply - tôi → em
+Filter Bot Reply - chúng tôi → bên em
+Filter Bot Reply - bot/AI → tư vấn viên
+Filter Bot Reply - bạn → Anh/Chị
+Filter Bot Reply - tôi không biết → em chưa có thông tin

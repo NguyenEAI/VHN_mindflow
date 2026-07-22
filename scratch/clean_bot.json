@@ -1,0 +1,10 @@
+{
+  "id": "clean_bot_json_query",
+  "name": "Clean bot_json_query",
+  "type": "python",
+  "componentType": "task",
+  "properties": {
+    "varName": "session.extra.clean_query",
+    "expression": "import json\nimport re\n\nq = \"\"\"{{bot_json_query}}\"\"\"\ntry:\n    s = q.replace(\"json\", \"\").replace(\"```\", \"\").strip()\n    d = json.loads(s)\n    \n    if isinstance(d.get(\"vendor\"), list):\n        d[\"vendor\"] = str(d[\"vendor\"])\n    if isinstance(d.get(\"product_type\"), list):\n        d[\"product_type\"] = str(d[\"product_type\"])\n        \n    print(json.dumps(d))\nexcept Exception as e:\n    print(q.replace(\"json\", \"\").replace(\"```\", \"\").strip())\n"
+  }
+}

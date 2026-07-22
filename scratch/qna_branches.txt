@@ -1,0 +1,25 @@
+Branch: greetings
+  AI QnA Greetings: True
+Branch: off_topic
+  AI QnA Off-topic: True
+Branch: handover
+  AI Analyze Handover Reason: True
+  AI QnA Handover Reply: True
+Branch: promotion
+  AI QnA Promotion: True
+Branch: internal_staff
+  AI QnA Internal Handler: True
+Branch: order
+  AI Decide Order Action: True
+Branch: b2c_consult
+  AI Decide b2c_consult: True
+  AI Chuyên trách B2C: True
+  AI Check B2C Status: True
+Branch: b2b_consult
+  AI Decide b2b_consult: True
+  AI Chuyên trách B2B: True
+  AI Phân tích thu thập thông tin B2B: True
+Branch: brand_info
+  AI QnA Brand Info: True
+Branch: company_info
+  AI QnA Company Info: True

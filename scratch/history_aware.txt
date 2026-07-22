@@ -1,0 +1,126 @@
+﻿
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:377:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:378:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:379:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:380:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:381:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:415:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:416:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:417:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:418:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:419:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:453:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:454:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:455:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:456:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:457:              "varReply": "handover_analyze",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:492:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:493:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:494:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:495:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:496:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:530:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:531:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:532:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:533:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:534:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:569:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:570:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:571:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:572:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:573:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:616:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:617:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:618:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:619:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:620:              "varReply": "ai_order_decide",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:927:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:928:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:929:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:930:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:931:              "varReply": "manager_decision",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:993:                        "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:994:                        "knowledge_aware": 
+false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:995:                        "chat_history_aware": 
+true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:996:                        "human_input_aware": 
+true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:997:                        "varReply": 
+"bot_json_query",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1129:                              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1130:                              
+"knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1131:                              
+"chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1132:                              
+"human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1133:                              "varReply": 
+"bot_analyze",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1230:              "knowledge": "",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1231:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1232:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1233:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1234:              "varReply": "bot_b2c_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1286:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1287:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1288:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1289:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1290:              "varReply": "ai_b2c_check",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1410:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1411:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1412:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1413:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1414:              "varReply": "manager_decision",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1469:                    "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1470:                    "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1471:                    "chat_history_aware": 
+false,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1472:                    "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1473:                    "varReply": 
+"ai_query_data",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1541:                    "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1542:                    "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1543:                    "chat_history_aware": 
+false,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1544:                    "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1545:                    "varReply": "bot_analyze",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1603:              "knowledge": "",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1604:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1605:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1606:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1607:              "varReply": "bot_b2b_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1659:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1660:              "knowledge_aware": false,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1661:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1662:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1663:              "varReply": "ai_b2b_check",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1788:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1789:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1790:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1791:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1792:              "varReply": "bot_reply",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1826:              "knowledge": "{{ 
+knowledge_from_rag }}",
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1827:              "knowledge_aware": true,
+> C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1828:              "chat_history_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1829:              "human_input_aware": true,
+  C:\Users\Administrator\Desktop\Hoc_python\VHN_DauTien_Fixed.json:1830:              "varReply": "bot_reply",
+
+

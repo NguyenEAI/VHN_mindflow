@@ -1,0 +1,17 @@
+Found at 237
+f order_info.action == "EXIT" }}
+{{#if order_info.product_requirement == "NOT-PROVIDED" }}
+{{else}}
+{{/if}}
+{{else}}
+{{#if order_info.action == "CONFIRMED" }}
+{{#if order_info.customer_phone == "NOT-P
+Found at 358
+f order_info.action == "CONFIRMED" }}
+{{#if order_info.customer_phone == "NOT-PROVIDED" }}
+{{else}}
+{{/if}}
+{{else}}
+{{/if}}
+{{/if}}
+{{#if session.extra.previous_manager_decision.need_product_info == 

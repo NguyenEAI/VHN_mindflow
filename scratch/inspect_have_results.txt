@@ -1,0 +1,7 @@
+True Node 0: Python
+True Node 1: Save session
+True Node 2: GPT-4 Analysis
+True Node 3: Var [product_analyze]
+True Node 4: Python
+True Node 5: Save session
+True Node 6: Save findproduct_data

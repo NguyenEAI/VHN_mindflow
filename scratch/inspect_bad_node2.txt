@@ -1,0 +1,3 @@
+Node name: Save findproduct_data
+Node type: setVar
+varValue: '{{ session.extra.product_information }}'

@@ -1,0 +1,33 @@
+- If action EXIT (type: if)
+  Branch: true
+    - If still has products (type: if)
+      Branch: true
+        - Bot Send Text - Exit (type: botSendText)
+        - Clear registration_chat_history (type: setVar)
+        - Save session (type: sessionSave)
+        - Clear findproduct_data (type: setVar)
+        - Clear chat_history_b2c (type: setVar)
+        - Clear findproduct_chat_history (type: setVar)
+        - Save session after cleanup (type: sessionSave)
+        - Clear Topic (type: clearTopic)
+      Branch: false
+        - Bot Send Text - Go To Consult (type: botSendText)
+        - Clear Topic (type: clearTopic)
+  Branch: false
+    - If action CONFIRMED (type: if)
+      Branch: true
+        - If missing info (type: if)
+          Branch: true
+            - Bot Send Text - Ask Missing (type: botSendText)
+          Branch: false
+            - Bot Send Text - Success (type: botSendText)
+            - Save old_order_customer_information (type: python)
+            - Clear registration_chat_history (type: setVar)
+            - Save session (type: sessionSave)
+            - Clear findproduct_data (type: setVar)
+            - Clear chat_history_b2c (type: setVar)
+            - Clear findproduct_chat_history (type: setVar)
+            - Save session after cleanup (type: sessionSave)
+            - Clear Topic (type: clearTopic)
+      Branch: false
+        - Bot Send Text - Reply (type: botSendText)

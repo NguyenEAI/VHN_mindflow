@@ -1,0 +1,5 @@
+Branches in If json_check: dict_keys(['true', 'false'])
+True branch nodes:
+  Node 0: Clean bot_json_query
+  Node 1: Var [session.extra.query_data]
+  Node 2: API CALL PRODUCT DATA

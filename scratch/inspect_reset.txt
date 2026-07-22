@@ -1,0 +1,2 @@
+Found Reset session.recall_counter!
+It is the first node in the sequence!

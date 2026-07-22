@@ -1,0 +1,122 @@
+Session Manager
+Sheet
+Set const sheet_url
+API Constants
+Const [api_url_search_data]
+Router
+If session.recall_counter > 3 (Safety Net)
+Reset session.recall_counter
+Set topic
+Bot Send Text - Recall Safety
+Break
+Flows Switch
+AI QnA Greetings
+Clear topic
+AI QnA Off-topic
+Clear topic
+AI Analyze Handover Reason
+Set handover
+AI QnA Handover Reply
+Clear topic
+AI QnA Promotion
+Clear Topic
+AI QnA Internal Handler
+Clear Topic
+Save human_input
+AI Decide Order Action
+Set order_info
+Collect Register Chat History
+Save session
+If action EXIT
+If still has products
+Bot Send Text - Exit
+Clear registration_chat_history
+Save session
+Clear findproduct_data
+Clear chat_history_b2c
+Clear findproduct_chat_history
+Save session after cleanup
+Clear Topic
+Bot Send Text - Go To Consult
+Clear Topic
+If action CONFIRMED
+If missing phone
+Bot Send Text - Ask Missing
+Bot Send Text - Success
+Save old_order_customer_information
+Clear registration_chat_history
+Save session
+Clear findproduct_data
+Clear chat_history_b2c
+Clear findproduct_chat_history
+Save session after cleanup
+Clear Topic
+Bot Send Text - Reply
+Save human_input
+AI Decide b2c_consult
+Save Decision
+If need product info
+GPT-4 Query Data
+Python json_check
+If json_check == Yes
+Set query_data
+API CALL PRODUCT DATA
+API CALL PRODUCT DATA FALLBACK
+Set api_raw_product_data
+Format Wishlist
+Save session wishlist
+GPT-4 Analysis
+Set product_analyze
+Format Product Info
+Save session info
+Save findproduct_data
+AI Chuyên trách B2C
+Verify URLs in B2C Reply
+Collect chat_history_b2c
+Save session
+AI Check B2C Status
+Set b2c_status
+If ready
+Set topic [order]
+Recall
+If exit
+Bot Send Text - Exit
+Clear Topic
+Bot Send B2C Reply
+Save human_input
+AI Decide b2b_consult
+Save Decision
+If need product info
+GPT-4 Query Data
+Set Query
+API CALL PRODUCT DATA
+Set API Raw
+Format Wishlist
+AI Analyze Product Names
+Set Analyze
+Exact Match Info
+Save findproduct_data
+AI Chuyên trách B2B
+Verify URLs in B2B Reply
+Collect chat_history_b2b
+Save session
+AI Phân tích thu thập thông tin B2B
+Var [b2b_info]
+If got lead
+Bot Send Text - Thank you B2B
+Clear chat_history_b2b
+Save session
+Clear Topic
+If exit
+Bot Send Text - Exit B2B
+Clear Topic
+Bot Send B2B Reply
+AI QnA Brand Info
+Clear Topic
+AI QnA Company Info
+Clear Topic
+Filter Bot Reply - tôi → em
+Filter Bot Reply - chúng tôi → bên em
+Filter Bot Reply - bot/AI → tư vấn viên
+Filter Bot Reply - bạn → Anh/Chị
+Filter Bot Reply - tôi không biết → em chưa có thông tin

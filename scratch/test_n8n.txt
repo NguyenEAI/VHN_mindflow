@@ -1,0 +1,18 @@
+--- Single string ---
+Status: 200
+Response status: success
+Data length: 27
+Sample product: Christina - Unstress - Step 1: Gentle Cleansing Milk - 300ml (Sữa tẩy trang rửa mặt dành cho da nhạy cảm)
+--- Comma separated ---
+Status: 200
+Response status: failed
+--- Python array representation ---
+Status: 200
+Response status: success
+Data length: 33
+Sample product: Christina - Unstress - Step 1: Gentle Cleansing Milk - 300ml (Sữa tẩy trang rửa mặt dành cho da nhạy cảm)
+--- JSON Array ---
+Status: 200
+Response status: success
+Data length: 33
+Sample product: Christina - Unstress - Step 1: Gentle Cleansing Milk - 300ml (Sữa tẩy trang rửa mặt dành cho da nhạy cảm)

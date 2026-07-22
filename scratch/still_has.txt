@@ -1,0 +1,12 @@
+If still has products true: 8
+  -> Bot Send Text - Exit botSendText {'text': '{{ order_info.reply_text }}'}
+  -> Clear registration_chat_history setVar {'varName': 'session.extra.registration_chat_history', 'varValue': 'empty_str()'}
+  -> Save session sessionSave {}
+  -> Clear findproduct_data setVar {'varName': 'session.extra.findproduct_data', 'varValue': 'empty_str()'}
+  -> Clear chat_history_b2c setVar {'varName': 'session.extra.chat_history_b2c', 'varValue': 'empty_str()'}
+  -> Clear findproduct_chat_history setVar {'varName': 'session.extra.findproduct_chat_history', 'varValue': 'empty_str()'}
+  -> Save session after cleanup sessionSave {}
+  -> Clear Topic clearTopic {}
+If still has products false: 2
+  -> Bot Send Text - Go To Consult botSendText {'text': '{{ order_info.reply_text }}'}
+  -> Clear Topic clearTopic {}

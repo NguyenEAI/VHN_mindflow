@@ -1,0 +1,108 @@
+Session Manager
+Company
+Set const company_name
+Set const company_contact
+Set const company_branch
+AI Setting
+Set const assistant_role
+Set const assistant_skill
+Set const assistant_scope
+Set const assistant_tone
+Set const vn_pronoun
+Set const assistant_language_ability
+Product
+Set const category
+Set const product_service_list
+Const [product_list]
+Const [treatment]
+Thông báo
+Set const company_email
+Set const telegram_chat_id
+Sheet
+Set const sheet_url
+Semantic
+Const [semantic_dataset]
+api_url
+Set const api_url_handover
+Const [api_url_error]
+Const [api_url_agency_record]
+Const [api_url_newcustomer_record]
+Const [api_url_search_data]
+Time
+Time GMT+7
+Agencies
+Const [agency]
+Const [spa_in4]
+Const [spa]
+Const [phong_kham_in4]
+Const [phong_kham]
+Const [tham_my_vien_in4]
+Const [tham_my_vien]
+Const [benh_vien_in4]
+Const [benh_vien]
+Const [he_thong_nha_thuoc_in4]
+Const [he_thong_nha_thuoc]
+RECALL CHECK
+If session.recall_counter > 3
+Var [session.recall_counter]
+Save session
+GPT-4o Mini Offtopic
+Bot Send Text
+Break
+MANAGER
+GPT-4 MANAGER
+Python
+verify_manager_decision_format
+Set manager_decision
+Set session.extra.previous_manager_decision
+Save session
+Recall
+Break
+Lấy thông tin sản phẩm
+Search sản phẩm?
+Sheet Product
+GPT-4 Query Data
+Python
+If json_check == "Yes"
+Var [session.extra.query_data]
+API CALL PRODUCT DATA
+API CALL PRODUCT DATA
+Var [api_raw_product_data]
+Have results?
+Python
+Save session
+GPT-4 Analysis
+Var [product_analyze]
+Python
+Save session
+📤 API Call Support 📤
+Recall
+If attachments
+Bot Send Text
+Break
+Parallel
+GPT-4o Mini Greetings
+Bot Send Text
+GPT-4o Mini QnA
+Bot Send Text
+GPT-4o Mini Handover
+Var [session.extra.call_support]
+Save session
+📤 API Call Support 📤
+Bot Send Text
+GPT-4o Mini Offtopic
+Bot Send Text
+GPT-4 Gather Requirement
+Bot Send Text
+GPT-4 Recommend Product
+Bot Send Text
+GPT-4o Mini Thank you
+Bot Send Text
+GPT-4o Mini Handover
+Var [session.extra.call_support]
+Save session
+📤 API Call Support 📤
+Bot Send Text
+Filter Bot Reply
+Filter Bot Reply
+Filter Bot Reply

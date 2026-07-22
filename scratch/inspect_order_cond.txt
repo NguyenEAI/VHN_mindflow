@@ -1,0 +1,4 @@
+If action EXIT condition: order_info.action == "EXIT"
+If still has products condition: order_info.product_requirement == "NOT-PROVIDED"
+If action CONFIRMED condition: order_info.action == "CONFIRMED"
+If missing info condition: order_info.customer_phone == "NOT-PROVIDED" or order_info.customer_name == "NOT-PROVIDED" or order_info.customer_address == "NOT-PROVIDED"

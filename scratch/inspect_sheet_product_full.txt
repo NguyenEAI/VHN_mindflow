@@ -1,0 +1,5 @@
+Node 0: GPT-4 Query Data (type: qna)
+Node 1: Python (type: python)
+Node 2: If json_check == "Yes" (type: if)
+Node 3: Var [api_raw_product_data] (type: setVar)
+Node 4: Have results? (type: if)

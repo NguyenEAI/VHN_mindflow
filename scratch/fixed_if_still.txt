@@ -1,0 +1,11 @@
+﻿
+  VHN_DauTien_Fixed.json:672:                  "componentType": "switch",
+  VHN_DauTien_Fixed.json:673:                  "type": "if",
+> VHN_DauTien_Fixed.json:674:                  "name": "If still has products",
+  VHN_DauTien_Fixed.json:675:                  "properties": {
+  VHN_DauTien_Fixed.json:676:                    "condition": "order_info.product_requirement == \"NOT-PROVIDED\""
+  VHN_DauTien_Fixed.json:677:                  },
+  VHN_DauTien_Fixed.json:678:                  "branches": {
+  VHN_DauTien_Fixed.json:679:                    "true": [
+
+

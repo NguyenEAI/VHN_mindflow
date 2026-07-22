@@ -1,0 +1,5 @@
+0 GPT-4 Query Data
+1 Python
+2 If json_check == "Yes"
+3 Var [api_raw_product_data]
+4 Have results?

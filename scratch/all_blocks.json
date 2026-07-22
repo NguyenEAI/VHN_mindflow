@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cdb0d5f37e21fb6f041a1829919078cd",
+    "componentType": "container",
+    "type": "block",
+    "name": "Sheet",
+    "properties": {
+      "hidden": false
+    },
+    "sequence": [
+      {
+        "id": "a2b082fa031427ff36866e8293e70243",
+        "componentType": "task",
+        "type": "setConst",
+        "name": "Set const sheet_url",
+        "properties": {
+          "constName": "sheet_url",
+          "constValue": "https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing"
+        }
+      }
+    ]
+  },
+  {
+    "id": "new_api_block_id",
+    "componentType": "container",
+    "type": "block",
+    "name": "API Constants",
+    "properties": {
+      "hidden": false
+    },
+    "sequence": [
+      {
+        "id": "88312684c6aea1703e59c2c95a416a69",
+        "type": "setConst",
+        "componentType": "task",
+        "properties": {
+          "constName": "api_url_search_data",
+          "constValue": "https://n8n.workerbot.ai/webhook/product-vhn-search-data"
+        },
+        "name": "Const [api_url_search_data]"
+      }
+    ]
+  }
+]

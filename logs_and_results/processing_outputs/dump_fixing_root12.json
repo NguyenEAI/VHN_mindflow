@@ -1,0 +1,246 @@
+{
+  "id": "5230ab15dbe14e5ed85008f432bc6a93",
+  "type": "block",
+  "componentType": "container",
+  "properties": {
+    "hidden": false
+  },
+  "sequence": [
+    {
+      "id": "7b9f5c6eb783c8e4a3b521e558a54229",
+      "type": "if",
+      "componentType": "switch",
+      "properties": {
+        "condition": "session.extra.previous_manager_decision.need_product_info == \"yes\""
+      },
+      "branches": {
+        "true": [
+          {
+            "id": "74c854c870ce55b3f2c87b2f89311641",
+            "type": "block",
+            "componentType": "container",
+            "properties": {
+              "hidden": false
+            },
+            "sequence": [
+              {
+                "id": "52532d1c2a7a9307df8455e1d70a9c05",
+                "type": "qna",
+                "componentType": "task",
+                "properties": {
+                  "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm, Assistant theo dõi cuộc trò chuyện với Customer để xác định đúng nhãn hàng và loại sản phẩm Customer đang tìm kiếm.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nTheo dõi cuộc trò chuyện với Customer và nhận gợi ý từ Sales Manager để xác định đúng nhãn hàng \"vendor\" và loại sản phẩm \"product_type\":\n* \"vendor\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"vendor\": \"none\" or \"vendor\": [\"christina\", \"floslek\"])\nChỉ được chọn trong 7 vendor bắt buộc sau: `christina`, `dermoaroma`, `floslek`, `ivatherm`, `pharmalife`, `preime` và `none`\n- `christina`: khi Customer yêu cầu các sản phẩm thuộc brand Christina (Israel)\n- `dermoaroma`: khi Customer yêu cầu các sản phẩm thuộc brand Dermoaroma (Italia)\n- `floslek`: khi Customer yêu cầu các sản phẩm thuộc brand Floslek (Ba Lan)\n- `ivatherm`: khi Customer yêu cầu các sản phẩm thuộc brand Ivatherm (Pháp)\n- `pharmalife`: khi Customer yêu cầu các sản phẩm thuộc brand Pharmalife (Italia)\n- `preime`: khi Customer yêu cầu các sản phẩm thuộc brand Préime DermaCeuticals\n- `none`: khi chưa xác định được brand mà Customer đang quan tâm\n\n* \"product_type\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"product_type\": \"none\" or \"product_type\": [\"serum\", \"cleanser\", \"toner\"])\nChỉ được chọn trong 16 product_type bắt buộc sau: \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\" và \"none\"\n- \"antisun\": khi Customer yêu cầu các sản phẩm chống nắng\n- \"body\": khi Customer yêu cầu các sản phẩm dành cho body\n- \"cleanser\": khi Customer yêu cầu các sản phẩm sữa rửa mặt, gel rửa mặt... chung chung\n- \"cream\": khi Customer yêu cầu các sản phẩm kem dưỡng, dưỡng ẩm...\n- \"kit\": khi Customer yêu cầu các sản phẩm bán theo set, bộ sản phẩm, bộ kit...\n- \"mask\": khi Customer yêu cầu các sản phẩm mặt nạ\n- \"micellar\": khi Customer yêu cầu các sản phẩm nước tẩy trang, dầu tẩy trang, sữa tẩy trang... chung chung\n- \"none\":  khi chưa xác định được loại sản phẩm Customer yêu cầu\n- \"peel\": khi Customer yêu cầu các sản phẩm tái tạo da, peel da...\n- \"serum\": khi Customer yêu cầu các sản phẩm serum, tinh chất, huyết thanh...\n- \"supply\": khi Customer yêu cầu các sản phẩm chức năng, thực phẩm bổ sung...\n- \"toner\": khi Customer yêu cầu các sản phẩm nước hoa hồng\n- \"exfoliate\": khi Customer yêu cầu các sản phẩm tẩy da chết, tẩy tế bào chết, sản phẩm dành cho lưng...\n- \"inject\": khi Customer yêu cầu các sản phẩm dạng tiêm\n- \"foam\": khi Customer yêu cầu các sản phẩm sữa rửa mặt tạo bọt sẵn, sữa rửa mặt dạng bọt mịn...\n- \"others\": khi Customer yêu cầu các sản phẩm khác ngoài \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\"\n\n# FRIENDLY REMINDER\n- Giá trị mặc định ban đầu của \"vendor\" là \"none\"\n- Giá trị mặc định ban đầu của \"product_type\" là \"none\"\n- Khi Customer mentions about \"peeling system\", Assistant MUST chọn \"vendor\" là \"dermoaroma\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer mentions about \"line repair\", Assistant MUST chọn \"vendor\" là \"christina\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer hỏi về sản phẩm tiêm trẻ hóa da, Assistant MUST chọn \"product_type\" là \"inject\" và lựa chọn \"vendor\" phù hợp theo nội dung cuộc trò chuyện với Customer và gợi ý từ Sales Manager.\n- Khi Customer hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà..., Assistant mặc định chọn \"vendor\" là \"none\" và \"product_type\" là \"none\"\n- Khi Customer hỏi thông tin về 'cicaderm' (ví dụ: cicaderm là của ai hả em) which means đang hỏi về sản phẩm `Ivatherm - Cicaderm Cream - 40ml (Kem phục hồi, hỗ trợ tái tạo da và ngăn ngừa sẹo)`, Assistant MUST chọn \"product_type\" là \"cream\" và chọn \"vendor\" là \"ivatherm\"\n- Khi Customer requests more products, hỏi thêm sản phẩm, yêu cầu thêm sản phẩm..., Assistant SHOULD giữ nguyên \"vendor\" hoặc \"product_type\" đã chọn trước đó.\n- Assistant REMEMBER that nước tẩy trang, dầu tẩy trang, sữa tẩy trang is the same product_type \"micellar\".\n- Tránh nhầm lẫn khi chọn \"product_type\" giữa **sữa tẩy trang** và **sữa rửa mặt**.\n- Khi Customer hỏi thông tin về sản phẩm \"Ivatherm - Multi-Performance - Cleansing milk Face And Eyes - 200ml\", Assistant SHOULD chọn \"product_type\" là `micellar`.\n- Khi Customer hỏi về sản phẩm trị mụn lưng, Assistant SHOULD chọn vendor `christina` và product_type `exfoliate`.\n\n# FORMAT OUTPUT IN JSON\n{\n  \"vendor\": [\"christina\", \"dermoaroma\"],\n  \"product_type\": [\"serum\", \"cleanser\", \"micellar\"]\n}\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain both variables \"vendor\" and \"product_type\"\n- \"vendor\" chỉ có thể là \"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\" và \"none\". DO NOT tạo \"vendor\" khác. NGHIÊM CẤM TẠO VENDOR MỚI. NGHIÊM CẤM VIẾT SAI TÊN VENDOR. DO NOT dùng từ đồng nghĩa.\n- \"product_type\" chỉ có thể là \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\", \"others\" và \"none\". DO NOT tạo \"product_type\" khác. NGHIÊM CẤM TẠO PRODUCT_TYPE MỚI. NGHIÊM CẤM VIẾT SAI TÊN PRODUCT_TYPE. DO NOT dùng từ đồng nghĩa.\n- PLEASE DO NOT SELF-CREATE OTHER \"vendor\" and \"product_type\", when Assistant do that the program will fail and ruin the company's reputation, so please DO NOT TẠO VENDOR VÀ PRODUCT_TYPE MỚI.",
+                  "dataset_uuid": "",
+                  "dataset_qa_uuid": "",
+                  "rag_query": "",
+                  "limit": "2",
+                  "api_key": "",
+                  "knowledge": "{{ knowledge_from_rag }}",
+                  "knowledge_aware": false,
+                  "chat_history_aware": true,
+                  "human_input_aware": true,
+                  "varReply": "bot_json_query",
+                  "temperature": "0.7",
+                  "max_tokens": "1000",
+                  "stop": "",
+                  "stop_regex": "",
+                  "pattern": "",
+                  "json_mode": true,
+                  "multimodal_mode": false,
+                  "tools": "",
+                  "agent_loop": false,
+                  "llm_alt_model": "gpt-4o-mini"
+                },
+                "name": "GPT-4 Query Data"
+              },
+              {
+                "id": "39e8ed5451eeef94d826d62c348b0aee",
+                "type": "python",
+                "componentType": "task",
+                "properties": {
+                  "varName": "json_check",
+                  "expression": "import json\n\nQUERY = \"\"\"{{bot_json_query}}\"\"\"\nKEYS = [\"vendor\", \"product_type\"]\nVENDOR = [\"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\", \"none\"]\nPRODUCT_TYPE = [\"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\", \"none\"]\n\nif type(QUERY).__name__ == 'str':\n    try:\n        parsed_data = json.loads(QUERY)\n        unique_keys_to_check = set(KEYS)\n        missing_keys = []\n        result_vendor = False\n        result_type = False\n\n        for keys in unique_keys_to_check:\n            if keys not in parsed_data:\n                missing_keys.append(keys)\n\n        if not missing_keys: \n            vendor_value = parsed_data[\"vendor\"]\n            type_value = parsed_data[\"product_type\"]\n\n            for key in VENDOR:\n                if key in vendor_value:\n                    result_vendor = True\n                    break\n\n            for key in PRODUCT_TYPE:\n                if key in type_value:\n                    result_type = True\n                    break\n\n            if result_vendor and result_type:\n                print(\"Yes\")\n        else:\n            print(\"No\")\n    except json.JSONDecodeError:\n        print(\"No\")\nelse:\n    print(\"No\")"
+                },
+                "name": "Python"
+              },
+              {
+                "id": "93d6f8292b171d5c7a5443436fb47c04",
+                "type": "if",
+                "componentType": "switch",
+                "properties": {
+                  "condition": "json_check == \"Yes\""
+                },
+                "branches": {
+                  "true": [
+                    {
+                      "id": "4cb8f3ceb32b6c9f08925189d1c5fa04",
+                      "type": "setVar",
+                      "componentType": "task",
+                      "properties": {
+                        "varName": "session.extra.query_data",
+                        "varValue": "json.loads(bot_json_query)"
+                      },
+                      "name": "Var [session.extra.query_data]"
+                    },
+                    {
+                      "id": "3173e7d6fcbdeb4100c4dfabad2c1bbd",
+                      "type": "botAPICall",
+                      "componentType": "task",
+                      "properties": {
+                        "api_response_var_name": "api_call_product_data",
+                        "api_url": "{{ api_url_search_data }}",
+                        "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n    \"product_type\": \"{{ session.extra.query_data.product_type }}\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+                        "api_header": "{\"Authorization\": \"Bearer token\"}",
+                        "api_method": "POST"
+                      },
+                      "name": "API CALL PRODUCT DATA"
+                    }
+                  ],
+                  "false": [
+                    {
+                      "id": "fb5a13c13db9c1499f374e20e623e775",
+                      "type": "botAPICall",
+                      "componentType": "task",
+                      "properties": {
+                        "api_response_var_name": "api_call_product_data",
+                        "api_url": "{{ api_url_search_data }}",
+                        "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n    \"product_type\": \"none\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+                        "api_header": "{\"Authorization\": \"Bearer token\"}",
+                        "api_method": "POST"
+                      },
+                      "name": "API CALL PRODUCT DATA"
+                    }
+                  ]
+                },
+                "name": "If json_check == \"Yes\""
+              },
+              {
+                "id": "2eb038c0383668d66cceab6470ff37cc",
+                "type": "setVar",
+                "componentType": "task",
+                "properties": {
+                  "varName": "api_raw_product_data",
+                  "varValue": "json.loads(api_call_product_data)"
+                },
+                "name": "Var [api_raw_product_data]"
+              },
+              {
+                "id": "885995130c0b3862f8fcef3a74d14013",
+                "type": "if",
+                "componentType": "switch",
+                "properties": {
+                  "condition": "api_raw_product_data[0].status == \"success\""
+                },
+                "branches": {
+                  "true": [
+                    {
+                      "id": "587546d6bed1f80d58351331a8bc7e79",
+                      "type": "python",
+                      "componentType": "task",
+                      "properties": {
+                        "varName": "session.extra.product_wishlist",
+                        "expression": "PRODUCTS = {{api_raw_product_data[0].data}}\n\n# Tạo nội dung rút gọn TỐI ĐA (Chỉ lấy Tên SP) cho LLM Analysis để tiết kiệm token\ncontent = \"\"\nfor product in PRODUCTS:\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    content += f\"- {title}\\n\"\n    \nprint(content)"
+                      },
+                      "name": "Python"
+                    },
+                    {
+                      "id": "72f84cc4254dc0921ec92ce2c1985d53",
+                      "type": "sessionSave",
+                      "componentType": "task",
+                      "properties": {},
+                      "name": "Save session"
+                    },
+                    {
+                      "id": "6d3f02d97dab85e491a60d076f675a58",
+                      "type": "qna",
+                      "componentType": "task",
+                      "properties": {
+                        "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm về tìm kiếm và đề xuất sản phẩm phù hợp với tình trạng, nhu cầu của Customer. Assistant theo dõi cuộc trò chuyện với Customer để chọn lọc sản phẩm phù hợp.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_wishlist }}\n\"\"\"\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nAssistant nhận gợi ý từ Sales Manager về skin_type (loại da), indication (các biểu hiện trên làn da) và nhu cầu của Customer để chọn lọc được sản phẩm phù hợp từ `Product List`. Assistant SHOULD tham khảo thành phần, công dụng trong mô tả sản phẩm để chọn được sản phẩm phù hợp nhất với tình trạng và nhu cầu của Customer.. Sau khi chọn lọc, hãy trả về \"name\" tương ứng với sản phẩm đó. \"name\" là array các giá trị chứa tên những sản phẩm phù hợp sau khi chọn lọc.\n\n## Example output in JSON format\n{\n    \"name\": [\"Christina - Comodex - Correct & Prevent Gel - 30ml (Gel chấm ngăn ngừa và cải thiện mụn trứng cá)\", \"Floslek - Anti acne 24h System - Spot gel for imperfections - 20ml (Gel chấm ngăn ngừa mụn trứng cá 24h)\", \"Ivatherm - Ivapur - Hidra Hydrating Cream - 40ml (Kem dưỡng ẩm cho da dầu nhạy cảm, da mụn)\"]\n}\n\n# FRIENDLY REMINDER\n- Assistant SHOULD đọc kĩ mô tả sản phẩm để chọn lọc được đúng sản phẩm phù hợp với tình trạng da của User.\n- Assistant MUST chọn sản phẩm \"Christina - Rose De Mer- Peeling Soap - 30g (Xà bông loại bỏ tế bào chết và đổi mới da)\" khi Customer hỏi về sản phẩm **trị mụn lưng**.\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain variable \"name\" and DO NOT contain others variable.\n- Assistant MUST lấy **ĐÚNG CHÍNH XÁC** tên sản phẩm từ `Product List`. KHÔNG ĐƯỢC PHÉP SAI tên sản phẩm.",
+                        "dataset_uuid": "",
+                        "dataset_qa_uuid": "",
+                        "rag_query": "",
+                        "limit": "2",
+                        "api_key": "",
+                        "knowledge": "{{ knowledge_from_rag }}",
+                        "knowledge_aware": false,
+                        "chat_history_aware": true,
+                        "human_input_aware": true,
+                        "varReply": "bot_analyze",
+                        "temperature": "0.7",
+                        "max_tokens": "1000",
+                        "stop": "",
+                        "stop_regex": "",
+                        "pattern": "",
+                        "json_mode": true,
+                        "multimodal_mode": false,
+                        "tools": "",
+                        "agent_loop": false,
+                        "llm_alt_model": "gpt-4o-mini"
+                      },
+                      "name": "GPT-4 Analysis"
+                    },
+                    {
+                      "id": "195a2ce48a37209aa513e1fa4fafb6eb",
+                      "type": "setVar",
+                      "componentType": "task",
+                      "properties": {
+                        "varName": "product_analyze",
+                        "varValue": "json.loads(bot_analyze)"
+                      },
+                      "name": "Var [product_analyze]"
+                    },
+                    {
+                      "id": "b0998b4d8ad4671d3a59454b8e821828",
+                      "type": "python",
+                      "componentType": "task",
+                      "properties": {
+                        "varName": "session.extra.product_information",
+                        "expression": "PRODUCTS = {{api_raw_product_data[0].data}}\n# IS_SALON = {{ session.extra.is_salon_product }}\nWISHLIST = {{product_analyze.name}}\n\n# Tạo nội dung\ncontent = \"\"\nfor product in PRODUCTS:\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    i = 1\n    # if product['is_salon_product'] == IS_SALON:\n    for names in WISHLIST:\n        if title == names:\n            content += f\"**{i}. {title}**\\n\"\n            \n            # Kiểm tra và in ra ảnh nếu có\n            if 'link_image' in product and product['link_image'] != 'N/A':\n                content += f\"![Ảnh sản phẩm]({product['link_image']})\\n\"\n            \n            # Chỉ in giá tham khảo nếu có\n            if 'price' in product and product['price'] != 'N/A':\n                price_formatted = f\"{product['price']:,}\".replace(\",\", \".\")  # đổi dấu phẩy thành dấu chấm nếu bạn muốn theo chuẩn VN\n                content += f\"**Giá tham khảo:** {price_formatted} VND\\n\\n\"\n                \n            # # Lấy mô tả ngắn gọn\n            # if 'description' in product and product['description'] != 'N/A':\n            #     short_description = product.get('description', '').replace(\"\\n\", \"\").strip()\n            #     content += f\"**Thông tin chung:** {short_description}\\n\"\n            \n            # Làm đẹp phần mô tả\n            description = product.get('full_description', '').replace(\"\\n\", \"\").strip()\n            for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:']:\n                description = description.replace(keyword, f\"**{keyword}**\")\n            content += f\"{description}\\n\"\n            \n            # Lấy keywords giới thiệu sản phẩm\n            if 'keywords' in product and product['keywords'] != 'N/A':\n                keywords = product.get('keywords', '').replace(\"\\n\", \"\").strip()\n                content += f\"**Đặc điểm nổi bật:** {keywords}\\n\"\n            \n            # Kiểm tra và in ra link nếu có\n            if 'link_product' in product and product['link_product'] != 'N/A':\n                content += f\"[Link sản phẩm]({product['link_product']})\\n\"\n            \n            content += \"\\n\\n\"  # Dòng trống giữa các sản phẩm\n            i += 1\n\n# Trả về kết quả\nprint(content)"
+                      },
+                      "name": "Python"
+                    },
+                    {
+                      "id": "7de737a6d53331bd121b93671efcac16",
+                      "type": "sessionSave",
+                      "componentType": "task",
+                      "properties": {},
+                      "name": "Save session"
+                    }
+                  ],
+                  "false": [
+                    {
+                      "id": "e794a07396cee253f3ae45c2cd6833d5",
+                      "componentType": "task",
+                      "type": "botAPICall",
+                      "name": "📤 API Call Support 📤",
+                      "properties": {
+                        "api_response_var_name": "api_name_output",
+                        "api_url": "{{api_url_handover}}",
+                        "api_body": "{\n    \"customer_name\": \"NOT-PROVIDED\",\n    \"customer_phone\": \"NOT-PROVIDED\",\n    \"customer_issue\": \"Có vấn đề với Data sản phẩm. Cần theo dõi và support\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"company_name\": \"{{ company_name }}\",\n    \"company_email\": \"{{ company_email }}\",\n    \"sheet_url\":\"{{ sheet_url }}\"\n}",
+                        "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+                        "api_method": "POST"
+                      }
+                    },
+                    {
+                      "id": "f99c4f245d7ffbc4af64950c76f6d485",
+                      "type": "recall",
+                      "componentType": "task",
+                      "properties": {
+                        "max_loop": "3"
+                      },
+                      "name": "Recall"
+                    }
+                  ]
+                },
+                "name": "Have results?"
+              }
+            ],
+            "name": "Sheet Product"
+          }
+        ],
+        "false": []
+      },
+      "name": "Search sản phẩm?"
+    }
+  ],
+  "name": "Lấy thông tin sản phẩm"
+}

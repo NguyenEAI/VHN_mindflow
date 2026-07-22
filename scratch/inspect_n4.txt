@@ -1,0 +1,2 @@
+Node 4: If session.recall_counter > 3 (Safety Net) Type: if
+Properties: {'condition': 'session.recall_counter > 3'}

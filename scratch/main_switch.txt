@@ -1,0 +1,4 @@
+Node 5 name: Flows Switch
+Node 5 type: flowSwitch
+Node 5 componentType: switch
+Node 5 branches: ['greetings', 'off_topic', 'handover', 'promotion', 'internal_staff', 'order', 'b2c_consult', 'b2b_consult', 'brand_info', 'company_info']

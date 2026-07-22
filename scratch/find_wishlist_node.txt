@@ -1,0 +1,20 @@
+Found wishlist node: Python
+Value: PRODUCTS = {{api_raw_product_data[0].data}}
+
+# Tạo nội dung rút gọn TỐI ĐA (Chỉ lấy Tên SP) cho LLM Analysis để tiết kiệm token
+content = ""
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    content += f"- {title}\n"
+    
+print(content)
+Found wishlist node: Format Wishlist
+Value: PRODUCTS = {{api_raw_product_data[0].data}}
+
+# Tạo nội dung rút gọn TỐI ĐA (Chỉ lấy Tên SP) cho LLM Analysis để tiết kiệm token
+content = ""
+for product in PRODUCTS:
+    title = product.get('name', '').replace("\n", "").strip()
+    content += f"- {title}\n"
+    
+print(content)

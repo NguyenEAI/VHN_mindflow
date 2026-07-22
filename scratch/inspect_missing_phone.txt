@@ -1,0 +1,2 @@
+Node name: If missing phone
+Node properties: {'condition': 'order_info.customer_phone == "NOT-PROVIDED"'}

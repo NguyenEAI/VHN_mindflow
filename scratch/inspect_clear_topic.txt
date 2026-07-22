@@ -1,0 +1,3 @@
+Type: clearTopic
+ComponentType: task
+Properties: {}

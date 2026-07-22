@@ -1,0 +1,2 @@
+--- Stringified array for vendor ---
+Response status: success

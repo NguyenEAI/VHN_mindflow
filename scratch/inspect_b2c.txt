@@ -1,0 +1,11 @@
+Node 0: Save human_input
+Node 1: AI Decide b2c_consult
+Node 2: Save Decision
+Node 3: If need product info
+Node 4: AI Chuyên trách B2C
+Node 5: Verify URLs in B2C Reply
+Node 6: Collect chat_history_b2c
+Node 7: Save session
+Node 8: AI Check B2C Status
+Node 9: Set b2c_status
+Node 10: If ready

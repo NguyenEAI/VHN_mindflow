@@ -1,0 +1,29 @@
+{
+  "id": "b2c_consult_qna_decide",
+  "type": "qna",
+  "componentType": "task",
+  "name": "AI Decide b2c_consult",
+  "properties": {
+    "instruction": "# Role\nAssistant là Manager quyết định xem trong tình huống này có cần tra cứu thông tin sản phẩm từ cơ sở dữ liệu hay không.\n\n# Task\nĐọc lịch sử trò chuyện và câu nói mới nhất của User.\nNếu User nhắc tới tên sản phẩm, dòng sản phẩm, thương hiệu, hoặc yêu cầu đề xuất sản phẩm -> cần thông tin sản phẩm.\nNếu User chỉ đang chào hỏi hoặc trả lời các thông tin khai thác nhu cầu chưa yêu cầu gợi ý -> không cần.\n\n# Output JSON\nTrả về JSON:\n{\n  \"need_product_info\": \"yes\" hoặc \"no\"\n}",
+    "dataset_uuid": "",
+    "dataset_qa_uuid": "",
+    "rag_query": "",
+    "limit": "2",
+    "api_key": "",
+    "knowledge": "{{ knowledge_from_rag }}",
+    "knowledge_aware": false,
+    "chat_history_aware": true,
+    "human_input_aware": true,
+    "varReply": "manager_decision",
+    "temperature": "0.1",
+    "max_tokens": "200",
+    "stop": "",
+    "stop_regex": "",
+    "pattern": "",
+    "json_mode": true,
+    "multimodal_mode": false,
+    "tools": "",
+    "agent_loop": false,
+    "llm_alt_model": "gpt-4o-mini"
+  }
+}

@@ -1,0 +1,71 @@
+Brace in Session Manager.extra
+Brace in AI QnA Greetings.instruction
+Brace in AI QnA Greetings.knowledge
+Brace in AI QnA Off-topic.instruction
+Brace in AI QnA Off-topic.knowledge
+Brace in AI Analyze Handover Reason.instruction
+Brace in AI Analyze Handover Reason.knowledge
+Brace in AI QnA Handover Reply.instruction
+Brace in AI QnA Handover Reply.knowledge
+Brace in AI QnA Promotion.instruction
+Brace in AI QnA Promotion.knowledge
+Brace in AI QnA Internal Handler.instruction
+Brace in AI QnA Internal Handler.knowledge
+Brace in Save human_input.human_input
+Brace in AI Decide Order Action.instruction
+Brace in AI Decide Order Action.knowledge
+Brace in Collect Register Chat History.expression
+Brace in Bot Send Text - Exit.text
+Brace in Bot Send Text - Go To Consult.text
+Brace in Bot Send Text - Success.text
+Brace in Save old_order_customer_information.expression
+Brace in Bot Send Text - Reply.text
+Brace in Save human_input.human_input
+Brace in AI Decide b2c_consult.instruction
+Brace in AI Decide b2c_consult.knowledge
+Brace in GPT-4 Query Data.instruction
+Brace in GPT-4 Query Data.knowledge
+Brace in Python.expression
+Brace in Clean bot_json_query.expression
+Brace in API CALL PRODUCT DATA.api_url
+Brace in API CALL PRODUCT DATA.api_body
+Brace in API CALL PRODUCT DATA.api_header
+Brace in API CALL PRODUCT DATA.api_url
+Brace in API CALL PRODUCT DATA.api_body
+Brace in API CALL PRODUCT DATA.api_header
+Brace in Python.expression
+Brace in GPT-4 Analysis.instruction
+Brace in GPT-4 Analysis.knowledge
+Brace in Python.expression
+Brace in 📤 API Call Support 📤.api_url
+Brace in 📤 API Call Support 📤.api_body
+Brace in 📤 API Call Support 📤.api_header
+Brace in AI Chuyên trách B2C.instruction
+Brace in Verify URLs in B2C Reply.expression
+Brace in Collect chat_history_b2c.expression
+Brace in AI Check B2C Status.instruction
+Brace in AI Check B2C Status.knowledge
+Brace in Bot Send B2C Reply.text
+Brace in Save human_input.human_input
+Brace in AI Decide b2b_consult.instruction
+Brace in AI Decide b2b_consult.knowledge
+Brace in GPT-4 Query Data.instruction
+Brace in GPT-4 Query Data.knowledge
+Brace in API CALL PRODUCT DATA.api_url
+Brace in API CALL PRODUCT DATA.api_body
+Brace in API CALL PRODUCT DATA.api_header
+Brace in Format Wishlist.expression
+Brace in AI Analyze Product Names.instruction
+Brace in AI Analyze Product Names.knowledge
+Brace in Exact Match Info.expression
+Brace in AI Chuyên trách B2B.instruction
+Brace in Verify URLs in B2B Reply.expression
+Brace in Collect chat_history_b2b.expression
+Brace in AI Phân tích thu thập thông tin B2B.instruction
+Brace in AI Phân tích thu thập thông tin B2B.knowledge
+Brace in Bot Send Text - Thank you B2B.text
+Brace in Bot Send B2B Reply.text
+Brace in AI QnA Brand Info.instruction
+Brace in AI QnA Brand Info.knowledge
+Brace in AI QnA Company Info.instruction
+Brace in AI QnA Company Info.knowledge

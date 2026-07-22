@@ -1,0 +1,5 @@
+Node 0: GPT-4 Query Data
+Node 1: Python
+Node 2: If json_check == "Yes"
+Node 3: Var [api_raw_product_data]
+Node 4: Have results?

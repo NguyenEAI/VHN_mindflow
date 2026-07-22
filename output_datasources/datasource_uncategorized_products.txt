@@ -1,0 +1,175 @@
+# DANH SÁCH SẢN PHẨM CHƯA PHÂN LOẠI (is_salon_product = NaN)
+
+---
+ID: nan
+Tên: Vino Pure Cleanser -1 / Sữa rửa mặt chiết xuất từ nho nguyên chất
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Cx nho Bordeaux: giàu protein, vitamin B1, B9, E,C, chất chống oxy hóa cao cung cấp nước cho da làm mịn da cải thiện độ đàn hồi, giảm sự xuất hiện của các đường và nếp nhăn.
+- Cleansing active: công nghệ độc đáo làm sạch da hiệu quả mang lại lớp nền mềm mịn
+
+---
+ID: nan
+Tên: Vino Peel - 2a Mặt nạ làm sạch sâu, tái tạo và làm sáng da
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Acid từ nho: tẩy tế bào chết, loại bỏ bụi bẩn, kích thích chuyển hóa tế bào, cung cấp năng lượng cho da.
+-  Glycolic aicd: trẻ hóa da, loại bỏ tế bào chết và tạp chất, giúp da căng bóng, sáng tông màu da, mang lại vẻ ngoài rạng rỡ.
+- Chiết xuất rượu vang đỏ: giúp da căng bóng, đồng đều màu da, cải thiện kết cấu da.
+
+---
+ID: nan
+Tên: Vino Forte Peel - 2b/Mặt nạ tại tạo da tăng cường
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+
+---
+ID: nan
+Tên: Vino Elixir 3/Tinh dầu massage
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Vitis Vinifera (Grape) Seed Oil : bao gồm các axit béo, giàu vitamin E, C, D và các chất chống oxy hóa mạnh, cung cấp cho da sự hydrat hóa và bảo vệ tối ưu, làm mịn da cải thiện độ đàn hồi, làm giảm sự xuất hiện của các nếp nhăn, hỗ trợ phục hồi và đổi mới da 
+- Vitamin C : thành phần chống oxy hóa mạnh, bảo vệ các tế bào da và cải thiện cấu trúc da, thúc đẩy sản xuất collagen và giúp đồng đều màu da.
+
+---
+ID: nan
+Tên: Vino Eye Mask 4a/Mặt nạ làm giảm thâm và bọng mắt
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Rejuvenating Active - làm giảm quầng thâm, loại bỏ bọng mắt, tăng cường sự mềm mại, làm giảm sự xuất hiện của nếp nhăn, hỗ trợ ngăn ngừa tổn thương mô, làm mới làn da, phục hồi sự mềm mại.
+• Bơ Avocado- giàu chất dinh dưỡng làm giảm sự xuất hiện của các dấu hiệu lão hóa, giúp làm mềm, cải thiện độ đàn hồi và đồng đều của da.
+• Bơ hạt mỡ - giữ ẩm và phục hồi làn da, giúp tái tạo, hỗ trợ giữ nước trong da, làm mịn da và tăng cường độ đàn hồi cho da.
+
+---
+ID: nan
+Tên: Vino Glory Mask 4b/ Mặt nạ trẻ hóa làm sáng da
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Cx nho Bordeaux: giàu protein, vitamin B1, B9, E,C, chất chống oxy hóa cao cung cấp nước cho da làm mịn da cải thiện độ đàn hồi, giảm sự xuất hiện của các đường và nếp nhăn.
+- Bơ Avocado- giàu chất dinh dưỡng làm giảm sự xuất hiện của các dấu hiệu lão hóa, giúp làm mềm, cải thiện độ đàn hồi và đồng đều của da.
+- Resveratrol: chất chống oxy hóa, giữ ẩm tự nhiên, làm sáng da
+
+---
+ID: nan
+Tên: Vino Sheen Serum 5/Serum chiết xuất từ nho nguyên chất
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Retinol dạng viên: xóa nhăn hiệu quả cho da, hỗ trợ đồng đều màu da, thúc đẩy độ đàn hồi da, giảm rõ rệt các dấu hiệu lão hóa da.
+- Acid Hyaluronic thông minh: Phân tử HA siêu nhỏ thấm sâu vào lớp hạ bì giữ nước làm giảm sự xuất hiện nếp nhăn, collagen & elastin linh hoạt cho làn da săn chắc & đàn hồi.
+- Hi-tech Biopolymer: giúp làm săn chắc da, làm mịn da ngay tức thì
+
+---
+ID: nan
+Tên: Shielding Cream 6 SPF 20/Kem dưỡng chống lão hóa và chống nắng
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Cx nho Bordeaux: giàu protein, vitamin B1, B9, E,C, chất chống oxy hóa cao cung cấp nước cho da làm mịn da cải thiện độ đàn hồi, giảm sự xuất hiện của các đường và nếp nhăn.
+- Resveratrol: chất chống oxy hóa, giữ ẩm tự nhiên, làm sáng da
+- UVA+Uvb sun filters : thành phần chống nắng bảo vệ da trước tia UV
+
+---
+ID: nan
+Tên: Vino Pure Cleanser – Sữa rửa mặt chiết xuất từ nho nguyên chất
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất nho Bordeaux; Cúc La Mã; Chiết xuất nho; Lactic; Ure.
+
+---
+ID: nan
+Tên: Vino Sheen Fusion – Huyết thanh trẻ hoá da
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Retinol hình cầu; Hyaluronic acid; Resveratrol; Polymer sinh học; Chiết xuất nho Bordeaux.
+
+---
+ID: nan
+Tên: Absolute Perfect – Huyết thanh tái tạo da chống lão hoá
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Peptide 3D; Hyaluronic acid; Polymer sinh học; Retinol hình cầu; Chiết xuất nho Bordeaux.
+
+---
+ID: nan
+Tên: Vino Sheen Restoring Cream – Kem làm sáng da và chống lão hoá
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất nho Bordeaux; Resveratrol; Oligopeptide 24; Glycerin; Tocopheryl Acetate
+
+---
+ID: nan
+Tên: Shelding Cream SPF 30 – Kem dưỡng ẩm, chống lão hoá và chống nắng SPF 30
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất nho Bordeaux; Resveratrol; UV Filter; Lactic acid; Ure.
+
+---
+ID: nan
+Tên: Deep Beauty Night Cream – Kem dưỡng ẩm chống lão hoá da ban đêm
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất nho Bordeaux; Tinh dầu mầm lúa mì; Oligopeptide; Resveratrol; Tocopheryl Acetate
+
+---
+ID: nan
+Tên: Vino Glory Mask – Mặt nạ tái tạo da và chống lão hoá
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất nho Bordeaux; Resveratrol; Trái bơ; Tocopheryl Acetate; Glyceryl
+
+---
+ID: nan
+Tên: Rejuvenating Vineyard Eye Cream – Kem trẻ hoá da vùng mắt
+Vendor: Christina
+Giá: LIÊN HỆ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+Chiết xuất cám gạo; Protein đậu nành; Oligopeptide 24; Resveratrol; Chiết xuất trái bơ.
+
+---
+ID: 241
+Tên: Purasomes Nutri Complex - Exosome phục hồi, sửa chữa da toàn diện  ( 3 x 5ml)
+Vendor: Dermoaroma
+Giá: 15,000,000 VNĐ
+Loại: Chưa phân loại
+Mô tả chi tiết:
+- AMPLEX+ (20 tỷ đơn vị exosome, 200mg 20 yếu tố tăng trưởng mạnh mẽ nhất)
+- 150mg HA (75mg HWM, 75mg LWM)
+- PDRN
+- 23 amino acid – 10 vitamin – 6 CoEnzyme
+- Chất chống oxy hóa
+CHỉ định:
+- Hoạt động trên những làn da khô, mệt mỏi, lão hóa và tổn thương do ánh sáng bằng cách khuếch đại mạnh mẽ hiệu suất tế bào.
+- Sửa chữa những lớp sâu dưới da. Hỗ trợ hình thành collagen và duy trì độ săn chắc, đàn hồi của da.
+- Bổ sung và nuôi dưỡng sâu cho da. Tăng cường khả năng thẩm thấu dưỡng chất. Thúc đẩy tăng sinh hình thành mạch máu và mô mới.
+- Định hình chất lượng nền da mới, tái tạo phần khung đàn hồi lâu dài, da săn chắc hơn và đường nét rõ hơn.
+Link sản phẩm: https://vhndistribution.com/san-pham/purasomes-nc150-nutri-complex/
+Link ảnh: https://vhndistribution.com/san-pham/purasomes-nc150-nutri-complex/#&gid=1&pid=1

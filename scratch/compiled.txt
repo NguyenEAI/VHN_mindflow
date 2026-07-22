@@ -1,0 +1,53 @@
+{{#if session.recall_counter > 3}}
+{{else}}
+{{/if}}
+{{#if session.topic == "greetings" }}
+{{/if}}
+{{#if session.topic == "off_topic" }}
+{{/if}}
+{{#if session.topic == "handover" }}
+{{/if}}
+{{#if session.topic == "promotion" }}
+{{/if}}
+{{#if session.topic == "internal_staff" }}
+{{/if}}
+{{#if session.topic == "order" }}
+{{#if order_info.action == "EXIT"}}
+{{#if order_info.product_requirement == "NOT-PROVIDED"}}
+{{else}}
+{{/if}}
+{{else}}
+{{#if order_info.action == "CONFIRMED"}}
+{{#if order_info.customer_phone == "NOT-PROVIDED" or order_info.customer_name == "NOT-PROVIDED" or order_info.customer_address == "NOT-PROVIDED"}}
+{{else}}
+{{/if}}
+{{else}}
+{{/if}}
+{{/if}}
+{{/if}}
+{{#if session.topic == "b2c_consult" }}
+{{#if session.extra.previous_manager_decision.need_product_info == "yes"}}
+{{else}}
+{{/if}}
+{{#if b2c_status.status == "READY"}}
+{{else}}
+{{#if b2c_status.status == "EXIT"}}
+{{else}}
+{{/if}}
+{{/if}}
+{{/if}}
+{{#if session.topic == "b2b_consult" }}
+{{#if session.extra.previous_manager_decision.need_product_info == "yes"}}
+{{else}}
+{{/if}}
+{{#if b2b_info.status == "YES"}}
+{{else}}
+{{#if b2b_info.status == "EXIT"}}
+{{else}}
+{{/if}}
+{{/if}}
+{{/if}}
+{{#if session.topic == "brand_info" }}
+{{/if}}
+{{#if session.topic == "company_info" }}
+{{/if}}

@@ -1,0 +1,56 @@
+ID: 39e8ed5451eeef94d826d62c348b0aee
+Expr: import json
+import sys
+
+QUERY = """{{bot_json_query}}"""
+QUERY = QUERY.strip()
+if QUERY.startswith("```json"):
+    QUERY = QUERY[7:]
+elif QUERY.startswith("```"):
+    QUERY = QUERY[3:]
+if QUERY.endswith("```"):
+    QUERY = QUERY[:-3]
+QUERY = QUERY.strip()
+
+KEYS = ["vendor", "product_type"]
+VENDOR = ["christina", "dermoaroma", "floslek", "ivatherm", "pharmalife", "preime", "none"]
+PRODUCT_TYPE = ["antisun", "body", "cleanser", "cream", "kit", "mask", "micellar", "peel", "serum", "supply", "toner", "exfoliate", "others", "inject", "foam", "none"]
+
+if type(QUERY).__name__ == 'str':
+    try:
+        parsed_data = json.loads(QUERY)
+        unique_keys_to_check = set(KEYS)
+        missing_keys = []
+        result_vendor = False
+        result_type = False
+
+        for keys in unique_keys_to_check:
+            if keys not in parsed_data:
+                missing_keys.append(keys)
+
+        if not missing_keys: 
+            vendor_value = str(parsed_data["vendor"]).lower()
+            type_value = str(parsed_data["product_type"]).lower()
+
+            for key in VENDOR:
+                if key in vendor_value:
+                    result_vendor = True
+                    break
+
+            for key in PRODUCT_TYPE:
+                if key in type_value:
+                    result_type = True
+                    break
+
+            if result_vendor and result_type:
+                sys.stdout.write("Yes")
+            else:
+                sys.stdout.write("No")
+        else:
+            sys.stdout.write("No")
+    except Exception as e:
+        sys.stdout.write("No")
+else:
+    sys.stdout.write("No")
+
+

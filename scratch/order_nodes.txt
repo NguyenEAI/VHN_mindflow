@@ -1,0 +1,6 @@
+Save human_input (saveHumanInput)
+AI Decide Order Action (qna)
+Set order_info (setVar)
+Collect Register Chat History (python)
+Save session (sessionSave)
+If action EXIT (if)

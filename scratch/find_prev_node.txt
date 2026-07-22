@@ -1,0 +1,3 @@
+Found Set topic in sequence!
+Previous node is: Reset session.recall_counter type: setVar
+Properties: {'varName': 'session.recall_counter', 'varValue': '0'}

@@ -1,0 +1,3 @@
+If action CONFIRMED true branch nodes: 1
+If action CONFIRMED false branch nodes: 1
+  -> nested node in false: Bot Send Text - Reply (botSendText)

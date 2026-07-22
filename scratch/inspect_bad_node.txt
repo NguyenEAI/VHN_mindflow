@@ -1,0 +1,3 @@
+Node name: Var [session.extra.query_data]
+Node type: setVar
+varValue: 'json.loads(bot_json_query)'

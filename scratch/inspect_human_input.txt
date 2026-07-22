@@ -1,0 +1,60 @@
+Found human_input in node: Flows Switch
+Path: [5]
+Found human_input in node: AI QnA Greetings
+Path: [5, 'branches', 'greetings', 0]
+Found human_input in node: AI QnA Off-topic
+Path: [5, 'branches', 'off_topic', 0]
+Found human_input in node: AI Analyze Handover Reason
+Path: [5, 'branches', 'handover', 0]
+Found human_input in node: AI QnA Handover Reply
+Path: [5, 'branches', 'handover', 2]
+Found human_input in node: AI QnA Promotion
+Path: [5, 'branches', 'promotion', 0]
+Found human_input in node: AI QnA Internal Handler
+Path: [5, 'branches', 'internal_staff', 0]
+Found human_input in node: Save human_input
+Path: [5, 'branches', 'order', 0]
+Found human_input in node: AI Decide Order Action
+Path: [5, 'branches', 'order', 1]
+Found human_input in node: Collect Register Chat History
+Path: [5, 'branches', 'order', 3]
+Found human_input in node: Save human_input
+Path: [5, 'branches', 'b2c_consult', 0]
+Found human_input in node: AI Decide b2c_consult
+Path: [5, 'branches', 'b2c_consult', 1]
+Found human_input in node: If need product info
+Path: [5, 'branches', 'b2c_consult', 3]
+Found human_input in node: Sheet Product
+Path: [5, 'branches', 'b2c_consult', 3, 'branches', 'true', 0]
+Found human_input in node: GPT-4 Query Data
+Path: [5, 'branches', 'b2c_consult', 3, 'branches', 'true', 0, 'sequence', 0]
+Found human_input in node: Have results?
+Path: [5, 'branches', 'b2c_consult', 3, 'branches', 'true', 0, 'sequence', 4]
+Found human_input in node: GPT-4 Analysis
+Path: [5, 'branches', 'b2c_consult', 3, 'branches', 'true', 0, 'sequence', 4, 'branches', 'true', 2]
+Found human_input in node: AI Chuyên trách B2C
+Path: [5, 'branches', 'b2c_consult', 4]
+Found human_input in node: Collect chat_history_b2c
+Path: [5, 'branches', 'b2c_consult', 6]
+Found human_input in node: AI Check B2C Status
+Path: [5, 'branches', 'b2c_consult', 8]
+Found human_input in node: Save human_input
+Path: [5, 'branches', 'b2b_consult', 0]
+Found human_input in node: AI Decide b2b_consult
+Path: [5, 'branches', 'b2b_consult', 1]
+Found human_input in node: If need product info
+Path: [5, 'branches', 'b2b_consult', 3]
+Found human_input in node: GPT-4 Query Data
+Path: [5, 'branches', 'b2b_consult', 3, 'branches', 'true', 0]
+Found human_input in node: AI Analyze Product Names
+Path: [5, 'branches', 'b2b_consult', 3, 'branches', 'true', 5]
+Found human_input in node: AI Chuyên trách B2B
+Path: [5, 'branches', 'b2b_consult', 4]
+Found human_input in node: Collect chat_history_b2b
+Path: [5, 'branches', 'b2b_consult', 6]
+Found human_input in node: AI Phân tích thu thập thông tin B2B
+Path: [5, 'branches', 'b2b_consult', 8]
+Found human_input in node: AI QnA Brand Info
+Path: [5, 'branches', 'brand_info', 0]
+Found human_input in node: AI QnA Company Info
+Path: [5, 'branches', 'company_info', 0]

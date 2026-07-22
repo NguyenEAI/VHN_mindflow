@@ -1,0 +1,7 @@
+Node 0: Clean bot_json_query
+Props: ['varName', 'expression']
+Node 1: Var [session.extra.query_data]
+Props: ['varName', 'varValue']
+varValue: json.loads(session.extra.clean_query)
+Node 2: API CALL PRODUCT DATA
+Props: ['api_response_var_name', 'api_url', 'api_body', 'api_header', 'api_method']

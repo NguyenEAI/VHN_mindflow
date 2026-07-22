@@ -1,0 +1,8 @@
+﻿
+  all_decoded.json:645:            "type": "python",
+  all_decoded.json:646:            "componentType": "task",
+> all_decoded.json:647:            "name": "Collect Register Chat History",
+  all_decoded.json:648:            "properties": {
+  all_decoded.json:649:              "varName": "session.extra.registration_chat_history",
+
+

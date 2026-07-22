@@ -1,0 +1,60 @@
+[
+  {
+    "id": "52532d1c2a7a9307df8455e1d70a9c05",
+    "type": "qna",
+    "componentType": "task",
+    "name": "GPT-4 Query Data",
+    "properties": {
+      "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm, Assistant theo dõi cuộc trò chuyện với Customer để xác định đúng nhãn hàng và loại sản phẩm Customer đang tìm kiếm.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nTheo dõi cuộc trò chuyện với Customer và nhận gợi ý từ Sales Manager để xác định đúng nhãn hàng \"vendor\" và loại sản phẩm \"product_type\":\n* \"vendor\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"vendor\": \"none\" or \"vendor\": [\"christina\", \"floslek\"])\nChỉ được chọn trong 7 vendor bắt buộc sau: `christina`, `dermoaroma`, `floslek`, `ivatherm`, `pharmalife`, `preime` và `none`\n- `christina`: khi Customer yêu cầu các sản phẩm thuộc brand Christina (Israel)\n- `dermoaroma`: khi Customer yêu cầu các sản phẩm thuộc brand Dermoaroma (Italia)\n- `floslek`: khi Customer yêu cầu các sản phẩm thuộc brand Floslek (Ba Lan)\n- `ivatherm`: khi Customer yêu cầu các sản phẩm thuộc brand Ivatherm (Pháp)\n- `pharmalife`: khi Customer yêu cầu các sản phẩm thuộc brand Pharmalife (Italia)\n- `preime`: khi Customer yêu cầu các sản phẩm thuộc brand Préime DermaCeuticals\n- `none`: khi chưa xác định được brand mà Customer đang quan tâm\n\n* \"product_type\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"product_type\": \"none\" or \"product_type\": [\"serum\", \"cleanser\", \"toner\"])\nChỉ được chọn trong 16 product_type bắt buộc sau: \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\" và \"none\"\n- \"antisun\": khi Customer yêu cầu các sản phẩm chống nắng\n- \"body\": khi Customer yêu cầu các sản phẩm dành cho body\n- \"cleanser\": khi Customer yêu cầu các sản phẩm sữa rửa mặt, gel rửa mặt... chung chung\n- \"cream\": khi Customer yêu cầu các sản phẩm kem dưỡng, dưỡng ẩm...\n- \"kit\": khi Customer yêu cầu các sản phẩm bán theo set, bộ sản phẩm, bộ kit...\n- \"mask\": khi Customer yêu cầu các sản phẩm mặt nạ\n- \"micellar\": khi Customer yêu cầu các sản phẩm nước tẩy trang, dầu tẩy trang, sữa tẩy trang... chung chung\n- \"none\":  khi chưa xác định được loại sản phẩm Customer yêu cầu\n- \"peel\": khi Customer yêu cầu các sản phẩm tái tạo da, peel da...\n- \"serum\": khi Customer yêu cầu các sản phẩm serum, tinh chất, huyết thanh...\n- \"supply\": khi Customer yêu cầu các sản phẩm chức năng, thực phẩm bổ sung...\n- \"toner\": khi Customer yêu cầu các sản phẩm nước hoa hồng\n- \"exfoliate\": khi Customer yêu cầu các sản phẩm tẩy da chết, tẩy tế bào chết, sản phẩm dành cho lưng...\n- \"inject\": khi Customer yêu cầu các sản phẩm dạng tiêm\n- \"foam\": khi Customer yêu cầu các sản phẩm sữa rửa mặt tạo bọt sẵn, sữa rửa mặt dạng bọt mịn...\n- \"others\": khi Customer yêu cầu các sản phẩm khác ngoài \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\"\n\n# FRIENDLY REMINDER\n- Giá trị mặc định ban đầu của \"vendor\" là \"none\"\n- Giá trị mặc định ban đầu của \"product_type\" là \"none\"\n- Khi Customer mentions about \"peeling system\", Assistant MUST chọn \"vendor\" là \"dermoaroma\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer mentions about \"line repair\", Assistant MUST chọn \"vendor\" là \"christina\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer hỏi về sản phẩm tiêm trẻ hóa da, Assistant MUST chọn \"product_type\" là \"inject\" và lựa chọn \"vendor\" phù hợp theo nội dung cuộc trò chuyện với Customer và gợi ý từ Sales Manager.\n- Khi Customer hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà..., Assistant mặc định chọn \"vendor\" là \"none\" và \"product_type\" là \"none\"\n- Khi Customer hỏi thông tin về 'cicaderm' (ví dụ: cicaderm là của ai hả em) which means đang hỏi về sản phẩm `Ivatherm - Cicaderm Cream - 40ml (Kem phục hồi, hỗ trợ tái tạo da và ngăn ngừa sẹo)`, Assistant MUST chọn \"product_type\" là \"cream\" và chọn \"vendor\" là \"ivatherm\"\n- Khi Customer requests more products, hỏi thêm sản phẩm, yêu cầu thêm sản phẩm..., Assistant SHOULD giữ nguyên \"vendor\" hoặc \"product_type\" đã chọn trước đó.\n- Assistant REMEMBER that nước tẩy trang, dầu tẩy trang, sữa tẩy trang is the same product_type \"micellar\".\n- Tránh nhầm lẫn khi chọn \"product_type\" giữa **sữa tẩy trang** và **sữa rửa mặt**.\n- Khi Customer hỏi thông tin về sản phẩm \"Ivatherm - Multi-Performance - Cleansing milk Face And Eyes - 200ml\", Assistant SHOULD chọn \"product_type\" là `micellar`.\n- Khi Customer hỏi về sản phẩm trị mụn lưng, Assistant SHOULD chọn vendor `christina` và product_type `exfoliate`.\n\n# FORMAT OUTPUT IN JSON\n{\n  \"vendor\": [\"christina\", \"dermoaroma\"],\n  \"product_type\": [\"serum\", \"cleanser\", \"micellar\"]\n}\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain both variables \"vendor\" and \"product_type\"\n- \"vendor\" chỉ có thể là \"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\" và \"none\". DO NOT tạo \"vendor\" khác. NGHIÊM CẤM TẠO VENDOR MỚI. NGHIÊM CẤM VIẾT SAI TÊN VENDOR. DO NOT dùng từ đồng nghĩa.\n- \"product_type\" chỉ có thể là \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\", \"others\" và \"none\". DO NOT tạo \"product_type\" khác. NGHIÊM CẤM TẠO PRODUCT_TYPE MỚI. NGHIÊM CẤM VIẾT SAI TÊN PRODUCT_TYPE. DO NOT dùng từ đồng nghĩa.\n- PLEASE DO NOT SELF-CREATE OTHER \"vendor\" and \"product_type\", when Assistant do that the program will fail and ruin the company's reputation, so please DO NOT TẠO VENDOR VÀ PRODUCT_TYPE MỚI.",
+      "dataset_uuid": "",
+      "dataset_qa_uuid": "",
+      "rag_query": "",
+      "limit": "2",
+      "api_key": "",
+      "knowledge": "{{ knowledge_from_rag }}",
+      "knowledge_aware": false,
+      "chat_history_aware": true,
+      "human_input_aware": true,
+      "varReply": "bot_json_query",
+      "temperature": "0.7",
+      "max_tokens": "1000",
+      "stop": "",
+      "stop_regex": "",
+      "pattern": "",
+      "json_mode": true,
+      "multimodal_mode": false,
+      "tools": "",
+      "agent_loop": false,
+      "llm_alt_model": "gpt-4o-mini"
+    }
+  },
+  {
+    "id": "b2b_consult_query_data",
+    "type": "qna",
+    "componentType": "task",
+    "name": "GPT-4 Query Data",
+    "properties": {
+      "instruction": "Nhiệm vụ: đọc tin nhắn mới nhất và context, chọn vendor/product_type từ enum.\nChỉ trả JSON hợp lệ:\n{\n  \"vendor\": [\"christina\", \"floslek\", \"ivatherm\", \"dermoaroma\", \"preime\", \"pharmalife\", \"none\"],\n  \"product_type\": [\"serum\", \"cream\", \"cleanser\", \"antisun\", \"peel\", \"toner\", \"mask\", \"body\", \"none\"]\n}\nKhông tạo enum mới. Nếu không chắc, dùng [\"none\"].",
+      "dataset_uuid": "",
+      "dataset_qa_uuid": "",
+      "rag_query": "",
+      "limit": "2",
+      "api_key": "",
+      "knowledge": "{{ knowledge_from_rag }}",
+      "knowledge_aware": false,
+      "chat_history_aware": false,
+      "human_input_aware": true,
+      "varReply": "ai_query_data",
+      "temperature": "0.1",
+      "max_tokens": "200",
+      "stop": "",
+      "stop_regex": "",
+      "pattern": "",
+      "json_mode": true,
+      "multimodal_mode": false,
+      "tools": "",
+      "agent_loop": false,
+      "llm_alt_model": "gpt-4o-mini"
+    }
+  }
+]

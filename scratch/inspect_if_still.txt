@@ -1,0 +1,3 @@
+Found If still has products
+Branches: ['true', 'false']
+False branch 1st node: Bot Send Text - Go To Consult properties: {'text': '{{ order_info.reply_text }}'}

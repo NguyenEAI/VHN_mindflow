@@ -1,0 +1,1 @@
+{'id': 'init_product_info_b2c', 'type': 'setVar', 'componentType': 'task', 'name': 'Init product_info', 'properties': {'varName': 'session.extra.product_information', 'varValue': '""'}}

@@ -1,0 +1,1 @@
+session.extra.previous_manager_decision.need_product_info == "yes"

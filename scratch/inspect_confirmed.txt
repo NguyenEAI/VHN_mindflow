@@ -1,0 +1,8 @@
+Node name: If action CONFIRMED
+Branches: ['true', 'false']
+True branch length: 1
+  Last node of true branch: If missing phone
+  Type: if
+False branch length: 1
+  First node of false branch: Bot Send Text - Reply
+  Type: botSendText

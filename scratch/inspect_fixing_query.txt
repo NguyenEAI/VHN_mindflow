@@ -1,0 +1,2 @@
+Original Var [session.extra.query_data] in VHN_fixing.json:
+varValue: 'json.loads(bot_json_query)'

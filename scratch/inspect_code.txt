@@ -1,0 +1,12 @@
+--- Python ---
+''
+--- Clean bot_json_query ---
+'session.extra.clean_query = bot_json_query'
+--- Python ---
+''
+--- Python ---
+''
+--- Verify URLs in B2C Reply ---
+'bot_b2c_reply = bot_reply'
+--- Collect chat_history_b2c ---
+"session.extra.chat_history_b2c += f'User: {human_input}\\nAssistant: {bot_reply}\\n'"

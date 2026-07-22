@@ -1,0 +1,13 @@
+session: Session Manager
+block: Sheet
+setConst: Set const sheet_url
+block: API Constants
+setConst: Const [api_url_search_data]
+router: Router
+if: If session.recall_counter > 3 (Safety Net)
+flowSwitch: Flows Switch
+botReplyFilter: Filter Bot Reply - tôi → em
+botReplyFilter: Filter Bot Reply - chúng tôi → bên em
+botReplyFilter: Filter Bot Reply - bot/AI → tư vấn viên
+botReplyFilter: Filter Bot Reply - bạn → Anh/Chị
+botReplyFilter: Filter Bot Reply - tôi không biết → em chưa có thông tin

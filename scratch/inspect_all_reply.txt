@@ -1,0 +1,3 @@
+Bot Send Text - Exit path: [5, 'branches', 'order', 5, 'branches', 'true', 0, 'branches', 'true', 0]
+Bot Send Text - Go To Consult path: [5, 'branches', 'order', 5, 'branches', 'true', 0, 'branches', 'false', 0]
+Bot Send Text - Reply path: [5, 'branches', 'order', 5, 'branches', 'false', 0, 'branches', 'false', 0]

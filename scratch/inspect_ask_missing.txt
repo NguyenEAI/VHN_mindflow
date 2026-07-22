@@ -1,0 +1,2 @@
+Node name: Bot Send Text - Ask Missing
+Node text: 'Dạ, trước khi em ghi nhận đơn, Anh/Chị vui lòng bổ sung giúp em SĐT và địa chỉ giao hàng (số nhà, đường, quận/huyện, tỉnh/thành) để nhân viên VHN liên hệ xác nhận và giao hàng chính xác ạ!'

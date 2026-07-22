@@ -1,0 +1,2 @@
+Type: <class 'dict'>
+Keys: ['sequence', 'properties']

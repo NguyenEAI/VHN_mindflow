@@ -1,0 +1,3 @@
+Found botSendText: Bot Send Text - Exit
+Found botSendText: Bot Send Text - Go To Consult
+Found botSendText: Bot Send Text - Reply

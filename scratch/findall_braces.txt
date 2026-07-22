@@ -1,0 +1,66 @@
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{ human_input }}
+{{ knowledge_from_rag }}
+{{session.extra.registration_chat_history}}
+{{human_input}}
+{{order_info.reply_text}}
+{{ order_info.reply_text }}
+{{ order_info.reply_text }}
+{{order_info.customer_name}}
+{{order_info.customer_phone}}
+{{order_info.customer_address}}
+{{order_info.product_requirement}}
+{{order_info.shipping_fee}}
+{{order_info.payment_method}}
+{{order_info.total_price}}
+{{order_info.customer_name}}
+{{order_info.customer_phone}}
+{{order_info.customer_address}}
+{{ order_info.reply_text }}
+{{ knowledge_from_rag }}
+{{session.extra.previous_manager_decision}}
+{{ knowledge_from_rag }}
+{{bot_json_query}}
+{{ api_url_search_data }}
+{{ api_url_search_data }}
+{{api_raw_product_data[0].data}}
+{{session.extra.previous_manager_decision}}
+{{ knowledge_from_rag }}
+{{api_raw_product_data[0].data}}
+{{product_analyze.name}}
+{{api_url_handover}}
+{{ sheet_url }}
+{{bot_b2c_reply}}
+{{knowledge_from_rag}}
+{{session.extra.chat_history_b2c}}
+{{human_input}}
+{{bot_b2c_reply}}
+{{ knowledge_from_rag }}
+{{ bot_b2c_reply }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
+{{api_url_search_data}}
+{{ sheet_url }}
+{{api_raw_product_data[0].data}}
+{{ knowledge_from_rag }}
+{{api_raw_product_data[0].data}}
+{{product_analyze.name}}
+{{bot_b2b_reply}}
+{{knowledge_from_rag}}
+{{session.extra.chat_history_b2b}}
+{{human_input}}
+{{bot_b2b_reply}}
+{{ human_input }}
+{{ knowledge_from_rag }}
+{{b2b_info.name}}
+{{b2b_info.phone}}
+{{b2b_info.facility}}
+{{b2b_info.address}}
+{{ bot_b2b_reply }}
+{{ knowledge_from_rag }}
+{{ knowledge_from_rag }}
