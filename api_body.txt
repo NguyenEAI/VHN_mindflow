@@ -1,0 +1,10 @@
+{
+    "bot_uuid": "{{ bot_uuid }}",
+    "channel_type": "{{ channel_type }}",
+    "channel_id": "{{ channel_id }}",
+    "thread_id": "{{ thread_id }}",
+    "user_msg_id": "{{ user_msg_id }}",
+    "vendor": "{{ session.extra.query_data.vendor }}",
+    "product_type": "{{ session.extra.query_data.product_type }}",
+    "sheet_url":"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing"
+}

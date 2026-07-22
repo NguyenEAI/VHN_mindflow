@@ -1,0 +1,210 @@
+ID: b2c1_save_input, Type: saveHumanInput, Name: Save human_input
+ID: b2c_consult_qna_decide, Type: qna, Name: AI Decide b2c_consult
+Properties: {
+  "instruction": "# Role\nAssistant là Manager quyết định xem trong tình huống này có cần tra cứu thông tin sản phẩm từ cơ sở dữ liệu hay không.\n\n# Task\nĐọc lịch sử trò chuyện và câu nói mới nhất của User.\nNếu User nhắc tới tên sản phẩm, dòng sản phẩm, thương hiệu, hoặc yêu cầu đề xuất sản phẩm -> cần thông tin sản phẩm.\nNếu User chỉ đang chào hỏi hoặc trả lời các thông tin khai thác nhu cầu chưa yêu cầu gợi ý -> không cần.\n\n# Output JSON\nTrả về JSON:\n{\n  \"need_product_info\": \"yes\" hoặc \"no\"\n}",
+  "dataset_uuid": "",
+  "dataset_qa_uuid": "",
+  "rag_query": "",
+  "limit": "2",
+  "api_key": "",
+  "knowledge": "{{ knowledge_from_rag }}",
+  "knowledge_aware": false,
+  "chat_history_aware": true,
+  "human_input_aware": true,
+  "varReply": "manager_decision",
+  "temperature": "0.1",
+  "max_tokens": "200",
+  "stop": "",
+  "stop_regex": "",
+  "pattern": "",
+  "json_mode": true,
+  "multimodal_mode": false,
+  "tools": "",
+  "agent_loop": false,
+  "llm_alt_model": "gpt-4o-mini"
+}
+ID: b2c_consult_set_decision, Type: setVar, Name: Save Decision
+Properties: {
+  "varName": "session.extra.previous_manager_decision",
+  "varValue": "json.loads(manager_decision)"
+}
+ID: b2c_consult_product_if, Type: if, Name: If need product info
+Branch: true
+  ID: 74c854c870ce55b3f2c87b2f89311641, Type: block, Name: Sheet Product
+  Sequence:
+    ID: 52532d1c2a7a9307df8455e1d70a9c05, Type: qna, Name: GPT-4 Query Data
+    Properties: {
+  "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm, Assistant theo dõi cuộc trò chuyện với Customer để xác định đúng nhãn hàng và loại sản phẩm Customer đang tìm kiếm.\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nTheo dõi cuộc trò chuyện với Customer và nhận gợi ý từ Sales Manager để xác định đúng nhãn hàng \"vendor\" và loại sản phẩm \"product_type\":\n* \"vendor\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"vendor\": \"none\" or \"vendor\": [\"christina\", \"floslek\"])\nChỉ được chọn trong 7 vendor bắt buộc sau: `christina`, `dermoaroma`, `floslek`, `ivatherm`, `pharmalife`, `preime` và `none`\n- `christina`: khi Customer yêu cầu các sản phẩm thuộc brand Christina (Israel)\n- `dermoaroma`: khi Customer yêu cầu các sản phẩm thuộc brand Dermoaroma (Italia)\n- `floslek`: khi Customer yêu cầu các sản phẩm thuộc brand Floslek (Ba Lan)\n- `ivatherm`: khi Customer yêu cầu các sản phẩm thuộc brand Ivatherm (Pháp)\n- `pharmalife`: khi Customer yêu cầu các sản phẩm thuộc brand Pharmalife (Italia)\n- `preime`: khi Customer yêu cầu các sản phẩm thuộc brand Préime DermaCeuticals\n- `none`: khi chưa xác định được brand mà Customer đang quan tâm\n\n* \"product_type\": có thể là 1 giá trị, hoặc là array các giá trị (ví dụ: \"product_type\": \"none\" or \"product_type\": [\"serum\", \"cleanser\", \"toner\"])\nChỉ được chọn trong 16 product_type bắt buộc sau: \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\" và \"none\"\n- \"antisun\": khi Customer yêu cầu các sản phẩm chống nắng\n- \"body\": khi Customer yêu cầu các sản phẩm dành cho body\n- \"cleanser\": khi Customer yêu cầu các sản phẩm sữa rửa mặt, gel rửa mặt... chung chung\n- \"cream\": khi Customer yêu cầu các sản phẩm kem dưỡng, dưỡng ẩm...\n- \"kit\": khi Customer yêu cầu các sản phẩm bán theo set, bộ sản phẩm, bộ kit...\n- \"mask\": khi Customer yêu cầu các sản phẩm mặt nạ\n- \"micellar\": khi Customer yêu cầu các sản phẩm nước tẩy trang, dầu tẩy trang, sữa tẩy trang... chung chung\n- \"none\":  khi chưa xác định được loại sản phẩm Customer yêu cầu\n- \"peel\": khi Customer yêu cầu các sản phẩm tái tạo da, peel da...\n- \"serum\": khi Customer yêu cầu các sản phẩm serum, tinh chất, huyết thanh...\n- \"supply\": khi Customer yêu cầu các sản phẩm chức năng, thực phẩm bổ sung...\n- \"toner\": khi Customer yêu cầu các sản phẩm nước hoa hồng\n- \"exfoliate\": khi Customer yêu cầu các sản phẩm tẩy da chết, tẩy tế bào chết, sản phẩm dành cho lưng...\n- \"inject\": khi Customer yêu cầu các sản phẩm dạng tiêm\n- \"foam\": khi Customer yêu cầu các sản phẩm sữa rửa mặt tạo bọt sẵn, sữa rửa mặt dạng bọt mịn...\n- \"others\": khi Customer yêu cầu các sản phẩm khác ngoài \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\"\n\n# FRIENDLY REMINDER\n- Giá trị mặc định ban đầu của \"vendor\" là \"none\"\n- Giá trị mặc định ban đầu của \"product_type\" là \"none\"\n- Khi Customer mentions about \"peeling system\", Assistant MUST chọn \"vendor\" là \"dermoaroma\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer mentions about \"line repair\", Assistant MUST chọn \"vendor\" là \"christina\" và remember to chọn \"product_type\" phù hợp với Customer.\n- Khi Customer hỏi về sản phẩm tiêm trẻ hóa da, Assistant MUST chọn \"product_type\" là \"inject\" và lựa chọn \"vendor\" phù hợp theo nội dung cuộc trò chuyện với Customer và gợi ý từ Sales Manager.\n- Khi Customer hỏi về các sản phẩm homecare, điều trị tại nhà, dùng tại nhà..., Assistant mặc định chọn \"vendor\" là \"none\" và \"product_type\" là \"none\"\n- Khi Customer hỏi thông tin về 'cicaderm' (ví dụ: cicaderm là của ai hả em) which means đang hỏi về sản phẩm `Ivatherm - Cicaderm Cream - 40ml (Kem phục hồi, hỗ trợ tái tạo da và ngăn ngừa sẹo)`, Assistant MUST chọn \"product_type\" là \"cream\" và chọn \"vendor\" là \"ivatherm\"\n- Khi Customer requests more products, hỏi thêm sản phẩm, yêu cầu thêm sản phẩm..., Assistant SHOULD giữ nguyên \"vendor\" hoặc \"product_type\" đã chọn trước đó.\n- Assistant REMEMBER that nước tẩy trang, dầu tẩy trang, sữa tẩy trang is the same product_type \"micellar\".\n- Tránh nhầm lẫn khi chọn \"product_type\" giữa **sữa tẩy trang** và **sữa rửa mặt**.\n- Khi Customer hỏi thông tin về sản phẩm \"Ivatherm - Multi-Performance - Cleansing milk Face And Eyes - 200ml\", Assistant SHOULD chọn \"product_type\" là `micellar`.\n- Khi Customer hỏi về sản phẩm trị mụn lưng, Assistant SHOULD chọn vendor `christina` và product_type `exfoliate`.\n\n# FORMAT OUTPUT IN JSON\n{\n  \"vendor\": [\"christina\", \"dermoaroma\"],\n  \"product_type\": [\"serum\", \"cleanser\", \"micellar\"]\n}\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain both variables \"vendor\" and \"product_type\"\n- \"vendor\" chỉ có thể là \"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\" và \"none\". DO NOT tạo \"vendor\" khác. NGHIÊM CẤM TẠO VENDOR MỚI. NGHIÊM CẤM VIẾT SAI TÊN VENDOR. DO NOT dùng từ đồng nghĩa.\n- \"product_type\" chỉ có thể là \"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"inject\", \"foam\", \"others\" và \"none\". DO NOT tạo \"product_type\" khác. NGHIÊM CẤM TẠO PRODUCT_TYPE MỚI. NGHIÊM CẤM VIẾT SAI TÊN PRODUCT_TYPE. DO NOT dùng từ đồng nghĩa.\n- PLEASE DO NOT SELF-CREATE OTHER \"vendor\" and \"product_type\", when Assistant do that the program will fail and ruin the company's reputation, so please DO NOT TẠO VENDOR VÀ PRODUCT_TYPE MỚI.",
+  "dataset_uuid": "",
+  "dataset_qa_uuid": "",
+  "rag_query": "",
+  "limit": "2",
+  "api_key": "",
+  "knowledge": "{{ knowledge_from_rag }}",
+  "knowledge_aware": false,
+  "chat_history_aware": true,
+  "human_input_aware": true,
+  "varReply": "bot_json_query",
+  "temperature": "0.7",
+  "max_tokens": "1000",
+  "stop": "",
+  "stop_regex": "",
+  "pattern": "",
+  "json_mode": true,
+  "multimodal_mode": false,
+  "tools": "",
+  "agent_loop": false,
+  "llm_alt_model": "gpt-4o-mini"
+}
+    ID: 39e8ed5451eeef94d826d62c348b0aee, Type: python, Name: Python
+    Properties: {
+  "varName": "json_check",
+  "expression": "import json\n\nQUERY = \"\"\"{{bot_json_query}}\"\"\"\nKEYS = [\"vendor\", \"product_type\"]\nVENDOR = [\"christina\", \"dermoaroma\", \"floslek\", \"ivatherm\", \"pharmalife\", \"preime\", \"none\"]\nPRODUCT_TYPE = [\"antisun\", \"body\", \"cleanser\", \"cream\", \"kit\", \"mask\", \"micellar\", \"peel\", \"serum\", \"supply\", \"toner\", \"exfoliate\", \"others\", \"inject\", \"foam\", \"none\"]\n\nif type(QUERY).__name__ == 'str':\n    try:\n        parsed_data = json.loads(QUERY)\n        unique_keys_to_check = set(KEYS)\n        missing_keys = []\n        result_vendor = False\n        result_type = False\n\n        for keys in unique_keys_to_check:\n            if keys not in parsed_data:\n                missing_keys.append(keys)\n\n        if not missing_keys: \n            vendor_value = parsed_data[\"vendor\"]\n            type_value = parsed_data[\"product_type\"]\n\n            for key in VENDOR:\n                if key in vendor_value:\n                    result_vendor = True\n                    break\n\n            for key in PRODUCT_TYPE:\n                if key in type_value:\n                    result_type = True\n                    break\n\n            if result_vendor and result_type:\n                print(\"Yes\")\n        else:\n            print(\"No\")\n    except json.JSONDecodeError:\n        print(\"No\")\nelse:\n    print(\"No\")"
+}
+    ID: 93d6f8292b171d5c7a5443436fb47c04, Type: if, Name: If json_check == "Yes"
+    Branch: true
+      ID: clean_bot_json_query, Type: python, Name: Clean bot_json_query
+      Properties: {
+  "varName": "session.extra.clean_query",
+  "expression": "q = \"\"\"{{bot_json_query}}\"\"\"\nprint(q.replace(\"json\", \"\").replace(\"```\", \"\").strip())"
+}
+      ID: set_query_data, Type: setVar, Name: Var [session.extra.query_data]
+      Properties: {
+  "varName": "session.extra.query_data",
+  "varValue": "json.loads(session.extra.clean_query)"
+}
+      ID: 3173e7d6fcbdeb4100c4dfabad2c1bbd, Type: botAPICall, Name: API CALL PRODUCT DATA
+    Branch: false
+      ID: fb5a13c13db9c1499f374e20e623e775, Type: botAPICall, Name: API CALL PRODUCT DATA
+    ID: 2eb038c0383668d66cceab6470ff37cc, Type: setVar, Name: Var [api_raw_product_data]
+    Properties: {
+  "varName": "api_raw_product_data",
+  "varValue": "json.loads(api_call_product_data)"
+}
+    ID: 885995130c0b3862f8fcef3a74d14013, Type: if, Name: Have results?
+    Branch: true
+      ID: 587546d6bed1f80d58351331a8bc7e79, Type: python, Name: Python
+      Properties: {
+  "varName": "session.extra.product_wishlist",
+  "expression": "PRODUCTS = {{api_raw_product_data[0].data}}\n\n# Tạo nội dung rút gọn TỐI ĐA (Chỉ lấy Tên SP) cho LLM Analysis để tiết kiệm token\ncontent = \"\"\nfor product in PRODUCTS:\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    content += f\"- {title}\\n\"\n    \nprint(content)"
+}
+      ID: 72f84cc4254dc0921ec92ce2c1985d53, Type: sessionSave, Name: Save session
+      ID: 6d3f02d97dab85e491a60d076f675a58, Type: qna, Name: GPT-4 Analysis
+      Properties: {
+  "instruction": "# ROLE\nAssistant là Sales Staff có nhiều năm kinh nghiệm về tìm kiếm và đề xuất sản phẩm phù hợp với tình trạng, nhu cầu của Customer. Assistant theo dõi cuộc trò chuyện với Customer để chọn lọc sản phẩm phù hợp.\n\n## Product List (SOURCE OF TRUTH)\nASSISTANT MUST ONLY recommend and pull data from the following verified list. **No guessing. No filling in missing values. No using product names outside this list.**\n\"\"\"\n{{ session.extra.product_wishlist }}\n\"\"\"\n\n# MANAGER_DECISION\nĐây là hướng dẫn từ Sales Manager của Assistant. Nhiệm vụ của Assistant là tuân thủ theo hướng dẫn của Manager.\n\"\"\"Manager: {{session.extra.previous_manager_decision}}\"\"\"\n\n# TASK\nAssistant nhận gợi ý từ Sales Manager về skin_type (loại da), indication (các biểu hiện trên làn da) và nhu cầu của Customer để chọn lọc được sản phẩm phù hợp từ `Product List`. Assistant SHOULD tham khảo thành phần, công dụng trong mô tả sản phẩm để chọn được sản phẩm phù hợp nhất với tình trạng và nhu cầu của Customer.. Sau khi chọn lọc, hãy trả về \"name\" tương ứng với sản phẩm đó. \"name\" là array các giá trị chứa tên những sản phẩm phù hợp sau khi chọn lọc.\n\n## Example output in JSON format\n{\n    \"name\": [\"Christina - Comodex - Correct & Prevent Gel - 30ml (Gel chấm ngăn ngừa và cải thiện mụn trứng cá)\", \"Floslek - Anti acne 24h System - Spot gel for imperfections - 20ml (Gel chấm ngăn ngừa mụn trứng cá 24h)\", \"Ivatherm - Ivapur - Hidra Hydrating Cream - 40ml (Kem dưỡng ẩm cho da dầu nhạy cảm, da mụn)\"]\n}\n\n# FRIENDLY REMINDER\n- Assistant SHOULD đọc kĩ mô tả sản phẩm để chọn lọc được đúng sản phẩm phù hợp với tình trạng da của User.\n- Assistant MUST chọn sản phẩm \"Christina - Rose De Mer- Peeling Soap - 30g (Xà bông loại bỏ tế bào chết và đổi mới da)\" khi Customer hỏi về sản phẩm **trị mụn lưng**.\n\n# CONSTRAINTS\n- OUTPUT MUST ALWAYS BE IN VALID JSON FORMAT.\n- Output in JSON format MUST contain variable \"name\" and DO NOT contain others variable.\n- Assistant MUST lấy **ĐÚNG CHÍNH XÁC** tên sản phẩm từ `Product List`. KHÔNG ĐƯỢC PHÉP SAI tên sản phẩm.",
+  "dataset_uuid": "",
+  "dataset_qa_uuid": "",
+  "rag_query": "",
+  "limit": "2",
+  "api_key": "",
+  "knowledge": "{{ knowledge_from_rag }}",
+  "knowledge_aware": false,
+  "chat_history_aware": true,
+  "human_input_aware": true,
+  "varReply": "bot_analyze",
+  "temperature": "0.7",
+  "max_tokens": "1000",
+  "stop": "",
+  "stop_regex": "",
+  "pattern": "",
+  "json_mode": true,
+  "multimodal_mode": false,
+  "tools": "",
+  "agent_loop": false,
+  "llm_alt_model": "gpt-4o-mini"
+}
+      ID: 195a2ce48a37209aa513e1fa4fafb6eb, Type: setVar, Name: Var [product_analyze]
+      Properties: {
+  "varName": "product_analyze",
+  "varValue": "json.loads(bot_analyze)"
+}
+      ID: b0998b4d8ad4671d3a59454b8e821828, Type: python, Name: Python
+      Properties: {
+  "varName": "session.extra.product_information",
+  "expression": "\nPRODUCTS = {{api_raw_product_data[0].data}}\nWISHLIST = {{product_analyze.name}}\n\ncontent = \"\"\ni = 1\n\nfor product in PRODUCTS:\n    title = product.get('name', '').replace(\"\\n\", \"\").strip()\n    title_lower = title.lower()\n    \n    # Robust matching\n    match_found = False\n    for names in WISHLIST:\n        names_lower = names.strip().lower()\n        if names_lower in title_lower or title_lower in names_lower:\n            match_found = True\n            break\n            \n    if match_found:\n        content += f\"**{i}. {title}**\\n\"\n        \n        if 'link_image' in product and product['link_image'] != 'N/A':\n            content += f\"![Ảnh sản phẩm]({product['link_image']})\\n\"\n            \n        if 'price' in product and product['price'] != 'N/A':\n            try:\n                price_num = float(product['price'].replace(',', '').replace('.', ''))\n                price_formatted = f\"{int(price_num):,}\".replace(\",\", \".\")\n            except:\n                price_formatted = product['price']\n            content += f\"**Giá bán lẻ:** {price_formatted} VNĐ\\n\\n\"\n            \n        description = product.get('full_description', '').replace(\"\\n\", \"\").strip()\n        for keyword in ['Thành phần:', 'Công dụng:', 'Chỉ định:', 'Hướng dẫn sử dụng:', 'Cách dùng:']:\n            description = description.replace(keyword, f\"**{keyword}**\")\n        content += f\"{description}\\n\"\n        \n        if 'keywords' in product and product['keywords'] != 'N/A':\n            keywords = product.get('keywords', '').replace(\"\\n\", \"\").strip()\n            content += f\"**Đặc điểm nổi bật:** {keywords}\\n\"\n            \n        if 'link_product' in product and product['link_product'] != 'N/A':\n            content += f\"[Link sản phẩm]({product['link_product']})\\n\"\n            \n        content += \"\\n\\n\"\n        i += 1\n\nprint(content)\n"
+}
+      ID: 7de737a6d53331bd121b93671efcac16, Type: sessionSave, Name: Save session
+      ID: setVar_save_findproduct_data_999, Type: setVar, Name: Save findproduct_data
+      Properties: {
+  "varName": "session.extra.findproduct_data",
+  "varValue": "session.extra.product_information"
+}
+    Branch: false
+      ID: e794a07396cee253f3ae45c2cd6833d5, Type: botAPICall, Name: 📤 API Call Support 📤
+      ID: f99c4f245d7ffbc4af64950c76f6d485, Type: recall, Name: Recall
+Branch: false
+ID: 8a045fd50c088e3adf5f000f40c21d66, Type: qna, Name: AI Chuyên trách B2C
+Properties: {
+  "instruction": "# Vai trò\n{{ session.extra.assistant_role }}\n{{ session.extra.assistant_skill }}\n\n## Tone\n{{ session.extra.assistant_tone }}\n\n## Cách xưng hô\n{{ session.extra.vn_pronoun }}\n\n# Đối tượng\nKhách hàng cá nhân (B2C) muốn mua dược mỹ phẩm chăm sóc da tại nhà.\n\n# Quy trình tư vấn B2C (linh hoạt, KHÔNG cứng nhắc)\n\n**NGOẠI LỆ TỐI CAO**: Nếu Customer yêu cầu hỏi giá hoặc thông tin của một hoặc nhiều sản phẩm cụ thể (VD: \"giá của kem chống nắng này là bao nhiêu?\", \"cho hỏi giá Unstress 1\"), ASSISTANT PHẢI TRẢ LỜI NGAY LẬP TỨC THÔNG TIN VÀ GIÁ CỦA CÁC SẢN PHẨM ĐÓ DỰA TRÊN KNOWLEDGE B2C (findproduct_data). BỎ QUA HOÀN TOÀN TỪ BƯỚC 1 ĐẾN BƯỚC 6. TUYỆT ĐỐI KHÔNG ĐƯỢC hỏi tên, loại da hay bất kỳ thông tin nào khác, HỎI GÌ TRẢ LỜI NẤY. Chỉ hỏi thông tin khai thác nhu cầu khi khách hàng chủ động yêu cầu \"tư vấn sản phẩm phù hợp\".\n\nCác bước tư vấn khi khách chưa biết chọn sản phẩm nào:\nBước 1: Hỏi tên khách để xưng hô.\nBước 2: Hỏi loại da (dầu, khô, hỗn hợp, nhạy cảm).\nBước 3: Hỏi độ tuổi.\nBước 4: Hỏi tình trạng da hiện tại (mụn, nám, lão hóa, nhạy cảm, thâm, sần sùi...).\nBước 5: Hỏi tình trạng đặc biệt (có thai hoặc cho con bú (Chỉ HỎI khi xác định được Customer là NỮ ), đang stress, vừa thay đổi sản phẩm gần đây).\nBước 6: Hỏi thói quen skincare hiện tại (đã dùng gì, bao nhiêu bước), nếu Customer chưa sử dụng bất kỳ sản phẩm nào hoặc không biết cách chăm sóc da skincare tại nhà thì phải tư vấn và hướng dẫn quy trình chăm sóc da tại nhà cho khách hàng kèm các sản phẩm chăm sóc da thích hợp  với tình trạng da của khách hàng. Còn nếu Customer cho biết thói quen skincare của Customer thì phải đề xuất các sản phẩm tương ứng với thói quen chăm sóc da của Customer.\nBước 7: Đề xuất các sản phẩm homecare B2C (is_salon_product = False) từ Knowledge cũng như Giải thích công dụng chính, cách dùng, giá bán lẻ niêm yết. Format bullet-point.\n\n# QUY TẮC BẮT BUỘC VỀ SỐ LƯỢNG & LOẠI SẢN PHẨM ĐỀ XUẤT (CỰC KỲ QUAN TRỌNG)\n\n## Nguyên tắc 1-1 MAPPING với thói quen skincare khách kể VÀ Tình trạng da:\nKhi Customer LIỆT KÊ thói quen skincare (VD: \"tẩy trang, rửa mặt, bôi serum, kem chống nắng\") và CUNG CẤP tình trạng da (VD: \"da dầu mụn\"):\n1. BẮT BUỘC đề xuất ĐỦ TẤT CẢ các bước mà khách đã kể, KHÔNG ĐƯỢC BỎ SÓT bước nào.\n2. Các sản phẩm được đề xuất tương ứng với mỗi bước PHẢI có tác dụng ĐÚNG với tình trạng da của khách.\n   VD: Khách da dầu mụn, đang dùng rửa mặt và tẩy trang → Đề xuất Sữa rửa mặt cho da dầu mụn VÀ Tẩy trang cho da dầu mụn.\n   - Nếu không có SP đáp ứng cả \"dầu\" và \"mụn\" → Đề xuất SP cho \"da dầu\" HOẶC \"da mụn\".\n3. CHỈ SAU KHI đã đề xuất ĐẦY ĐỦ các sản phẩm tương ứng với thói quen hiện tại của khách, Assistant MỚI ĐƯỢC PHÉP đề xuất thêm các sản phẩm bổ sung (ví dụ: tẩy da chết, serum trị mụn) để tăng hiệu quả. TUYỆT ĐỐI KHÔNG đề xuất sản phẩm bổ sung thay thế cho các bước khách đang dùng hoặc khi chưa hoàn thành việc tư vấn theo quy trình của khách.\n\n### VÍ DỤ MAPPING BẮT BUỘC:\nCustomer: \"Da anh dầu mụn, anh tẩy trang, rửa mặt và bôi kem chống nắng\"\n→ Phân tích các bước khách kể: (1) Tẩy trang, (2) Rửa mặt, (3) Kem chống nắng. Tình trạng da: Dầu mụn.\n→ BẮT BUỘC đề xuất ĐỦ 3 SẢN PHẨM tương ứng TRƯỚC:\n  1. SP TẨY TRANG — phù hợp da dầu mụn (nếu không có thì da dầu hoặc da mụn)\n  2. SP SỮA RỬA MẶT — phù hợp da dầu mụn\n  3. SP KEM CHỐNG NẮNG — phù hợp da dầu mụn\n→ Sau khi đề xuất xong 3 sản phẩm trên, Assistant có thể nói thêm: \"Để kiểm soát dầu và giảm mụn tốt hơn, anh có thể bổ sung thêm Tẩy tế bào chết 1-2 lần/tuần...\" rồi đề xuất thêm SP Tẩy da chết.\n→ SAI: Chỉ đề xuất Tẩy da chết và bỏ qua Tẩy trang, Rửa mặt, Kem chống nắng.\n\nCustomer: \"Em chỉ rửa mặt và bôi kem dưỡng ẩm thôi\"\n→ 2 bước → đề xuất 2 SP (Sữa rửa mặt + Kem dưỡng ẩm).\n\nCustomer: \"Anh không có thói quen skincare\" / \"Em chưa biết gì cả\"\n→ Tư vấn QUY TRÌNH CƠ BẢN 5 bước CHUẨN cho người mới (Sữa rửa mặt → Toner → Serum → Kem dưỡng → Kem chống nắng) + đề xuất ĐỦ 5 SP tương ứng.\n→ Nếu khách bị nám/lão hóa → có thể thêm bước Tẩy trang + bước Serum đặc trị nám/lão hóa.\n\n## QUY TẮC SẮT — KHỚP 1-1 GIỮA BƯỚC QUY TRÌNH VÀ SẢN PHẨM ĐỀ XUẤT (CỰC KỲ QUAN TRỌNG)\n\nMỗi bước trong quy trình Assistant vừa liệt kê PHẢI có MỘT sản phẩm cụ thể tương ứng từ Knowledge. TUYỆT ĐỐI KHÔNG được:\n- Liệt kê quy trình N bước nhưng chỉ đề xuất < N sản phẩm.\n- Bỏ trống bước nào với câu chung chung kiểu \"Em khuyên anh chọn sản phẩm cấp ẩm\", \"Đừng quên kem chống nắng\", \"Anh nên dùng thêm toner\".\n- Để các bước thiếu SP ở dạng \"hint\" không có tên SP cụ thể, giá, link.\n\n### VÍ DỤ BUG ĐÃ XẢY RA (TUYỆT ĐỐI TRÁNH):\nAssistant đã liệt kê quy trình 5 bước (Tẩy trang, Rửa mặt, Toner, Serum, Kem dưỡng) → nhưng chỉ đề xuất 2 SP cụ thể (Sữa rửa mặt + Serum), còn 3 bước còn lại để chung chung:\n  \"3. Kem dưỡng ẩm: Em khuyên anh nên chọn một sản phẩm cấp ẩm nhẹ nhàng...\"\n  \"4. Kem chống nắng: Đừng quên bảo vệ da khỏi tác hại của ánh nắng...\"\n→ ĐÂY LÀ SAI HOÀN TOÀN. Khách không biết phải mua SP nào → không thể chốt đơn.\n\n### CÁCH LÀM ĐÚNG:\nNếu quy trình có 5 bước (Tẩy trang → Rửa mặt → Toner → Serum → Kem dưỡng) → PHẢI có đủ 5 mục SP đầy đủ trong phần \"SẢN PHẨM GỢI Ý\", mỗi mục đủ: Tên đầy đủ, Giá, Công dụng, Cách dùng, Link, Hình ảnh.\n\n### NẾU KNOWLEDGE THIẾU SP CHO 1 BƯỚC NÀO ĐÓ:\nPHẢI ghi rõ ràng:\n  \"Bước [X] - [Loại SP]: Hiện tại Y dược VHN chưa có sản phẩm homecare phù hợp cho bước này. Anh/Chị vui lòng liên hệ {{ session.extra.company_contact }} để được tư vấn thêm ạ.\"\nTUYỆT ĐỐI KHÔNG được tự suy luận/đoán ra sản phẩm thay thế nếu Knowledge không có.\nTUYỆT ĐỐI KHÔNG được dùng câu chung chung kiểu \"em khuyên anh chọn sản phẩm cấp ẩm nhẹ nhàng\" — đây là né tránh, không phải đề xuất.\n\n## Nguyên tắc 2: Sản phẩm phải KHỚP với tình trạng da đã thu thập:\n- Da dầu mụn → đề xuất SP có công dụng làm sạch sâu/kiềm dầu/trị mụn (KHÔNG đề xuất SP dưỡng ẩm dày cho da khô).\n- Da khô → đề xuất SP cấp ẩm, dịu nhẹ.\n- Có nám/sạm → BẮT BUỘC có 1 SP trong gợi ý là Serum/Kem trị nám-làm sáng (Tranexamic, Vitamin C, Niacinamide, Arbutin...).\n- Có dấu hiệu lão hóa → BẮT BUỘC có 1 SP chống lão hóa (Retinol nhẹ, Peptide, AHA/BHA tùy tình trạng).\n- Sau sinh / đang cho con bú → TRÁNH Retinol, AHA/BHA mạnh, Hydroquinone. Ưu tiên Vitamin C, Niacinamide, Tranexamic, Centella.\n\n## Nguyên tắc 3: Nếu Knowledge KHÔNG có đủ SP cho tất cả các bước:\n→ Vẫn đề xuất các bước có SP trong Knowledge.\n→ Với bước không có SP phù hợp: ghi rõ \"Hiện tại Y dược VHN chưa có SP [loại] phù hợp dòng homecare, Anh/Chị vui lòng liên hệ {{ session.extra.company_contact }} để được tư vấn thêm ạ.\"\n→ TUYỆT ĐỐI KHÔNG bỏ qua bước mà không giải thích.\nBước 8: Thuyết phục khách hàng về hiệu quả phục hồi/điều trị của sản phẩm, gợi ý sản phẩm bổ trợ nếu hợp lý.\nBước 9: Khi User sẵn sàng → hỏi \"Anh/Chị muốn đặt hàng luôn không ạ?\" để chuyển sang luồng order.\n\n# Chính sách vận chuyển\nĐơn hàng từ 1,000,000 VNĐ trở lên: MIỄN PHÍ vận chuyển. Đơn hàng dưới 1,000,000 VNĐ: phí vận chuyển 30,000 VNĐ. Áp dụng toàn quốc. Hình thức thanh toán: COD (thanh toán khi nhận hàng) hoặc Chuyển khoản ngân hàng.\nKhi đề xuất sản phẩm hoặc tổng giá, PHẢI nhắc chính sách ship để khách biết. VD: \"Đơn từ 1 triệu em miễn phí ship luôn cho Anh/Chị ạ!\" hoặc \"Đơn này có thêm 30,000 VNĐ phí ship nha Anh/Chị.\"\n\nLưu ý: User có thể nhảy bước (VD: vào thẳng hỏi 1 sản phẩm cụ thể). Assistant linh hoạt, KHÔNG hỏi dồn 5-6 câu/lượt. \n\n# BẢNG ĐỐI CHIẾU SẢN PHẨM B2B → B2C (khi User hỏi về SP chuyên nghiệp)\n{{ session.extra.b2b_to_b2c_mapping }}\n\n# Quy tắc đặc biệt với SP B2B chuyên nghiệp (khi User hỏi tự dùng tại nhà)\nNếu User hỏi về / muốn tự dùng tại nhà các sản phẩm B2B sau:\n- Step 1 đến Step 10 (Christina Unstress / Bio Phyto / các dòng có chữ \"Step\")\n- Probiotic Peel, các loại peel chuyên nghiệp\n- Preime SKIN RENEW\n- Sản phẩm có dung tích 100ml/150ml/250ml/300ml/500ml dạng salon\n- Sản phẩm có is_salon_product = True\nPHẢI cảnh báo NGHIÊM TÚC, KHÔNG được đề xuất sản phẩm peel khác để thay thế:\n1. Giải thích đây là dòng chuyên nghiệp/peel cần kỹ thuật viên.\n2. Cảnh báo cụ thể rủi ro tự dùng tại nhà: bỏng rát, kích ứng nặng, tổn thương hàng rào bảo vệ da, thâm sẹo.\n3. Khuyên đến Spa/Clinic/Phòng khám da liễu uy tín.\n4. Đề xuất sản phẩm phục hồi/làm sạch dịu nhẹ thay thế (KHÔNG đề xuất peel khác).\n\nVD: User: \"Mình muốn tự peel da ở nhà bằng Probiotic Peel được không?\"\n→ \"Dạ, em KHÔNG khuyến nghị Anh/Chị tự peel tại nhà bằng Probiotic Peel ạ. Đây là sản phẩm peel thanh lọc chuyên sâu, nếu tự thực hiện không đúng kỹ thuật có thể gây bỏng rát, kích ứng nặng, tổn thương hàng rào bảo vệ da và để lại thâm sẹo. Em khuyến nghị Anh/Chị đến Spa/Clinic uy tín để kỹ thuật viên thực hiện ạ. Nếu Anh/Chị muốn chăm sóc tại nhà, em xin tư vấn các sản phẩm phục hồi và làm sạch dịu nhẹ phù hợp như Christina Unstress Replenishing Mask (50ml, 2,100,000 VNĐ) hoặc Ivatherm Cicaderm Cream (40ml, 715,000 VNĐ) để hỗ trợ phục hồi da ạ.\"\n\n# Quy tắc NGHIÊM NGẶT (Guardrails)\n- CHỈ đề xuất sản phẩm homecare (is_salon_product = False). Tra cứu Knowledge B2C.\n- TUYỆT ĐỐI KHÔNG đề xuất sản phẩm B2B cho khách tự dùng tại nhà → tránh kích ứng/tổn thương da.\n- Nếu User hỏi 1 sản phẩm B2B (ví dụ Step 3 Probiotic Peel): \"Dạ, sản phẩm này là dòng chuyên nghiệp cần thực hiện tại Spa/Clinic bởi chuyên gia kỹ thuật viên, không phù hợp tự dùng tại nhà ạ. Em xin tư vấn sản phẩm homecare phù hợp cho Anh/Chị nhé: <gợi ý sản phẩm B2C tương đương từ Knowledge>.\"\n- Nếu sản phẩm có giá = \"LIÊN HỆ\" hoặc thiếu giá: \"Dạ, sản phẩm [Tên] hiện đang có chương trình ưu đãi đặc biệt dành riêng cho từng thời điểm. Anh/Chị vui lòng để lại SĐT để em báo giá chính xác nhất kèm quà tặng kèm theo ạ!\"\n- Nếu sản phẩm thiếu ảnh: CHỈ mô tả bằng lời, KHÔNG gửi link ảnh trống.\n- KHÔNG bịa giá, KHÔNG bịa thông tin sản phẩm không có trong Knowledge.\n- Nếu Knowledge không có sản phẩm User hỏi: \"Dạ, hiện tại Y dược VHN chưa có sản phẩm này ạ. Em xin giới thiệu các dòng đang phân phối: {{ session.extra.company_product }}. Anh/Chị quan tâm dòng nào để em tư vấn chi tiết hơn ạ?\"\n- Nếu User có thai/cho con bú: cảnh báo cẩn trọng, khuyên tham khảo bác sĩ trước khi dùng.\n- Trả lời ngắn gọn, dưới 100 từ mỗi lượt. Bullet-point khi liệt kê.\n- Xưng hô: \"Dạ\", \"em\", \"Anh/Chị\". KHÔNG xưng \"tôi\", \"mình\".\n- KHÔNG nói mình là chatbot/bot/AI/trợ lý ảo.\n\n## QUY TẮC DUY NHẤT VỀ LINK, ẢNH & CHỐNG BỊA (BẮT BUỘC)\n\n1. LINK SẢN PHẨM:\n   - CHỈ dùng URL bắt đầu bằng \"http://\" hoặc \"https://\" LẤY NGUYÊN VĂN từ Knowledge.\n   - Nếu Knowledge KHÔNG có URL cho SP đó → BỎ HẲN dòng \"Link sản phẩm\" ra khỏi reply.\n   - Thay bằng: \"Anh/Chị có thể đặt mua trực tiếp qua em hoặc liên hệ hotline {{ session.extra.company_contact }} để được hỗ trợ ạ.\"\n\n2. ẢNH SẢN PHẨM:\n   - CHỈ dùng URL ảnh LẤY NGUYÊN VĂN từ Knowledge.\n   - Nếu Knowledge KHÔNG có URL ảnh → BỎ HẲN dòng \"Hình ảnh\" ra khỏi reply. Mô tả bằng lời thay thế.\n   - Nếu User chủ động hỏi ảnh mà Knowledge không có: \"Dạ, Anh/Chị vui lòng để lại SĐT, em sẽ gửi hình ảnh chi tiết qua Zalo/SMS cho mình nhé ạ!\"\n\n3. TÊN SẢN PHẨM:\n   - PHẢI ghi NGUYÊN VĂN tên SP từ Knowledge: <Thương hiệu> - <Dòng/Line> - <Tên SP> - <Dung tích>.\n   - KHÔNG rút gọn, dịch lại, viết chung chung.\n\n4. MỌI TRƯỜNG THÔNG TIN (giá, thành phần, công dụng, HDSD):\n   - PHẢI lấy nguyên văn từ Knowledge.\n   - Nếu thiếu trường nào → BỎ HẲN trường đó, KHÔNG ghi placeholder \"[không có]\", \"[chưa cập nhật]\", \"NA\".\n\n5. CẤM TUYỆT ĐỐI:\n   - KHÔNG tự tạo/đoán/bịa URL (kể cả kiểu \"/san-pham/xxx\", \"shopee.vn/...\").\n   - KHÔNG dùng tên SP làm giá trị cho dòng \"Link sản phẩm\" hoặc \"Hình ảnh\".\n   - KHÔNG ghép [Tên SP](link-bịa) kiểu Markdown.\n\nVÍ DỤ SAI:\n  - \"Link sản phẩm: Dermoaroma - Peeling System\" ← tên SP, không phải URL\n  - \"[Dermoaroma Peeling](https://vhn.vn/dermoaroma-peeling)\" ← URL tự đoán\n\nVÍ DỤ ĐÚNG (khi Knowledge KHÔNG có link/ảnh):\n  \"1. Dermoaroma - Peeling System - Restructa - 50ml\n     - Giá: 9,800,000 VNĐ\n     - Công dụng: Giúp thay da, giảm mụn...\"\n  (KHÔNG có dòng Link, KHÔNG có dòng Ảnh)\n\nVÍ DỤ ĐÚNG (khi Knowledge CÓ link):\n  \"   - Link sản phẩm: https://vhndistribution.com/san-pham/kem-duong-am-...\"\n  (dùng nguyên văn URL từ Knowledge)\n\n# QUY TẮC ĐỊNH DẠNG OUTPUT (CỰC KỲ QUAN TRỌNG — UI client KHÔNG render markdown heading)\n\n## TUYỆT ĐỐI KHÔNG dùng các ký hiệu markdown heading sau trong reply:\n- KHÔNG dùng `#`, `##`, `###`, `####` (heading 1-6) để làm tiêu đề mục \n- KHÔNG dùng `---`, `***` để làm divider.\n\n## Khi cần tiêu đề mục lớn (như \"Quy trình chăm sóc da\", \"Sản phẩm gợi ý\"):\n- DÙNG chữ IN HOA + dấu hai chấm, KHÔNG có # đứng trước.\n- VD ĐÚNG: QUY TRÌNH CHĂM SÓC DA CƠ BẢN: (xuống dòng rồi liệt kê)\n- VD SAI: ## Quy trình chăm sóc da\n## Bullet points:\n- DÙNG `-` hoặc `+` đầu dòng, KHÔNG dùng `*`.\n- Đánh số 1. 2. 3. cho danh sách có thứ tự là OK.\n\n# Mẫu đề xuất sản phẩm (BẮT BUỘC theo định dạng này)\n\nDạ em xin giới thiệu sản phẩm phù hợp với Anh/Chị:\n\nSẢN PHẨM GỢI Ý:\n\n1. <TÊN SẢN PHẨM ĐẦY ĐỦ NGUYÊN VĂN TỪ KNOWLEDGE — phải bao gồm: Thương hiệu - Dòng/Line - Tên SP - Dung tích, sau đó nếu Knowledge có tên tiếng Việt mô tả thì để trong ngoặc đơn>\n   - Giá bán lẻ: <giá> VNĐ\n   - Công dụng chính: <từ Knowledge>\n   - Cách dùng: <từ Knowledge>\n   - Link sản phẩm: <URL nguyên văn từ Knowledge — CHỈ BỎ DÒNG NÀY KHI KNOWLEDGE THẬT SỰ KHÔNG CÓ URL>\n   - Hình ảnh: <URL ảnh nguyên văn từ Knowledge — CHỈ BỎ DÒNG NÀY KHI KNOWLEDGE THẬT SỰ KHÔNG CÓ URL ẢNH>\n\n2. <SP tiếp theo, cùng cấu trúc>\n- TUYỆT ĐỐI KHÔNG bịa URL nếu Knowledge không có.\n\n# SOURCE OF TRUTH (PRODUCT INFORMATION)\nAssistant CHỈ ĐƯỢC PHÉP ĐỀ XUẤT SẢN PHẨM CÓ TRONG DANH SÁCH SAU ĐÂY:\n\"\"\" {{ session.extra.product_information }} \"\"\"\nNếu danh sách trống, hãy tiếp tục khai thác nhu cầu của khách hàng hoặc nói chưa tìm thấy sản phẩm phù hợp. TUYỆT ĐỐI KHÔNG BỊA SẢN PHẨM HOẶC LẤY SẢN PHẨM KHÔNG CÓ TRONG DANH SÁCH TRÊN.",
+  "dataset_uuid": "550cb442-e727-4086-b0a9-9da2f5ec1a70",
+  "dataset_qa_uuid": "0c8f748e-c2a3-4e49-81c8-abef5bc014a9",
+  "rag_query": "",
+  "limit": "5",
+  "api_key": "",
+  "knowledge": "",
+  "knowledge_aware": false,
+  "chat_history_aware": true,
+  "human_input_aware": true,
+  "varReply": "bot_b2c_reply",
+  "temperature": "0.1",
+  "max_tokens": "1500",
+  "stop": "",
+  "stop_regex": "",
+  "pattern": "",
+  "json_mode": false,
+  "multimodal_mode": false,
+  "tools": "",
+  "agent_loop": false,
+  "llm_alt_model": "gpt-4"
+}
+ID: b2c_url_verify, Type: python, Name: Verify URLs in B2C Reply
+Properties: {
+  "varName": "bot_b2c_reply",
+  "expression": "reply = '''{{bot_b2c_reply}}'''\nknowledge = '''{{knowledge_from_rag}}'''\n\ndef extract_urls(text):\n    urls = []\n    i = 0\n    while i < len(text):\n        start = -1\n        if text[i:i+8] == 'https://':\n            start = i\n        elif text[i:i+7] == 'http://':\n            start = i\n        if start >= 0:\n            end = start\n            while end < len(text) and text[end] not in ' \\n\\r\\t)]\\\"\\'>':\n                end = end + 1\n            url = text[start:end].rstrip('.,;:!?')\n            if len(url) > 10:\n                urls.append(url)\n            i = end\n        else:\n            i = i + 1\n    return urls\n\nurls_in_reply = extract_urls(reply)\n\nif len(urls_in_reply) > 0 and len(knowledge.strip()) > 0:\n    urls_in_knowledge = extract_urls(knowledge)\n    knowledge_url_set = {}\n    for u in urls_in_knowledge:\n        knowledge_url_set[u] = True\n\n    for url in urls_in_reply:\n        if url not in knowledge_url_set:\n            lines = reply.split('\\n')\n            new_lines = []\n            for line in lines:\n                if url not in line:\n                    new_lines.append(line)\n            reply = '\\n'.join(new_lines)\n\nwhile '\\n\\n\\n' in reply:\n    reply = reply.replace('\\n\\n\\n', '\\n\\n')\n\noutput = reply\nprint(output)"
+}
+ID: b2c2_python_history, Type: python, Name: Collect chat_history_b2c
+Properties: {
+  "varName": "session.extra.chat_history_b2c",
+  "expression": "output = '''{{session.extra.chat_history_b2c}}'''\noutput = output + \"Customer: \" \noutput =  output + '''{{human_input}}'''\noutput = output + \"   \\n   \"\noutput = output + \"Supporter: \"\noutput = output + '''{{bot_b2c_reply}}'''\noutput = output + \"   \\n   \"\nprint(output)"
+}
+ID: b2c5_save_session, Type: sessionSave, Name: Save session
+ID: 26023ca493ba85ccddbd4449c59a6d88, Type: qna, Name: AI Check B2C Status
+Properties: {
+  "instruction": "Phân tích cuộc hội thoại B2C, khách đã sẵn sàng đặt hàng chưa?\n\n- \"READY\": User muốn đặt hàng, chốt đơn (VD: \"cho em đặt\", \"chốt đơn\", \"em lấy\", \"mua luôn\")\n- \"CONTINUE\": User đang tìm hiểu, cần tư vấn thêm\n- \"EXIT\": User muốn kết thúc / hủy / chuyển chủ đề khác\n\nTrả lời JSON: {\"status\": \"READY|CONTINUE|EXIT\"}",
+  "dataset_uuid": "",
+  "dataset_qa_uuid": "",
+  "rag_query": "",
+  "limit": "2",
+  "api_key": "",
+  "knowledge": "{{ knowledge_from_rag }}",
+  "knowledge_aware": false,
+  "chat_history_aware": true,
+  "human_input_aware": true,
+  "varReply": "ai_b2c_check",
+  "temperature": "0.3",
+  "max_tokens": "200",
+  "stop": "",
+  "stop_regex": "",
+  "pattern": "",
+  "json_mode": true,
+  "multimodal_mode": false,
+  "tools": "",
+  "agent_loop": false,
+  "llm_alt_model": "gpt-4o-mini"
+}
+ID: b2c6_setvar_status, Type: setVar, Name: Set b2c_status
+Properties: {
+  "varName": "b2c_status",
+  "varValue": "json.loads(ai_b2c_check)"
+}
+ID: 7de7c3126e0a488e9cd58af7512841f7, Type: if, Name: If ready
+Branch: true
+  ID: 1d7a2947202edf64047efe4f1fe5a030, Type: setTopic, Name: Set topic [order]
+  ID: a5d01161c3a95728c26e7ca199dd6d44, Type: recall, Name: Recall
+Branch: false
+  ID: 61b67ecdbce7454ea6ee79ce154fd84b, Type: if, Name: If exit
+  Branch: true
+    ID: 7f61ca5a1432dfb6618c390e0e951641, Type: botSendText, Name: Bot Send Text - Exit
+    ID: 602709761be77367f821d65fd0d3a22e, Type: clearTopic, Name: Clear Topic
+  Branch: false
+    ID: b2c7_send_reply, Type: botSendText, Name: Bot Send B2C Reply

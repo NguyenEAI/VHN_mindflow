@@ -1,0 +1,145 @@
+{
+  "name": "FOR_VHN_Agent",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "### Search thong tin san pham",
+        "height": 232,
+        "width": 898,
+        "color": 4
+      },
+      "id": "8b0f4a74-b515-47f3-99cd-d62fef3469c6",
+      "name": "Sticky Note3",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        1520,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "allIncomingItems",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        2200,
+        780
+      ],
+      "id": "c22b7177-d274-40b4-9119-3be245cb62ff",
+      "name": "Respond to Webhook"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $json.body.sheet_url }}",
+          "mode": "url"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1834813226,
+          "mode": "list",
+          "cachedResultName": "Sheet2",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit#gid=1834813226"
+        },
+        "options": {}
+      },
+      "id": "30bfa335-a357-4a66-b49e-bcc04401e350",
+      "name": "Product Sheet",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.3,
+      "position": [
+        1800,
+        780
+      ],
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nhận toàn bộ input\nconst inputData = $input.all();\n\n// Kiểm tra lỗi hoặc input rỗng\nconst hasError = inputData.every(item => item.json?.error);\nconst isEmptyData = inputData.length === 0 || inputData.every(item => Object.keys(item.json || {}).length === 0);\n\nif (hasError || isEmptyData) {\n  return {\n    json: {\n      status: \"failed\"\n    }\n  };\n}\n\n// Chuyển input thành dữ liệu JSON\nlet filteredData = inputData.map(item => item.json);\n\n// --- XỬ LÝ FILTER THEO PRODUCT_TYPE ---\nconst product_type = $('Search_data').first().json.body?.product_type;\nlet type = [];\nlet skipTypeFilter = false;\n\ntry {\n  if (typeof product_type === 'string') {\n    const trimmed = product_type.trim();\n    if (trimmed.toLowerCase() === 'none') {\n      skipTypeFilter = true;\n    } else if (trimmed.startsWith('[')) {\n      const jsonStr = trimmed.replace(/'/g, '\"');\n      const parsed = JSON.parse(jsonStr);\n      if (Array.isArray(parsed)) {\n        type = parsed.map(i => i.trim().toLowerCase());\n      }\n    } else if (trimmed !== '') {\n      type = [trimmed.toLowerCase()];\n    }\n  } else if (Array.isArray(product_type)) {\n    type = product_type.map(i => i.trim().toLowerCase());\n  }\n} catch (e) {\n  type = [];\n}\n\nif (!skipTypeFilter && type.length > 0) {\n  filteredData = filteredData.filter(item =>\n    typeof item.type === 'string' &&\n    type.includes(item.type.trim().toLowerCase())\n  );\n}\n\n// --- XỬ LÝ FILTER THEO VENDOR ---\nconst vendorInput = $('Search_data').first().json.body?.vendor;\nlet vendors = [];\nlet skipVendorFilter = false;\n\ntry {\n  if (typeof vendorInput === 'string') {\n    const trimmed = vendorInput.trim();\n    if (trimmed.toLowerCase() === 'none') {\n      skipVendorFilter = true;\n    } else if (trimmed.startsWith('[')) {\n      const jsonStr = trimmed.replace(/'/g, '\"');\n      const parsed = JSON.parse(jsonStr);\n      if (Array.isArray(parsed)) {\n        vendors = parsed.map(i => i.trim().toLowerCase());\n      }\n    } else if (trimmed !== '') {\n      vendors = [trimmed.toLowerCase()];\n    }\n  } else if (Array.isArray(vendorInput)) {\n    vendors = vendorInput.map(i => i.trim().toLowerCase());\n  }\n} catch (e) {\n  vendors = [];\n}\n\nif (!skipVendorFilter && vendors.length > 0) {\n  filteredData = filteredData.filter(item =>\n    typeof item.vendor === 'string' &&\n    vendors.includes(item.vendor.trim().toLowerCase())\n  );\n}\n\n// --- TRẢ KẾT QUẢ CUỐI CÙNG ---\nif (filteredData.length === 0) {\n  return {\n    json: {\n      status: \"failed\"\n    }\n  };\n}\n\nreturn {\n  json: {\n    status: \"success\",\n    data: filteredData\n  }\n};\n"
+      },
+      "id": "80734dd0-dab0-4414-ab30-7906608bc702",
+      "name": "Success or Failed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2000,
+        780
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "product-vhn-search-data",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        1580,
+        780
+      ],
+      "id": "1a6a9c8a-82b3-40ee-8fcb-7ae17f140458",
+      "name": "Search_data",
+      "webhookId": "49009ae0-3195-4f35-976b-d7f9185ce181"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Product Sheet": {
+      "main": [
+        [
+          {
+            "node": "Success or Failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Success or Failed": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search_data": {
+      "main": [
+        [
+          {
+            "node": "Product Sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "825b7ad5-a332-466f-b915-855975992cd9",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "6c8ad7f1d8ddd4f1d54b1c5fb2555340b6e3def62afb77ba1614f2f12612d295"
+  },
+  "id": "8kRR9JuIHW8NEJ4C",
+  "tags": [
+    {
+      "createdAt": "2024-06-14T03:41:25.328Z",
+      "updatedAt": "2024-06-14T03:41:25.328Z",
+      "id": "zC1BjobG9Ir3lgrO",
+      "name": "PRODUCTION"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "3173e7d6fcbdeb4100c4dfabad2c1bbd",
+  "type": "botAPICall",
+  "componentType": "task",
+  "properties": {
+    "api_response_var_name": "api_call_product_data",
+    "api_url": "{{ api_url_search_data }}",
+    "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n    \"product_type\": \"{{ session.extra.query_data.product_type }}\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+    "api_header": "{\"Authorization\": \"Bearer token\"}",
+    "api_method": "POST"
+  },
+  "name": "API CALL PRODUCT DATA"
+}
+{
+  "id": "fb5a13c13db9c1499f374e20e623e775",
+  "type": "botAPICall",
+  "componentType": "task",
+  "properties": {
+    "api_response_var_name": "api_call_product_data",
+    "api_url": "{{ api_url_search_data }}",
+    "api_body": "{\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n    \"product_type\": \"none\",\n    \"sheet_url\":\"https://docs.google.com/spreadsheets/d/1LdO_BV7DHdgs0_GAqTTkQbWkwefUQqw036Cb3PJcUJM/edit?usp=sharing\"\n}",
+    "api_header": "{\"Authorization\": \"Bearer token\"}",
+    "api_method": "POST"
+  },
+  "name": "API CALL PRODUCT DATA"
+}
+{
+  "id": "e794a07396cee253f3ae45c2cd6833d5",
+  "componentType": "task",
+  "type": "botAPICall",
+  "name": "📤 API Call Support 📤",
+  "properties": {
+    "api_response_var_name": "api_name_output",
+    "api_url": "{{api_url_handover}}",
+    "api_body": "{\n    \"customer_name\": \"NOT-PROVIDED\",\n    \"customer_phone\": \"NOT-PROVIDED\",\n    \"customer_issue\": \"Có vấn đề với Data sản phẩm. Cần theo dõi và support\",\n    \"bot_uuid\": \"{{ bot_uuid }}\",\n    \"channel_type\": \"{{ channel_type }}\",\n    \"channel_id\": \"{{ channel_id }}\",\n    \"thread_id\": \"{{ thread_id }}\",\n    \"user_msg_id\": \"{{ user_msg_id }}\",\n    \"company_name\": \"{{ company_name }}\",\n    \"company_email\": \"{{ company_email }}\",\n    \"sheet_url\":\"{{ sheet_url }}\"\n}",
+    "api_header": "{\n  \"Authorization\": \"Bearer token\"\n}",
+    "api_method": "POST"
+  }
+}
+{
+  "id": "b2b_consult_api_call",
+  "type": "botAPICall",
+  "componentType": "task",
+  "name": "API CALL PRODUCT DATA",
+  "properties": {
+    "api_response_var_name": "api_call_product_data",
+    "api_url": "{{api_url_search_data}}",
+    "api_body": "{\n  \"bot_uuid\": \"{{ bot_uuid }}\",\n  \"channel_type\": \"{{ channel_type }}\",\n  \"channel_id\": \"{{ channel_id }}\",\n  \"thread_id\": \"{{ thread_id }}\",\n  \"user_msg_id\": \"{{ user_msg_id }}\",\n  \"vendor\": \"{{ session.extra.query_data.vendor }}\",\n  \"product_type\": \"{{ session.extra.query_data.product_type }}\",\n  \"sheet_url\": \"{{ sheet_url }}\"\n}",
+    "api_header": "{}",
+    "api_method": "POST"
+  }
+}
