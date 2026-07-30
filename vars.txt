@@ -1,0 +1,58 @@
+ session.extra.company_contact 
+ knowledge_from_rag 
+bot_json_query
+session.extra.registration_chat_history
+ session.extra.findproduct_data 
+ session.extra.assistant_role 
+order_info.customer_address
+ session.extra.query_data.vendor 
+order_info.customer_name
+api_url_handover
+ sheet_url 
+ session.extra.assistant_scope 
+ session.extra.query_data.product_type 
+ thread_id 
+human_input
+ session.extra.b2b_to_b2c_mapping 
+ session.extra.company_product 
+ session.extra.product_information 
+order_info.product_requirement
+ human_input 
+ bot_b2c_reply 
+session.extra.chat_history_b2b
+b2b_info.name
+bot_b2c_reply
+bot_b2b_reply
+b2b_info.phone
+session.extra.previous_manager_decision
+ session.extra.product_wishlist 
+ session.extra.old_order_customer_information 
+ user_msg_id 
+ session.extra.assistant_tone 
+b2b_info.facility
+order_info.customer_phone
+ session.extra.company_name 
+order_info.reply_text
+ channel_type 
+api_url_search_data
+ai_b2b_check
+ session.extra.vn_pronoun 
+product_analyze.name
+ session.extra.assistant_skill 
+ session.extra.chat_history_b2b 
+order_info.shipping_fee
+ai_order_decide
+ order_info.reply_text 
+ api_url_search_data 
+ session.extra.company_short_name 
+api_raw_product_data[0].data
+session.extra.chat_history_b2c
+bot_analyze
+knowledge_from_rag
+ bot_b2b_reply 
+order_info.payment_method
+ session.extra.registration_chat_history 
+ channel_id 
+order_info.total_price
+b2b_info.address
+ bot_uuid 

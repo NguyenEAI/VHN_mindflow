@@ -1,0 +1,8 @@
+Array none, array cleanser: failed
+String none, string cleanser: 27
+String ['none'], string ['cleanser']: failed
+String none, string cleanser,antisun: failed
+String none, string ['cleanser', 'antisun']: 33
+Array none, array antisun: failed
+String none, string antisun: 6
+String ['none'], string ['antisun']: failed

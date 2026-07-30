@@ -1,0 +1,184 @@
+﻿Total products in sheet: 257
+
+--- Searching for keywords: ['line repair', 'hydra', 'concentrate', '-6 '] ---
+Found 58 matches
+  ID=4, vendor=Christina, type=[None], salon=True, price=2800000
+  Name: Christina - Unstress -Step 4: Frangipani Concentrate - 300ml (Huyß║┐t thanh l├ám dß╗ïu bß║úo vß╗ç da)
+
+  ID=9, vendor=Christina, type=[None], salon=True, price=3916000
+  Name: Christina - Unstress - Step 8: Optimal hydration mask - 250ml (Mß║╖t nß║í d╞░ß╗íng ß║⌐m v├á phß╗Ñc hß╗ôi da)
+
+  ID=39, vendor=Christina, type=[None], salon=False, price=1600000
+  Name: Christina - Comodex - Hydrate & restore Serum - 30ml (Tinh chß║Ñt cung cß║Ñp ─æß╗Ö ß║⌐m v├á t├íi tß║ío da)
+
+  ID=48, vendor=Christina, type=[None], salon=True, price=N/A
+  Name: Christina - Nuance - 4 Grape-Dew Hydrating Tonic 100 (Toner c├ón bß║▒ng v├á trß║╗ h├│a da)
+
+  ID=61, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Nuance-  Grape-Dew Hydrating Tonic - 100ml (Toner c├ón bß║▒ng v├á trß║╗ h├│a da)
+
+  ID=87, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Rose de mer - post peel kit (3products) - Calm and Hydrate (Gel l├ám mß╗üm v├á phß╗Ñc hß╗ôi)
+
+  ID=110, vendor=Christina, type=[None], salon=True, price=2255000
+  Name: Christina - Line Repair -1 Moisturizing Micellar Milk - 500ml (L├ám sß║ích da mß║╖t v├á v├╣ng cß╗ò)
+
+  ID=111, vendor=Christina, type=[None], salon=True, price=2860000
+  Name: Christina - Line Repair -2 Oxygen Peel - 250ml (Peel da t─âng c╞░ß╗¥ng oxy)
+
+  ID=112, vendor=Christina, type=[None], salon=True, price=1800000
+  Name: Christina - Line Repair -3 Glow Mask - 250ml (Mß║╖t nß║í ─æß║⌐y nhanh qu├í tr├¼nh thay mß╗¢i tß║┐ b├áo da)
+
+  ID=113, vendor=Christina, type=[None], salon=True, price=1518000
+  Name: Christina - Line Repair -4 Ultra Nourish Mask - 250ml (Mß║╖t nß║í phß╗Ñc hß╗ôi h├áng r├áo bß║úo vß╗ç da)
+
+  ID=114, vendor=Christina, type=[None], salon=True, price=2629000
+  Name: Christina - Line Repair -5 Lift Define Mask - 150gr (Mß║╖t nß║í l├ám s─ân chß║»c da tß╗⌐c th├¼, chß╗æng oxy h├│a v├á giß╗» ß║⌐m)
+
+  ID=115, vendor=Christina, type=[None], salon=True, price=2090000
+  Name: Christina - Line Repair -6 Hydra Fusion Concentrate - 50ml (Huyß║┐t thanh cung cß║Ñp vitamin v├á ─æß╗Ö ß║⌐m)
+
+  ID=116, vendor=Christina, type=[None], salon=True, price=1650000
+  Name: Christina - Line Repair -7 Radiance Firm Day Cream - 100ml (Kem d╞░ß╗íng c─âng b├│ng, chß╗æng l├úo h├│a da ban ng├áy)
+
+  ID=117, vendor=Christina, type=[None], salon=False, price=1529000
+  Name: Christina - Line Repair - Glow-Oxygen Peel - 60ml (Peel da t─âng c╞░ß╗¥ng oxy)
+
+  ID=118, vendor=Christina, type=[None], salon=False, price=1947000
+  Name: Christina - Line Repair - Glow - Hydra Fusion Concentrate - 30ml (Huyß║┐t thanh cung cß║Ñp vitamin v├á ─æß╗Ö ß║⌐m)
+
+  ID=119, vendor=Christina, type=[None], salon=False, price=1496000
+  Name: Christina - Line Repair - Glow - Radiance Firm Day Cream - 60ml (Kem d╞░ß╗íng c─âng b├│ng, chß╗æng l├úo h├│a da ban ng├áy)
+
+  ID=120, vendor=Christina, type=[None], salon=False, price=1760000
+  Name: Christina - Line Repair - Glow - Radiance Reveal Serum - 30ml (Huyß║┐t thanh c─âng b├│ng, t├íi tß║ío da)
+
+  ID=121, vendor=Christina, type=[None], salon=False, price=1360000
+  Name: Christina - Line Repair - Glow - Satin Smooth Night Cream - 50ml (Kem d╞░ß╗íng c─âng b├│ng, t├íi tß║ío da ban ─æ├¬m)
+
+  ID=122, vendor=Christina, type=[None], salon=False, price=1760000
+  Name: Christina - Line Repair - Glow - Light Capture Eye Cream - 30ml (Kem d╞░ß╗íng ß║⌐m, giß║úm quß║ºng th├óm v├á bß╗ìng mß║»t)
+
+  ID=123, vendor=Christina, type=[None], salon=True, price=990000
+  Name: Christina - Line Repair -1 Moisturizing Micellar Milk - 300ml (Sß╗»a tß║⌐y trang sß║ích s├óu v├á cß║Ñp ß║⌐m tß╗⌐c th├¼)
+
+  ID=124, vendor=Christina, type=[None], salon=False, price=1089000
+  Name: Christina - Line Repair - Hydra - AHA-BHA Active Cleanser - 250ml (Sß╗»a rß╗¡a mß║╖t l├ám sß║ích s├óu c├│ chß╗⌐a AHA - BHA)
+
+  ID=125, vendor=Christina, type=[None], salon=False, price=1210000
+  Name: Christina - Line Repair - Hydra - Lactic Active Toner - 300ml (N╞░ß╗¢c c├ón bß║▒ng t─âng c╞░ß╗¥ng d╞░ß╗íng ß║⌐m)
+
+  ID=126, vendor=Christina, type=[None], salon=False, price=1280000
+  Name: Christina - Line Repair - Hydra - Theraskin + HA - 30ml (Huyß║┐t thanh cß║Ñp n╞░ß╗¢c, nu├┤i d╞░ß╗íng tß║┐ b├áo v├á chß╗æng l├úo h├│a da)
+
+  ID=127, vendor=Christina, type=[None], salon=False, price=1155000
+  Name: Christina - Line Repair - Hydra - Collagen Elastin - 60ml (Kem d╞░ß╗íng ß║⌐m cß║Ñp n╞░ß╗¢c v├á chß╗æng l├úo h├│a da)
+
+  ID=128, vendor=Christina, type=[None], salon=False, price=1760000
+  Name: Christina - Line Repair - Hydra - Lactic Night Repair - 60ml (Kem d╞░ß╗íng ß║⌐m l├ám s─ân chß║»c v├á s├íng da ban ─æ├¬m)
+
+  ID=129, vendor=Christina, type=[None], salon=False, price=1380000
+  Name: Christina - Line Repair - Hydra - Lactic Intense Peel - 50ml (Tß║⌐y da chß║┐t l├ám sß║ích s├óu, l├ám s├íng da)
+
+  ID=130, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Hydra - HA Eye & Neck - 30ml (Serum cß║Ñp n╞░ß╗¢c, d╞░ß╗íng ß║⌐m cho mß║»t v├á cß╗ò)
+
+  ID=131, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Hydra - Orchid Hydration Mask - 60ml (Mß║╖t nß║í si├¬u d╞░ß╗íng sß╗¡a chß╗»a li├¬n kß║┐t tß║┐ b├áo, x├│a mß╗¥ nß║┐p n
+
+  ID=132, vendor=Christina, type=[None], salon=False, price=1419000
+  Name: Christina - Line Repair - Hydra - Gingseng Cream - 50ml (Kem d╞░ß╗íng ß║⌐m, chß╗æng l├úo h├│a da)
+
+  ID=133, vendor=Christina, type=[None], salon=False, price=1826000
+  Name: Christina - Line Repair - Fix - Hydra Perfect - 30ml (Huyß║┐t thanh d╞░ß╗íng ß║⌐m, t─âng c╞░ß╗¥ng ─æß╗Ö s─ân chß║»c da)
+
+  ID=134, vendor=Christina, type=[None], salon=False, price=1680000
+  Name: Christina - Line Repair - Fix - Antioxidant Assist SPF-50 - 50ml (Kem d╞░ß╗íng chß╗æng l├úo h├│a v├á bß║úo vß╗ç da ban ng├áy)
+
+  ID=135, vendor=Christina, type=[None], salon=False, price=2068000
+  Name: Christina - Line Repair - Fix - Retinol E active cream - 30ml (Kem d╞░ß╗íng Retinol cß║úi thiß╗çn l├úo h├│a da to├án diß╗çn)
+
+  ID=136, vendor=Christina, type=[None], salon=False, price=1705000
+  Name: Christina - Line Repair - Fix - Complete Renewal - 30ml (Kem d╞░ß╗íng cß║úi thiß╗çn l├úo ho├í da to├án diß╗çn)
+
+  ID=137, vendor=Christina, type=[None], salon=False, price=2068000
+  Name: Christina - Line Repair - Fix - Retinol E Eye Cream - 30ml (Kem d╞░ß╗íng mß║»t Retinol E)
+
+  ID=138, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Fix - HA Repair Mask - 60ml (Mß║╖t nß║í d╞░ß╗íng chß║Ñt phß╗Ñc hß╗ôi sß╗⌐c sß╗æng, t─âng sinh li├¬n kß║┐t, t├íi tß║ío 
+
+  ID=139, vendor=Christina, type=[None], salon=False, price=1089000
+  Name: Christina - Line Repair - Firm - Blue Daisy Cleanser - 300ml (Sß╗»a rß╗¡a mß║╖t dß╗ïu nhß║╣ chß╗æng l├úo ho├í da)
+
+  ID=140, vendor=Christina, type=[None], salon=False, price=1760000
+  Name: Christina - Line Repair - Firm - Forever Youth Serum - 30ml (Serum ─æß╗òi mß╗¢i v├á trß║╗ ho├í da)
+
+  ID=141, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Firm - Daytime Guard SPF 50 - 60ml (Kem ng├áy d╞░ß╗íng ß║⌐m, trß║╗ ho├í v├á bß║úo vß╗ç da vß╗¢i chß╗ë sß╗æ SPF50)
+
+  ID=142, vendor=Christina, type=[None], salon=False, price=1518000
+  Name: Christina - Line Repair - Firm - Nighttime Rehab - 50ml (Kem ─æ├¬m d╞░ß╗íng ß║⌐m v├á trß║╗ ho├í da to├án diß╗çn)
+
+  ID=143, vendor=Christina, type=[None], salon=False, price=1380000
+  Name: Christina - Line Repair - Firm - AHA & Resveratrol Peel - 50ml (Tß║⌐y bß╗Å tß║┐ b├áo chß║┐t v├á bß║úo vß╗ç tß╗æi ╞░u c├íc tß║┐ b├áo mß╗¢i)
+
+  ID=144, vendor=Christina, type=[None], salon=False, price=1419000
+  Name: Christina - Line Repair - Firm - Allday Eye Rescue - 30ml (Kem d╞░ß╗íng chß╗æng nh─ân, giß║úm th├óm v├á bß╗ìng mß║»t)
+
+  ID=145, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Firm - Always-On Mist - 100ml (Xß╗ït d╞░ß╗íng giß║úm mß║⌐n ─æß╗Å v├á phß╗Ñc hß╗ôi sß╗⌐c sß╗æng l├án da)
+
+  ID=146, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Firm - Collagen Boost Mask - 60ml (Mß║╖t nß║í gi├áu d╞░ß╗íng chß║Ñt sß╗¡a chß╗»a tß╗òn th╞░╞íng, t─âng c╞░ß╗¥ng ─æß╗Ö ─æ
+
+  ID=147, vendor=Christina, type=[None], salon=False, price=1290000
+  Name: Christina - Line Repair - Nutrient - Pure Natural Cleanser - 250ml (Sß╗»a rß╗¡a mß║╖t d╞░ß╗íng ß║⌐m v├á l├ám dß╗ïu da)
+
+  ID=148, vendor=Christina, type=[None], salon=False, price=1089000
+  Name: Christina - Line Repair - Nutrient - Goji Berries Active Toner - 300ml (N╞░ß╗¢c hoa hß╗ông l├ám sß║ích v├á phß╗Ñc hß╗ôi da)
+
+  ID=149, vendor=Christina, type=[None], salon=False, price=1760000
+  Name: Christina - Line Repair - Nutrient - Bio Shield Serum - 30ml (Serum chß╗æng l├úo h├│a v├á bß║úo vß╗ç khß╗Åi ├ính s├íng xanh v├á m├┤i tr
+
+  ID=151, vendor=Christina, type=[None], salon=False, price=1380000
+  Name: Christina - Line Repair - Nutrient - Niacinamide Night Cream - 60ml (Kem d╞░ß╗íng phß╗Ñc hß╗ôi v├á l├ám s├íng da ban ─æ├¬m)
+
+  ID=152, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Nutrient - Bakuchiol Day Cream SPF 15 - 50ml (Kem d╞░ß╗íng trß║╗ h├│a ─æa tß║ºng v├á ng─ân chß║╖n h├¼nh th├án
+
+  ID=153, vendor=Christina, type=[None], salon=False, price=N/A
+  Name: Christina - Line Repair - Nutrient - Wood Pulp Scrub - 75ml (Kem tß║⌐y tß║┐ b├áo chß║┐t l├ám mß╗ïn v├á th├┤ng tho├íng lß╗ù ch├ón l├┤ng)
+
+  ID=164, vendor=Christina, type=[None], salon=True, price=5720000
+  Name: Christina - Forever Young - 8 Hydra Protective Day cream SPF- 25 - 150ml (Kem d╞░ß╗íng trß║╗ h├│a v├á bß║úo vß╗ç da SPF 25)
+
+  ID=169, vendor=Christina, type=[None], salon=False, price=3520000
+  Name: Christina - Hydra Protective Day Cream SPF 25 - 50ml (Kem d╞░ß╗íng trß║╗ h├│a v├á bß║úo vß╗ç da SPF 25)
+
+  ID=198, vendor=Floslek, type=[None], salon=False, price=935000
+  Name: Floslek - Revita C Revitalization - Vitamin Concentrate under eyes, on the face, neck, neckline - 30ml (Serum l├ám s├íng v
+
+  ID=209, vendor=Ivatherm, type=[None], salon=False, price=979000
+  Name: Ivatherm - Ivapur - Hidra Hydrating Cream - 40ml (Kem d╞░ß╗íng ß║⌐m cho da dß║ºu nhß║íy cß║úm, da mß╗Ñn)
+
+  ID=221, vendor=Ivatherm, type=[None], salon=False, price=998000
+  Name: Ivatherm - Sunlight Hydrating - Face cream SPF5 50+ - 50ml (Kem chß╗æng nß║»ng bß║úo vß╗ç cao cß║Ñp ß║⌐m d├ánh cho da th╞░ß╗¥ng v├á da kh
+
+  ID=224, vendor=Ivatherm, type=[None], salon=False, price=989000
+  Name: Ivatherm - Aquafil - Hydra Complex Gel-Cream Eyes Contour - 15ml (Kem chß╗æng l├úo h├│a v├á giß║úm th├óm quß║ºng mß║»t)
+
+  ID=225, vendor=Ivatherm, type=[None], salon=False, price=880000
+  Name: Ivatherm - Aquafil - Hydra Cleansing Foam - 160ml (Sß╗»a rß╗¡a mß║╖t dß║íng bß╗ìt mß╗ïn d├ánh cho da kh├┤, mß║Ñt n╞░ß╗¢c, nhß║íy cß║úm)
+
+  ID=226, vendor=Ivatherm, type=[None], salon=False, price=980000
+  Name: Ivatherm - Aquafil - Hydra Hydrating Serum - 30ml (Serum d╞░ß╗íng ß║⌐m phß╗Ñc hß╗ôi & trß║╗ ho├í)
+
+  ID=240, vendor=Preime, type=[None], salon=True, price=6800000
+  Name: Preime - HA 3.5 Dual Hydrating Solution ()
+
+
+--- All unique 'type' values for Christina ---
+Types: ['None']
+
+--- Christina product counts by type ---
+  None: 187 products
